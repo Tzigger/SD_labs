@@ -1,11 +1,10 @@
 <html xmlns:jsp="http://java.sun.com/JSP/Page">
 	<head>
-		<title>Formular student</title>
+		<title>Adauga student</title>
 		<meta charset="UTF-8" />
 	</head>
 	<body>
-		<h3>Formular student</h3>
-		Introduceti datele despre student:
+		<h3>Adauga student nou</h3>
 		<form action="./process-student" method="post">
 			Nume: <input type="text" name="nume" />
 			<br />
@@ -14,7 +13,8 @@
 			Varsta: <input type="number" name="varsta" />
 			<br />
 			<br />
-			<button type="submit" name="submit">Trimite</button>
+			<button type="submit">Adauga</button>
 		</form>
+		<p><a href="./read-student">Inapoi la lista</a></p>
 	</body>
 </html>

@@ -1,49 +1,34 @@
-import beans.StudentBean;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import db.DatabaseHelper;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
-import java.time.Year;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 public class UpdateStudentServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // se citesc parametrii din cererea de tip POST
+        int id = Integer.parseInt(request.getParameter("id"));
         String nume = request.getParameter("nume");
         String prenume = request.getParameter("prenume");
         int varsta = Integer.parseInt(request.getParameter("varsta"));
 
-        /*
-        procesarea datelor - calcularea anului nasterii
-         */
-        int anCurent = Year.now().getValue();
-        int anNastere = anCurent - varsta;
+        try (Connection conn = DatabaseHelper.getConnection()) {
+            PreparedStatement ps = conn.prepareStatement(
+                "UPDATE studenti SET nume=?, prenume=?, varsta=? WHERE id=?");
+            ps.setString(1, nume);
+            ps.setString(2, prenume);
+            ps.setInt(3, varsta);
+            ps.setInt(4, id);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            throw new ServletException(e);
+        }
 
-        // initializare serializator Jackson
-        XmlMapper mapper = new XmlMapper();
-
-        // creare bean si populare cu date
-        StudentBean bean = new StudentBean();
-        bean.setNume(nume);
-        bean.setPrenume(prenume);
-        bean.setVarsta(varsta);
-
-        // Doar aici modific astfel incat sa scriu in fisier
-        File file = new File("/home/tzigger/SD/date_lab/student.xml");
-        XmlMapper xmlMapper = new XmlMapper();
-        xmlMapper.writeValue(file,bean);
-
-
-        // se trimit datele primite si anul nasterii catre o alta pagina JSP pentru afisare
-        request.setAttribute("nume", nume);
-        request.setAttribute("prenume", prenume);
-        request.setAttribute("varsta", varsta);
-        request.setAttribute("anNastere", anNastere);
-        request.getRequestDispatcher("./info-student.jsp").forward(request, response);
+        response.sendRedirect("./read-student");
     }
 }

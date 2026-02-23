@@ -7,10 +7,16 @@
         </p>
         <br />
         <p>
-            <a href="./formular.jsp">Formular student</a>
+            <a href="./formular.jsp">Adauga student</a>
         </p>
         <p>
-            <a href="./read-student">Vizualizare student</a>
+            <a href="./read-student">Lista studenti</a>
+        </p>
+        <p>
+            <a href="./search-student">Cauta student</a>
+        </p>
+        <p>
+            <a href="./export-json">Exporta JSON</a>
         </p>
     </body>
 </html>
