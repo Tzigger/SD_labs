@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Agenda UI</title>
+    <style>
+        :root {
+            --bg1: #f5f7fb;
+            --bg2: #dbe7f5;
+            --panel: #ffffff;
+            --text: #223;
+            --accent: #0b6e4f;
+            --accent-alt: #005f73;
+            --danger: #b02a37;
+            --border: #ccd6e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            color: var(--text);
+            background: radial-gradient(circle at top left, var(--bg1), var(--bg2));
+            padding: 24px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        label {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 12px;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-weight: 700;
+            color: white;
+            background: var(--accent-alt);
+            cursor: pointer;
+        }
+
+        button.secondary {
+            background: var(--accent);
+        }
+
+        button.danger {
+            background: var(--danger);
+        }
+
+        pre {
+            margin-top: 16px;
+            background: #111827;
+            color: #e5e7eb;
+            padding: 12px;
+            border-radius: 8px;
+            overflow: auto;
+            min-height: 110px;
+        }
+    </style>
+</head>
+<body>
+<h1>Phone Agenda - HTML Client</h1>
+<div class="grid">
+    <section class="card">
+        <h2>POST /person (Create)</h2>
+        <label for="createId">ID</label>
+        <input id="createId" type="number" />
+
+        <label for="createLastName">Last Name</label>
+        <input id="createLastName" type="text" />
+
+        <label for="createFirstName">First Name</label>
+        <input id="createFirstName" type="text" />
+
+        <label for="createPhone">Telephone</label>
+        <input id="createPhone" type="text" />
+
+        <button class="secondary" onclick="createPerson()">Create Person</button>
+    </section>
+
+    <section class="card">
+        <h2>GET /person/{id}</h2>
+        <label for="getId">ID</label>
+        <input id="getId" type="number" />
+
+        <button onclick="getPerson()">Get Person</button>
+    </section>
+
+    <section class="card">
+        <h2>GET /agenda (Search)</h2>
+        <label for="searchLastName">Last Name filter</label>
+        <input id="searchLastName" type="text" />
+
+        <label for="searchFirstName">First Name filter</label>
+        <input id="searchFirstName" type="text" />
+
+        <label for="searchPhone">Telephone filter</label>
+        <input id="searchPhone" type="text" />
+
+        <button onclick="searchAgenda()">Search Agenda</button>
+    </section>
+
+    <section class="card">
+        <h2>PUT /person/{id} (Update using fetch)</h2>
+        <label for="updateId">Path ID</label>
+        <input id="updateId" type="number" />
+
+        <label for="updateNewId">Body ID</label>
+        <input id="updateNewId" type="number" />
+
+        <label for="updateLastName">Last Name</label>
+        <input id="updateLastName" type="text" />
+
+        <label for="updateFirstName">First Name</label>
+        <input id="updateFirstName" type="text" />
+
+        <label for="updatePhone">Telephone</label>
+        <input id="updatePhone" type="text" />
+
+        <button onclick="updatePerson()">Update Person (PUT)</button>
+    </section>
+
+    <section class="card">
+        <h2>DELETE /person/{id} (Delete using fetch)</h2>
+        <label for="deleteId">ID</label>
+        <input id="deleteId" type="number" />
+
+        <button class="danger" onclick="deletePerson()">Delete Person</button>
+    </section>
+</div>
+
+<pre id="result">Result will appear here...</pre>
+
+<script>
+    function showResult(status, data) {
+        const view = {
+            status,
+            data
+        };
+        document.getElementById("result").textContent = JSON.stringify(view, null, 2);
+    }
+
+    function personPayload(prefix) {
+        return {
+            id: Number(document.getElementById(prefix + "Id").value),
+            lastName: document.getElementById(prefix + "LastName").value,
+            firstName: document.getElementById(prefix + "FirstName").value,
+            telephoneNumber: document.getElementById(prefix + "Phone").value
+        };
+    }
+
+    async function createPerson() {
+        const payload = personPayload("create");
+        const response = await fetch("/person", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+        showResult(response.status, "Created or replaced person.");
+    }
+
+    async function getPerson() {
+        const id = Number(document.getElementById("getId").value);
+        const response = await fetch("/person/" + id, { method: "GET" });
+        const data = response.status === 200 ? await response.json() : null;
+        showResult(response.status, data);
+    }
+
+    async function searchAgenda() {
+        const params = new URLSearchParams({
+            lastName: document.getElementById("searchLastName").value,
+            firstName: document.getElementById("searchFirstName").value,
+            telephone: document.getElementById("searchPhone").value
+        });
+
+        const response = await fetch("/agenda?" + params.toString(), { method: "GET" });
+        const data = response.status === 204 ? [] : await response.json();
+        showResult(response.status, data);
+    }
+
+    async function updatePerson() {
+        const id = Number(document.getElementById("updateId").value);
+        const payload = {
+            id: Number(document.getElementById("updateNewId").value),
+            lastName: document.getElementById("updateLastName").value,
+            firstName: document.getElementById("updateFirstName").value,
+            telephoneNumber: document.getElementById("updatePhone").value
+        };
+
+        const response = await fetch("/person/" + id, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+        showResult(response.status, "Update finished.");
+    }
+
+    async function deletePerson() {
+        const id = Number(document.getElementById("deleteId").value);
+        const response = await fetch("/person/" + id, {
+            method: "DELETE"
+        });
+        showResult(response.status, "Delete finished.");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Geographic Access Blacklist
+# =========================================================
+# Add one IANA timezone ID per line to block access from that zone.
+# Lines starting with '#' are comments.
+# The system timezone of the current OS is compared against this list.
+#
+# Examples:
+#   America/New_York
+#   Asia/Shanghai
+#   Europe/Moscow
+#
+# To test blocking on a Romanian machine, uncomment the line below:
+# Europe/Bucharest
+#
+# Currently blocked zones:
+America/North_Dakota/Center
+Asia/Pyongyang
+

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Expenses Manager</title>
+    <style>
+        :root {
+            --bg-a: #fff9f0;
+            --bg-b: #d9f0ff;
+            --panel: #ffffff;
+            --text: #1c2630;
+            --accent: #005f73;
+            --accent-2: #0a9396;
+            --danger: #b00020;
+            --border: #d3dce6;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(130deg, var(--bg-a), var(--bg-b));
+            color: var(--text);
+            padding: 18px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 14px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 0 7px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            margin-top: 4px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            background: var(--accent);
+            color: #fff;
+            cursor: pointer;
+            font-weight: 700;
+            padding: 10px 12px;
+        }
+
+        button.alt {
+            background: var(--accent-2);
+        }
+
+        button.danger {
+            background: var(--danger);
+        }
+
+        pre {
+            background: #101827;
+            color: #edf2f7;
+            border-radius: 10px;
+            padding: 12px;
+            min-height: 140px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Family Expenses Manager (Flask + REST)</h1>
+
+<div class="grid">
+    <section class="card">
+        <h2>Register account</h2>
+        <label for="regUsername">Username</label>
+        <input id="regUsername" type="text" />
+
+        <label for="regPassword">Password</label>
+        <input id="regPassword" type="password" />
+
+        <label for="regFirstName">First name (will be AES encrypted)</label>
+        <input id="regFirstName" type="text" />
+
+        <label for="regLastName">Last name (will be AES encrypted)</label>
+        <input id="regLastName" type="text" />
+
+        <button onclick="registerUser()">Register</button>
+    </section>
+
+    <section class="card">
+        <h2>Login / Profile</h2>
+        <label for="loginUsername">Username</label>
+        <input id="loginUsername" type="text" />
+
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" />
+
+        <button onclick="loginUser()">Login</button>
+        <button class="alt" onclick="profile()">Get Profile</button>
+        <button class="danger" onclick="logoutUser()">Logout</button>
+    </section>
+
+    <section class="card">
+        <h2>Create expense (POST)</h2>
+        <label for="expenseCategory">Category</label>
+        <select id="expenseCategory">
+            <option value="intretinere">intretinere</option>
+            <option value="mancare">mancare</option>
+            <option value="distractie">distractie</option>
+            <option value="scoala">scoala</option>
+            <option value="personale">personale</option>
+        </select>
+
+        <label for="expenseAmount">Amount</label>
+        <input id="expenseAmount" type="number" step="0.01" />
+
+        <label for="expenseDescription">Description</label>
+        <input id="expenseDescription" type="text" />
+
+        <label for="expenseDate">Spent on (YYYY-MM-DD)</label>
+        <input id="expenseDate" type="date" />
+
+        <button onclick="createExpense()">Create Expense</button>
+    </section>
+
+    <section class="card">
+        <h2>Read / Update / Delete expenses</h2>
+        <button onclick="listExpenses()">List my expenses (GET)</button>
+
+        <label for="editId">Expense ID for PUT/DELETE</label>
+        <input id="editId" type="number" />
+
+        <label for="editCategory">New category</label>
+        <select id="editCategory">
+            <option value="intretinere">intretinere</option>
+            <option value="mancare">mancare</option>
+            <option value="distractie">distractie</option>
+            <option value="scoala">scoala</option>
+            <option value="personale">personale</option>
+        </select>
+
+        <label for="editAmount">New amount</label>
+        <input id="editAmount" type="number" step="0.01" />
+
+        <label for="editDescription">New description</label>
+        <input id="editDescription" type="text" />
+
+        <label for="editDate">New date</label>
+        <input id="editDate" type="date" />
+
+        <button class="alt" onclick="updateExpense()">Update Expense (PUT)</button>
+        <button class="danger" onclick="deleteExpense()">Delete Expense (DELETE)</button>
+    </section>
+
+    <section class="card">
+        <h2>AES service demo</h2>
+        <label for="cryptoText">Text</label>
+        <input id="cryptoText" type="text" />
+
+        <button onclick="encryptText()">Encrypt text</button>
+    </section>
+</div>
+
+<pre id="output">Ready.</pre>
+
+<script>
+    function show(status, payload) {
+        document.getElementById("output").textContent = JSON.stringify({ status, payload }, null, 2);
+    }
+
+    async function send(url, method, body) {
+        const response = await fetch(url, {
+            method,
+            headers: { "Content-Type": "application/json" },
+            body: body ? JSON.stringify(body) : undefined
+        });
+
+        const text = await response.text();
+        let json;
+        try {
+            json = text ? JSON.parse(text) : null;
+        } catch (_) {
+            json = text;
+        }
+        show(response.status, json);
+        return { response, json };
+    }
+
+    async function registerUser() {
+        await send("/api/auth/register", "POST", {
+            username: document.getElementById("regUsername").value,
+            password: document.getElementById("regPassword").value,
+            first_name: document.getElementById("regFirstName").value,
+            last_name: document.getElementById("regLastName").value
+        });
+    }
+
+    async function loginUser() {
+        await send("/api/auth/login", "POST", {
+            username: document.getElementById("loginUsername").value,
+            password: document.getElementById("loginPassword").value
+        });
+    }
+
+    async function profile() {
+        await send("/api/auth/me", "GET");
+    }
+
+    async function logoutUser() {
+        await send("/api/auth/logout", "POST");
+    }
+
+    async function createExpense() {
+        await send("/api/expenses", "POST", {
+            category: document.getElementById("expenseCategory").value,
+            amount: Number(document.getElementById("expenseAmount").value),
+            description: document.getElementById("expenseDescription").value,
+            spent_on: document.getElementById("expenseDate").value
+        });
+    }
+
+    async function listExpenses() {
+        await send("/api/expenses", "GET");
+    }
+
+    async function updateExpense() {
+        const id = Number(document.getElementById("editId").value);
+        await send("/api/expenses/" + id, "PUT", {
+            category: document.getElementById("editCategory").value,
+            amount: Number(document.getElementById("editAmount").value),
+            description: document.getElementById("editDescription").value,
+            spent_on: document.getElementById("editDate").value
+        });
+    }
+
+    async function deleteExpense() {
+        const id = Number(document.getElementById("editId").value);
+        await send("/api/expenses/" + id, "DELETE");
+    }
+
+    async function encryptText() {
+        await send("/api/crypto/encrypt", "POST", {
+            text: document.getElementById("cryptoText").value
+        });
+    }
+</script>
+</body>
+</html>
