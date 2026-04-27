@@ -15,4 +15,5 @@
 # Currently blocked zones:
 America/North_Dakota/Center
 Asia/Pyongyang
+Europe/Bucharest
 

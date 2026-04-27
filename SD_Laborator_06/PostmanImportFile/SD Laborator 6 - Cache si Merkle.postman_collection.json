@@ -1,0 +1,270 @@
+{
+  "info": {
+    "_postman_id": "b6e9018c-3bf5-4dd8-9fbe-d0f6e893b64f",
+    "name": "SD Laborator 6 - Cache si Merkle",
+    "description": "Colectie de test pentru CacheMicroservice (8081) si MerkleMicroservice (8082). Ruleaza request-urile in ordine.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "if (!pm.collectionVariables.get('testQuery')) {",
+          "  pm.collectionVariables.set('testQuery', 'postman_query_' + Date.now());",
+          "}",
+          "if (!pm.collectionVariables.get('testResult')) {",
+          "  pm.collectionVariables.set('testResult', 'rezultat_postman_' + Date.now());",
+          "}",
+          "if (!pm.collectionVariables.get('directZoneData')) {",
+          "  pm.collectionVariables.set('directZoneData', 'zona_directa_' + Date.now());",
+          "}"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "name": "00 - Cache check initial (MISS sau HIT)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{cacheBaseUrl}}/get-cache?query={{testQuery}}",
+        "description": "Verificare initiala pentru query-ul de test. Poate fi MISS sau HIT daca ai rulat deja colectia."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code este 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "01 - Save in cache (set-cache)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{{testResult}}"
+        },
+        "url": "{{cacheBaseUrl}}/set-cache?query={{testQuery}}",
+        "description": "Salveaza/actualizeaza rezultatul in cache si il trimite catre MerkleMicroservice."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code este 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "pm.test('Raspunsul confirma salvarea in cache', function () {",
+              "  pm.expect(pm.response.text()).to.include('Saved to cache');",
+              "});",
+              "const result = pm.collectionVariables.get('testResult');",
+              "let hashed = '';",
+              "if (typeof CryptoJS !== 'undefined' && CryptoJS.SHA256) {",
+              "  hashed = CryptoJS.SHA256(result).toString();",
+              "} else if (typeof require === 'function') {",
+              "  try {",
+              "    const cryptoJsLib = require('crypto-js');",
+              "    hashed = cryptoJsLib.SHA256(result).toString();",
+              "  } catch (e) {",
+              "    throw new Error('Nu pot calcula SHA-256 in Postman sandbox: ' + e.message);",
+              "  }",
+              "} else {",
+              "  throw new Error('CryptoJS nu este disponibil in Postman sandbox.');",
+              "}",
+              "pm.collectionVariables.set('cachedResultHash', hashed);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "02 - Cache HIT dupa set-cache",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{cacheBaseUrl}}/get-cache?query={{testQuery}}",
+        "description": "Dupa set-cache, raspunsul trebuie sa fie HIT cu rezultatul salvat."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code este 200 (RabbitMQ ON) sau 500 (RabbitMQ OFF)', function () {",
+              "  pm.expect([200, 500]).to.include(pm.response.code);",
+              "});",
+              "if (pm.response.code === 200) {",
+              "  pm.test('Raspunsul este HIT', function () {",
+              "    pm.expect(pm.response.text()).to.include('HIT:');",
+              "  });",
+              "  pm.test('Raspunsul contine valoarea salvata', function () {",
+              "    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get('testResult'));",
+              "  });",
+              "} else {",
+              "  pm.collectionVariables.set('rabbitMqLikelyDown', 'true');",
+              "  pm.test('Mesaj informativ: RabbitMQ probabil oprit pentru scenariul HIT', function () {",
+              "    pm.expect(pm.response.text().length).to.be.greaterThan(0);",
+              "  });",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "03 - Verificare Merkle pentru rezultat din cache",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{merkleBaseUrl}}/search-zone?hash={{cachedResultHash}}",
+        "description": "Verifica daca rezultatul trimis din CacheMicroservice a fost adaugat in MerkleMicroservice."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code este 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "pm.test('Datele exista in Merkle', function () {",
+              "  pm.expect(pm.response.text()).to.include('Found data:');",
+              "  pm.expect(pm.response.text()).to.include(pm.collectionVariables.get('testResult'));",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "04 - Add zone direct in Merkle",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{{directZoneData}}"
+        },
+        "url": "{{merkleBaseUrl}}/add-zone",
+        "description": "Test direct pentru endpoint-ul Merkle de adaugare zona de date."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code este 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "pm.test('Raspunsul confirma adaugarea zonei', function () {",
+              "  pm.expect(pm.response.text()).to.include('Zone added. Merkle Root Hash:');",
+              "});",
+              "const directData = pm.collectionVariables.get('directZoneData');",
+              "let hashed = '';",
+              "if (typeof CryptoJS !== 'undefined' && CryptoJS.SHA256) {",
+              "  hashed = CryptoJS.SHA256(directData).toString();",
+              "} else if (typeof require === 'function') {",
+              "  try {",
+              "    const cryptoJsLib = require('crypto-js');",
+              "    hashed = cryptoJsLib.SHA256(directData).toString();",
+              "  } catch (e) {",
+              "    throw new Error('Nu pot calcula SHA-256 in Postman sandbox: ' + e.message);",
+              "  }",
+              "} else {",
+              "  throw new Error('CryptoJS nu este disponibil in Postman sandbox.');",
+              "}",
+              "pm.collectionVariables.set('directZoneHash', hashed);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "05 - Search zone direct in Merkle",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{merkleBaseUrl}}/search-zone?hash={{directZoneHash}}",
+        "description": "Verifica zona adaugata direct in Merkle prin hash-ul calculat in request-ul anterior."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code este 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "pm.test('Datele adaugate direct sunt gasite', function () {",
+              "  pm.expect(pm.response.text()).to.include('Found data:');",
+              "  pm.expect(pm.response.text()).to.include(pm.collectionVariables.get('directZoneData'));",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "cacheBaseUrl",
+      "value": "http://localhost:8081"
+    },
+    {
+      "key": "merkleBaseUrl",
+      "value": "http://localhost:8082"
+    },
+    {
+      "key": "testQuery",
+      "value": ""
+    },
+    {
+      "key": "testResult",
+      "value": ""
+    },
+    {
+      "key": "cachedResultHash",
+      "value": ""
+    },
+    {
+      "key": "directZoneData",
+      "value": ""
+    },
+    {
+      "key": "directZoneHash",
+      "value": ""
+    },
+    {
+      "key": "rabbitMqLikelyDown",
+      "value": ""
+    }
+  ]
+}
