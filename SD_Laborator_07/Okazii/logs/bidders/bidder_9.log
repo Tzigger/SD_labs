@@ -1,0 +1,8 @@
+[JOURNAL] [28-04-2026 16:17:50] [56695] CYCLE_START: Connected to Auctioneer. Identity: name='Mihai Constantin', phone='0750999000', email='mihai@mail.ro'.
+[56695] M-am conectat la Auctioneer! Identitate: Mihai Constantin (0750999000, mihai@mail.ro)
+[BidderMicroservice:56695] HeartBeat client connected to HeartBeatMicroservice.
+[JOURNAL] [28-04-2026 16:17:50] [56695] Placing bid: licitez 3872
+[56695] Astept rezultatul licitatiei...
+[JOURNAL] [28-04-2026 16:17:50] [56695] Waiting for auction result.
+[56695] Eroare: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
+[JOURNAL] [28-04-2026 16:18:05] [56695] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

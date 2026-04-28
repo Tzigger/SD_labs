@@ -37,6 +37,7 @@ class LibraryAppComponent {
 
     @RabbitListener(queues = ["\${libraryapp.rabbitmq.queue}"])
     fun recieveMessage(msg: String) {
+        // Java asculta coada de request si primeste comenzi de forma functie:parametri.
         val processedMsg = decodeIncomingMessage(msg)
         try {
             val messageParts = processedMsg.split(":", limit = 2)
@@ -48,6 +49,7 @@ class LibraryAppComponent {
                 "add" -> customAdd(parameter)
                 else -> null
             }
+            // Raspunsul este trimis in coada de response, de unde il citeste clientul Python.
             if (result != null) sendMessage(result)
         } catch (e: Exception) {
             println(e)
@@ -62,6 +64,7 @@ class LibraryAppComponent {
 
     fun customFind(searchParameter: String): String {
         val parameters = parseParameters(searchParameter)
+        // Parametrii vin din Python codati cu urlencode si aici ii transformam inapoi in valori.
         val field = parameters["field"] ?: searchParameter.substringBefore("=")
         val value = parameters["value"] ?: searchParameter.substringAfter("=", "")
         val outputFormat = parameters["format"] ?: "json"
@@ -76,6 +79,7 @@ class LibraryAppComponent {
 
     fun customAdd(payload: String): String {
         val parameters = parseParameters(payload)
+        // Pentru add construim obiectul Book din datele primite prin mesaj.
         val author = parameters["author"]?.trim().orEmpty()
         val title = parameters["title"]?.trim().orEmpty()
         val publisher = parameters["publisher"]?.trim().orEmpty()
@@ -116,6 +120,7 @@ class LibraryAppComponent {
             return emptyMap()
         }
 
+        // Transformam string-ul "cheie=valoare&cheie2=valoare2" intr-un Map usor de folosit.
         return parameterString.split("&")
             .mapNotNull { entry ->
                 val keyValue = entry.split("=", limit = 2)

@@ -1,0 +1,4 @@
+[28-04-2026 16:17:49] [56679] CYCLE_START: Connected to Auctioneer. Identity: name='Ion Popescu', phone='0740111222', email='ion@mail.ro'.
+[28-04-2026 16:17:49] [56679] Placing bid: licitez 3486
+[28-04-2026 16:17:49] [56679] Waiting for auction result.
+[28-04-2026 16:18:05] [56679] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

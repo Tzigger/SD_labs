@@ -9,6 +9,7 @@ import org.springframework.amqp.rabbit.connection.CachingConnectionFactory
 import org.springframework.amqp.rabbit.connection.ConnectionFactory
 import org.springframework.amqp.rabbit.core.RabbitAdmin
 import org.springframework.amqp.rabbit.core.RabbitTemplate
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.stereotype.Component
@@ -29,10 +30,16 @@ class RabbitMqConnectionFactoryComponent {
     private lateinit var routingKey: String
     @Value("\${stackapp.rabbitmq.queue}")
     private lateinit var queueName: String
+    @Value("\${stackapp.rabbitmq.request.routingkey}")
+    private lateinit var requestRoutingKey: String
+    @Value("\${stackapp.rabbitmq.response.queue}")
+    private lateinit var responseQueueName: String
+    @Value("\${stackapp.rabbitmq.response.routingkey}")
+    private lateinit var responseRoutingKey: String
 
     fun getExchange(): String = this.exchange
 
-    fun getRoutingKey(): String = this.routingKey
+    fun getRoutingKey(): String = this.responseRoutingKey
 
     @Bean
     fun connectionFactory(): ConnectionFactory {
@@ -51,12 +58,25 @@ class RabbitMqConnectionFactoryComponent {
     fun rabbitTemplate(): RabbitTemplate = RabbitTemplate(connectionFactory())
 
     @Bean
-    fun queue(): Queue = Queue(this.queueName, false)
+    fun requestQueue(): Queue = Queue(this.queueName, true)
+
+    @Bean
+    fun responseQueue(): Queue = Queue(this.responseQueueName, true)
 
     @Bean
     fun exchangeBean(): DirectExchange = DirectExchange(this.exchange)
 
     @Bean
-    fun binding(queue: Queue, exchangeBean: DirectExchange): Binding =
-        BindingBuilder.bind(queue).to(exchangeBean).with(this.routingKey)
+    fun requestBinding(
+        @Qualifier("requestQueue") requestQueue: Queue,
+        exchangeBean: DirectExchange
+    ): Binding =
+        BindingBuilder.bind(requestQueue).to(exchangeBean).with(this.requestRoutingKey)
+
+    @Bean
+    fun responseBinding(
+        @Qualifier("responseQueue") responseQueue: Queue,
+        exchangeBean: DirectExchange
+    ): Binding =
+        BindingBuilder.bind(responseQueue).to(exchangeBean).with(this.responseRoutingKey)
 }

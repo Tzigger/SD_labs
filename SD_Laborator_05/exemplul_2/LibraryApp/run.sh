@@ -15,6 +15,10 @@ cleanup() {
 trap cleanup EXIT INT TERM
 
 cd "$(dirname "$0")"
-export JAVA_HOME=/usr/local/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
-export PATH="$JAVA_HOME/bin:$PATH"
+if command -v /usr/libexec/java_home >/dev/null 2>&1; then
+    JAVA_21_HOME=$(/usr/libexec/java_home -v 21 2>/dev/null || true)
+    if [ ! -z "$JAVA_21_HOME" ]; then export JAVA_HOME="$JAVA_21_HOME"; fi
+fi
+if [ -d "/opt/homebrew/opt/openjdk@21/bin" ]; then export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"; fi
+if [ -d "/usr/local/opt/openjdk@21/bin" ]; then export PATH="/usr/local/opt/openjdk@21/bin:$PATH"; fi
 mvn clean spring-boot:run

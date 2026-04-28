@@ -1,0 +1,5 @@
+[28-04-2026 16:15:19] [56478] CYCLE_START: Connected to Auctioneer. Identity: name='Cristian Munteanu', phone='0730998877', email='cristian@mail.ro'.
+[28-04-2026 16:15:19] [56478] Placing bid: licitez 9215
+[28-04-2026 16:15:19] [56478] Sending duplicate (deduplication test).
+[28-04-2026 16:15:19] [56478] Waiting for auction result.
+[28-04-2026 16:15:49] [56478] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

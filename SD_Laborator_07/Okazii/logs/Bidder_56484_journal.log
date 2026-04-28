@@ -1,0 +1,5 @@
+[28-04-2026 16:15:19] [56484] CYCLE_START: Connected to Auctioneer. Identity: name='Ion Popescu', phone='0740111222', email='ion@mail.ro'.
+[28-04-2026 16:15:19] [56484] Placing bid: licitez 2750
+[28-04-2026 16:15:19] [56484] Sending duplicate (deduplication test).
+[28-04-2026 16:15:19] [56484] Waiting for auction result.
+[28-04-2026 16:15:49] [56484] ERROR: java.net.SocketException: Connection reset

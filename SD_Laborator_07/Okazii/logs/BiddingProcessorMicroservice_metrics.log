@@ -1,0 +1,17 @@
+[28-04-2026 16:12:18.669] [BiddingProcessorMicroservice] EVENT=cycle_start | source=/[0:0:0:0:0:0:0:1]:56301
+[28-04-2026 16:15:17.979] [BiddingProcessorMicroservice] EVENT=recovery_detected | journal_line=2
+[28-04-2026 16:15:17.986] [BiddingProcessorMicroservice] EVENT=recovery_empty 
+[28-04-2026 16:15:34.624] [BiddingProcessorMicroservice] EVENT=cycle_start | source=/127.0.0.1:56508
+[28-04-2026 16:15:34.649] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:34.652] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:34.652] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:34.652] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:34.652] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:34.652] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:34.652] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:34.653] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:34.653] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:34.653] [BiddingProcessorMicroservice] EVENT=bid_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:15:34.653] [BiddingProcessorMicroservice] EVENT=all_bids_received | count=10
+[28-04-2026 16:17:48.523] [BiddingProcessorMicroservice] EVENT=recovery_detected | journal_line=10
+[28-04-2026 16:17:48.527] [BiddingProcessorMicroservice] EVENT=recovery_loaded | bids=10

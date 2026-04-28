@@ -8,9 +8,10 @@ import org.springframework.stereotype.Service
 @Service
 @Primary
 class LibraryPrinterAlternativeService: LibraryPrinter {
+    // Acest serviciu formateaza rezultatele in formatul cerut de client.
     override fun printHTML(books: Set<Book>): String {
         val builder = StringBuilder()
-        builder.append("<html><head><tit    le>Libraria mea HTML</title></head><body>")
+        builder.append("<html><head><title>Libraria mea HTML</title></head><body>")
         books.forEach {
             builder.append("<p><h3>")
                 .append(escapeHtml(it.name))

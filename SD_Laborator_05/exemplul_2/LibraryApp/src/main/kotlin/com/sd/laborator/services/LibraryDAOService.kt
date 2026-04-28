@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class LibraryDAOService: LibraryDAO {
+    // Pentru laborator tinem cartile in memorie, ca o baza de date simpla.
     private var books: MutableSet<Book> = mutableSetOf(
         Book(Content("Roberto Ierusalimschy","Preface. When Waldemar, Luiz, and I started the development of Lua, back in 1993, we could hardly imagine that it would spread as it did. ...","Programming in LUA","Teora")),
         Book(Content("Jules Verne","Nemaipomeniti sunt francezii astia! - Vorbiti, domnule, va ascult! ....","Steaua Sudului","Corint")),
@@ -19,6 +20,7 @@ class LibraryDAOService: LibraryDAO {
     }
 
     override fun addBook(book: Book) {
+        // Cartea adaugata din interfata ajunge aici dupa ce trece prin RabbitMQ si componenta Java.
         this.books.add(book)
     }
 

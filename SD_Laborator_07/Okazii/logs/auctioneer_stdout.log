@@ -1,0 +1,68 @@
+[JOURNAL] [28-04-2026 16:17:49] AuctioneerMicroservice starting up.
+[AuctioneerMicroservice] HeartBeat client connected to HeartBeatMicroservice.
+AuctioneerMicroservice se executa pe portul: 1500
+Se asteapta oferte de la bidderi... (15s)
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [28-04-2026 16:17:49] CYCLE_START: Listening on port 1500. Duration: 15000ms.
+[JOURNAL] [28-04-2026 16:17:49] RECOVERY: Interrupted cycle at journal line 48. Loading persisted bids...
+[JOURNAL] [28-04-2026 16:17:49] RECOVERY: Loaded 10 bids. Forwarding to MessageProcessor...
+[JOURNAL] [28-04-2026 16:17:49] Connected to MessageProcessor. Forwarding 10 bids (RECOVERY).
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+Am trimis mesajul: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[JOURNAL] [28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+Am trimis toate ofertele catre MessageProcessor.
+[JOURNAL] [28-04-2026 16:17:49] Sent 'final' to MessageProcessor.
+[JOURNAL] [28-04-2026 16:17:49] MessageProcessor acknowledged. Recovery complete.
+[JOURNAL] [28-04-2026 16:17:49] RECOVERY: Interrupted cycle forwarded. NOTE: Bidder result notifications skipped (sockets not recoverable).
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56679. Total: 1
+[28-04-2026 16:17:49] /127.0.0.1:56679 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 3486
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56679 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 3486
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56681. Total: 2
+[28-04-2026 16:17:49] /127.0.0.1:56681 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6577
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56681 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6577
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56683. Total: 3
+[28-04-2026 16:17:49] /127.0.0.1:56683 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 8211
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56683 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 8211
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56685. Total: 4
+[28-04-2026 16:17:49] /127.0.0.1:56685 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 6959
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56685 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 6959
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56687. Total: 5
+[28-04-2026 16:17:49] /127.0.0.1:56687 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 7576
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56687 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 7576
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56689. Total: 6
+[28-04-2026 16:17:49] /127.0.0.1:56689 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9487
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56689 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9487
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56691. Total: 7
+[28-04-2026 16:17:49] /127.0.0.1:56691 (name=Ioana, phone=, email=) >>> Stan|phone=0760112233|email=ioana@mail.ro|] licitez 1788
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56691 (name=Ioana, phone=, email=) >>> Stan|phone=0760112233|email=ioana@mail.ro|] licitez 1788
+[JOURNAL] [28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56693. Total: 8
+[28-04-2026 16:17:49] /127.0.0.1:56693 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 1272
+[JOURNAL] [28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56693 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 1272
+[JOURNAL] [28-04-2026 16:17:50] Bidder connected: /127.0.0.1:56695. Total: 9
+[28-04-2026 16:17:50] /127.0.0.1:56695 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 3872
+[JOURNAL] [28-04-2026 16:17:50] Bid received: [28-04-2026 16:17:50] /127.0.0.1:56695 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 3872
+[JOURNAL] [28-04-2026 16:17:50] Bidder connected: /127.0.0.1:56697. Total: 10
+[28-04-2026 16:17:50] /127.0.0.1:56697 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9334
+[JOURNAL] [28-04-2026 16:17:50] Bid received: [28-04-2026 16:17:50] /127.0.0.1:56697 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9334
+Licitatia s-a incheiat! Se trimit ofertele spre procesare...
+[JOURNAL] [28-04-2026 16:18:05] Auction closed after 16061ms. Bids: 10.
+Nu ma pot conecta la MessageProcessor!
+[JOURNAL] [28-04-2026 16:18:05] FATAL: Cannot connect to MessageProcessor: java.net.ConnectException: Connection refused
+[JOURNAL] [28-04-2026 16:18:05] Shutdown initiated.

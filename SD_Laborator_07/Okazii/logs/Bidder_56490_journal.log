@@ -1,0 +1,5 @@
+[28-04-2026 16:15:19] [56490] CYCLE_START: Connected to Auctioneer. Identity: name='Radu Gheorghe', phone='0720654321', email='radu@mail.ro'.
+[28-04-2026 16:15:19] [56490] Placing bid: licitez 8975
+[28-04-2026 16:15:19] [56490] Sending duplicate (deduplication test).
+[28-04-2026 16:15:19] [56490] Waiting for auction result.
+[28-04-2026 16:15:49] [56490] ERROR: java.net.SocketException: Connection reset

@@ -1,0 +1,29 @@
+[28-04-2026 16:12:18] BiddingProcessorMicroservice starting up.
+[28-04-2026 16:12:18] Listening on port 1700.
+[28-04-2026 16:12:18] CYCLE_START: MessageProcessor connected from /[0:0:0:0:0:0:0:1]:56301.
+[28-04-2026 16:12:18] ERROR: MessageProcessor disconnected unexpectedly.
+[28-04-2026 16:12:18] ERROR: java.lang.Exception: MessageProcessorMicroservice disconnected.
+[28-04-2026 16:12:18] Shutdown initiated.
+[28-04-2026 16:15:17] BiddingProcessorMicroservice starting up.
+[28-04-2026 16:15:17] Listening on port 1700.
+[28-04-2026 16:15:17] RECOVERY: Interrupted cycle at journal line 2. Loading persisted bids...
+[28-04-2026 16:15:17] RECOVERY: State file empty — nothing to replay. Continuing fresh.
+[28-04-2026 16:15:34] CYCLE_START: MessageProcessor connected from /127.0.0.1:56508.
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:34] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:15:34] All bids collected: 10. Deciding winner.
+[28-04-2026 16:15:34] All bids received. Acknowledged MessageProcessor.
+[28-04-2026 16:15:34] Shutdown initiated.
+[28-04-2026 16:17:48] BiddingProcessorMicroservice starting up.
+[28-04-2026 16:17:48] Listening on port 1700.
+[28-04-2026 16:17:48] RECOVERY: Interrupted cycle at journal line 10. Loading persisted bids...
+[28-04-2026 16:17:48] RECOVERY: Loaded 10 bids. Completing interrupted cycle...
+[28-04-2026 16:17:48] Shutdown initiated.

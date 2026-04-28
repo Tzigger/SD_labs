@@ -1,0 +1,9 @@
+[JOURNAL] [28-04-2026 16:17:49] [56681] CYCLE_START: Connected to Auctioneer. Identity: name='Lucia Petrescu', phone='0750665544', email='lucia@mail.ro'.
+[56681] M-am conectat la Auctioneer! Identitate: Lucia Petrescu (0750665544, lucia@mail.ro)
+[BidderMicroservice:56681] HeartBeat client connected to HeartBeatMicroservice.
+[JOURNAL] [28-04-2026 16:17:49] [56681] Placing bid: licitez 6577
+[JOURNAL] [28-04-2026 16:17:49] [56681] Sending duplicate (deduplication test).
+[56681] Astept rezultatul licitatiei...
+[JOURNAL] [28-04-2026 16:17:49] [56681] Waiting for auction result.
+[56681] Eroare: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
+[JOURNAL] [28-04-2026 16:18:05] [56681] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

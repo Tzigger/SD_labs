@@ -1,0 +1,56 @@
+[28-04-2026 16:12:18.755] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[28-04-2026 16:12:18.762] [AuctioneerMicroservice] EVENT=recovery_detected | journal_line=1
+[28-04-2026 16:12:18.764] [AuctioneerMicroservice] EVENT=recovery_empty 
+[28-04-2026 16:12:19.210] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/[0:0:0:0:0:0:0:1]:56305, total=1
+[28-04-2026 16:12:19.215] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=477
+[28-04-2026 16:15:18.516] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[28-04-2026 16:15:18.533] [AuctioneerMicroservice] EVENT=recovery_detected | journal_line=8
+[28-04-2026 16:15:18.536] [AuctioneerMicroservice] EVENT=recovery_empty 
+[28-04-2026 16:15:19.041] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56472, total=1
+[28-04-2026 16:15:19.088] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:19.090] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56474, total=2
+[28-04-2026 16:15:19.118] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:19.138] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56476, total=3
+[28-04-2026 16:15:19.172] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:19.189] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56478, total=4
+[28-04-2026 16:15:19.223] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:19.245] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56480, total=5
+[28-04-2026 16:15:19.279] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:19.298] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56482, total=6
+[28-04-2026 16:15:19.333] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:19.355] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56484, total=7
+[28-04-2026 16:15:19.390] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:19.411] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56486, total=8
+[28-04-2026 16:15:19.446] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:19.464] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56488, total=9
+[28-04-2026 16:15:19.498] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:19.520] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56490, total=10
+[28-04-2026 16:15:19.555] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:15:34.563] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=16066, bids=10
+[28-04-2026 16:15:49.631] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=31140
+[28-04-2026 16:17:49.064] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[28-04-2026 16:17:49.071] [AuctioneerMicroservice] EVENT=recovery_detected | journal_line=48
+[28-04-2026 16:17:49.075] [AuctioneerMicroservice] EVENT=recovery_loaded | bids=10
+[28-04-2026 16:17:49.121] [AuctioneerMicroservice] EVENT=recovery_complete | forwarded=10
+[28-04-2026 16:17:49.590] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56679, total=1
+[28-04-2026 16:17:49.629] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56679, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 3486
+[28-04-2026 16:17:49.629] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56681, total=2
+[28-04-2026 16:17:49.665] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56681, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6577
+[28-04-2026 16:17:49.684] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56683, total=3
+[28-04-2026 16:17:49.718] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56683, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 8211
+[28-04-2026 16:17:49.739] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56685, total=4
+[28-04-2026 16:17:49.773] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56685, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 6959
+[28-04-2026 16:17:49.796] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56687, total=5
+[28-04-2026 16:17:49.830] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56687, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 7576
+[28-04-2026 16:17:49.849] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56689, total=6
+[28-04-2026 16:17:49.884] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56689, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9487
+[28-04-2026 16:17:49.902] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56691, total=7
+[28-04-2026 16:17:49.937] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56691, body=Stan|phone=0760112233|email=ioana@mail.ro|] licitez 1788
+[28-04-2026 16:17:49.959] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56693, total=8
+[28-04-2026 16:17:49.994] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56693, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 1272
+[28-04-2026 16:17:50.015] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56695, total=9
+[28-04-2026 16:17:50.049] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56695, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 3872
+[28-04-2026 16:17:50.073] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56697, total=10
+[28-04-2026 16:17:50.108] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56697, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9334
+[28-04-2026 16:18:05.112] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=16061, bids=10
+[28-04-2026 16:18:05.116] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=16071

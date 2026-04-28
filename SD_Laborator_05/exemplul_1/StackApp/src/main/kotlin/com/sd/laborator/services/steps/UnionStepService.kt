@@ -10,10 +10,12 @@ import org.springframework.stereotype.Service
 @Order(3)
 class UnionStepService(private val unionOperation: UnionOperation): StackComputationStep {
     override fun execute(context: ComputationContext): ComputationContext {
+        // Ultimul pas ruleaza doar daca pasii anteriori nu au pus eroare.
         if (context.error != null) {
             return context
         }
 
+        // Rezultatul final este reuniunea celor doua produse calculate anterior.
         context.result = unionOperation.executeOperation(context.leftProduct, context.rightProduct)
         return context
     }

@@ -1,0 +1,30 @@
+[28-04-2026 16:12:18.134] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/[0:0:0:0:0:0:0:1]:56297
+[28-04-2026 16:15:17.466] [MessageProcessorMicroservice] EVENT=recovery_detected | journal_line=2
+[28-04-2026 16:15:17.469] [MessageProcessorMicroservice] EVENT=recovery_empty 
+[28-04-2026 16:15:34.566] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:56507
+[28-04-2026 16:15:34.611] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=all_received | count=10
+[28-04-2026 16:15:34.621] [MessageProcessorMicroservice] EVENT=sorted | count=10
+[28-04-2026 16:15:34.627] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=17189
+[28-04-2026 16:17:49.078] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:56677
+[28-04-2026 16:17:49.110] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=all_received | count=10
+[28-04-2026 16:17:49.118] [MessageProcessorMicroservice] EVENT=sorted | count=10

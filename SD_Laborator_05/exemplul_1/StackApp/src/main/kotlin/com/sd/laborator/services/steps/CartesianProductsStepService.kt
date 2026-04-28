@@ -12,10 +12,12 @@ class CartesianProductsStepService(
     private val cartesianProductOperation: CartesianProductOperation
 ): StackComputationStep {
     override fun execute(context: ComputationContext): ComputationContext {
+        // Daca un pas anterior a gasit o problema, nu mai calculam aici.
         if (context.error != null || context.stackA == null || context.stackB == null) {
             return context
         }
 
+        // Al doilea pas calculeaza produsele carteziene necesare rezultatului final.
         context.leftProduct = cartesianProductOperation.executeOperation(
             context.stackA!!.data,
             context.stackB!!.data

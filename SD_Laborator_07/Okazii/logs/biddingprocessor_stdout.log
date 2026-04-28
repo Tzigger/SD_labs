@@ -1,0 +1,17 @@
+[JOURNAL] [28-04-2026 16:17:48] BiddingProcessorMicroservice starting up.
+[BiddingProcessorMicroservice] HeartBeat client connected to HeartBeatMicroservice.
+BiddingProcessorMicroservice se executa pe portul: 1700
+Se asteapta ofertele pentru finalizarea licitatiei...
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [28-04-2026 16:17:48] Listening on port 1700.
+[JOURNAL] [28-04-2026 16:17:48] RECOVERY: Interrupted cycle at journal line 10. Loading persisted bids...
+[JOURNAL] [28-04-2026 16:17:48] RECOVERY: Loaded 10 bids. Completing interrupted cycle...
+Exception in thread "main" java.lang.NumberFormatException: For input string: "licitez"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at BiddingProcessorMicroservice.decideAndReportWinner(BiddingProcessorMicroservice.kt:236)
+	at BiddingProcessorMicroservice.checkAndRecoverFromJournal(BiddingProcessorMicroservice.kt:122)
+	at BiddingProcessorMicroservice.<init>(BiddingProcessorMicroservice.kt:161)
+	at BiddingProcessorMicroserviceKt.main(BiddingProcessorMicroservice.kt:276)
+[JOURNAL] [28-04-2026 16:17:48] Shutdown initiated.

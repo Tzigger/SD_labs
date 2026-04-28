@@ -1,0 +1,35 @@
+[JOURNAL] [28-04-2026 16:17:47] MessageProcessorMicroservice starting up.
+[MessageProcessorMicroservice] HeartBeat client connected to HeartBeatMicroservice.
+MessageProcessorMicroservice se executa pe portul: 1600
+Se asteapta mesaje pentru procesare...
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [28-04-2026 16:17:48] Listening on port 1600.
+[JOURNAL] [28-04-2026 16:17:49] CYCLE_START: Auctioneer connected from /127.0.0.1:56677.
+[JOURNAL] [28-04-2026 16:17:49] Starting to receive and process messages.
+[28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[JOURNAL] [28-04-2026 16:17:49] Received: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+S-au primit toate mesajele.
+[JOURNAL] [28-04-2026 16:17:49] All messages received. Unique: 10
+[JOURNAL] [28-04-2026 16:17:49] Sorted 10 messages by timestamp.
+[JOURNAL] [28-04-2026 16:17:49] Acknowledged receipt to Auctioneer.
+Nu ma pot conecta la BiddingProcessor!
+[JOURNAL] [28-04-2026 16:17:49] FATAL: Cannot connect to BiddingProcessor: java.net.ConnectException: Connection refused
+[JOURNAL] [28-04-2026 16:17:49] Shutdown initiated.

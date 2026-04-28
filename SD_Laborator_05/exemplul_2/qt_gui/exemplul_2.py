@@ -69,9 +69,14 @@ class LibraryApp(QWidget):
 
     def send_request(self, request):
         if not request:
-            return
+            return None
+        # Intai trimitem cererea in coada, apoi asteptam raspunsul din coada de raspuns.
         self.rabbit_mq.send_message(message=request)
-        self.rabbit_mq.receive_message()
+        response = self.rabbit_mq.receive_message()
+        if response is not None:
+            # Actualizarea interfetei se face aici, in thread-ul principal Qt.
+            self.set_response(response)
+        return response
 
     def _looks_like_html(self, content):
         return content.lstrip().lower().startswith('<html')
@@ -102,6 +107,7 @@ class LibraryApp(QWidget):
             'value': search_string,
             'format': selected_format
         }
+        # Parametrii sunt codati ca intr-un query string ca sa suporte spatii si caractere speciale.
         return 'find:{}'.format(urlencode(params))
 
     def search(self):
@@ -119,6 +125,7 @@ class LibraryApp(QWidget):
             return
 
         request = 'add:{}'.format(urlencode(data))
+        # Pentru add trimitem toate campurile cartii prin acelasi mecanism RabbitMQ.
         self.send_request(request)
         QMessageBox.information(self, 'Exemplul 2', self.last_response)
 

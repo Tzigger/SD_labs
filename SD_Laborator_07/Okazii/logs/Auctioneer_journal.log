@@ -1,0 +1,88 @@
+[28-04-2026 16:12:18] AuctioneerMicroservice starting up.
+[28-04-2026 16:12:18] CYCLE_START: Listening on port 1500. Duration: 15000ms.
+[28-04-2026 16:12:18] RECOVERY: Interrupted cycle at journal line 1. Loading persisted bids...
+[28-04-2026 16:12:18] RECOVERY: State file empty — nothing to replay. Continuing fresh.
+[28-04-2026 16:12:19] Bidder connected: /[0:0:0:0:0:0:0:1]:56305. Total: 1
+[28-04-2026 16:12:19] ERROR: java.lang.Exception: Bidder 56305 disconnected.
+[28-04-2026 16:12:19] Shutdown initiated.
+[28-04-2026 16:15:18] AuctioneerMicroservice starting up.
+[28-04-2026 16:15:18] CYCLE_START: Listening on port 1500. Duration: 15000ms.
+[28-04-2026 16:15:18] RECOVERY: Interrupted cycle at journal line 8. Loading persisted bids...
+[28-04-2026 16:15:18] RECOVERY: State file empty — nothing to replay. Continuing fresh.
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56472. Total: 1
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56474. Total: 2
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56476. Total: 3
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56478. Total: 4
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56480. Total: 5
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56482. Total: 6
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56484. Total: 7
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56486. Total: 8
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56488. Total: 9
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:19] Bidder connected: /127.0.0.1:56490. Total: 10
+[28-04-2026 16:15:19] Bid received: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:15:34] Auction closed after 16066ms. Bids: 10.
+[28-04-2026 16:15:34] Connected to MessageProcessor. Forwarding 10 bids.
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:15:34] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:15:34] Sent 'final' to MessageProcessor.
+[28-04-2026 16:15:34] MessageProcessor acknowledged. Moving to finishAuction.
+[28-04-2026 16:15:49] FATAL: finishAuction error: java.net.SocketTimeoutException: Accept timed out
+[28-04-2026 16:15:49] Shutdown initiated.
+[28-04-2026 16:17:49] AuctioneerMicroservice starting up.
+[28-04-2026 16:17:49] CYCLE_START: Listening on port 1500. Duration: 15000ms.
+[28-04-2026 16:17:49] RECOVERY: Interrupted cycle at journal line 48. Loading persisted bids...
+[28-04-2026 16:17:49] RECOVERY: Loaded 10 bids. Forwarding to MessageProcessor...
+[28-04-2026 16:17:49] Connected to MessageProcessor. Forwarding 10 bids (RECOVERY).
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56472 (name=Maria, phone=, email=) >>> Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56474 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56476 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56478 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56480 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56482 (name=Andrei, phone=, email=) >>> Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56484 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56486 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56488 (name=Ana, phone=, email=) >>> Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
+[28-04-2026 16:17:49] Forwarded: [28-04-2026 16:15:19] /127.0.0.1:56490 (name=Radu, phone=, email=) >>> Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
+[28-04-2026 16:17:49] Sent 'final' to MessageProcessor.
+[28-04-2026 16:17:49] MessageProcessor acknowledged. Recovery complete.
+[28-04-2026 16:17:49] RECOVERY: Interrupted cycle forwarded. NOTE: Bidder result notifications skipped (sockets not recoverable).
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56679. Total: 1
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56679 (name=Ion, phone=, email=) >>> Popescu|phone=0740111222|email=ion@mail.ro|] licitez 3486
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56681. Total: 2
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56681 (name=Lucia, phone=, email=) >>> Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6577
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56683. Total: 3
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56683 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 8211
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56685. Total: 4
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56685 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 6959
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56687. Total: 5
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56687 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 7576
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56689. Total: 6
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56689 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9487
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56691. Total: 7
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56691 (name=Ioana, phone=, email=) >>> Stan|phone=0760112233|email=ioana@mail.ro|] licitez 1788
+[28-04-2026 16:17:49] Bidder connected: /127.0.0.1:56693. Total: 8
+[28-04-2026 16:17:49] Bid received: [28-04-2026 16:17:49] /127.0.0.1:56693 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 1272
+[28-04-2026 16:17:50] Bidder connected: /127.0.0.1:56695. Total: 9
+[28-04-2026 16:17:50] Bid received: [28-04-2026 16:17:50] /127.0.0.1:56695 (name=Mihai, phone=, email=) >>> Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 3872
+[28-04-2026 16:17:50] Bidder connected: /127.0.0.1:56697. Total: 10
+[28-04-2026 16:17:50] Bid received: [28-04-2026 16:17:50] /127.0.0.1:56697 (name=Cristian, phone=, email=) >>> Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9334
+[28-04-2026 16:18:05] Auction closed after 16061ms. Bids: 10.
+[28-04-2026 16:18:05] FATAL: Cannot connect to MessageProcessor: java.net.ConnectException: Connection refused
+[28-04-2026 16:18:05] Shutdown initiated.

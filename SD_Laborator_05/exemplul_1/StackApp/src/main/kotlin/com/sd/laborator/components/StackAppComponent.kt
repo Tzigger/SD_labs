@@ -29,13 +29,16 @@ class StackAppComponent {
 
     @RabbitListener(queues = ["\${stackapp.rabbitmq.queue}"])
     fun recieveMessage(msg: String) {
-        // the result: 114,101,103,101,110,101,114,97,116,101,95,65 --> needs processing
-        val processed_msg = (msg.split(",").map { it.toInt().toChar() }).joinToString(separator="")
-        var result: String? = when(processed_msg) {
-            "compute" -> computeExpression()
-            "regenerate_A" -> regenerateA()
-            "regenerate_B" -> regenerateB()
-            else -> null
+        val processedMsg = decodeIncomingMessage(msg)
+        val result: String? = try {
+            when(processedMsg) {
+                "compute" -> computeExpression()
+                "regenerate_A" -> regenerateA()
+                "regenerate_B" -> regenerateB()
+                else -> null
+            }
+        } catch (e: Exception) {
+            "compute~Error: ${e.message}"
         }
         println("result: ")
         println(result)
@@ -70,5 +73,19 @@ class StackAppComponent {
     private fun regenerateB(): String {
         B = stackFactory.generateStack(20)
         return "B~" + B?.data.toString()
+    }
+
+    private fun decodeIncomingMessage(msg: String): String {
+        return try {
+            val chunks = msg.split(",")
+            val looksEncoded = chunks.size > 1 && chunks.all { it.trim().matches(Regex("\\d+")) }
+            if (looksEncoded) {
+                chunks.map { it.trim().toInt().toChar() }.joinToString(separator = "")
+            } else {
+                msg
+            }
+        } catch (_: Exception) {
+            msg
+        }
     }
 }
