@@ -7,6 +7,8 @@ from queue import Empty, Queue
 from typing import Dict, List
 
 MENU_IDS = {1, 2, 3, 4, 5}
+
+# Fiecare meniu are un timp de pregatire diferit.
 BASE_PREP_TIME = {
     1: 0.4,
     2: 0.7,
@@ -17,6 +19,7 @@ BASE_PREP_TIME = {
 
 
 def _build_identifier(prefix: str) -> str:
+    # Generam identificatori de forma Chelner72XX45E sau Bucatar37X56AF.
     first = random.randint(10, 99)
     suffix = ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
     return f"{prefix}{first}{suffix}"
@@ -24,6 +27,7 @@ def _build_identifier(prefix: str) -> str:
 
 @dataclass
 class Order:
+    # Comanda tine meniul ales si chelnerul la care trebuie sa se intoarca mancarea.
     order_id: int
     menu_id: int
     waiter_id: str
@@ -33,23 +37,30 @@ class Order:
 class Waiter:
     def __init__(self, waiter_id: str, kitchen_queue: Queue, delivery_queue: Queue):
         self.waiter_id = waiter_id
+        # Coada comuna prin care chelnerii trimit comenzile catre bucatari.
         self.kitchen_queue = kitchen_queue
+        # Coada proprie prin care chelnerul primeste comenzile gata de servit.
         self.delivery_queue = delivery_queue
+        # Coada proprie prin care chelnerul primeste cereri noi de la clienti.
         self.request_queue: Queue = Queue()
+        # In tema, fiecare chelner poate prelua meniurile 1..5.
         self.accepted_menu_ids = MENU_IDS
         self.placed_orders = 0
         self.served_orders = 0
 
     def take_order(self, order_id: int, menu_id: int):
+        # Verificam daca meniul primit este unul dintre cele 5 acceptate.
         if menu_id not in self.accepted_menu_ids:
             raise ValueError(f"{self.waiter_id} nu poate prelua meniul {menu_id}")
 
         order = Order(order_id=order_id, menu_id=menu_id, waiter_id=self.waiter_id, created_at=time.time())
+        # Chelnerul pune comanda in coada bucatariei.
         self.kitchen_queue.put(order)
         self.placed_orders += 1
         print(f"[{self.waiter_id}] a preluat comanda #{order.order_id} pentru meniul {menu_id}")
 
     def serve_order(self, order: Order):
+        # Si servirea are un timp diferit in functie de meniul comandat.
         service_delay = 0.15 + (order.menu_id * 0.03)
         time.sleep(service_delay)
         self.served_orders += 1
@@ -60,27 +71,36 @@ class Waiter:
 class Cook:
     def __init__(self, cook_id: str, kitchen_queue: Queue, waiter_delivery_queues: Dict[str, Queue]):
         self.cook_id = cook_id
+        # Bucatarii citesc din aceeasi coada comuna de comenzi.
         self.kitchen_queue = kitchen_queue
+        # Dupa preparare, bucatarul trimite comanda inapoi la coada chelnerului corect.
         self.waiter_delivery_queues = waiter_delivery_queues
+        # In tema, fiecare bucatar poate pregati meniurile 1..5.
         self.accepted_menu_ids = MENU_IDS
+        # Factorul face ca fiecare bucatar sa aiba viteza lui.
         self.speed_factor = random.uniform(0.8, 1.4)
         self.prepared_orders = 0
 
     def prepare_order(self, order: Order):
+        # Verificam daca bucatarul poate pregati meniul cerut.
         if order.menu_id not in self.accepted_menu_ids:
             raise ValueError(f"{self.cook_id} nu poate pregati meniul {order.menu_id}")
 
+        # Timpul final depinde si de meniu, si de viteza bucatarului.
         prep_time = BASE_PREP_TIME[order.menu_id] * self.speed_factor
         time.sleep(prep_time)
         self.prepared_orders += 1
         print(f"[{self.cook_id}] a pregatit comanda #{order.order_id} in {prep_time:.2f}s")
+        # Comanda gata este pusa in coada chelnerului care a preluat-o.
         self.waiter_delivery_queues[order.waiter_id].put(order)
 
 
 class RestaurantSystem:
     def __init__(self, waiter_count: int, cook_count: int, total_orders: int):
         self.total_orders = total_orders
+        # Coada principala dintre echipa de chelneri si echipa de bucatari.
         self.kitchen_queue: Queue = Queue()
+        # Evenimentul ne spune cand toate comenzile au fost servite.
         self.done_event = threading.Event()
         self.lock = threading.Lock()
         self.completed_orders = 0
@@ -93,17 +113,20 @@ class RestaurantSystem:
         delivery_queues = {}
         for _ in range(waiter_count):
             waiter_id = _build_identifier('Chelner')
+            # Fiecare chelner are coada lui pentru livrarile care se intorc din bucatarie.
             delivery_queue = Queue()
             delivery_queues[waiter_id] = delivery_queue
             self.waiters.append(Waiter(waiter_id, self.kitchen_queue, delivery_queue))
 
         for _ in range(cook_count):
             cook_id = _build_identifier('Bucatar')
+            # Bucatarii primesc toate cozile chelnerilor ca sa stie unde trimit comanda gata.
             self.cooks.append(Cook(cook_id, self.kitchen_queue, delivery_queues))
 
     def _waiter_worker(self, waiter: Waiter):
         while not self.done_event.is_set():
             try:
+                # Chelnerul verifica daca a primit o comanda noua de la client.
                 order_id, menu_id = waiter.request_queue.get(timeout=0.1)
                 waiter.take_order(order_id, menu_id)
                 waiter.request_queue.task_done()
@@ -111,10 +134,12 @@ class RestaurantSystem:
                 pass
 
             try:
+                # Apoi verifica daca bucatarii i-au trimis inapoi o comanda gata.
                 finished_order = waiter.delivery_queue.get(timeout=0.1)
                 waiter.serve_order(finished_order)
                 waiter.delivery_queue.task_done()
                 with self.lock:
+                    # Cand toate comenzile au fost servite, oprim simularea.
                     self.completed_orders += 1
                     if self.completed_orders >= self.total_orders:
                         self.done_event.set()
@@ -124,6 +149,7 @@ class RestaurantSystem:
     def _cook_worker(self, cook: Cook):
         while not self.done_event.is_set() or not self.kitchen_queue.empty():
             try:
+                # Bucatarul ia urmatoarea comanda disponibila din coada comuna.
                 order = self.kitchen_queue.get(timeout=0.1)
             except Empty:
                 continue
@@ -134,6 +160,7 @@ class RestaurantSystem:
                 self.kitchen_queue.task_done()
 
     def _dispatch_customer_orders(self):
+        # Simulam clientii: fiecare comanda ajunge la un chelner ales aleator.
         for order_id in range(1, self.total_orders + 1):
             waiter = random.choice(self.waiters)
             menu_id = random.randint(1, 5)
@@ -142,11 +169,13 @@ class RestaurantSystem:
     def start(self):
         print('Pornire simulare restaurant...')
         for waiter in self.waiters:
+            # Fiecare chelner ruleaza separat, ca si cum ar fi un serviciu propriu.
             thread = threading.Thread(target=self._waiter_worker, args=(waiter,), daemon=True)
             self.waiter_threads.append(thread)
             thread.start()
 
         for cook in self.cooks:
+            # Fiecare bucatar ruleaza separat si consuma din coada comuna.
             thread = threading.Thread(target=self._cook_worker, args=(cook,), daemon=True)
             self.cook_threads.append(thread)
             thread.start()
@@ -168,6 +197,7 @@ class RestaurantSystem:
 
 
 if __name__ == '__main__':
+    # Seed fix ca simularea sa fie reproductibila la rulare.
     random.seed(42)
     app = RestaurantSystem(waiter_count=3, cook_count=2, total_orders=18)
     app.start()
