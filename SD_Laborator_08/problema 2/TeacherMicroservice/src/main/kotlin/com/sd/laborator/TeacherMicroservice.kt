@@ -1,76 +1,264 @@
 package com.sd.laborator
 
+import java.io.File
 import java.io.BufferedReader
 import java.io.InputStreamReader
-import java.net.*
+import java.net.ServerSocket
+import java.net.Socket
+import java.util.Base64
+import java.util.UUID
 import kotlin.concurrent.thread
 import kotlin.system.exitProcess
+
+// Starea unei intrebari initiate local de teacher pana la timeout/raspuns.
+data class TeacherPendingRequest(
+    var visibility: String = "UNKNOWN",
+    val responses: MutableList<String> = mutableListOf()
+)
 
 class TeacherMicroservice {
     private lateinit var messageManagerSocket: Socket
     private lateinit var teacherMicroserviceServerSocket: ServerSocket
+    private lateinit var questionDatabase: MutableList<Pair<String, String>>
+    private val pendingLock = Object()
+    // Corelare requestId -> starea intrebarii, pentru raspunsuri asincrone de la manager.
+    private val pendingRequests = hashMapOf<String, TeacherPendingRequest>()
+    // Socketul catre manager este partajat intre thread-uri, deci serializam scrierile.
+    private val managerWriteLock = Any()
 
     companion object Constants {
-        // pentru testare, se foloseste localhost. pentru deploy, server-ul socket (microserviciul MessageManager) se identifica dupa un "hostname"
-        // acest hostname poate fi trimis (optional) ca variabila de mediu
         val MESSAGE_MANAGER_HOST = System.getenv("MESSAGE_MANAGER_HOST") ?: "localhost"
-        const val MESSAGE_MANAGER_PORT = 1500
-        const val TEACHER_PORT = 1600
+        val MESSAGE_MANAGER_PORT = System.getenv("MESSAGE_MANAGER_PORT")?.toIntOrNull() ?: 1500
+        val TEACHER_PORT = System.getenv("TEACHER_PORT")?.toIntOrNull() ?: 1600
+        val RESPONSE_TIMEOUT_MS = System.getenv("RESPONSE_TIMEOUT_MS")?.toLongOrNull() ?: 3000L
+        val SERVICE_ID = System.getenv("SERVICE_ID") ?: "teacher"
+        val ANSWERS_DATABASE_PATH = System.getenv("ANSWERS_DATABASE_PATH") ?: "teacher_answers_database.txt"
+    }
+
+    init {
+        questionDatabase = loadQuestionDatabase()
+    }
+
+    private fun loadQuestionDatabase(): MutableList<Pair<String, String>> {
+        val file = File(ANSWERS_DATABASE_PATH)
+        if (!file.exists()) {
+            println("Fisierul de raspunsuri al profesorului nu exista: $ANSWERS_DATABASE_PATH")
+            return mutableListOf()
+        }
+
+        val databaseLines = file.readLines()
+        val database = mutableListOf<Pair<String, String>>()
+        for (i in 0 until databaseLines.size step 2) {
+            if (i + 1 < databaseLines.size) {
+                database.add(Pair(databaseLines[i], databaseLines[i + 1]))
+            }
+        }
+        return database
     }
 
     private fun subscribeToMessageManager() {
         try {
             messageManagerSocket = Socket(MESSAGE_MANAGER_HOST, MESSAGE_MANAGER_PORT)
-            messageManagerSocket.soTimeout = 3000
             println("M-am conectat la MessageManager!")
+            // Inregistrare explicita in manager cu id logic.
+            sendToMessageManager("SUBSCRIBE|$SERVICE_ID|TEACHER")
         } catch (e: Exception) {
             println("Nu ma pot conecta la MessageManager!")
             exitProcess(1)
         }
     }
 
-    public fun run() {
-        // microserviciul se inscrie in lista de "subscribers" de la MessageManager prin conectarea la acesta
-        subscribeToMessageManager()
+    private fun encodeMessage(message: String): String =
+        Base64.getEncoder().encodeToString(message.toByteArray(Charsets.UTF_8))
 
-        // se porneste un socket server TCP pe portul 1600 care asculta pentru conexiuni
+    private fun decodeMessage(base64Message: String): String {
+        return try {
+            String(Base64.getDecoder().decode(base64Message), Charsets.UTF_8)
+        } catch (e: IllegalArgumentException) {
+            ""
+        }
+    }
+
+    private fun sendToMessageManager(message: String) {
+        synchronized(managerWriteLock) {
+            messageManagerSocket.getOutputStream().write((message + "\n").toByteArray())
+        }
+    }
+
+    private fun respondToQuestion(question: String): String? {
+        questionDatabase.forEach {
+            if (it.first == question) {
+                return it.second
+            }
+        }
+        return null
+    }
+
+    private fun handleMessageManagerMessage(message: String) {
+        // Teacher are doua roluri:
+        // 1) initiator de intrebari (catre studenti/profesor)
+        // 2) responder la intrebari primite de la alti studenti
+        when {
+            message.startsWith("QUESTION_DELIVERY|") -> {
+                // QUESTION_DELIVERY|requestId|fromId|base64Question
+                val parts = message.split("|", limit = 4)
+                if (parts.size == 4) {
+                    val requestId = parts[1]
+                    val fromId = parts[2]
+                    val question = decodeMessage(parts[3])
+                    println("Am primit intrebare de la $fromId: \"$question\"")
+
+                    val answer = respondToQuestion(question)
+                    if (answer != null) {
+                        sendToMessageManager("ANSWER|$requestId|$SERVICE_ID|${encodeMessage(answer)}")
+                    }
+                }
+            }
+            message.startsWith("QUESTION_STATUS|") -> {
+                // QUESTION_STATUS|requestId|visibility|recipientCount
+                // Vizibilitatea e calculata de manager pe baza cardinalitatii destinatarilor.
+                val parts = message.split("|", limit = 4)
+                if (parts.size == 4) {
+                    val requestId = parts[1]
+                    val visibility = parts[2]
+                    synchronized(pendingLock) {
+                        pendingRequests[requestId]?.visibility = visibility
+                        pendingLock.notifyAll()
+                    }
+                }
+            }
+            message.startsWith("ANSWER_DELIVERY|") -> {
+                // ANSWER_DELIVERY|requestId|fromId|visibility|base64Answer
+                val parts = message.split("|", limit = 5)
+                if (parts.size == 5) {
+                    val requestId = parts[1]
+                    val fromId = parts[2]
+                    val visibility = parts[3]
+                    val answer = decodeMessage(parts[4])
+                    // Prefixam cu [PRIVATE]/[PUBLIC] pentru a reflecta cerinta laboratorului.
+                    val formattedAnswer = "[$visibility] $fromId: $answer"
+
+                    var wasPending = false
+                    synchronized(pendingLock) {
+                        val pendingRequest = pendingRequests[requestId]
+                        if (pendingRequest != null) {
+                            pendingRequest.responses.add(formattedAnswer)
+                            wasPending = true
+                        }
+                        pendingLock.notifyAll()
+                    }
+
+                    if (!wasPending) {
+                        println("Raspuns primit (fara cerere activa): $formattedAnswer")
+                    }
+                }
+            }
+        }
+    }
+
+    private fun startMessageManagerListener() {
+        thread(isDaemon = true) {
+            val messageManagerBufferReader = BufferedReader(InputStreamReader(messageManagerSocket.inputStream))
+            while (true) {
+                val receivedMessage = messageManagerBufferReader.readLine() ?: break
+                handleMessageManagerMessage(receivedMessage)
+            }
+            println("Conexiunea cu MessageManager a fost inchisa.")
+        }
+    }
+
+    private fun parseClientRequest(requestLine: String): Triple<String, String, String> {
+        if (!requestLine.startsWith("ASK|")) {
+            // compatibilitate cu versiunea initiala (profesor -> toti studentii)
+            return Triple("ALL_STUDENTS", "-", requestLine)
+        }
+
+        val parts = requestLine.split("|", limit = 4)
+        if (parts.size != 4) {
+            return Triple("ALL_STUDENTS", "-", requestLine)
+        }
+
+        return Triple(
+            parts[1].trim().uppercase(),
+            parts[2].trim(),
+            parts[3].trim()
+        )
+    }
+
+    private fun submitQuestion(targetType: String, targetValue: String, questionBody: String): String {
+        // requestId unic pentru a corela status + raspunsuri primite asincron.
+        val requestId = UUID.randomUUID().toString()
+        synchronized(pendingLock) {
+            pendingRequests[requestId] = TeacherPendingRequest()
+        }
+
+        sendToMessageManager(
+            "QUESTION|$requestId|$SERVICE_ID|$targetType|$targetValue|${encodeMessage(questionBody)}"
+        )
+
+        val deadline = System.currentTimeMillis() + RESPONSE_TIMEOUT_MS
+        val requestOutcome = synchronized(pendingLock) {
+            // Asteptare "event-driven" pe baza notificarilor din listener-ul managerului.
+            while (System.currentTimeMillis() < deadline) {
+                val pendingRequest = pendingRequests[requestId] ?: break
+
+                // Fara destinatari rezolvati de manager -> terminam imediat.
+                if (pendingRequest.visibility == "NONE") {
+                    break
+                }
+                // Pentru PRIVATE e suficient primul raspuns.
+                if (pendingRequest.visibility == "PRIVATE" && pendingRequest.responses.isNotEmpty()) {
+                    break
+                }
+
+                val waitDuration = deadline - System.currentTimeMillis()
+                if (waitDuration <= 0) {
+                    break
+                }
+                pendingLock.wait(minOf(waitDuration, 200L))
+            }
+
+            pendingRequests.remove(requestId)
+        }
+
+        return when {
+            requestOutcome == null -> "Eroare interna la procesarea intrebarii."
+            requestOutcome.visibility == "NONE" ->
+                "Nu exista destinatari disponibili pentru tipul de intrebare cerut."
+            requestOutcome.responses.isEmpty() ->
+                "Nu a raspuns nimeni la intrebare."
+            // Pentru PUBLIC putem avea mai multe raspunsuri concatenate.
+            else -> requestOutcome.responses.joinToString("\n")
+        }
+    }
+
+    public fun run() {
+        subscribeToMessageManager()
+        startMessageManagerListener()
+
         teacherMicroserviceServerSocket = ServerSocket(TEACHER_PORT)
 
         println("TeacherMicroservice se executa pe portul: ${teacherMicroserviceServerSocket.localPort}")
         println("Se asteapta cereri (intrebari)...")
 
         while (true) {
-            // se asteapta conexiuni din partea clientilor ce doresc sa puna o intrebare
-            // (in acest caz, din partea aplicatiei client GUI)
             val clientConnection = teacherMicroserviceServerSocket.accept()
 
-            // se foloseste un thread separat pentru tratarea fiecarei conexiuni client
             thread {
                 println("S-a primit o cerere de la: ${clientConnection.inetAddress.hostAddress}:${clientConnection.port}")
 
-                // se citeste intrebarea dorita
                 val clientBufferReader = BufferedReader(InputStreamReader(clientConnection.inputStream))
-                val receivedQuestion = clientBufferReader.readLine()
+                val requestLine = clientBufferReader.readLine()
 
-                // intrebarea este redirectionata catre microserviciul MessageManager
-                println("Trimit catre MessageManager: ${"intrebare ${messageManagerSocket.localPort} $receivedQuestion\n"}")
-                messageManagerSocket.getOutputStream().write(("intrebare ${messageManagerSocket.localPort} $receivedQuestion\n").toByteArray())
-
-                // se asteapta raspuns de la MessageManager
-                val messageManagerBufferReader = BufferedReader(InputStreamReader(messageManagerSocket.inputStream))
-                try {
-                    val receivedResponse = messageManagerBufferReader.readLine()
-
-                    // se trimite raspunsul inapoi clientului apelant
-                    println("Am primit raspunsul: \"$receivedResponse\"")
-                    clientConnection.getOutputStream().write((receivedResponse + "\n").toByteArray())
-                } catch (e: SocketTimeoutException) {
-                    println("Nu a venit niciun raspuns in timp util.")
-                    clientConnection.getOutputStream().write("Nu a raspuns nimeni la intrebare\n".toByteArray())
-                } finally {
-                    // se inchide conexiunea cu clientul
+                if (requestLine == null) {
                     clientConnection.close()
+                    return@thread
                 }
+
+                val (targetType, targetValue, questionBody) = parseClientRequest(requestLine)
+                val response = submitQuestion(targetType, targetValue, questionBody)
+                clientConnection.getOutputStream().write((response + "\n").toByteArray())
+                clientConnection.close()
             }
         }
     }

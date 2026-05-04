@@ -1,0 +1,117 @@
+:root {
+  --bg: #0e1a22;
+  --card: #132633;
+  --text: #e9f2f7;
+  --muted: #9fb7c6;
+  --accent: #2ad39a;
+  --border: #24506b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 20% 0%, #153346 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.page {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 28px 18px 36px;
+}
+
+.hero h1 {
+  margin: 0 0 6px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.card {
+  background: linear-gradient(180deg, #153143, var(--card));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border);
+  background: #0d202c;
+  color: var(--text);
+  border-radius: 8px;
+}
+
+textarea {
+  resize: vertical;
+  margin-top: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 9px 12px;
+  cursor: pointer;
+  background: var(--accent);
+  color: #07301f;
+  font-weight: 600;
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.output {
+  min-height: 220px;
+  max-height: 420px;
+  overflow: auto;
+  padding: 10px;
+  background: #0b1b26;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

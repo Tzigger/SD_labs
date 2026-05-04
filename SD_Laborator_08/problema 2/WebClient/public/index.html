@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SD Lab 8 - Web Client</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>SD Laborator 8 - Client Web</h1>
+        <p>Comunicare teacher/studenti: one-to-one (PRIVATE) si one-to-many (PUBLIC)</p>
+      </header>
+
+      <section class="card">
+        <div class="grid">
+          <label>
+            Cine intreaba
+            <select id="sender">
+              <option value="teacher">teacher</option>
+              <option value="student1">student1</option>
+              <option value="student2">student2</option>
+              <option value="student3">student3</option>
+            </select>
+          </label>
+
+          <label>
+            Pe cine intreaba
+            <select id="target">
+              <option value="teacher">Teacher</option>
+              <option value="all_students">Toti studentii</option>
+              <option value="student1">Student 1</option>
+              <option value="student2">Student 2</option>
+              <option value="student3">Student 3</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Intrebare
+          <textarea id="question" rows="3" placeholder="Scrie intrebarea..."></textarea>
+        </label>
+
+        <div class="actions">
+          <button id="askBtn" type="button">Intreaba</button>
+          <button id="clearBtn" type="button" class="ghost">Curata raspunsuri</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Raspunsuri</h2>
+        <pre id="output" class="output"></pre>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

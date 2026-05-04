@@ -1,0 +1,8 @@
+Ce este un microserviciu?
+O componenta mica, independenta si deployabila separat.
+Ce protocol folosim intre servicii?
+Socket TCP, prin MessageManager.
+Ce inseamna one to one?
+Mesaj privat intre doua entitati.
+Ce inseamna one to many?
+Mesaj public catre mai multi destinatari.

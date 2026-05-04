@@ -1,0 +1,85 @@
+services:
+  message_manager:
+    build:
+      context: ./MessageManagerMicroservice
+    container_name: message_manager
+    ports:
+      - "1500:1500"
+    networks:
+      - ms-net
+
+  teacher_microservice:
+    build:
+      context: ./TeacherMicroservice
+    container_name: teacher_microservice
+    environment:
+      MESSAGE_MANAGER_HOST: message_manager
+      SERVICE_ID: teacher
+      TEACHER_PORT: 1600
+      ANSWERS_DATABASE_PATH: /data/teacher_answers_database.txt
+    ports:
+      - "1600:1600"
+    volumes:
+      - ./TeacherMicroservice/teacher_answers_database.txt:/data/teacher_answers_database.txt:ro
+    depends_on:
+      - message_manager
+    networks:
+      - ms-net
+
+  student_microservice_1:
+    build:
+      context: ./StudentMicroservice
+    container_name: student_microservice_1
+    environment:
+      MESSAGE_MANAGER_HOST: message_manager
+      STUDENT_ID: student1
+      STUDENT_PORT: 1700
+      QUESTIONS_DATABASE_PATH: /data/questions_database.txt
+    ports:
+      - "1701:1700"
+    volumes:
+      - ./question_database1.txt:/data/questions_database.txt:ro
+    depends_on:
+      - message_manager
+    networks:
+      - ms-net
+
+  student_microservice_2:
+    build:
+      context: ./StudentMicroservice
+    container_name: student_microservice_2
+    environment:
+      MESSAGE_MANAGER_HOST: message_manager
+      STUDENT_ID: student2
+      STUDENT_PORT: 1700
+      QUESTIONS_DATABASE_PATH: /data/questions_database.txt
+    ports:
+      - "1702:1700"
+    volumes:
+      - ./question_database2.txt:/data/questions_database.txt:ro
+    depends_on:
+      - message_manager
+    networks:
+      - ms-net
+
+  student_microservice_3:
+    build:
+      context: ./StudentMicroservice
+    container_name: student_microservice_3
+    environment:
+      MESSAGE_MANAGER_HOST: message_manager
+      STUDENT_ID: student3
+      STUDENT_PORT: 1700
+      QUESTIONS_DATABASE_PATH: /data/questions_database.txt
+    ports:
+      - "1703:1700"
+    volumes:
+      - ./question_database3.txt:/data/questions_database.txt:ro
+    depends_on:
+      - message_manager
+    networks:
+      - ms-net
+
+networks:
+  ms-net:
+    driver: bridge
