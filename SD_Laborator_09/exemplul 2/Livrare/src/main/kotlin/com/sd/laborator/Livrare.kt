@@ -11,8 +11,10 @@ import org.springframework.cloud.stream.messaging.Sink
 class LivrareMicroservice {
     @StreamListener(Sink.INPUT)
     ///TODO - parametrul ar trebui sa fie doar numarul de inregistrare al comenzii si atat
+    ///DONE - se receptioneaza doar ID-ul comenzii pentru expediere
     fun expediereComanda(comanda: String) {
-        println("S-a expediat urmatoarea comanda: $comanda")
+        val idComanda = comanda.trim()
+        println("S-a expediat comanda cu identificatorul: $idComanda")
     }
 }
 

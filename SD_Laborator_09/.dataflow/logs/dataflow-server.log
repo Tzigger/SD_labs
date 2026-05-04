@@ -1,0 +1,176 @@
+2026-05-04 23:02:33.538  INFO 78271 --- [           main] o.s.c.d.a.l.ProfileApplicationListener   : Setting property 'spring.cloud.kubernetes.enabled' to false.
+2026-05-04 23:02:33.849  INFO 78271 --- [           main] o.s.c.d.a.l.ProfileApplicationListener   : Setting property 'spring.cloud.kubernetes.enabled' to false.
+  ____                              ____ _                __
+ / ___| _ __  _ __(_)_ __   __ _   / ___| | ___  _   _  __| |
+ \___ \| '_ \| '__| | '_ \ / _` | | |   | |/ _ \| | | |/ _` |
+  ___) | |_) | |  | | | | | (_| | | |___| | (_) | |_| | (_| |
+ |____/| .__/|_|  |_|_| |_|\__, |  \____|_|\___/ \__,_|\__,_|
+  ____ |_|    _          __|___/                 __________
+ |  _ \  __ _| |_ __ _  |  ___| | _____      __  \ \ \ \ \ \
+ | | | |/ _` | __/ _` | | |_  | |/ _ \ \ /\ / /   \ \ \ \ \ \
+ | |_| | (_| | || (_| | |  _| | | (_) \ V  V /    / / / / / /
+ |____/ \__,_|\__\__,_| |_|   |_|\___/ \_/\_/    /_/_/_/_/_/
+
+Spring Cloud Data Flow Server  (v2.5.4.RELEASE)
+
+2026-05-04 23:02:33.882  INFO 78271 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2026-05-04 23:02:33.934  INFO 78271 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2026-05-04 23:02:33.934  WARN 78271 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spring-cloud-dataflow-server/local": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2026-05-04 23:02:33.935  INFO 78271 --- [           main] o.s.c.d.s.s.DataFlowServerApplication    : The following profiles are active: local
+2026-05-04 23:02:34.393  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2026-05-04 23:02:34.393  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Map repositories in DEFAULT mode.
+2026-05-04 23:02:34.448  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 Map repository interfaces.
+2026-05-04 23:02:34.597  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2026-05-04 23:02:34.598  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 23:02:34.603  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 JPA repository interfaces.
+2026-05-04 23:02:34.669  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2026-05-04 23:02:34.670  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 23:02:34.699  INFO 78271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 5 JPA repository interfaces.
+2026-05-04 23:02:34.768  INFO 78271 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e8725826-c2f8-34e2-8e8c-16de860d510d
+2026-05-04 23:02:35.026  INFO 78271 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9393 (http)
+2026-05-04 23:02:35.030  INFO 78271 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9393"]
+2026-05-04 23:02:35.030  INFO 78271 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-04 23:02:35.030  INFO 78271 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2026-05-04 23:02:35.059  INFO 78271 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-04 23:02:35.146  INFO 78271 --- [           main] o.s.c.d.s.config.web.WebConfiguration    : Start Embedded H2
+2026-05-04 23:02:35.146  INFO 78271 --- [           main] o.s.c.d.s.config.web.WebConfiguration    : Starting H2 Server with URL: jdbc:h2:tcp://localhost:19092/mem:dataflow
+2026-05-04 23:02:35.296  INFO 78271 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-04 23:02:35.320  INFO 78271 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-04 23:02:35.331  INFO 78271 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 6.0.8 by Redgate
+2026-05-04 23:02:35.341  INFO 78271 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:tcp://localhost:19092/mem:dataflow (H2 1.4)
+2026-05-04 23:02:35.347  WARN 78271 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.200 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 1.4.199.
+2026-05-04 23:02:35.361  INFO 78271 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.008s)
+2026-05-04 23:02:35.367  INFO 78271 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history_dataflow" ...
+2026-05-04 23:02:35.381  INFO 78271 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-05-04 23:02:35.387  INFO 78271 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1 - INITIAL SETUP
+2026-05-04 23:02:35.410  INFO 78271 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.032s)
+2026-05-04 23:02:35.454  INFO 78271 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-04 23:02:35.489  INFO 78271 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2026-05-04 23:02:35.602  INFO 78271 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2026-05-04 23:02:35.659  INFO 78271 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-05-04 23:02:36.028  INFO 78271 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-05-04 23:02:36.031  INFO 78271 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 23:02:36.209  INFO 78271 --- [           main] urationMetadataResolverAutoConfiguration : Final Registry Configurations: {registry-1.docker.io=RegistryConfiguration{registryHost='registry-1.docker.io', user='null', secret='****'', authorizationType=dockeroauth2, manifestMediaType='application/vnd.docker.distribution.manifest.v2+json', disableSslVerification='false', extra={registryAuthUri=https://auth.docker.io/token?service=registry.docker.io&scope=repository:{repository}:pull&offline_token=1&client_id=shell}}}
+2026-05-04 23:02:36.511  INFO 78271 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2026-05-04 23:02:36.529  INFO 78271 --- [           main] o.s.c.d.s.b.SimpleJobServiceFactoryBean  : No database type set, using meta data indicating: H2
+2026-05-04 23:02:36.572  WARN 78271 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-04 23:02:36.616  INFO 78271 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2026-05-04 23:02:36.811  INFO 78271 --- [           main] .s.c.DataFlowControllerAutoConfiguration : Skipper URI [http://localhost:7577/api]
+2026-05-04 23:02:36.852  INFO 78271 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9393"]
+2026-05-04 23:02:36.859  INFO 78271 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9393 (http) with context path ''
+2026-05-04 23:02:36.863  INFO 78271 --- [           main] o.s.c.d.s.s.DataFlowServerApplication    : Started DataFlowServerApplication in 8.764 seconds (JVM running for 9.073)
+2026-05-04 23:02:36.929  INFO 78271 --- [           main] .s.c.d.s.s.LauncherInitializationService : Added 'Local' platform account 'default' into Task Launcher repository.
+2026-05-04 23:02:37.243  INFO 78271 --- [nio-9393-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-04 23:02:37.476 ERROR 78271 --- [nio-9393-exec-2] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request
+
+java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in path at index 89: file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul 2/Client/target/Client-1.0-SNAPSHOT.jar
+	at org.springframework.cloud.dataflow.registry.support.AppResourceCommon.getResource(AppResourceCommon.java:182)
+	at org.springframework.cloud.dataflow.registry.service.DefaultAppRegistryService.getResourceVersion(DefaultAppRegistryService.java:292)
+	at org.springframework.cloud.dataflow.registry.service.DefaultAppRegistryService$$FastClassBySpringCGLIB$$a8bae4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at org.springframework.cloud.dataflow.registry.service.DefaultAppRegistryService$$EnhancerBySpringCGLIB$$67519c02.getResourceVersion(<generated>)
+	at org.springframework.cloud.dataflow.server.controller.AppRegistryController.register(AppRegistryController.java:225)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 89: file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul 2/Client/target/Client-1.0-SNAPSHOT.jar
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at org.springframework.cloud.dataflow.registry.support.AppResourceCommon.getResource(AppResourceCommon.java:156)
+	... 68 common frames omitted
+
+2026-05-04 23:06:35.479  WARN 78271 --- [nio-9393-exec-7] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: Could not find stream definition named lab9demo
+2026-05-04 23:06:35.487  WARN 78271 --- [nio-9393-exec-6] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: Could not find stream definition named lab9demo
+2026-05-04 23:06:35.549  INFO 78271 --- [nio-9393-exec-8] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Livrare/target/Livrare-1.0-SNAPSHOT.jar] for application [livrare]
+2026-05-04 23:06:35.582  INFO 78271 --- [nio-9393-exec-8] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Facturare/target/Facturare-1.0-SNAPSHOT.jar] for application [facturare]
+2026-05-04 23:06:35.606  INFO 78271 --- [nio-9393-exec-8] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Depozit/target/Depozit-1.0-SNAPSHOT.jar] for application [depozit]
+2026-05-04 23:06:35.628  INFO 78271 --- [nio-9393-exec-8] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Comanda/target/Comanda-1.0-SNAPSHOT.jar] for application [comanda]
+2026-05-04 23:06:35.663  INFO 78271 --- [nio-9393-exec-8] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Client/target/Client-1.0-SNAPSHOT.jar] for application [client]
+2026-05-04 23:06:35.696  INFO 78271 --- [nio-9393-exec-8] o.s.c.d.s.stream.SkipperStreamDeployer   : Deploying Stream lab9demo using skipper.
+2026-05-04 23:06:35.701  INFO 78271 --- [nio-9393-exec-8] o.s.c.d.s.stream.SkipperStreamDeployer   : Using platform 'default'
+2026-05-04 23:23:22.390  WARN 78271 --- [io-9393-exec-10] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: The app [facturare:processor:1.0-SNAPSHOT] you're trying to unregister is currently used in stream 'lab9demo'.
+2026-05-04 23:23:22.390  WARN 78271 --- [nio-9393-exec-3] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: The app [client:source:1.0-SNAPSHOT] you're trying to unregister is currently used in stream 'lab9demo'.
+2026-05-04 23:23:22.390  WARN 78271 --- [nio-9393-exec-2] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: The app [depozit:processor:1.0-SNAPSHOT] you're trying to unregister is currently used in stream 'lab9demo'.
+2026-05-04 23:23:22.390  WARN 78271 --- [nio-9393-exec-6] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: The app [comanda:processor:1.0-SNAPSHOT] you're trying to unregister is currently used in stream 'lab9demo'.
+2026-05-04 23:23:22.390  WARN 78271 --- [nio-9393-exec-4] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: The app [livrare:sink:1.0-SNAPSHOT] you're trying to unregister is currently used in stream 'lab9demo'.
+2026-05-04 23:23:58.014  WARN 78271 --- [nio-9393-exec-5] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: Could not find stream definition named lab9demo
+2026-05-04 23:23:58.022  WARN 78271 --- [nio-9393-exec-1] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: Could not find stream definition named lab9demo
+2026-05-04 23:23:58.057  INFO 78271 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Livrare/target/Livrare-1.0-SNAPSHOT.jar] for application [livrare]
+2026-05-04 23:23:58.077  INFO 78271 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Facturare/target/Facturare-1.0-SNAPSHOT.jar] for application [facturare]
+2026-05-04 23:23:58.096  INFO 78271 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Depozit/target/Depozit-1.0-SNAPSHOT.jar] for application [depozit]
+2026-05-04 23:23:58.116  INFO 78271 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Comanda/target/Comanda-1.0-SNAPSHOT.jar] for application [comanda]
+2026-05-04 23:23:58.134  INFO 78271 --- [nio-9393-exec-3] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Client/target/Client-1.0-SNAPSHOT.jar] for application [client]
+2026-05-04 23:23:58.153  INFO 78271 --- [nio-9393-exec-3] o.s.c.d.s.stream.SkipperStreamDeployer   : Deploying Stream lab9demo using skipper.
+2026-05-04 23:23:58.156  INFO 78271 --- [nio-9393-exec-3] o.s.c.d.s.stream.SkipperStreamDeployer   : Using platform 'default'
+2026-05-04 23:29:25.800  WARN 78271 --- [nio-9393-exec-5] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: Could not find stream definition named lab9demo
+2026-05-04 23:29:25.807  WARN 78271 --- [nio-9393-exec-2] o.s.c.d.s.c.RestControllerAdvice         : Caught exception while handling a request: Could not find stream definition named lab9demo
+2026-05-04 23:29:25.837  INFO 78271 --- [nio-9393-exec-1] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Livrare/target/Livrare-1.0-SNAPSHOT.jar] for application [livrare]
+2026-05-04 23:29:25.859  INFO 78271 --- [nio-9393-exec-1] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Facturare/target/Facturare-1.0-SNAPSHOT.jar] for application [facturare]
+2026-05-04 23:29:25.880  INFO 78271 --- [nio-9393-exec-1] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Depozit/target/Depozit-1.0-SNAPSHOT.jar] for application [depozit]
+2026-05-04 23:29:25.901  INFO 78271 --- [nio-9393-exec-1] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Comanda/target/Comanda-1.0-SNAPSHOT.jar] for application [comanda]
+2026-05-04 23:29:25.919  INFO 78271 --- [nio-9393-exec-1] .s.c.d.s.s.i.AppDeploymentRequestCreator : Creating resource with [file:///Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_09/exemplul%202/Client/target/Client-1.0-SNAPSHOT.jar] for application [client]
+2026-05-04 23:29:25.938  INFO 78271 --- [nio-9393-exec-1] o.s.c.d.s.stream.SkipperStreamDeployer   : Deploying Stream lab9demo using skipper.
+2026-05-04 23:29:25.940  INFO 78271 --- [nio-9393-exec-1] o.s.c.d.s.stream.SkipperStreamDeployer   : Using platform 'default'
