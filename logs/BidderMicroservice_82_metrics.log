@@ -1,0 +1,5 @@
+[29-04-2026 10:59:51.873] [BidderMicroservice_82] EVENT=cycle_start | bidder_id=82, name=Bidder 82, phone=0700000082, email=bidder82@mail.ro
+[29-04-2026 10:59:51.905] [BidderMicroservice_82] EVENT=bid_sent | bidder_id=82, price=9392
+[29-04-2026 10:59:51.915] [BidderMicroservice_82] EVENT=duplicate_sent | bidder_id=82, price=9392
+[29-04-2026 11:00:08.594] [BidderMicroservice_82] EVENT=auction_result | bidder_id=82, result=Licitatie pierduta...
+[29-04-2026 11:00:08.725] [BidderMicroservice_82] EVENT=shutdown | bidder_id=82

@@ -6,20 +6,18 @@
 # mijlocul procesării, verifică că state.dat e salvat, apoi
 # repornește serviciul și verifică că recovery funcționează.
 #
-# Pre-requisite: toate JARurile trebuie construite.
 # Usage: ./test_recovery.sh
+# Daca JARurile lipsesc, scriptul le construieste cu Gradle.
 # ============================================================
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_DIR="$SCRIPT_DIR/logs"
-JAR_DIR="$SCRIPT_DIR/out/artifacts"
-
-MP_JAR="$JAR_DIR/MessageProcessorMicroservice_jar/MessageProcessorMicroservice.jar"
-BP_JAR="$JAR_DIR/BiddingProcessorMicroservice_jar/BiddingProcessorMicroservice.jar"
-AU_JAR="$JAR_DIR/AuctioneerMicroservice_jar/AuctioneerMicroservice.jar"
-BI_JAR="$JAR_DIR/BidderMicroservice_jar/BidderMicroservice.jar"
+MP_JAR="$SCRIPT_DIR/MessageProcessorMicroservice/build/libs/MessageProcessorMicroservice.jar"
+BP_JAR="$SCRIPT_DIR/BiddingProcessorMicroservice/build/libs/BiddingProcessorMicroservice.jar"
+AU_JAR="$SCRIPT_DIR/AuctioneerMicroservice/build/libs/AuctioneerMicroservice.jar"
+BI_JAR="$SCRIPT_DIR/BidderMicroservice/build/libs/BidderMicroservice.jar"
 
 GREEN='\033[0;32m'; RED='\033[0;31m'; YELLOW='\033[1;33m'
 CYAN='\033[0;36m'; NC='\033[0m'
@@ -29,14 +27,22 @@ err() { echo -e "${RED}✗ $*${NC}"; }
 info(){ echo -e "${CYAN}► $*${NC}"; }
 warn(){ echo -e "${YELLOW}⚠ $*${NC}"; }
 
-# Verifică JARuri
+# Verifica JARurile si construieste automat din terminalul VS Code daca lipsesc.
+needs_build=false
 for jar in "$MP_JAR" "$BP_JAR" "$AU_JAR" "$BI_JAR"; do
-    if [[ ! -f "$jar" ]]; then
-        err "JAR lipsă: $jar"
-        echo "  Construiește proiectul mai întâi în IntelliJ!"
+    [[ ! -f "$jar" ]] && needs_build=true && break
+done
+
+if $needs_build; then
+    info "JARuri lipsa. Construiesc proiectul cu Gradle..."
+    if ! command -v gradle &>/dev/null; then
+        err "Gradle nu este instalat. Ruleaza: brew install gradle"
         exit 1
     fi
-done
+    cd "$SCRIPT_DIR"
+    gradle shadowJar --parallel --quiet 2>&1
+    ok "Build complet."
+fi
 
 mkdir -p "$LOG_DIR"
 PIDS=()
@@ -91,7 +97,7 @@ wait_for_log "$LOG_DIR/au_test.log" "Auctioneer"
 # ── Pas 5: Pornește 3 bidderi ─────────────────────────────
 info "Pas 5: Pornesc 3 bidderi..."
 for i in 1 2 3; do
-    java -jar "$BI_JAR" > "$LOG_DIR/bidder_test_${i}.log" 2>&1 &
+    java -jar "$BI_JAR" "$i" > "$LOG_DIR/bidder_test_${i}.log" 2>&1 &
     PIDS+=("$!")
     sleep 0.2
 done

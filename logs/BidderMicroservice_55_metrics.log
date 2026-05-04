@@ -1,0 +1,5 @@
+[29-04-2026 10:59:50.254] [BidderMicroservice_55] EVENT=cycle_start | bidder_id=55, name=Bidder 55, phone=0700000055, email=bidder55@mail.ro
+[29-04-2026 10:59:50.288] [BidderMicroservice_55] EVENT=bid_sent | bidder_id=55, price=6532
+[29-04-2026 10:59:50.295] [BidderMicroservice_55] EVENT=duplicate_sent | bidder_id=55, price=6532
+[29-04-2026 11:00:08.381] [BidderMicroservice_55] EVENT=auction_result | bidder_id=55, result=Licitatie pierduta...
+[29-04-2026 11:00:08.512] [BidderMicroservice_55] EVENT=shutdown | bidder_id=55

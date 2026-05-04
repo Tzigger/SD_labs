@@ -1,0 +1,5 @@
+[29-04-2026 10:59:51.570] [BidderMicroservice_76] EVENT=cycle_start | bidder_id=76, name=Bidder 76, phone=0700000076, email=bidder76@mail.ro
+[29-04-2026 10:59:51.615] [BidderMicroservice_76] EVENT=bid_sent | bidder_id=76, price=3022
+[29-04-2026 10:59:51.630] [BidderMicroservice_76] EVENT=duplicate_sent | bidder_id=76, price=3022
+[29-04-2026 11:00:08.724] [BidderMicroservice_76] EVENT=auction_result | bidder_id=76, result=Licitatie pierduta...
+[29-04-2026 11:00:08.728] [BidderMicroservice_76] EVENT=shutdown | bidder_id=76

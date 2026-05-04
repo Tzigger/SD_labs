@@ -1,0 +1,4 @@
+[29-04-2026 10:59:52.320] [BidderMicroservice_90] EVENT=cycle_start | bidder_id=90, name=Bidder 90, phone=0700000090, email=bidder90@mail.ro
+[29-04-2026 10:59:52.361] [BidderMicroservice_90] EVENT=bid_sent | bidder_id=90, price=8292
+[29-04-2026 11:00:08.694] [BidderMicroservice_90] EVENT=auction_result | bidder_id=90, result=Licitatie pierduta...
+[29-04-2026 11:00:08.697] [BidderMicroservice_90] EVENT=shutdown | bidder_id=90

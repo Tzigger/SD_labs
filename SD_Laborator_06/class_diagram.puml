@@ -1,0 +1,100 @@
+@startuml
+title Lab 6 - Class Diagram
+
+package "LibraryApp" {
+    class LibraryPrinterController {
+        +customPrint(format: String): String
+        +customFind(author: String, title: String, publisher: String): String
+        +findAndPrint(author: String, title: String, publisher: String, format: String): String
+    }
+
+    interface ILibraryDAOService {
+        +getBooks(): Set<Book>
+        +findAllByAuthor(author: String): Set<Book>
+        +findAllByTitle(title: String): Set<Book>
+        +findAllByPublisher(publisher: String): Set<Book>
+    }
+
+    interface ILibraryPrinterService {
+        +printHTML(books: Set<Book>): String
+        +printJSON(books: Set<Book>): String
+        +printRaw(books: Set<Book>): String
+    }
+
+    class BookRepository {
+        +createTable()
+        +add(book: BookEntity)
+        +getAll(): MutableList<BookEntity?>
+        +findAllByAuthor(author: String): MutableList<BookEntity?>
+        +findAllByTitle(title: String): MutableList<BookEntity?>
+        +findAllByPublisher(publisher: String): MutableList<BookEntity?>
+    }
+
+    class BookEntity {
+        +id: Int
+        +name: String
+        +author: String
+        +publisher: String
+        +content: String
+    }
+}
+
+package "CacheMicroservice" {
+    class CacheController {
+        +getCache(query: String): String
+        +setCache(query: String, result: String): String
+        +receivePrinterStatus(status: String)
+        +getPrinterStatus(): String
+    }
+
+    interface ICacheRepository {
+        +createTable()
+        +add(cache: CacheEntity)
+        +getByQuery(query: String): CacheEntity?
+        +getByQueryHash(queryHash: String): CacheEntity?
+        +update(cache: CacheEntity)
+    }
+
+    class CacheEntity {
+        +id: Int
+        +query: String
+        +queryHash: String
+        +result: String
+        +resultHash: String
+        +timestamp: Long
+    }
+
+    class CacheRepository
+    class RabbitMqConfig
+}
+
+package "MerkleMicroservice" {
+    class MerkleController {
+        +addZone(data: String): String
+        +indexZone(payload: Map<String, String>): String
+        +lookupZone(queryHash: String): String
+        +searchZone(hash: String): String
+    }
+
+    class MerkleNode {
+        +data: String?
+        +left: MerkleNode?
+        +right: MerkleNode?
+        +hash: String
+    }
+}
+
+LibraryPrinterController --> ILibraryDAOService
+LibraryPrinterController --> ILibraryPrinterService
+ILibraryDAOService --> BookRepository
+BookRepository --> BookEntity
+
+CacheController --> ICacheRepository
+ICacheRepository <|.. CacheRepository
+CacheRepository --> CacheEntity
+CacheController --> RabbitMqConfig
+CacheController --> MerkleController : HTTP
+
+MerkleController --> MerkleNode
+
+@enduml

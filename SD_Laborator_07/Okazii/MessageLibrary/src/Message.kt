@@ -1,14 +1,16 @@
 import java.text.SimpleDateFormat
+import java.nio.charset.StandardCharsets
 import java.util.*
 
 /**
- * Represents a message exchanged between microservices in the Okazii auction system.
+ * Message este obiectul comun pe care il trimit toate microserviciile intre ele.
  *
- * Extended for homework: includes optional bidder identity fields (name, phone, email).
- * The serialized format is:
- *   <timestamp> <sender> [name=<name>|phone=<phone>|email=<email>|] <body>\n
+ * Pentru tema de acasa am adaugat identitatea ofertantului: nume, telefon si e-mail.
+ * Formatul de pe retea este unul stabil, cu Base64 pentru campurile text:
+ *   MSG2 <timestamp> <sender64> <name64> <phone64> <email64> <body64>\n
  *
- * For system/control messages (no identity), the identity block is omitted.
+ * Am ales Base64 ca sa nu se strice mesajele cand numele/body-ul contin spatii.
+ * Inainte formatul era separat prin spatii, iar "Ion Popescu" era citit gresit.
  */
 class Message private constructor(
     val sender: String,
@@ -20,16 +22,26 @@ class Message private constructor(
 ) {
     companion object {
         private val DATE_FORMAT = SimpleDateFormat("dd-MM-yyyy HH:mm:ss")
+        private const val WIRE_PREFIX = "MSG2"
+        private val B64_ENCODER = Base64.getEncoder()
+        private val B64_DECODER = Base64.getDecoder()
+        private val BID_AMOUNT_REGEX = Regex("""\blicitez\s+(\d+)""")
+
+        private fun encode(value: String): String =
+            B64_ENCODER.encodeToString(value.toByteArray(StandardCharsets.UTF_8))
+
+        private fun decode(value: String): String =
+            String(B64_DECODER.decode(value), StandardCharsets.UTF_8)
 
         /**
-         * Create a plain system message (no bidder identity).
+         * Creeaza un mesaj de sistem, folosit pentru semnale ca "final".
          */
         fun create(sender: String, body: String): Message {
             return Message(sender, body, Date())
         }
 
         /**
-         * Create a message with bidder identity fields (name, phone, email).
+         * Creeaza un mesaj de licitatie cu datele personale ale ofertantului.
          */
         fun createWithIdentity(
             sender: String,
@@ -42,30 +54,64 @@ class Message private constructor(
         }
 
         /**
-         * Deserialize a message from its wire-format byte array.
-         * Format: "<timestamp> <sender> [name=<n>|phone=<p>|email=<e>|] <body>\n"
-         * Identity block is present only when all three identity fields are non-empty.
+         * Deserializeaza un mesaj primit de pe socket.
+         * Accepta si formatul vechi, ca recovery-ul sa poata citi state.dat ramas
+         * de la o rulare anterioara a laboratorului.
          */
         fun deserialize(msg: ByteArray): Message {
-            val msgString = String(msg).trim()
-            val parts = msgString.split(' ', limit = 4)
+            val msgString = String(msg, StandardCharsets.UTF_8).trim()
+            if (msgString.isBlank()) {
+                return Message("unknown", "", Date())
+            }
 
-            if (parts.size < 3) {
-                // Fallback: return a minimal message to avoid crashes on malformed input
+            if (msgString.startsWith("$WIRE_PREFIX ")) {
+                return deserializeCurrentFormat(msgString)
+            }
+
+            return deserializeLegacyFormat(msgString)
+        }
+
+        private fun deserializeCurrentFormat(msgString: String): Message {
+            val parts = msgString.split(' ', limit = 7)
+            if (parts.size != 7) {
                 return Message("unknown", msgString, Date())
             }
 
+            return try {
+                Message(
+                    sender = decode(parts[2]),
+                    body = decode(parts[6]),
+                    timestamp = Date(parts[1].toLongOrNull() ?: System.currentTimeMillis()),
+                    name = decode(parts[3]),
+                    phone = decode(parts[4]),
+                    email = decode(parts[5])
+                )
+            } catch (e: Exception) {
+                return Message("unknown", msgString, Date())
+            }
+        }
+
+        private fun deserializeLegacyFormat(msgString: String): Message {
+            val parts = msgString.split(' ', limit = 3)
+            if (parts.size < 3) {
+                return Message("unknown", msgString, Date())
+            }
             val timestampMs = parts[0].toLongOrNull() ?: System.currentTimeMillis()
             val sender = parts[1]
+            val rest = parts[2]
 
-            return if (parts.size == 4 && parts[2].startsWith("[name=")) {
-                // Identity block present: "[name=<n>|phone=<p>|email=<e>|]"
-                val identityBlock = parts[2].removePrefix("[").removeSuffix("|]")
+            return if (rest.startsWith("[name=")) {
+                // Format vechi: [name=Ion Popescu|phone=...|email=...|] licitez 5000
+                val identityEnd = rest.indexOf("|]")
+                if (identityEnd == -1) {
+                    return Message(sender, rest, Date(timestampMs))
+                }
+                val identityBlock = rest.substring(1, identityEnd)
                 val identityMap = identityBlock.split('|').associate { kv ->
                     val eq = kv.indexOf('=')
                     if (eq >= 0) kv.substring(0, eq) to kv.substring(eq + 1) else kv to ""
                 }
-                val body = parts[3]
+                val body = rest.substring(identityEnd + 2).trimStart()
                 Message(
                     sender, body, Date(timestampMs),
                     identityMap["name"] ?: "",
@@ -73,28 +119,28 @@ class Message private constructor(
                     identityMap["email"] ?: ""
                 )
             } else {
-                // No identity block — body is everything from parts[2] onward
-                val body = if (parts.size == 4) "${parts[2]} ${parts[3]}" else parts[2]
-                Message(sender, body, Date(timestampMs))
+                Message(sender, rest, Date(timestampMs))
             }
         }
     }
 
     /**
-     * Returns true if this message carries bidder identity information.
+     * Verificam daca mesajul chiar contine date de ofertant.
      */
     fun hasIdentity(): Boolean = name.isNotEmpty() || phone.isNotEmpty() || email.isNotEmpty()
 
     /**
-     * Serialize the message to its wire-format byte array.
+     * Scoatem suma din corpul mesajului fara sa presupunem ca este exact al doilea cuvant.
+     * Asta ajuta si la recovery, unde pot exista mesaje vechi cu text inainte de "licitez".
+     */
+    fun bidAmount(): Int? = BID_AMOUNT_REGEX.find(body)?.groupValues?.getOrNull(1)?.toIntOrNull()
+
+    /**
+     * Serializeaza mesajul in formatul trimis pe socket.
      */
     fun serialize(): ByteArray {
-        val identityPart = if (hasIdentity()) {
-            " [name=$name|phone=$phone|email=$email|]"
-        } else {
-            ""
-        }
-        return "${timestamp.time} $sender$identityPart $body\n".toByteArray()
+        return "$WIRE_PREFIX ${timestamp.time} ${encode(sender)} ${encode(name)} ${encode(phone)} ${encode(email)} ${encode(body)}\n"
+            .toByteArray(StandardCharsets.UTF_8)
     }
 
     override fun toString(): String {
@@ -104,9 +150,11 @@ class Message private constructor(
     }
 
     /**
-     * A key used for duplicate detection: same sender + same body = duplicate.
+     * Cheia de deduplicare reprezinta mesajul exact.
+     * Daca acelasi bidder trimite acelasi obiect de doua ori, timestamp-ul ramane identic,
+     * deci MessageProcessor il poate elimina fara sa confunde doua licitatii diferite.
      */
-    fun deduplicationKey(): String = "$sender|$body"
+    fun deduplicationKey(): String = "${timestamp.time}|$sender|$name|$phone|$email|$body"
 }
 
 fun main(args: Array<String>) {

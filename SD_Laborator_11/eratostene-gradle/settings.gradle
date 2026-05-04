@@ -1,0 +1,3 @@
+
+rootProject.name="eratostene-gradle"
+rootProject.buildFileName="build-local.gradle"

@@ -1,0 +1,6 @@
+applicationType: function
+defaultPackage: com.sd.laborator
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle
+features: [app-name, aws-lambda, gradle, junit, kotlin, kotlin-build, logback, micronaut-build, readme, shade, yaml]

@@ -1,0 +1,5 @@
+[29-04-2026 10:59:49] [Bidder 45:50952] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 45', phone='0700000045', email='bidder45@mail.ro'.
+[29-04-2026 10:59:49] [Bidder 45:50952] Placing bid: licitez 4933
+[29-04-2026 10:59:49] [Bidder 45:50952] Sending duplicate (deduplication test).
+[29-04-2026 10:59:49] [Bidder 45:50952] Waiting for auction result.
+[29-04-2026 11:00:08] [Bidder 45:50952] CYCLE_END: Auction result: Licitatie pierduta...

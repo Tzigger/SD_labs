@@ -1,14 +1,13 @@
 package com.sd.laborator
 
 import org.springframework.web.bind.annotation.*
-import kotlin.math.ceil
-import kotlin.math.log2
 
 @RestController
 class MerkleController {
 
     private var root: MerkleNode? = null
     private val dataBlocks = mutableListOf<String>()
+    private val cacheEntries = linkedMapOf<String, String>()
 
     private fun buildTree(blocks: List<String>): MerkleNode? {
         if (blocks.isEmpty()) return null
@@ -28,16 +27,42 @@ class MerkleController {
         return nodes.firstOrNull()
     }
 
+    private fun rebuildTree() {
+        val cacheBlocks = cacheEntries.map { "${it.key}:${it.value}" }
+        root = buildTree(dataBlocks + cacheBlocks)
+    }
+
     @PostMapping("/add-zone")
     fun addZone(@RequestBody data: String): String {
         dataBlocks.add(data)
-        root = buildTree(dataBlocks)
+        rebuildTree()
         return "Zone added. Merkle Root Hash: ${root?.hash}"
+    }
+
+    @PostMapping("/index-zone")
+    fun indexZone(@RequestBody payload: Map<String, String>): String {
+        val queryHash = payload["queryHash"] ?: return "Invalid zone: queryHash missing"
+        val resultHash = payload["resultHash"] ?: return "Invalid zone: resultHash missing"
+        cacheEntries[queryHash] = resultHash
+        rebuildTree()
+        return "Zone indexed. Query Hash: $queryHash Merkle Root Hash: ${root?.hash}"
+    }
+
+    @GetMapping("/lookup-zone")
+    fun lookupZone(@RequestParam queryHash: String): String {
+        val resultHash = cacheEntries[queryHash]
+        return if (resultHash != null) "FOUND:$resultHash" else "MISS"
     }
 
     @GetMapping("/search-zone")
     fun searchZone(@RequestParam hash: String): String {
-        // Logica simplă pentru validare: noi doar returnăm ce block a dat match pe hash
+        val foundCache = cacheEntries.entries.find {
+            it.key == hash || MerkleNode(data = "${it.key}:${it.value}").hash == hash
+        }
+        if (foundCache != null) {
+            return "Found cache queryHash=${foundCache.key} resultHash=${foundCache.value}"
+        }
+
         val found = dataBlocks.find { 
             MerkleNode(data = it).hash == hash 
         }

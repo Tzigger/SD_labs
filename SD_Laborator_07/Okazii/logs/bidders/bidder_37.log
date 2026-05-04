@@ -1,1 +1,9 @@
-Error: Invalid or corrupt jarfile /Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_07/Okazii/BidderMicroservice/build/libs/BidderMicroservice.jar
+[JOURNAL] [29-04-2026 10:59:49] [Bidder 37:50936] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 37', phone='0700000037', email='bidder37@mail.ro'.
+[Bidder 37:50936] M-am conectat la Auctioneer! Identitate: Bidder 37 (0700000037, bidder37@mail.ro)
+[BidderMicroservice:37] HeartBeat client connected to HeartBeatMicroservice.
+[JOURNAL] [29-04-2026 10:59:49] [Bidder 37:50936] Placing bid: licitez 4540
+[JOURNAL] [29-04-2026 10:59:49] [Bidder 37:50936] Sending duplicate (deduplication test).
+[Bidder 37:50936] Astept rezultatul licitatiei...
+[JOURNAL] [29-04-2026 10:59:49] [Bidder 37:50936] Waiting for auction result.
+[Bidder 37:50936] Rezultat licitatie: Licitatie pierduta...
+[JOURNAL] [29-04-2026 11:00:08] [Bidder 37:50936] CYCLE_END: Auction result: Licitatie pierduta...

@@ -10,7 +10,9 @@ class CacheRowMapper : RowMapper<CacheEntity?> {
         return CacheEntity(
             rs.getInt("id"),
             rs.getString("query"),
+            rs.getString("query_hash") ?: "",
             rs.getString("result"),
+            rs.getString("result_hash") ?: "",
             rs.getLong("timestamp")
         )
     }

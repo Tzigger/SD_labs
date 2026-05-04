@@ -1,0 +1,5 @@
+[29-04-2026 10:59:48.258] [BidderMicroservice_21] EVENT=cycle_start | bidder_id=21, name=Bidder 21, phone=0700000021, email=bidder21@mail.ro
+[29-04-2026 10:59:48.283] [BidderMicroservice_21] EVENT=bid_sent | bidder_id=21, price=6294
+[29-04-2026 10:59:48.287] [BidderMicroservice_21] EVENT=duplicate_sent | bidder_id=21, price=6294
+[29-04-2026 11:00:08.647] [BidderMicroservice_21] EVENT=auction_result | bidder_id=21, result=Licitatie pierduta...
+[29-04-2026 11:00:08.728] [BidderMicroservice_21] EVENT=shutdown | bidder_id=21

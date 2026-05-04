@@ -54,6 +54,7 @@ class BiddingProcessorMicroservice {
         println("[JOURNAL] $line")
         logWriter.println(line)
         logWriter.flush()
+        MetricsCollector.appendToMasterLog("[$ts] [BiddingProcessorMicroservice] JOURNAL $event")
     }
 
     // ── State Persistence ─────────────────────────────────────────────────────
@@ -112,6 +113,7 @@ class BiddingProcessorMicroservice {
         if (recovered.isEmpty()) {
             logEvent("RECOVERY: State file empty — nothing to replay. Continuing fresh.")
             metrics.record("recovery_empty")
+            logEvent("CYCLE_END: Recovery finished with empty state.")
             return true
         }
 
@@ -119,7 +121,7 @@ class BiddingProcessorMicroservice {
         metrics.record("recovery_loaded", mapOf("bids" to recovered.size.toString()))
 
         recovered.forEach { processedBidsQueue.add(it) }
-        decideAndReportWinner()   // completes the interrupted cycle
+        decideAndReportWinner(stopAfterReport = false)   // completes the interrupted cycle
 
         clearStateFile()
         processedBidsQueue.clear()
@@ -222,18 +224,18 @@ class BiddingProcessorMicroservice {
         subscriptions.add(sub)
     }
 
-    private fun decideAndReportWinner() {
+    private fun decideAndReportWinner(stopAfterReport: Boolean = true) {
         val winner: Message? = processedBidsQueue.toList().maxByOrNull {
-            runCatching { it.body.split(" ")[1].toInt() }.getOrDefault(Int.MIN_VALUE)
+            it.bidAmount() ?: Int.MIN_VALUE
         }
 
-        if (winner == null) {
+        val price = winner?.bidAmount()
+        if (winner == null || price == null) {
             logEvent("ERROR: No bids — cannot decide winner.")
             metrics.record("no_winner")
             return
         }
 
-        val price = winner.body.split(" ")[1].toInt()
         val idStr = if (winner.hasIdentity()) "(${winner.name}, ${winner.phone}, ${winner.email})" else ""
         println("Castigatorul este: ${winner.sender} $idStr cu pretul $price")
         logEvent("Winner decided: sender=${winner.sender} $idStr, price=$price")
@@ -261,10 +263,12 @@ class BiddingProcessorMicroservice {
             exitProcess(1)
         }
 
-        metrics.stop()
-        heartBeatClient.stop()
-        subscriptions.dispose()
-        logWriter.close()
+        if (stopAfterReport) {
+            metrics.stop()
+            heartBeatClient.stop()
+            subscriptions.dispose()
+            logWriter.close()
+        }
     }
 
     fun run() {

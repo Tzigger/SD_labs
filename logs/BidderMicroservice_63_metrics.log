@@ -1,0 +1,5 @@
+[29-04-2026 10:59:50.724] [BidderMicroservice_63] EVENT=cycle_start | bidder_id=63, name=Bidder 63, phone=0700000063, email=bidder63@mail.ro
+[29-04-2026 10:59:50.756] [BidderMicroservice_63] EVENT=bid_sent | bidder_id=63, price=1019
+[29-04-2026 10:59:50.762] [BidderMicroservice_63] EVENT=duplicate_sent | bidder_id=63, price=1019
+[29-04-2026 11:00:08.477] [BidderMicroservice_63] EVENT=auction_result | bidder_id=63, result=Licitatie pierduta...
+[29-04-2026 11:00:08.510] [BidderMicroservice_63] EVENT=shutdown | bidder_id=63

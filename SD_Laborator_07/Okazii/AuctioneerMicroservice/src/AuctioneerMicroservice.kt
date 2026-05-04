@@ -62,6 +62,7 @@ class AuctioneerMicroservice {
         println("[JOURNAL] $line")
         logWriter.println(line)
         logWriter.flush()
+        MetricsCollector.appendToMasterLog("[$ts] [AuctioneerMicroservice] JOURNAL $event")
     }
 
     // ── State Persistence ─────────────────────────────────────────────────────
@@ -116,6 +117,7 @@ class AuctioneerMicroservice {
         if (recovered.isEmpty()) {
             logEvent("RECOVERY: State file empty — nothing to replay. Continuing fresh.")
             metrics.record("recovery_empty")
+            logEvent("CYCLE_END: Recovery finished with empty state.")
             return true
         }
 
@@ -162,31 +164,52 @@ class AuctioneerMicroservice {
         println("AuctioneerMicroservice se executa pe portul: ${auctioneerSocket.localPort}")
         println("Se asteapta oferte de la bidderi... (${AUCTION_DURATION / 1000}s)")
         println("Apasati CTRL+C pentru a opri.")
-        logEvent("CYCLE_START: Listening on port $AUCTIONEER_PORT. Duration: ${AUCTION_DURATION}ms.")
         metrics.record("startup", mapOf("port" to AUCTIONEER_PORT.toString(), "duration_ms" to AUCTION_DURATION.toString()))
 
         // ── Homework 1: crash recovery ─────────────────────────────────────────
+        // Verificam jurnalul inainte sa scriem CYCLE_START pentru ciclul nou.
+        // Altfel, fiecare pornire curata ar fi interpretata ca un crash neterminat.
         checkAndRecoverFromJournal()
+
+        logEvent("CYCLE_START: Listening on port $AUCTIONEER_PORT. Duration: ${AUCTION_DURATION}ms.")
+        metrics.record("cycle_start", mapOf("port" to AUCTIONEER_PORT.toString()))
 
         receiveBidsObservable = Observable.create<String> { emitter ->
             while (true) {
                 try {
                     val conn = auctioneerSocket.accept()
                     bidderConnections.add(conn)
+                    conn.soTimeout = 2_000
                     logEvent("Bidder connected: ${conn.remoteSocketAddress}. Total: ${bidderConnections.size}")
                     metrics.record("bidder_connected", mapOf(
                         "remote" to conn.remoteSocketAddress.toString(),
                         "total"  to bidderConnections.size.toString()
                     ))
 
-                    val line = BufferedReader(InputStreamReader(conn.inputStream)).readLine()
-                    if (line == null) {
-                        conn.close()
-                        emitter.onError(Exception("Bidder ${conn.port} disconnected."))
-                        break
+                    val reader = BufferedReader(InputStreamReader(conn.inputStream))
+                    var linesFromBidder = 0
+
+                    // Un Bidder poate trimite doua linii identice pentru testul de duplicate.
+                    // Citim pana la EOF/timeout, dar pastram socketul deschis ca sa trimitem rezultatul.
+                    while (true) {
+                        val line = try {
+                            reader.readLine()
+                        } catch (e: SocketTimeoutException) {
+                            logEvent("No more bid lines from ${conn.remoteSocketAddress} after ${linesFromBidder} line(s).")
+                            break
+                        }
+
+                        if (line == null) break
+                        if (line.isBlank()) continue
+
+                        totalBidsReceived++
+                        linesFromBidder++
+                        emitter.onNext(line)
                     }
-                    totalBidsReceived++
-                    emitter.onNext(line)
+
+                    if (linesFromBidder == 0) {
+                        logEvent("WARNING: Bidder ${conn.remoteSocketAddress} disconnected without sending a bid.")
+                    }
 
                 } catch (e: SocketTimeoutException) {
                     emitter.onComplete()
@@ -264,7 +287,11 @@ class AuctioneerMicroservice {
             val receivedMsg = BufferedReader(InputStreamReader(bpConn.inputStream)).readLine()
 
             val result = Message.deserialize(receivedMsg.toByteArray())
-            val winningPrice = result.body.split(" ")[1].toInt()
+            val winningPrice = result.bidAmount()
+            if (winningPrice == null) {
+                logEvent("FATAL: Winner message has no valid bid amount: $result")
+                exitProcess(1)
+            }
             println("Rezultat: ${result.sender} a castigat cu pretul: $winningPrice")
             logEvent("Winner: sender=${result.sender}, price=$winningPrice")
             metrics.record("auction_result", mapOf("winner" to result.sender, "price" to winningPrice.toString()))

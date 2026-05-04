@@ -1,0 +1,5 @@
+[29-04-2026 10:59:52.819] [BidderMicroservice_98] EVENT=cycle_start | bidder_id=98, name=Bidder 98, phone=0700000098, email=bidder98@mail.ro
+[29-04-2026 10:59:52.856] [BidderMicroservice_98] EVENT=bid_sent | bidder_id=98, price=3110
+[29-04-2026 10:59:52.864] [BidderMicroservice_98] EVENT=duplicate_sent | bidder_id=98, price=3110
+[29-04-2026 11:00:08.506] [BidderMicroservice_98] EVENT=auction_result | bidder_id=98, result=Licitatie pierduta...
+[29-04-2026 11:00:08.532] [BidderMicroservice_98] EVENT=shutdown | bidder_id=98

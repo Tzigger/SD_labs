@@ -56,6 +56,7 @@ class MessageProcessorMicroservice {
         println("[JOURNAL] $line")
         logWriter.println(line)
         logWriter.flush()
+        MetricsCollector.appendToMasterLog("[$ts] [MessageProcessorMicroservice] JOURNAL $event")
     }
 
     // ── State Persistence ─────────────────────────────────────────────────────
@@ -125,6 +126,7 @@ class MessageProcessorMicroservice {
         if (recovered.isEmpty()) {
             logEvent("RECOVERY: State file empty or missing — nothing to replay. Continuing fresh.")
             metrics.record("recovery_empty")
+            logEvent("CYCLE_END: Recovery finished with empty state.")
             return true
         }
 
@@ -138,7 +140,7 @@ class MessageProcessorMicroservice {
         messageQueue.clear()
         sorted.forEach { messageQueue.add(it) }
 
-        sendProcessedMessages()   // completes the interrupted cycle
+        sendProcessedMessages(stopAfterSend = false)   // completes the interrupted cycle
 
         // After forwarding, clear state and start fresh
         clearStateFile()
@@ -273,7 +275,7 @@ class MessageProcessorMicroservice {
         subscriptions.add(sub)
     }
 
-    internal fun sendProcessedMessages() {
+    internal fun sendProcessedMessages(stopAfterSend: Boolean = true) {
         try {
             biddingProcessorSocket = Socket(BIDDING_PROCESSOR_HOST, BIDDING_PROCESSOR_PORT)
             logEvent("Connected to BiddingProcessor. Sending ${messageQueue.size} messages.")
@@ -300,10 +302,12 @@ class MessageProcessorMicroservice {
                     // Clear state file — cycle completed successfully
                     clearStateFile()
 
-                    metrics.stop()
-                    heartBeatClient.stop()
-                    subscriptions.dispose()
-                    logWriter.close()
+                    if (stopAfterSend) {
+                        metrics.stop()
+                        heartBeatClient.stop()
+                        subscriptions.dispose()
+                        logWriter.close()
+                    }
                 }
             )
         } catch (e: Exception) {

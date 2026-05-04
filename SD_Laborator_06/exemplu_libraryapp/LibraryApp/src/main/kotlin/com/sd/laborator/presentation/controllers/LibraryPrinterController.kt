@@ -61,10 +61,12 @@ class LibraryPrinterController {
             val cacheUrl = java.net.URL("http://localhost:8081/get-cache?query=${java.net.URLEncoder.encode(query, "UTF-8")}")
             val connection = cacheUrl.openConnection() as java.net.HttpURLConnection
             connection.requestMethod = "GET"
+            connection.connectTimeout = 1500
+            connection.readTimeout = 1500
             if (connection.responseCode == 200) {
                 val response = connection.inputStream.bufferedReader().use { it.readText() }
                 if (response.startsWith("HIT:")) {
-                    return response.substring(4) // Return cached JSON/HTML
+                    return response.removePrefix("HIT:").trimStart()
                 }
             }
         } catch (e: Exception) {
@@ -92,6 +94,8 @@ class LibraryPrinterController {
             val conn = cachePostUrl.openConnection() as java.net.HttpURLConnection
             conn.requestMethod = "POST"
             conn.doOutput = true
+            conn.connectTimeout = 1500
+            conn.readTimeout = 1500
             conn.setRequestProperty("Content-Type", "text/plain; charset=utf-8")
             conn.outputStream.write(result.toByteArray(Charsets.UTF_8))
             conn.outputStream.close()

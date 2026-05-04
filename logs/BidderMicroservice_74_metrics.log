@@ -1,0 +1,4 @@
+[29-04-2026 10:59:51.427] [BidderMicroservice_74] EVENT=cycle_start | bidder_id=74, name=Bidder 74, phone=0700000074, email=bidder74@mail.ro
+[29-04-2026 10:59:51.480] [BidderMicroservice_74] EVENT=bid_sent | bidder_id=74, price=5933
+[29-04-2026 11:00:08.680] [BidderMicroservice_74] EVENT=auction_result | bidder_id=74, result=Licitatie pierduta...
+[29-04-2026 11:00:08.691] [BidderMicroservice_74] EVENT=shutdown | bidder_id=74

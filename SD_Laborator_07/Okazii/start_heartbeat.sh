@@ -11,7 +11,7 @@ JAR="$SCRIPT_DIR/HeartBeatMicroservice/build/libs/HeartBeatMicroservice.jar"
 
 if [[ ! -f "$JAR" ]]; then
     echo "ERROR: JAR not found: $JAR"
-    echo "Build the project first in IntelliJ: Build → Build Project"
+    echo "Build the project first from VS Code terminal: ./build.sh"
     exit 1
 fi
 

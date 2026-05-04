@@ -1,0 +1,4 @@
+[29-04-2026 10:59:49.911] [BidderMicroservice_49] EVENT=cycle_start | bidder_id=49, name=Bidder 49, phone=0700000049, email=bidder49@mail.ro
+[29-04-2026 10:59:49.941] [BidderMicroservice_49] EVENT=bid_sent | bidder_id=49, price=6115
+[29-04-2026 11:00:08.677] [BidderMicroservice_49] EVENT=auction_result | bidder_id=49, result=Licitatie pierduta...
+[29-04-2026 11:00:08.680] [BidderMicroservice_49] EVENT=shutdown | bidder_id=49

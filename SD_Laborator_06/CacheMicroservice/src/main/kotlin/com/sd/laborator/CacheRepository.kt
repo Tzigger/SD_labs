@@ -20,16 +20,21 @@ class CacheRepository : ICacheRepository {
             CREATE TABLE IF NOT EXISTS cache (
                 id        INTEGER PRIMARY KEY AUTOINCREMENT,
                 query     VARCHAR(200) UNIQUE,
+                query_hash VARCHAR(64),
                 result    TEXT,
+                result_hash VARCHAR(64),
                 timestamp BIGINT
             )
         """.trimIndent())
+        ensureColumn("query_hash", "VARCHAR(64)")
+        ensureColumn("result_hash", "VARCHAR(64)")
+        _jdbcTemplate.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_cache_query_hash ON cache(query_hash)")
     }
 
     override fun add(cache: CacheEntity) {
         _jdbcTemplate.update(
-            "INSERT INTO cache (query, result, timestamp) VALUES (?, ?, ?)",
-            cache.query, cache.result, cache.timestamp
+            "INSERT INTO cache (query, query_hash, result, result_hash, timestamp) VALUES (?, ?, ?, ?, ?)",
+            cache.query, cache.queryHash, cache.result, cache.resultHash, cache.timestamp
         )
     }
 
@@ -41,10 +46,26 @@ class CacheRepository : ICacheRepository {
         return results.firstOrNull()
     }
 
+    override fun getByQueryHash(queryHash: String): CacheEntity? {
+        val results = _jdbcTemplate.query(
+            "SELECT * FROM cache WHERE query_hash = ?",
+            _rowMapper, queryHash
+        )
+        return results.firstOrNull()
+    }
+
     override fun update(cache: CacheEntity) {
         _jdbcTemplate.update(
-            "UPDATE cache SET result = ?, timestamp = ? WHERE query = ?",
-            cache.result, cache.timestamp, cache.query
+            "UPDATE cache SET query_hash = ?, result = ?, result_hash = ?, timestamp = ? WHERE query = ?",
+            cache.queryHash, cache.result, cache.resultHash, cache.timestamp, cache.query
         )
+    }
+
+    private fun ensureColumn(name: String, definition: String) {
+        val columns = _jdbcTemplate.queryForList("PRAGMA table_info(cache)")
+        val exists = columns.any { it["name"] == name }
+        if (!exists) {
+            _jdbcTemplate.execute("ALTER TABLE cache ADD COLUMN $name $definition")
+        }
     }
 }

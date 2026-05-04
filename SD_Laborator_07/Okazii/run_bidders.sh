@@ -2,9 +2,8 @@
 # ============================================================
 # run_bidders.sh  —  Lab Task 1: Launch N BidderMicroservice instances
 #
-# Runs this AFTER AuctioneerMicroservice is already started.
-# Launches N bidder JVM processes in parallel (with a small stagger)
-# and waits for all of them to finish.
+# Ruleaza dupa ce AuctioneerMicroservice este pornit.
+# Lanseaza N procese JVM BidderMicroservice in paralel si asteapta rezultatele.
 #
 # Usage:
 #   ./run_bidders.sh [N]     # default N=100
@@ -26,7 +25,7 @@ GREEN='\033[0;32m'; RED='\033[0;31m'; CYAN='\033[0;36m'; NC='\033[0m'
 
 if [[ ! -f "$JAR" ]]; then
     echo -e "${RED}ERROR: JAR not found at $JAR${NC}"
-    echo "Build the project first: IntelliJ → Build → Build Project"
+    echo "Build the project first from VS Code terminal: ./build.sh"
     exit 1
 fi
 
@@ -49,7 +48,9 @@ cleanup() {
 trap cleanup EXIT INT TERM
 
 for i in $(seq 1 "$N"); do
-    java -jar "$JAR" > "$LOG_DIR/bidder_${i}.log" 2>&1 &
+    # Trimitem indexul catre Bidder ca numele/telefonul/emailul si fisierele de recovery
+    # sa fie stabile: Bidder 1, Bidder 2, ... Bidder N.
+    java -jar "$JAR" "$i" > "$LOG_DIR/bidder_${i}.log" 2>&1 &
     PID=$!
     PIDS+=("$PID")
     # Print one dot per 10 bidders to show progress

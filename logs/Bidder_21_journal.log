@@ -1,0 +1,5 @@
+[29-04-2026 10:59:48] [Bidder 21:50904] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 21', phone='0700000021', email='bidder21@mail.ro'.
+[29-04-2026 10:59:48] [Bidder 21:50904] Placing bid: licitez 6294
+[29-04-2026 10:59:48] [Bidder 21:50904] Sending duplicate (deduplication test).
+[29-04-2026 10:59:48] [Bidder 21:50904] Waiting for auction result.
+[29-04-2026 11:00:08] [Bidder 21:50904] CYCLE_END: Auction result: Licitatie pierduta...

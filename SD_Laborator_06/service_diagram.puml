@@ -1,0 +1,39 @@
+@startuml
+title Lab 6 - Service Diagram
+
+actor User
+
+node "LibraryApp GUI" as GUI
+component "LibraryApp\n:8080" as LibraryApp
+database "library.db\nBook" as LibraryDb
+
+component "CacheMicroservice\n:8081" as Cache
+database "cache.db\ncache(query, queryHash, result, resultHash, timestamp)" as CacheDb
+
+component "MerkleMicroservice\n:8082" as Merkle
+database "Merkle index\nin memory" as MerkleIndex
+
+queue "printer.file" as PrinterFile
+queue "printer.commands" as PrinterCommands
+queue "printer.status" as PrinterStatus
+component "LibraryPrinterMicroservice" as Printer
+
+User --> GUI : search query + format
+GUI --> LibraryApp : GET /find-and-print
+LibraryApp --> Cache : GET /get-cache
+LibraryApp --> Cache : POST /set-cache on MISS/expired
+LibraryApp --> LibraryDb : search books
+
+Cache --> CacheDb : read/write cache entry
+Cache --> Merkle : GET /lookup-zone
+Cache --> Merkle : POST /index-zone
+Merkle --> MerkleIndex : update/search Merkle tree
+
+Cache --> PrinterFile : cached result
+Cache --> PrinterCommands : PRINT FORMAT=...
+PrinterStatus --> Cache : printer status
+PrinterFile --> Printer
+PrinterCommands --> Printer
+Printer --> PrinterStatus
+
+@enduml

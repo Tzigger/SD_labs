@@ -6,7 +6,7 @@
 # bidderi, și curăță totul la CTRL+C.
 #
 # Usage:
-#   ./start_all.sh [NUM_BIDDERS]    # implicit: 5
+#   ./start_all.sh [NUM_BIDDERS]    # implicit: 100
 #   ./start_all.sh 100
 #
 # Stop: CTRL+C oricând
@@ -17,7 +17,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-NUM_BIDDERS=${1:-5}
+NUM_BIDDERS=${1:-100}
 LOG_DIR="$SCRIPT_DIR/logs"
 BIDDER_LOG_DIR="$LOG_DIR/bidders"
 
@@ -118,7 +118,8 @@ echo ""
 log "Lansez $NUM_BIDDERS bidderi..."
 BIDDER_PIDS=()
 for i in $(seq 1 "$NUM_BIDDERS"); do
-    java -jar "$BI_JAR" > "$BIDDER_LOG_DIR/bidder_${i}.log" 2>&1 &
+    # Indexul face identitatea bidderului predictibila in loguri si in recovery.
+    java -jar "$BI_JAR" "$i" > "$BIDDER_LOG_DIR/bidder_${i}.log" 2>&1 &
     BIDDER_PIDS+=("$!")
     PIDS+=("$!")
     sleep 0.05

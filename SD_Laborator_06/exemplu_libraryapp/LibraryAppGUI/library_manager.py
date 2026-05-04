@@ -6,6 +6,7 @@ from requests.exceptions import HTTPError
 from PyQt5.QtWidgets import QWidget, QApplication, QFileDialog, QMessageBox
 from PyQt5 import QtCore
 from PyQt5.uic import loadUi
+from urllib.parse import quote
 
 
 def debug_trace(ui=None):
@@ -27,21 +28,19 @@ class LibraryApp(QWidget):
 
     def search(self):
         search_string = self.search_bar.text()
-        url = None
+        selected_format = self.selected_format()
         if not search_string:
-            if self.json_rb.isChecked():
-                url = '/print?format=json'
-            elif self.html_rb.isChecked():
-                url = '/print?format=html'
-            else:
-                url = '/print?format=raw'
+            url = '/find-and-print?format={}'.format(selected_format)
         else:
             if self.author_rb.isChecked():
-                url = '/find?author={}'.format(search_string.replace(' ', '%20'))
+                url = '/find-and-print?author={}&format={}'.format(
+                    quote(search_string), selected_format)
             elif self.title_rb.isChecked():
-                url = '/find?title={}'.format(search_string.replace(' ', '%20'))
+                url = '/find-and-print?title={}&format={}'.format(
+                    quote(search_string), selected_format)
             else:
-                url = '/find?publisher={}'.format(search_string.replace(' ', '%20'))
+                url = '/find-and-print?publisher={}&format={}'.format(
+                    quote(search_string), selected_format)
         full_url = "http://localhost:8080" + url
         try:
             response = requests.get(full_url)
@@ -50,6 +49,13 @@ class LibraryApp(QWidget):
             print('HTTP error occurred: {}'.format(http_err))
         except Exception as err:
             print('Other error occurred: {}'.format(err))
+
+    def selected_format(self):
+        if self.html_rb.isChecked():
+            return 'html'
+        if self.json_rb.isChecked():
+            return 'json'
+        return 'raw'
 
     def save_as_file(self):
         options = QFileDialog.Options()

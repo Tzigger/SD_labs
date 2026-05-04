@@ -21,7 +21,7 @@ subprojects {
         }
     }
 
-    // Tell Gradle that sources are in src/ (IntelliJ-style flat layout)
+    // Proiectul laboratorului are sursele direct in src/, nu in src/main/kotlin.
     the<org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension>()
         .sourceSets.getByName("main").kotlin.srcDirs("src")
 }

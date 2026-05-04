@@ -1,8 +1,9 @@
-[JOURNAL] [28-04-2026 16:17:50] [56697] CYCLE_START: Connected to Auctioneer. Identity: name='Cristian Munteanu', phone='0730998877', email='cristian@mail.ro'.
-[56697] M-am conectat la Auctioneer! Identitate: Cristian Munteanu (0730998877, cristian@mail.ro)
-[BidderMicroservice:56697] HeartBeat client connected to HeartBeatMicroservice.
-[JOURNAL] [28-04-2026 16:17:50] [56697] Placing bid: licitez 9334
-[56697] Astept rezultatul licitatiei...
-[JOURNAL] [28-04-2026 16:17:50] [56697] Waiting for auction result.
-[56697] Eroare: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
-[JOURNAL] [28-04-2026 16:18:05] [56697] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 10:50882] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 10', phone='0700000010', email='bidder10@mail.ro'.
+[Bidder 10:50882] M-am conectat la Auctioneer! Identitate: Bidder 10 (0700000010, bidder10@mail.ro)
+[BidderMicroservice:10] HeartBeat client connected to HeartBeatMicroservice.
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 10:50882] Placing bid: licitez 3130
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 10:50882] Sending duplicate (deduplication test).
+[Bidder 10:50882] Astept rezultatul licitatiei...
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 10:50882] Waiting for auction result.
+[Bidder 10:50882] Rezultat licitatie: Licitatie pierduta...
+[JOURNAL] [29-04-2026 11:00:08] [Bidder 10:50882] CYCLE_END: Auction result: Licitatie pierduta...

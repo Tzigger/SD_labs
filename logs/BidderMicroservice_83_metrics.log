@@ -1,0 +1,4 @@
+[29-04-2026 10:59:51.928] [BidderMicroservice_83] EVENT=cycle_start | bidder_id=83, name=Bidder 83, phone=0700000083, email=bidder83@mail.ro
+[29-04-2026 10:59:51.963] [BidderMicroservice_83] EVENT=bid_sent | bidder_id=83, price=9783
+[29-04-2026 11:00:08.495] [BidderMicroservice_83] EVENT=auction_result | bidder_id=83, result=Licitatie pierduta...
+[29-04-2026 11:00:08.732] [BidderMicroservice_83] EVENT=shutdown | bidder_id=83

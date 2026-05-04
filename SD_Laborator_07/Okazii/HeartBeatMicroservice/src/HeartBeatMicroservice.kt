@@ -10,6 +10,7 @@ import java.net.ServerSocket
 import java.net.Socket
 import java.text.SimpleDateFormat
 import java.util.*
+import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.TimeUnit
 
 /**
@@ -26,8 +27,9 @@ import java.util.concurrent.TimeUnit
  */
 class HeartBeatMicroservice {
 
-    // Registry: serviceName → last heartbeat timestamp (ms)
-    private val heartbeatRegistry: MutableMap<String, Long> = mutableMapOf()
+    // Registry: serviceName -> ultimul heartbeat. Este ConcurrentHashMap deoarece
+    // conexiunile de heartbeat scriu din thread-uri diferite, iar monitorul citeste periodic.
+    private val heartbeatRegistry: MutableMap<String, Long> = ConcurrentHashMap()
     private val subscriptions = CompositeDisposable()
     private val heartbeatServerSocket: ServerSocket
     private val logWriter: PrintWriter
@@ -54,6 +56,7 @@ class HeartBeatMicroservice {
         println(line)
         logWriter.println(line)
         logWriter.flush()
+        MetricsCollector.appendToMasterLog("$line")
     }
 
     // ── Init ──────────────────────────────────────────────────────────────────

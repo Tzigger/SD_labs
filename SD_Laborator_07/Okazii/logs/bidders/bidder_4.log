@@ -1,9 +1,9 @@
-[JOURNAL] [28-04-2026 16:17:49] [56685] CYCLE_START: Connected to Auctioneer. Identity: name='Mihai Constantin', phone='0750999000', email='mihai@mail.ro'.
-[56685] M-am conectat la Auctioneer! Identitate: Mihai Constantin (0750999000, mihai@mail.ro)
-[BidderMicroservice:56685] HeartBeat client connected to HeartBeatMicroservice.
-[JOURNAL] [28-04-2026 16:17:49] [56685] Placing bid: licitez 6959
-[JOURNAL] [28-04-2026 16:17:49] [56685] Sending duplicate (deduplication test).
-[56685] Astept rezultatul licitatiei...
-[JOURNAL] [28-04-2026 16:17:49] [56685] Waiting for auction result.
-[56685] Eroare: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
-[JOURNAL] [28-04-2026 16:18:05] [56685] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 4:50870] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[Bidder 4:50870] M-am conectat la Auctioneer! Identitate: Bidder 4 (0700000004, bidder4@mail.ro)
+[BidderMicroservice:4] HeartBeat client connected to HeartBeatMicroservice.
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 4:50870] Placing bid: licitez 1453
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 4:50870] Sending duplicate (deduplication test).
+[Bidder 4:50870] Astept rezultatul licitatiei...
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 4:50870] Waiting for auction result.
+[Bidder 4:50870] Rezultat licitatie: Licitatie pierduta...
+[JOURNAL] [29-04-2026 11:00:08] [Bidder 4:50870] CYCLE_END: Auction result: Licitatie pierduta...

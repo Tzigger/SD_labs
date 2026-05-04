@@ -1,0 +1,4 @@
+[29-04-2026 10:59:48.054] [BidderMicroservice_17] EVENT=cycle_start | bidder_id=17, name=Bidder 17, phone=0700000017, email=bidder17@mail.ro
+[29-04-2026 10:59:48.079] [BidderMicroservice_17] EVENT=bid_sent | bidder_id=17, price=9343
+[29-04-2026 11:00:08.463] [BidderMicroservice_17] EVENT=auction_result | bidder_id=17, result=Licitatie pierduta...
+[29-04-2026 11:00:08.645] [BidderMicroservice_17] EVENT=shutdown | bidder_id=17

@@ -1,9 +1,8 @@
-[JOURNAL] [28-04-2026 16:17:49] [56683] CYCLE_START: Connected to Auctioneer. Identity: name='Cristian Munteanu', phone='0730998877', email='cristian@mail.ro'.
-[56683] M-am conectat la Auctioneer! Identitate: Cristian Munteanu (0730998877, cristian@mail.ro)
-[BidderMicroservice:56683] HeartBeat client connected to HeartBeatMicroservice.
-[JOURNAL] [28-04-2026 16:17:49] [56683] Placing bid: licitez 8211
-[JOURNAL] [28-04-2026 16:17:49] [56683] Sending duplicate (deduplication test).
-[56683] Astept rezultatul licitatiei...
-[JOURNAL] [28-04-2026 16:17:49] [56683] Waiting for auction result.
-[56683] Eroare: java.net.SocketException: Connection reset
-[JOURNAL] [28-04-2026 16:18:05] [56683] ERROR: java.net.SocketException: Connection reset
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 3:50868] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 3', phone='0700000003', email='bidder3@mail.ro'.
+[Bidder 3:50868] M-am conectat la Auctioneer! Identitate: Bidder 3 (0700000003, bidder3@mail.ro)
+[BidderMicroservice:3] HeartBeat client connected to HeartBeatMicroservice.
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 3:50868] Placing bid: licitez 7526
+[Bidder 3:50868] Astept rezultatul licitatiei...
+[JOURNAL] [29-04-2026 10:59:47] [Bidder 3:50868] Waiting for auction result.
+[Bidder 3:50868] Rezultat licitatie: Licitatie pierduta...
+[JOURNAL] [29-04-2026 11:00:08] [Bidder 3:50868] CYCLE_END: Auction result: Licitatie pierduta...
