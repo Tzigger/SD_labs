@@ -1,0 +1,30 @@
+[04-05-2026 21:54:38.660] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 21:54:38.689] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=6896
+[04-05-2026 21:54:58.470] [BidderMicroservice_27] EVENT=auction_result | bidder_id=27, result=Licitatie pierduta...
+[04-05-2026 21:54:58.480] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27
+[04-05-2026 21:56:26.409] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 21:56:26.429] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=8165
+[04-05-2026 21:56:26.434] [BidderMicroservice_27] EVENT=duplicate_sent | bidder_id=27, price=8165
+[04-05-2026 21:56:42.304] [BidderMicroservice_27] EVENT=auction_result | bidder_id=27, result=Licitatie pierduta...
+[04-05-2026 21:56:42.309] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27
+[04-05-2026 21:57:24.754] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 21:57:24.775] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=4405
+[04-05-2026 21:57:46.402] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27
+[04-05-2026 21:58:35.240] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 21:58:35.259] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=4405
+[04-05-2026 21:58:54.892] [BidderMicroservice_27] EVENT=auction_result | bidder_id=27, result=Licitatie pierduta...
+[04-05-2026 21:58:54.897] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27
+[04-05-2026 22:15:16.448] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 22:15:16.468] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=9988
+[04-05-2026 22:15:16.472] [BidderMicroservice_27] EVENT=duplicate_sent | bidder_id=27, price=9988
+[04-05-2026 22:15:32.340] [BidderMicroservice_27] EVENT=auction_result | bidder_id=27, result=Licitatie pierduta...
+[04-05-2026 22:15:32.363] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27
+[04-05-2026 22:16:34.574] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 22:16:34.597] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=6224
+[04-05-2026 22:16:34.602] [BidderMicroservice_27] EVENT=duplicate_sent | bidder_id=27, price=6224
+[04-05-2026 22:16:50.467] [BidderMicroservice_27] EVENT=auction_result | bidder_id=27, result=Licitatie pierduta...
+[04-05-2026 22:16:50.478] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27
+[04-05-2026 22:21:04.335] [BidderMicroservice_27] EVENT=cycle_start | bidder_id=27, name=Bidder 27, phone=0700000027, email=bidder27@mail.ro
+[04-05-2026 22:21:04.355] [BidderMicroservice_27] EVENT=bid_sent | bidder_id=27, price=5145
+[04-05-2026 22:21:23.723] [BidderMicroservice_27] EVENT=auction_result | bidder_id=27, result=Licitatie pierduta...
+[04-05-2026 22:21:23.744] [BidderMicroservice_27] EVENT=shutdown | bidder_id=27

@@ -1,0 +1,35 @@
+[04-05-2026 21:54:37.544] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 21:54:37.565] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=9746
+[04-05-2026 21:54:58.671] [BidderMicroservice_8] EVENT=auction_result | bidder_id=8, result=Licitatie castigata! Pret castigator: 9746
+[04-05-2026 21:54:58.682] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 21:56:25.337] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 21:56:25.357] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=1295
+[04-05-2026 21:56:42.282] [BidderMicroservice_8] EVENT=auction_result | bidder_id=8, result=Licitatie pierduta...
+[04-05-2026 21:56:42.305] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 21:57:23.678] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 21:57:23.698] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=3927
+[04-05-2026 21:57:23.703] [BidderMicroservice_8] EVENT=duplicate_sent | bidder_id=8, price=3927
+[04-05-2026 21:57:45.942] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 21:58:34.171] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 21:58:34.190] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=3927
+[04-05-2026 21:58:34.194] [BidderMicroservice_8] EVENT=duplicate_sent | bidder_id=8, price=3927
+[04-05-2026 21:58:54.882] [BidderMicroservice_8] EVENT=auction_result | bidder_id=8, result=Licitatie pierduta...
+[04-05-2026 21:58:54.887] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 22:15:15.376] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 22:15:15.395] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=7258
+[04-05-2026 22:15:15.400] [BidderMicroservice_8] EVENT=duplicate_sent | bidder_id=8, price=7258
+[04-05-2026 22:15:32.336] [BidderMicroservice_8] EVENT=auction_result | bidder_id=8, result=Licitatie pierduta...
+[04-05-2026 22:15:32.362] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 22:16:33.495] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 22:16:33.515] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=8405
+[04-05-2026 22:16:50.464] [BidderMicroservice_8] EVENT=auction_result | bidder_id=8, result=Licitatie pierduta...
+[04-05-2026 22:16:50.477] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 22:16:54.243] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 22:16:54.265] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=5390
+[04-05-2026 22:17:10.328] [BidderMicroservice_8] EVENT=error | bidder_id=8, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:17:10.334] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8
+[04-05-2026 22:21:03.263] [BidderMicroservice_8] EVENT=cycle_start | bidder_id=8, name=Bidder 8, phone=0700000008, email=bidder8@mail.ro
+[04-05-2026 22:21:03.281] [BidderMicroservice_8] EVENT=bid_sent | bidder_id=8, price=5390
+[04-05-2026 22:21:03.287] [BidderMicroservice_8] EVENT=duplicate_sent | bidder_id=8, price=5390
+[04-05-2026 22:21:23.758] [BidderMicroservice_8] EVENT=auction_result | bidder_id=8, result=Licitatie pierduta...
+[04-05-2026 22:21:23.768] [BidderMicroservice_8] EVENT=shutdown | bidder_id=8

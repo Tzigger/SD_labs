@@ -1,0 +1,17 @@
+[JOURNAL] [04-05-2026 21:57:23] BiddingProcessorMicroservice starting up.
+[BiddingProcessorMicroservice] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+BiddingProcessorMicroservice se executa pe portul: 1700
+Se asteapta ofertele pentru finalizarea licitatiei...
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [04-05-2026 21:57:23] Listening on port 1700.
+[JOURNAL] [04-05-2026 21:57:45] Shutdown initiated.
+Exception in thread "main" java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:755)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:698)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:663)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:639)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:543)
+	at BiddingProcessorMicroservice.<init>(BiddingProcessorMicroservice.kt:166)
+	at BiddingProcessorMicroserviceKt.main(BiddingProcessorMicroservice.kt:280)

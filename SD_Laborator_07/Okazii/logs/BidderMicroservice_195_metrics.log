@@ -1,0 +1,3 @@
+[04-05-2026 21:57:34.359] [BidderMicroservice_195] EVENT=cycle_start | bidder_id=195, name=Bidder 195, phone=0700000195, email=bidder195@mail.ro
+[04-05-2026 21:57:34.381] [BidderMicroservice_195] EVENT=bid_sent | bidder_id=195, price=3060
+[04-05-2026 21:57:45.966] [BidderMicroservice_195] EVENT=shutdown | bidder_id=195

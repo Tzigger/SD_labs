@@ -1,0 +1,4 @@
+[04-05-2026 21:57:33.958] [BidderMicroservice_189] EVENT=cycle_start | bidder_id=189, name=Bidder 189, phone=0700000189, email=bidder189@mail.ro
+[04-05-2026 21:57:33.980] [BidderMicroservice_189] EVENT=bid_sent | bidder_id=189, price=3368
+[04-05-2026 21:57:33.984] [BidderMicroservice_189] EVENT=duplicate_sent | bidder_id=189, price=3368
+[04-05-2026 21:57:45.814] [BidderMicroservice_189] EVENT=shutdown | bidder_id=189

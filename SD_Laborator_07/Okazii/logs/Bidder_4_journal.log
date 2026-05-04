@@ -1,0 +1,38 @@
+[04-05-2026 21:54:37] [Bidder 4:56057] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 21:54:37] [Bidder 4:56057] Placing bid: licitez 9676
+[04-05-2026 21:54:37] [Bidder 4:56057] Waiting for auction result.
+[04-05-2026 21:54:58] [Bidder 4:56057] CYCLE_END: Auction result: Licitatie pierduta...
+[04-05-2026 21:56:25] [Bidder 4:56347] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 21:56:25] [Bidder 4:56347] Placing bid: licitez 5902
+[04-05-2026 21:56:25] [Bidder 4:56347] Waiting for auction result.
+[04-05-2026 21:56:42] [Bidder 4:56347] CYCLE_END: Auction result: Licitatie pierduta...
+[04-05-2026 21:57:23] [Bidder 4:56468] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 21:57:23] [Bidder 4:56468] Placing bid: licitez 3873
+[04-05-2026 21:57:23] [Bidder 4:56468] Sending duplicate (deduplication test).
+[04-05-2026 21:57:23] [Bidder 4:56468] Waiting for auction result.
+[04-05-2026 21:58:33] [Bidder 4:57034] RECOVERY: Ciclu anterior intrerupt. Oferta recuperata: licitez 3873.
+[04-05-2026 21:58:33] [Bidder 4:57034] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 21:58:33] [Bidder 4:57034] Placing bid: licitez 3873
+[04-05-2026 21:58:33] [Bidder 4:57034] Sending duplicate (deduplication test).
+[04-05-2026 21:58:33] [Bidder 4:57034] Waiting for auction result.
+[04-05-2026 21:58:54] [Bidder 4:57034] CYCLE_END: Auction result: Licitatie pierduta...
+[04-05-2026 22:15:15] [Bidder 4:57717] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 22:15:15] [Bidder 4:57717] Placing bid: licitez 4445
+[04-05-2026 22:15:15] [Bidder 4:57717] Sending duplicate (deduplication test).
+[04-05-2026 22:15:15] [Bidder 4:57717] Waiting for auction result.
+[04-05-2026 22:15:32] [Bidder 4:57717] CYCLE_END: Auction result: Licitatie pierduta...
+[04-05-2026 22:16:33] [Bidder 4:57849] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 22:16:33] [Bidder 4:57849] Placing bid: licitez 5800
+[04-05-2026 22:16:33] [Bidder 4:57849] Waiting for auction result.
+[04-05-2026 22:16:50] [Bidder 4:57849] CYCLE_END: Auction result: Licitatie pierduta...
+[04-05-2026 22:16:54] [Bidder 4:57945] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 22:16:54] [Bidder 4:57945] Placing bid: licitez 2890
+[04-05-2026 22:16:54] [Bidder 4:57945] Sending duplicate (deduplication test).
+[04-05-2026 22:16:54] [Bidder 4:57945] Waiting for auction result.
+[04-05-2026 22:17:10] [Bidder 4:57945] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:21:03] [Bidder 4:58714] RECOVERY: Ciclu anterior intrerupt. Oferta recuperata: licitez 2890.
+[04-05-2026 22:21:03] [Bidder 4:58714] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 4', phone='0700000004', email='bidder4@mail.ro'.
+[04-05-2026 22:21:03] [Bidder 4:58714] Placing bid: licitez 2890
+[04-05-2026 22:21:03] [Bidder 4:58714] Sending duplicate (deduplication test).
+[04-05-2026 22:21:03] [Bidder 4:58714] Waiting for auction result.
+[04-05-2026 22:21:23] [Bidder 4:58714] CYCLE_END: Auction result: Licitatie pierduta...

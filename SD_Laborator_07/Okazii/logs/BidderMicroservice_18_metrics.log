@@ -1,0 +1,33 @@
+[04-05-2026 21:54:38.114] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 21:54:38.136] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=5628
+[04-05-2026 21:54:58.631] [BidderMicroservice_18] EVENT=auction_result | bidder_id=18, result=Licitatie pierduta...
+[04-05-2026 21:54:58.637] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 21:56:25.901] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 21:56:25.922] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=5630
+[04-05-2026 21:56:25.926] [BidderMicroservice_18] EVENT=duplicate_sent | bidder_id=18, price=5630
+[04-05-2026 21:56:42.285] [BidderMicroservice_18] EVENT=auction_result | bidder_id=18, result=Licitatie pierduta...
+[04-05-2026 21:56:42.303] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 21:57:24.245] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 21:57:24.265] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=8385
+[04-05-2026 21:57:46.038] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 21:58:34.736] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 21:58:34.754] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=8385
+[04-05-2026 21:58:54.875] [BidderMicroservice_18] EVENT=auction_result | bidder_id=18, result=Licitatie pierduta...
+[04-05-2026 21:58:54.886] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 22:15:15.942] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 22:15:15.962] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=5489
+[04-05-2026 22:15:15.967] [BidderMicroservice_18] EVENT=duplicate_sent | bidder_id=18, price=5489
+[04-05-2026 22:15:32.342] [BidderMicroservice_18] EVENT=auction_result | bidder_id=18, result=Licitatie pierduta...
+[04-05-2026 22:15:32.361] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 22:16:34.060] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 22:16:34.079] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=9362
+[04-05-2026 22:16:50.455] [BidderMicroservice_18] EVENT=auction_result | bidder_id=18, result=Licitatie pierduta...
+[04-05-2026 22:16:50.477] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 22:16:54.811] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 22:16:54.830] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=5004
+[04-05-2026 22:17:10.323] [BidderMicroservice_18] EVENT=error | bidder_id=18, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:17:10.333] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18
+[04-05-2026 22:21:03.830] [BidderMicroservice_18] EVENT=cycle_start | bidder_id=18, name=Bidder 18, phone=0700000018, email=bidder18@mail.ro
+[04-05-2026 22:21:03.848] [BidderMicroservice_18] EVENT=bid_sent | bidder_id=18, price=5004
+[04-05-2026 22:21:23.728] [BidderMicroservice_18] EVENT=auction_result | bidder_id=18, result=Licitatie pierduta...
+[04-05-2026 22:21:23.789] [BidderMicroservice_18] EVENT=shutdown | bidder_id=18

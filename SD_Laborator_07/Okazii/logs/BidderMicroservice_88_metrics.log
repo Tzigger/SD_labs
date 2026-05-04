@@ -1,0 +1,11 @@
+[04-05-2026 21:54:42.364] [BidderMicroservice_88] EVENT=cycle_start | bidder_id=88, name=Bidder 88, phone=0700000088, email=bidder88@mail.ro
+[04-05-2026 21:54:42.418] [BidderMicroservice_88] EVENT=bid_sent | bidder_id=88, price=7288
+[04-05-2026 21:54:58.591] [BidderMicroservice_88] EVENT=auction_result | bidder_id=88, result=Licitatie pierduta...
+[04-05-2026 21:54:58.594] [BidderMicroservice_88] EVENT=shutdown | bidder_id=88
+[04-05-2026 21:57:28.207] [BidderMicroservice_88] EVENT=cycle_start | bidder_id=88, name=Bidder 88, phone=0700000088, email=bidder88@mail.ro
+[04-05-2026 21:57:28.228] [BidderMicroservice_88] EVENT=bid_sent | bidder_id=88, price=1669
+[04-05-2026 21:57:45.894] [BidderMicroservice_88] EVENT=shutdown | bidder_id=88
+[04-05-2026 22:21:07.811] [BidderMicroservice_88] EVENT=cycle_start | bidder_id=88, name=Bidder 88, phone=0700000088, email=bidder88@mail.ro
+[04-05-2026 22:21:07.840] [BidderMicroservice_88] EVENT=bid_sent | bidder_id=88, price=1669
+[04-05-2026 22:21:23.757] [BidderMicroservice_88] EVENT=auction_result | bidder_id=88, result=Licitatie pierduta...
+[04-05-2026 22:21:23.774] [BidderMicroservice_88] EVENT=shutdown | bidder_id=88

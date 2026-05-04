@@ -1,0 +1,12 @@
+[04-05-2026 21:54:42.009] [BidderMicroservice_82] EVENT=cycle_start | bidder_id=82, name=Bidder 82, phone=0700000082, email=bidder82@mail.ro
+[04-05-2026 21:54:42.041] [BidderMicroservice_82] EVENT=bid_sent | bidder_id=82, price=3715
+[04-05-2026 21:54:58.586] [BidderMicroservice_82] EVENT=auction_result | bidder_id=82, result=Licitatie pierduta...
+[04-05-2026 21:54:58.645] [BidderMicroservice_82] EVENT=shutdown | bidder_id=82
+[04-05-2026 21:57:27.870] [BidderMicroservice_82] EVENT=cycle_start | bidder_id=82, name=Bidder 82, phone=0700000082, email=bidder82@mail.ro
+[04-05-2026 21:57:27.892] [BidderMicroservice_82] EVENT=bid_sent | bidder_id=82, price=8560
+[04-05-2026 21:57:45.924] [BidderMicroservice_82] EVENT=shutdown | bidder_id=82
+[04-05-2026 22:21:07.491] [BidderMicroservice_82] EVENT=cycle_start | bidder_id=82, name=Bidder 82, phone=0700000082, email=bidder82@mail.ro
+[04-05-2026 22:21:07.523] [BidderMicroservice_82] EVENT=bid_sent | bidder_id=82, price=8560
+[04-05-2026 22:21:07.529] [BidderMicroservice_82] EVENT=duplicate_sent | bidder_id=82, price=8560
+[04-05-2026 22:21:23.823] [BidderMicroservice_82] EVENT=auction_result | bidder_id=82, result=Licitatie pierduta...
+[04-05-2026 22:21:23.829] [BidderMicroservice_82] EVENT=shutdown | bidder_id=82

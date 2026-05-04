@@ -1,0 +1,3 @@
+[04-05-2026 21:57:33.475] [BidderMicroservice_180] EVENT=cycle_start | bidder_id=180, name=Bidder 180, phone=0700000180, email=bidder180@mail.ro
+[04-05-2026 21:57:33.507] [BidderMicroservice_180] EVENT=bid_sent | bidder_id=180, price=2195
+[04-05-2026 21:57:45.854] [BidderMicroservice_180] EVENT=shutdown | bidder_id=180

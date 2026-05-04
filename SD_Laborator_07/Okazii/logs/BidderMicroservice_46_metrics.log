@@ -1,0 +1,11 @@
+[04-05-2026 21:54:39.722] [BidderMicroservice_46] EVENT=cycle_start | bidder_id=46, name=Bidder 46, phone=0700000046, email=bidder46@mail.ro
+[04-05-2026 21:54:39.744] [BidderMicroservice_46] EVENT=bid_sent | bidder_id=46, price=7117
+[04-05-2026 21:54:58.376] [BidderMicroservice_46] EVENT=auction_result | bidder_id=46, result=Licitatie pierduta...
+[04-05-2026 21:54:58.625] [BidderMicroservice_46] EVENT=shutdown | bidder_id=46
+[04-05-2026 21:57:25.823] [BidderMicroservice_46] EVENT=cycle_start | bidder_id=46, name=Bidder 46, phone=0700000046, email=bidder46@mail.ro
+[04-05-2026 21:57:25.843] [BidderMicroservice_46] EVENT=bid_sent | bidder_id=46, price=2171
+[04-05-2026 21:57:46.335] [BidderMicroservice_46] EVENT=shutdown | bidder_id=46
+[04-05-2026 22:21:05.403] [BidderMicroservice_46] EVENT=cycle_start | bidder_id=46, name=Bidder 46, phone=0700000046, email=bidder46@mail.ro
+[04-05-2026 22:21:05.422] [BidderMicroservice_46] EVENT=bid_sent | bidder_id=46, price=2171
+[04-05-2026 22:21:23.790] [BidderMicroservice_46] EVENT=auction_result | bidder_id=46, result=Licitatie pierduta...
+[04-05-2026 22:21:23.813] [BidderMicroservice_46] EVENT=shutdown | bidder_id=46

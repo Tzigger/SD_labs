@@ -1,0 +1,4 @@
+[04-05-2026 21:57:31.706] [BidderMicroservice_149] EVENT=cycle_start | bidder_id=149, name=Bidder 149, phone=0700000149, email=bidder149@mail.ro
+[04-05-2026 21:57:31.729] [BidderMicroservice_149] EVENT=bid_sent | bidder_id=149, price=9006
+[04-05-2026 21:57:31.734] [BidderMicroservice_149] EVENT=duplicate_sent | bidder_id=149, price=9006
+[04-05-2026 21:57:45.669] [BidderMicroservice_149] EVENT=shutdown | bidder_id=149

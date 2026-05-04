@@ -1,0 +1,14 @@
+[04-05-2026 21:54:40.507] [BidderMicroservice_60] EVENT=cycle_start | bidder_id=60, name=Bidder 60, phone=0700000060, email=bidder60@mail.ro
+[04-05-2026 21:54:40.530] [BidderMicroservice_60] EVENT=bid_sent | bidder_id=60, price=7091
+[04-05-2026 21:54:40.534] [BidderMicroservice_60] EVENT=duplicate_sent | bidder_id=60, price=7091
+[04-05-2026 21:54:58.461] [BidderMicroservice_60] EVENT=auction_result | bidder_id=60, result=Licitatie pierduta...
+[04-05-2026 21:54:58.549] [BidderMicroservice_60] EVENT=shutdown | bidder_id=60
+[04-05-2026 21:57:26.611] [BidderMicroservice_60] EVENT=cycle_start | bidder_id=60, name=Bidder 60, phone=0700000060, email=bidder60@mail.ro
+[04-05-2026 21:57:26.633] [BidderMicroservice_60] EVENT=bid_sent | bidder_id=60, price=2080
+[04-05-2026 21:57:46.042] [BidderMicroservice_60] EVENT=shutdown | bidder_id=60
+[04-05-2026 21:57:46.396] [BidderMicroservice_60] EVENT=error | bidder_id=60, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:21:06.282] [BidderMicroservice_60] EVENT=cycle_start | bidder_id=60, name=Bidder 60, phone=0700000060, email=bidder60@mail.ro
+[04-05-2026 22:21:06.316] [BidderMicroservice_60] EVENT=bid_sent | bidder_id=60, price=2080
+[04-05-2026 22:21:06.326] [BidderMicroservice_60] EVENT=duplicate_sent | bidder_id=60, price=2080
+[04-05-2026 22:21:23.769] [BidderMicroservice_60] EVENT=auction_result | bidder_id=60, result=Licitatie pierduta...
+[04-05-2026 22:21:23.811] [BidderMicroservice_60] EVENT=shutdown | bidder_id=60

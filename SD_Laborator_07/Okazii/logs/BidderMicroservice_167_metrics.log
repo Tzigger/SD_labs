@@ -1,0 +1,4 @@
+[04-05-2026 21:57:32.716] [BidderMicroservice_167] EVENT=cycle_start | bidder_id=167, name=Bidder 167, phone=0700000167, email=bidder167@mail.ro
+[04-05-2026 21:57:32.740] [BidderMicroservice_167] EVENT=bid_sent | bidder_id=167, price=2998
+[04-05-2026 21:57:46.030] [BidderMicroservice_167] EVENT=shutdown | bidder_id=167
+[04-05-2026 21:57:46.156] [BidderMicroservice_167] EVENT=error | bidder_id=167, message=AuctioneerMicroservice s-a deconectat.

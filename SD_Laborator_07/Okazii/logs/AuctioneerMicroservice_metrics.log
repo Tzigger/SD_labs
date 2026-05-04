@@ -1,56 +1,1671 @@
-[28-04-2026 16:12:18.755] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
-[28-04-2026 16:12:18.762] [AuctioneerMicroservice] EVENT=recovery_detected | journal_line=1
-[28-04-2026 16:12:18.764] [AuctioneerMicroservice] EVENT=recovery_empty 
-[28-04-2026 16:12:19.210] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/[0:0:0:0:0:0:0:1]:56305, total=1
-[28-04-2026 16:12:19.215] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=477
-[28-04-2026 16:15:18.516] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
-[28-04-2026 16:15:18.533] [AuctioneerMicroservice] EVENT=recovery_detected | journal_line=8
-[28-04-2026 16:15:18.536] [AuctioneerMicroservice] EVENT=recovery_empty 
-[28-04-2026 16:15:19.041] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56472, total=1
-[28-04-2026 16:15:19.088] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
-[28-04-2026 16:15:19.090] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56474, total=2
-[28-04-2026 16:15:19.118] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
-[28-04-2026 16:15:19.138] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56476, total=3
-[28-04-2026 16:15:19.172] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
-[28-04-2026 16:15:19.189] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56478, total=4
-[28-04-2026 16:15:19.223] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
-[28-04-2026 16:15:19.245] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56480, total=5
-[28-04-2026 16:15:19.279] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
-[28-04-2026 16:15:19.298] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56482, total=6
-[28-04-2026 16:15:19.333] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
-[28-04-2026 16:15:19.355] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56484, total=7
-[28-04-2026 16:15:19.390] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
-[28-04-2026 16:15:19.411] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56486, total=8
-[28-04-2026 16:15:19.446] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
-[28-04-2026 16:15:19.464] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56488, total=9
-[28-04-2026 16:15:19.498] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
-[28-04-2026 16:15:19.520] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56490, total=10
-[28-04-2026 16:15:19.555] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
-[28-04-2026 16:15:34.563] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=16066, bids=10
-[28-04-2026 16:15:49.631] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=31140
-[28-04-2026 16:17:49.064] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
-[28-04-2026 16:17:49.071] [AuctioneerMicroservice] EVENT=recovery_detected | journal_line=48
-[28-04-2026 16:17:49.075] [AuctioneerMicroservice] EVENT=recovery_loaded | bids=10
-[28-04-2026 16:17:49.121] [AuctioneerMicroservice] EVENT=recovery_complete | forwarded=10
-[28-04-2026 16:17:49.590] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56679, total=1
-[28-04-2026 16:17:49.629] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56679, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 3486
-[28-04-2026 16:17:49.629] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56681, total=2
-[28-04-2026 16:17:49.665] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56681, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6577
-[28-04-2026 16:17:49.684] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56683, total=3
-[28-04-2026 16:17:49.718] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56683, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 8211
-[28-04-2026 16:17:49.739] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56685, total=4
-[28-04-2026 16:17:49.773] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56685, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 6959
-[28-04-2026 16:17:49.796] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56687, total=5
-[28-04-2026 16:17:49.830] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56687, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 7576
-[28-04-2026 16:17:49.849] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56689, total=6
-[28-04-2026 16:17:49.884] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56689, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9487
-[28-04-2026 16:17:49.902] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56691, total=7
-[28-04-2026 16:17:49.937] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56691, body=Stan|phone=0760112233|email=ioana@mail.ro|] licitez 1788
-[28-04-2026 16:17:49.959] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56693, total=8
-[28-04-2026 16:17:49.994] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56693, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 1272
-[28-04-2026 16:17:50.015] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56695, total=9
-[28-04-2026 16:17:50.049] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56695, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 3872
-[28-04-2026 16:17:50.073] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56697, total=10
-[28-04-2026 16:17:50.108] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56697, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9334
-[28-04-2026 16:18:05.112] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=16061, bids=10
-[28-04-2026 16:18:05.116] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=16071
+[04-05-2026 21:54:36.607] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 21:54:36.611] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 21:54:37.151] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56051, total=1
+[04-05-2026 21:54:37.209] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56051, body=licitez 3685
+[04-05-2026 21:54:37.213] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56051, body=licitez 3685
+[04-05-2026 21:54:37.214] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56053, total=2
+[04-05-2026 21:54:37.231] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56053, body=licitez 4196
+[04-05-2026 21:54:37.245] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56055, total=3
+[04-05-2026 21:54:37.286] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56055, body=licitez 2070
+[04-05-2026 21:54:37.286] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56055, body=licitez 2070
+[04-05-2026 21:54:37.298] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56057, total=4
+[04-05-2026 21:54:37.337] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56057, body=licitez 9676
+[04-05-2026 21:54:37.354] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56059, total=5
+[04-05-2026 21:54:37.394] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56059, body=licitez 9196
+[04-05-2026 21:54:37.411] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56061, total=6
+[04-05-2026 21:54:37.451] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56061, body=licitez 2683
+[04-05-2026 21:54:37.452] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56061, body=licitez 2683
+[04-05-2026 21:54:37.467] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56063, total=7
+[04-05-2026 21:54:37.508] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56063, body=licitez 5724
+[04-05-2026 21:54:37.527] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56065, total=8
+[04-05-2026 21:54:37.571] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56065, body=licitez 9746
+[04-05-2026 21:54:37.587] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56067, total=9
+[04-05-2026 21:54:37.636] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56067, body=licitez 4107
+[04-05-2026 21:54:37.653] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56069, total=10
+[04-05-2026 21:54:37.695] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56069, body=licitez 5655
+[04-05-2026 21:54:37.695] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56069, body=licitez 5655
+[04-05-2026 21:54:37.707] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56071, total=11
+[04-05-2026 21:54:37.747] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56071, body=licitez 6736
+[04-05-2026 21:54:37.747] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56071, body=licitez 6736
+[04-05-2026 21:54:37.759] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56073, total=12
+[04-05-2026 21:54:37.804] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56073, body=licitez 8334
+[04-05-2026 21:54:37.821] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56075, total=13
+[04-05-2026 21:54:37.871] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56075, body=licitez 7851
+[04-05-2026 21:54:37.872] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56075, body=licitez 7851
+[04-05-2026 21:54:37.880] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56077, total=14
+[04-05-2026 21:54:37.929] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56077, body=licitez 8849
+[04-05-2026 21:54:37.930] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56077, body=licitez 8849
+[04-05-2026 21:54:37.938] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56079, total=15
+[04-05-2026 21:54:37.984] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56079, body=licitez 7614
+[04-05-2026 21:54:37.988] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56083, total=16
+[04-05-2026 21:54:38.033] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56083, body=licitez 6929
+[04-05-2026 21:54:38.040] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56085, total=17
+[04-05-2026 21:54:38.082] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56085, body=licitez 7051
+[04-05-2026 21:54:38.083] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56085, body=licitez 7051
+[04-05-2026 21:54:38.097] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56087, total=18
+[04-05-2026 21:54:38.144] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56087, body=licitez 5628
+[04-05-2026 21:54:38.158] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56089, total=19
+[04-05-2026 21:54:38.209] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56089, body=licitez 7562
+[04-05-2026 21:54:38.210] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56089, body=licitez 7562
+[04-05-2026 21:54:38.244] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56091, total=20
+[04-05-2026 21:54:38.294] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56091, body=licitez 7971
+[04-05-2026 21:54:38.304] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56093, total=21
+[04-05-2026 21:54:38.354] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56093, body=licitez 7921
+[04-05-2026 21:54:38.355] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56093, body=licitez 7921
+[04-05-2026 21:54:38.355] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56095, total=22
+[04-05-2026 21:54:38.386] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56095, body=licitez 5044
+[04-05-2026 21:54:38.391] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56097, total=23
+[04-05-2026 21:54:38.437] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56097, body=licitez 2386
+[04-05-2026 21:54:38.447] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56099, total=24
+[04-05-2026 21:54:38.496] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56099, body=licitez 3088
+[04-05-2026 21:54:38.503] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56101, total=25
+[04-05-2026 21:54:38.566] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56101, body=licitez 5175
+[04-05-2026 21:54:38.566] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56101, body=licitez 5175
+[04-05-2026 21:54:38.582] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56103, total=26
+[04-05-2026 21:54:38.639] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56103, body=licitez 8543
+[04-05-2026 21:54:38.640] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56103, body=licitez 8543
+[04-05-2026 21:54:38.644] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56105, total=27
+[04-05-2026 21:54:38.695] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56105, body=licitez 6896
+[04-05-2026 21:54:38.697] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56107, total=28
+[04-05-2026 21:54:38.748] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56107, body=licitez 4322
+[04-05-2026 21:54:38.749] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56107, body=licitez 4322
+[04-05-2026 21:54:38.753] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56109, total=29
+[04-05-2026 21:54:38.829] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56109, body=licitez 4542
+[04-05-2026 21:54:38.830] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56109, body=licitez 4542
+[04-05-2026 21:54:38.831] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56111, total=30
+[04-05-2026 21:54:38.925] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56111, body=licitez 7061
+[04-05-2026 21:54:38.926] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56111, body=licitez 7061
+[04-05-2026 21:54:38.957] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56113, total=31
+[04-05-2026 21:54:39.025] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56113, body=licitez 4948
+[04-05-2026 21:54:39.026] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56113, body=licitez 4948
+[04-05-2026 21:54:39.026] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56115, total=32
+[04-05-2026 21:54:39.057] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56115, body=licitez 4840
+[04-05-2026 21:54:39.058] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56116, total=33
+[04-05-2026 21:54:39.077] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56116, body=licitez 5887
+[04-05-2026 21:54:39.078] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56116, body=licitez 5887
+[04-05-2026 21:54:39.078] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56119, total=34
+[04-05-2026 21:54:39.106] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56119, body=licitez 9486
+[04-05-2026 21:54:39.106] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56119, body=licitez 9486
+[04-05-2026 21:54:39.106] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56121, total=35
+[04-05-2026 21:54:39.158] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56121, body=licitez 1082
+[04-05-2026 21:54:39.158] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56121, body=licitez 1082
+[04-05-2026 21:54:39.158] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56123, total=36
+[04-05-2026 21:54:39.203] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56123, body=licitez 4539
+[04-05-2026 21:54:39.204] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56123, body=licitez 4539
+[04-05-2026 21:54:39.205] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56125, total=37
+[04-05-2026 21:54:39.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56125, body=licitez 8019
+[04-05-2026 21:54:39.263] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56127, total=38
+[04-05-2026 21:54:39.309] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56127, body=licitez 2000
+[04-05-2026 21:54:39.309] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56127, body=licitez 2000
+[04-05-2026 21:54:39.320] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56129, total=39
+[04-05-2026 21:54:39.364] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56129, body=licitez 1043
+[04-05-2026 21:54:39.364] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56129, body=licitez 1043
+[04-05-2026 21:54:39.373] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56131, total=40
+[04-05-2026 21:54:39.419] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56131, body=licitez 1052
+[04-05-2026 21:54:39.419] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56131, body=licitez 1052
+[04-05-2026 21:54:39.428] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56133, total=41
+[04-05-2026 21:54:39.483] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56133, body=licitez 3777
+[04-05-2026 21:54:39.484] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56133, body=licitez 3777
+[04-05-2026 21:54:39.487] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56135, total=42
+[04-05-2026 21:54:39.530] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56135, body=licitez 9046
+[04-05-2026 21:54:39.530] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56135, body=licitez 9046
+[04-05-2026 21:54:39.543] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56137, total=43
+[04-05-2026 21:54:39.584] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56137, body=licitez 7494
+[04-05-2026 21:54:39.594] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56139, total=44
+[04-05-2026 21:54:39.636] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56139, body=licitez 7057
+[04-05-2026 21:54:39.637] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56139, body=licitez 7057
+[04-05-2026 21:54:39.651] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56141, total=45
+[04-05-2026 21:54:39.694] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56141, body=licitez 1127
+[04-05-2026 21:54:39.707] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56143, total=46
+[04-05-2026 21:54:39.749] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56143, body=licitez 7117
+[04-05-2026 21:54:39.764] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56145, total=47
+[04-05-2026 21:54:39.805] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56145, body=licitez 6304
+[04-05-2026 21:54:39.818] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56147, total=48
+[04-05-2026 21:54:39.862] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56147, body=licitez 9220
+[04-05-2026 21:54:39.862] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56147, body=licitez 9220
+[04-05-2026 21:54:39.878] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56149, total=49
+[04-05-2026 21:54:39.920] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56149, body=licitez 1629
+[04-05-2026 21:54:39.933] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56151, total=50
+[04-05-2026 21:54:39.978] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56151, body=licitez 7882
+[04-05-2026 21:54:39.999] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56153, total=51
+[04-05-2026 21:54:40.042] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56153, body=licitez 2149
+[04-05-2026 21:54:40.043] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56153, body=licitez 2149
+[04-05-2026 21:54:40.046] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56155, total=52
+[04-05-2026 21:54:40.087] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56155, body=licitez 5446
+[04-05-2026 21:54:40.098] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56157, total=53
+[04-05-2026 21:54:40.138] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56157, body=licitez 6879
+[04-05-2026 21:54:40.148] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56159, total=54
+[04-05-2026 21:54:40.191] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56159, body=licitez 8561
+[04-05-2026 21:54:40.203] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56161, total=55
+[04-05-2026 21:54:40.246] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56161, body=licitez 7242
+[04-05-2026 21:54:40.259] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56163, total=56
+[04-05-2026 21:54:40.300] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56163, body=licitez 3347
+[04-05-2026 21:54:40.300] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56163, body=licitez 3347
+[04-05-2026 21:54:40.324] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56165, total=57
+[04-05-2026 21:54:40.369] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56165, body=licitez 6042
+[04-05-2026 21:54:40.369] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56165, body=licitez 6042
+[04-05-2026 21:54:40.382] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56167, total=58
+[04-05-2026 21:54:40.426] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56167, body=licitez 1447
+[04-05-2026 21:54:40.434] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56169, total=59
+[04-05-2026 21:54:40.480] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56169, body=licitez 8911
+[04-05-2026 21:54:40.481] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56169, body=licitez 8911
+[04-05-2026 21:54:40.493] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56171, total=60
+[04-05-2026 21:54:40.535] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56171, body=licitez 7091
+[04-05-2026 21:54:40.535] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56171, body=licitez 7091
+[04-05-2026 21:54:40.541] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56173, total=61
+[04-05-2026 21:54:40.580] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56173, body=licitez 7847
+[04-05-2026 21:54:40.597] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56175, total=62
+[04-05-2026 21:54:40.640] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56175, body=licitez 7437
+[04-05-2026 21:54:40.640] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56175, body=licitez 7437
+[04-05-2026 21:54:40.654] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56177, total=63
+[04-05-2026 21:54:40.695] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56177, body=licitez 2816
+[04-05-2026 21:54:40.695] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56177, body=licitez 2816
+[04-05-2026 21:54:40.731] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56179, total=64
+[04-05-2026 21:54:40.974] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56179, body=licitez 4040
+[04-05-2026 21:54:40.974] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56179, body=licitez 4040
+[04-05-2026 21:54:40.996] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56184, total=65
+[04-05-2026 21:54:41.165] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56184, body=licitez 2188
+[04-05-2026 21:54:41.166] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56184, body=licitez 2188
+[04-05-2026 21:54:41.167] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56186, total=66
+[04-05-2026 21:54:41.342] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56186, body=licitez 1230
+[04-05-2026 21:54:41.342] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56190, total=67
+[04-05-2026 21:54:41.423] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56190, body=licitez 4734
+[04-05-2026 21:54:41.424] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56191, total=68
+[04-05-2026 21:54:41.458] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56191, body=licitez 6318
+[04-05-2026 21:54:41.459] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56195, total=69
+[04-05-2026 21:54:41.459] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56195, body=licitez 4032
+[04-05-2026 21:54:41.459] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56196, total=70
+[04-05-2026 21:54:41.470] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56196, body=licitez 8224
+[04-05-2026 21:54:41.471] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56196, body=licitez 8224
+[04-05-2026 21:54:41.471] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56199, total=71
+[04-05-2026 21:54:41.586] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56199, body=licitez 6398
+[04-05-2026 21:54:41.588] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56199, body=licitez 6398
+[04-05-2026 21:54:41.589] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56201, total=72
+[04-05-2026 21:54:41.589] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56201, body=licitez 6128
+[04-05-2026 21:54:41.590] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56201, body=licitez 6128
+[04-05-2026 21:54:41.590] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56202, total=73
+[04-05-2026 21:54:41.591] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56202, body=licitez 1129
+[04-05-2026 21:54:41.591] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56206, total=74
+[04-05-2026 21:54:41.664] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56206, body=licitez 2917
+[04-05-2026 21:54:41.665] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56206, body=licitez 2917
+[04-05-2026 21:54:41.666] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56207, total=75
+[04-05-2026 21:54:41.681] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56207, body=licitez 3444
+[04-05-2026 21:54:41.682] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56211, total=76
+[04-05-2026 21:54:41.738] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56211, body=licitez 8550
+[04-05-2026 21:54:41.739] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56212, total=77
+[04-05-2026 21:54:41.747] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56212, body=licitez 5050
+[04-05-2026 21:54:41.748] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56212, body=licitez 5050
+[04-05-2026 21:54:41.764] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56216, total=78
+[04-05-2026 21:54:41.833] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56216, body=licitez 9127
+[04-05-2026 21:54:41.834] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56216, body=licitez 9127
+[04-05-2026 21:54:41.834] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56217, total=79
+[04-05-2026 21:54:41.860] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56217, body=licitez 5892
+[04-05-2026 21:54:41.860] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56221, total=80
+[04-05-2026 21:54:41.916] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56221, body=licitez 5088
+[04-05-2026 21:54:41.916] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56225, total=81
+[04-05-2026 21:54:41.992] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56225, body=licitez 2818
+[04-05-2026 21:54:41.993] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56225, body=licitez 2818
+[04-05-2026 21:54:41.993] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56227, total=82
+[04-05-2026 21:54:42.049] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56227, body=licitez 3715
+[04-05-2026 21:54:42.050] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56229, total=83
+[04-05-2026 21:54:42.091] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56229, body=licitez 4559
+[04-05-2026 21:54:42.092] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56231, total=84
+[04-05-2026 21:54:42.152] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56231, body=licitez 2065
+[04-05-2026 21:54:42.152] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56233, total=85
+[04-05-2026 21:54:42.218] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56233, body=licitez 9634
+[04-05-2026 21:54:42.219] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56233, body=licitez 9634
+[04-05-2026 21:54:42.219] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56235, total=86
+[04-05-2026 21:54:42.301] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56235, body=licitez 2255
+[04-05-2026 21:54:42.302] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56235, body=licitez 2255
+[04-05-2026 21:54:42.302] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56237, total=87
+[04-05-2026 21:54:42.356] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56237, body=licitez 9251
+[04-05-2026 21:54:42.357] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56239, total=88
+[04-05-2026 21:54:42.428] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56239, body=licitez 7288
+[04-05-2026 21:54:42.429] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56241, total=89
+[04-05-2026 21:54:42.522] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56241, body=licitez 2382
+[04-05-2026 21:54:42.522] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56241, body=licitez 2382
+[04-05-2026 21:54:42.523] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56243, total=90
+[04-05-2026 21:54:42.598] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56243, body=licitez 9132
+[04-05-2026 21:54:42.599] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56243, body=licitez 9132
+[04-05-2026 21:54:42.602] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56245, total=91
+[04-05-2026 21:54:42.739] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56245, body=licitez 9721
+[04-05-2026 21:54:42.739] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56247, total=92
+[04-05-2026 21:54:42.742] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56247, body=licitez 8748
+[04-05-2026 21:54:42.742] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56247, body=licitez 8748
+[04-05-2026 21:54:42.743] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56249, total=93
+[04-05-2026 21:54:42.770] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56249, body=licitez 8060
+[04-05-2026 21:54:42.770] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56251, total=94
+[04-05-2026 21:54:42.854] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56251, body=licitez 6744
+[04-05-2026 21:54:42.855] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56253, total=95
+[04-05-2026 21:54:42.877] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56253, body=licitez 5133
+[04-05-2026 21:54:42.877] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56253, body=licitez 5133
+[04-05-2026 21:54:42.878] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56255, total=96
+[04-05-2026 21:54:42.960] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56255, body=licitez 2409
+[04-05-2026 21:54:42.960] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56256, total=97
+[04-05-2026 21:54:43.006] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56256, body=licitez 1924
+[04-05-2026 21:54:43.007] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56258, total=98
+[04-05-2026 21:54:43.020] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56258, body=licitez 4550
+[04-05-2026 21:54:43.027] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56258, body=licitez 4550
+[04-05-2026 21:54:43.028] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56261, total=99
+[04-05-2026 21:54:43.084] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56261, body=licitez 8748
+[04-05-2026 21:54:43.085] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56261, body=licitez 8748
+[04-05-2026 21:54:43.085] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56263, total=100
+[04-05-2026 21:54:43.114] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56263, body=licitez 8737
+[04-05-2026 21:54:43.114] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56263, body=licitez 8737
+[04-05-2026 21:54:58.127] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=21536, bids=152
+[04-05-2026 21:54:58.281] [AuctioneerMicroservice] EVENT=auction_result | winner=/127.0.0.1:56065, price=9746
+[04-05-2026 21:54:58.301] [AuctioneerMicroservice] EVENT=cycle_end | duration_ms=21703, notified=100
+[04-05-2026 21:54:58.492] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=21911
+[04-05-2026 21:55:07.846] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 21:55:07.850] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 21:55:08.360] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56288, total=1
+[04-05-2026 21:55:08.405] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56288, body=licitez 2018
+[04-05-2026 21:55:08.541] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56290, total=2
+[04-05-2026 21:55:08.577] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56290, body=licitez 2449
+[04-05-2026 21:55:08.577] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56290, body=licitez 2449
+[04-05-2026 21:55:08.753] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56292, total=3
+[04-05-2026 21:55:08.788] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56292, body=licitez 3042
+[04-05-2026 21:55:08.789] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56292, body=licitez 3042
+[04-05-2026 21:55:16.465] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=8644
+[04-05-2026 21:56:24.459] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 21:56:24.463] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 21:56:24.939] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56341, total=1
+[04-05-2026 21:56:24.990] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56341, body=licitez 2018
+[04-05-2026 21:56:24.995] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56343, total=2
+[04-05-2026 21:56:25.036] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56343, body=licitez 2449
+[04-05-2026 21:56:25.037] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56343, body=licitez 2449
+[04-05-2026 21:56:25.048] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56345, total=3
+[04-05-2026 21:56:25.089] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56345, body=licitez 3042
+[04-05-2026 21:56:25.090] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56345, body=licitez 3042
+[04-05-2026 21:56:25.099] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56347, total=4
+[04-05-2026 21:56:25.139] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56347, body=licitez 5902
+[04-05-2026 21:56:25.153] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56349, total=5
+[04-05-2026 21:56:25.193] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56349, body=licitez 1341
+[04-05-2026 21:56:25.209] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56351, total=6
+[04-05-2026 21:56:25.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56351, body=licitez 3670
+[04-05-2026 21:56:25.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56351, body=licitez 3670
+[04-05-2026 21:56:25.268] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56353, total=7
+[04-05-2026 21:56:25.307] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56353, body=licitez 4644
+[04-05-2026 21:56:25.308] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56353, body=licitez 4644
+[04-05-2026 21:56:25.323] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56355, total=8
+[04-05-2026 21:56:25.361] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56355, body=licitez 1295
+[04-05-2026 21:56:25.381] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56357, total=9
+[04-05-2026 21:56:25.420] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56357, body=licitez 9920
+[04-05-2026 21:56:25.420] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56357, body=licitez 9920
+[04-05-2026 21:56:25.436] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56359, total=10
+[04-05-2026 21:56:25.476] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56359, body=licitez 4093
+[04-05-2026 21:56:25.476] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56359, body=licitez 4093
+[04-05-2026 21:56:25.491] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56361, total=11
+[04-05-2026 21:56:25.531] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56361, body=licitez 8842
+[04-05-2026 21:56:25.532] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56361, body=licitez 8842
+[04-05-2026 21:56:25.547] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56363, total=12
+[04-05-2026 21:56:25.587] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56363, body=licitez 3110
+[04-05-2026 21:56:25.587] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56363, body=licitez 3110
+[04-05-2026 21:56:25.604] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56365, total=13
+[04-05-2026 21:56:25.644] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56365, body=licitez 5390
+[04-05-2026 21:56:25.660] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56367, total=14
+[04-05-2026 21:56:25.699] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56367, body=licitez 1982
+[04-05-2026 21:56:25.700] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56367, body=licitez 1982
+[04-05-2026 21:56:25.716] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56369, total=15
+[04-05-2026 21:56:25.754] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56369, body=licitez 6242
+[04-05-2026 21:56:25.771] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56371, total=16
+[04-05-2026 21:56:25.812] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56371, body=licitez 4136
+[04-05-2026 21:56:25.812] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56371, body=licitez 4136
+[04-05-2026 21:56:25.829] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56373, total=17
+[04-05-2026 21:56:25.868] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56373, body=licitez 9346
+[04-05-2026 21:56:25.886] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56375, total=18
+[04-05-2026 21:56:25.927] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56375, body=licitez 5630
+[04-05-2026 21:56:25.927] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56375, body=licitez 5630
+[04-05-2026 21:56:25.939] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56377, total=19
+[04-05-2026 21:56:25.979] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56377, body=licitez 2440
+[04-05-2026 21:56:25.997] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56379, total=20
+[04-05-2026 21:56:26.039] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56379, body=licitez 6661
+[04-05-2026 21:56:26.040] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56379, body=licitez 6661
+[04-05-2026 21:56:26.060] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56381, total=21
+[04-05-2026 21:56:26.100] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56381, body=licitez 1458
+[04-05-2026 21:56:26.113] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56383, total=22
+[04-05-2026 21:56:26.153] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56383, body=licitez 1395
+[04-05-2026 21:56:26.172] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56385, total=23
+[04-05-2026 21:56:26.212] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56385, body=licitez 7475
+[04-05-2026 21:56:26.224] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56387, total=24
+[04-05-2026 21:56:26.264] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56387, body=licitez 3693
+[04-05-2026 21:56:26.264] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56387, body=licitez 3693
+[04-05-2026 21:56:26.280] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56389, total=25
+[04-05-2026 21:56:26.320] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56389, body=licitez 6082
+[04-05-2026 21:56:26.336] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56391, total=26
+[04-05-2026 21:56:26.375] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56391, body=licitez 5604
+[04-05-2026 21:56:26.394] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56393, total=27
+[04-05-2026 21:56:26.434] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56393, body=licitez 8165
+[04-05-2026 21:56:26.434] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56393, body=licitez 8165
+[04-05-2026 21:56:26.452] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56395, total=28
+[04-05-2026 21:56:26.492] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56395, body=licitez 9005
+[04-05-2026 21:56:26.493] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56395, body=licitez 9005
+[04-05-2026 21:56:26.511] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56397, total=29
+[04-05-2026 21:56:26.553] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56397, body=licitez 9590
+[04-05-2026 21:56:26.554] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56397, body=licitez 9590
+[04-05-2026 21:56:26.567] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56399, total=30
+[04-05-2026 21:56:26.606] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56399, body=licitez 5271
+[04-05-2026 21:56:26.623] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56401, total=31
+[04-05-2026 21:56:26.662] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56401, body=licitez 6700
+[04-05-2026 21:56:26.680] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56403, total=32
+[04-05-2026 21:56:26.720] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56403, body=licitez 7787
+[04-05-2026 21:56:26.720] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56403, body=licitez 7787
+[04-05-2026 21:56:26.737] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56405, total=33
+[04-05-2026 21:56:26.776] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56405, body=licitez 9918
+[04-05-2026 21:56:26.792] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56407, total=34
+[04-05-2026 21:56:26.832] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56407, body=licitez 9200
+[04-05-2026 21:56:26.833] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56407, body=licitez 9200
+[04-05-2026 21:56:26.847] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56409, total=35
+[04-05-2026 21:56:26.887] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56409, body=licitez 5105
+[04-05-2026 21:56:26.888] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56409, body=licitez 5105
+[04-05-2026 21:56:26.904] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56411, total=36
+[04-05-2026 21:56:26.946] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56411, body=licitez 7903
+[04-05-2026 21:56:26.946] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56411, body=licitez 7903
+[04-05-2026 21:56:26.958] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56413, total=37
+[04-05-2026 21:56:27.000] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56413, body=licitez 3180
+[04-05-2026 21:56:27.000] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56413, body=licitez 3180
+[04-05-2026 21:56:27.013] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56415, total=38
+[04-05-2026 21:56:27.054] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56415, body=licitez 5419
+[04-05-2026 21:56:27.076] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56417, total=39
+[04-05-2026 21:56:27.118] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56417, body=licitez 3891
+[04-05-2026 21:56:27.128] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56419, total=40
+[04-05-2026 21:56:27.165] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56419, body=licitez 2664
+[04-05-2026 21:56:27.165] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56419, body=licitez 2664
+[04-05-2026 21:56:42.171] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=17735, bids=62
+[04-05-2026 21:56:42.275] [AuctioneerMicroservice] EVENT=auction_result | winner=/127.0.0.1:56357, price=9920
+[04-05-2026 21:56:42.282] [AuctioneerMicroservice] EVENT=cycle_end | duration_ms=17847, notified=40
+[04-05-2026 21:56:42.303] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=17871
+[04-05-2026 21:57:23.063] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 21:57:23.067] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 21:57:23.278] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56462, total=1
+[04-05-2026 21:57:23.327] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56462, body=licitez 1400
+[04-05-2026 21:57:23.331] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56462, body=licitez 1400
+[04-05-2026 21:57:23.331] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56464, total=2
+[04-05-2026 21:57:23.375] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56464, body=licitez 1140
+[04-05-2026 21:57:23.387] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56466, total=3
+[04-05-2026 21:57:23.430] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56466, body=licitez 7581
+[04-05-2026 21:57:23.441] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56468, total=4
+[04-05-2026 21:57:23.480] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56468, body=licitez 3873
+[04-05-2026 21:57:23.481] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56468, body=licitez 3873
+[04-05-2026 21:57:23.495] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56470, total=5
+[04-05-2026 21:57:23.535] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56470, body=licitez 7818
+[04-05-2026 21:57:23.551] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56472, total=6
+[04-05-2026 21:57:23.592] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56472, body=licitez 9785
+[04-05-2026 21:57:23.592] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56472, body=licitez 9785
+[04-05-2026 21:57:23.609] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56474, total=7
+[04-05-2026 21:57:23.649] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56474, body=licitez 1823
+[04-05-2026 21:57:23.664] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56476, total=8
+[04-05-2026 21:57:23.703] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56476, body=licitez 3927
+[04-05-2026 21:57:23.704] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56476, body=licitez 3927
+[04-05-2026 21:57:23.722] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56478, total=9
+[04-05-2026 21:57:23.762] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56478, body=licitez 2873
+[04-05-2026 21:57:23.776] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56480, total=10
+[04-05-2026 21:57:23.814] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56480, body=licitez 6463
+[04-05-2026 21:57:23.835] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56482, total=11
+[04-05-2026 21:57:23.875] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56482, body=licitez 9446
+[04-05-2026 21:57:23.875] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56482, body=licitez 9446
+[04-05-2026 21:57:23.891] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56484, total=12
+[04-05-2026 21:57:23.932] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56484, body=licitez 8376
+[04-05-2026 21:57:23.949] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56486, total=13
+[04-05-2026 21:57:23.989] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56486, body=licitez 1277
+[04-05-2026 21:57:23.990] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56486, body=licitez 1277
+[04-05-2026 21:57:24.006] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56488, total=14
+[04-05-2026 21:57:24.046] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56488, body=licitez 5260
+[04-05-2026 21:57:24.062] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56490, total=15
+[04-05-2026 21:57:24.101] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56490, body=licitez 9300
+[04-05-2026 21:57:24.118] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56492, total=16
+[04-05-2026 21:57:24.157] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56492, body=licitez 7790
+[04-05-2026 21:57:24.157] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56492, body=licitez 7790
+[04-05-2026 21:57:24.173] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56494, total=17
+[04-05-2026 21:57:24.212] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56494, body=licitez 7920
+[04-05-2026 21:57:24.230] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56496, total=18
+[04-05-2026 21:57:24.269] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56496, body=licitez 8385
+[04-05-2026 21:57:24.286] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56498, total=19
+[04-05-2026 21:57:24.326] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56498, body=licitez 4939
+[04-05-2026 21:57:24.326] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56498, body=licitez 4939
+[04-05-2026 21:57:24.343] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56500, total=20
+[04-05-2026 21:57:24.390] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56500, body=licitez 8545
+[04-05-2026 21:57:24.391] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56500, body=licitez 8545
+[04-05-2026 21:57:24.405] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56502, total=21
+[04-05-2026 21:57:24.446] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56502, body=licitez 5877
+[04-05-2026 21:57:24.459] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56504, total=22
+[04-05-2026 21:57:24.499] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56504, body=licitez 4834
+[04-05-2026 21:57:24.500] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56504, body=licitez 4834
+[04-05-2026 21:57:24.516] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56506, total=23
+[04-05-2026 21:57:24.557] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56506, body=licitez 1638
+[04-05-2026 21:57:24.572] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56508, total=24
+[04-05-2026 21:57:24.611] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56508, body=licitez 8778
+[04-05-2026 21:57:24.627] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56510, total=25
+[04-05-2026 21:57:24.666] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56510, body=licitez 5655
+[04-05-2026 21:57:24.683] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56512, total=26
+[04-05-2026 21:57:24.723] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56512, body=licitez 8370
+[04-05-2026 21:57:24.723] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56512, body=licitez 8370
+[04-05-2026 21:57:24.740] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56514, total=27
+[04-05-2026 21:57:24.780] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56514, body=licitez 4405
+[04-05-2026 21:57:24.796] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56516, total=28
+[04-05-2026 21:57:24.835] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56516, body=licitez 4791
+[04-05-2026 21:57:24.836] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56516, body=licitez 4791
+[04-05-2026 21:57:24.852] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56518, total=29
+[04-05-2026 21:57:24.893] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56518, body=licitez 9482
+[04-05-2026 21:57:24.893] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56518, body=licitez 9482
+[04-05-2026 21:57:24.909] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56520, total=30
+[04-05-2026 21:57:24.948] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56520, body=licitez 6336
+[04-05-2026 21:57:24.948] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56520, body=licitez 6336
+[04-05-2026 21:57:24.964] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56522, total=31
+[04-05-2026 21:57:25.004] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56522, body=licitez 3621
+[04-05-2026 21:57:25.004] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56522, body=licitez 3621
+[04-05-2026 21:57:25.021] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56524, total=32
+[04-05-2026 21:57:25.061] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56524, body=licitez 6819
+[04-05-2026 21:57:25.061] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56524, body=licitez 6819
+[04-05-2026 21:57:25.080] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56526, total=33
+[04-05-2026 21:57:25.119] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56526, body=licitez 3637
+[04-05-2026 21:57:25.133] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56528, total=34
+[04-05-2026 21:57:25.171] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56528, body=licitez 7215
+[04-05-2026 21:57:25.190] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56530, total=35
+[04-05-2026 21:57:25.229] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56530, body=licitez 7651
+[04-05-2026 21:57:25.246] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56532, total=36
+[04-05-2026 21:57:25.285] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56532, body=licitez 3355
+[04-05-2026 21:57:25.286] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56532, body=licitez 3355
+[04-05-2026 21:57:25.300] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56534, total=37
+[04-05-2026 21:57:25.339] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56534, body=licitez 7120
+[04-05-2026 21:57:25.356] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56536, total=38
+[04-05-2026 21:57:25.416] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56536, body=licitez 3953
+[04-05-2026 21:57:25.416] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56536, body=licitez 3953
+[04-05-2026 21:57:25.433] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56538, total=39
+[04-05-2026 21:57:25.473] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56538, body=licitez 9602
+[04-05-2026 21:57:25.477] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56540, total=40
+[04-05-2026 21:57:25.518] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56540, body=licitez 9381
+[04-05-2026 21:57:25.519] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56540, body=licitez 9381
+[04-05-2026 21:57:25.533] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56542, total=41
+[04-05-2026 21:57:25.574] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56542, body=licitez 6116
+[04-05-2026 21:57:25.585] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56544, total=42
+[04-05-2026 21:57:25.624] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56544, body=licitez 5582
+[04-05-2026 21:57:25.640] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56546, total=43
+[04-05-2026 21:57:25.679] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56546, body=licitez 8661
+[04-05-2026 21:57:25.700] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56548, total=44
+[04-05-2026 21:57:25.740] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56548, body=licitez 8065
+[04-05-2026 21:57:25.752] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56550, total=45
+[04-05-2026 21:57:25.792] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56550, body=licitez 9424
+[04-05-2026 21:57:25.793] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56550, body=licitez 9424
+[04-05-2026 21:57:25.808] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56552, total=46
+[04-05-2026 21:57:25.847] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56552, body=licitez 2171
+[04-05-2026 21:57:25.864] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56554, total=47
+[04-05-2026 21:57:25.905] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56554, body=licitez 3388
+[04-05-2026 21:57:25.906] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56554, body=licitez 3388
+[04-05-2026 21:57:25.921] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56558, total=48
+[04-05-2026 21:57:25.961] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56558, body=licitez 1612
+[04-05-2026 21:57:25.977] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56560, total=49
+[04-05-2026 21:57:26.017] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56560, body=licitez 8248
+[04-05-2026 21:57:26.017] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56560, body=licitez 8248
+[04-05-2026 21:57:26.033] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56562, total=50
+[04-05-2026 21:57:26.072] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56562, body=licitez 9202
+[04-05-2026 21:57:26.073] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56562, body=licitez 9202
+[04-05-2026 21:57:26.091] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56564, total=51
+[04-05-2026 21:57:26.131] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56564, body=licitez 3999
+[04-05-2026 21:57:26.131] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56564, body=licitez 3999
+[04-05-2026 21:57:26.147] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56566, total=52
+[04-05-2026 21:57:26.186] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56566, body=licitez 7996
+[04-05-2026 21:57:26.202] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56568, total=53
+[04-05-2026 21:57:26.243] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56568, body=licitez 9496
+[04-05-2026 21:57:26.243] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56568, body=licitez 9496
+[04-05-2026 21:57:26.257] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56570, total=54
+[04-05-2026 21:57:26.297] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56570, body=licitez 1262
+[04-05-2026 21:57:26.297] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56570, body=licitez 1262
+[04-05-2026 21:57:26.314] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56572, total=55
+[04-05-2026 21:57:26.353] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56572, body=licitez 6681
+[04-05-2026 21:57:26.353] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56572, body=licitez 6681
+[04-05-2026 21:57:26.370] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56574, total=56
+[04-05-2026 21:57:26.412] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56574, body=licitez 6239
+[04-05-2026 21:57:26.429] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56576, total=57
+[04-05-2026 21:57:26.469] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56576, body=licitez 6918
+[04-05-2026 21:57:26.470] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56576, body=licitez 6918
+[04-05-2026 21:57:26.483] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56578, total=58
+[04-05-2026 21:57:26.521] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56578, body=licitez 5907
+[04-05-2026 21:57:26.539] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56580, total=59
+[04-05-2026 21:57:26.578] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56580, body=licitez 7634
+[04-05-2026 21:57:26.597] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56582, total=60
+[04-05-2026 21:57:26.637] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56582, body=licitez 2080
+[04-05-2026 21:57:26.652] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56584, total=61
+[04-05-2026 21:57:26.692] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56584, body=licitez 1745
+[04-05-2026 21:57:26.693] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56584, body=licitez 1745
+[04-05-2026 21:57:26.708] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56586, total=62
+[04-05-2026 21:57:26.746] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56586, body=licitez 3785
+[04-05-2026 21:57:26.762] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56588, total=63
+[04-05-2026 21:57:26.800] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56588, body=licitez 5593
+[04-05-2026 21:57:26.817] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56590, total=64
+[04-05-2026 21:57:26.861] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56590, body=licitez 7612
+[04-05-2026 21:57:26.876] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56592, total=65
+[04-05-2026 21:57:26.920] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56592, body=licitez 6452
+[04-05-2026 21:57:26.921] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56592, body=licitez 6452
+[04-05-2026 21:57:26.934] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56594, total=66
+[04-05-2026 21:57:26.975] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56594, body=licitez 9255
+[04-05-2026 21:57:26.975] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56594, body=licitez 9255
+[04-05-2026 21:57:26.988] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56596, total=67
+[04-05-2026 21:57:27.028] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56596, body=licitez 4762
+[04-05-2026 21:57:27.028] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56596, body=licitez 4762
+[04-05-2026 21:57:27.049] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56598, total=68
+[04-05-2026 21:57:27.091] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56598, body=licitez 5128
+[04-05-2026 21:57:27.109] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56600, total=69
+[04-05-2026 21:57:27.150] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56600, body=licitez 7694
+[04-05-2026 21:57:27.150] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56600, body=licitez 7694
+[04-05-2026 21:57:27.160] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56602, total=70
+[04-05-2026 21:57:27.201] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56602, body=licitez 1028
+[04-05-2026 21:57:27.202] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56602, body=licitez 1028
+[04-05-2026 21:57:27.220] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56604, total=71
+[04-05-2026 21:57:27.263] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56604, body=licitez 1477
+[04-05-2026 21:57:27.279] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56606, total=72
+[04-05-2026 21:57:27.323] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56606, body=licitez 5348
+[04-05-2026 21:57:27.341] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56608, total=73
+[04-05-2026 21:57:27.385] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56608, body=licitez 6284
+[04-05-2026 21:57:27.385] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56608, body=licitez 6284
+[04-05-2026 21:57:27.398] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56610, total=74
+[04-05-2026 21:57:27.439] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56610, body=licitez 6716
+[04-05-2026 21:57:27.457] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56612, total=75
+[04-05-2026 21:57:27.498] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56612, body=licitez 6735
+[04-05-2026 21:57:27.512] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56614, total=76
+[04-05-2026 21:57:27.554] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56614, body=licitez 8156
+[04-05-2026 21:57:27.555] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56614, body=licitez 8156
+[04-05-2026 21:57:27.569] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56616, total=77
+[04-05-2026 21:57:27.612] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56616, body=licitez 3746
+[04-05-2026 21:57:27.613] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56616, body=licitez 3746
+[04-05-2026 21:57:27.629] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56618, total=78
+[04-05-2026 21:57:27.673] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56618, body=licitez 8061
+[04-05-2026 21:57:27.687] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56620, total=79
+[04-05-2026 21:57:27.732] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56620, body=licitez 5121
+[04-05-2026 21:57:27.732] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56620, body=licitez 5121
+[04-05-2026 21:57:27.747] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56622, total=80
+[04-05-2026 21:57:27.789] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56622, body=licitez 5066
+[04-05-2026 21:57:27.799] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56624, total=81
+[04-05-2026 21:57:27.841] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56624, body=licitez 7156
+[04-05-2026 21:57:27.842] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56624, body=licitez 7156
+[04-05-2026 21:57:27.855] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56626, total=82
+[04-05-2026 21:57:27.896] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56626, body=licitez 8560
+[04-05-2026 21:57:27.922] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56628, total=83
+[04-05-2026 21:57:27.967] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56628, body=licitez 6162
+[04-05-2026 21:57:27.973] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56630, total=84
+[04-05-2026 21:57:28.018] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56630, body=licitez 7169
+[04-05-2026 21:57:28.029] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56632, total=85
+[04-05-2026 21:57:28.074] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56632, body=licitez 9698
+[04-05-2026 21:57:28.080] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56634, total=86
+[04-05-2026 21:57:28.123] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56634, body=licitez 9838
+[04-05-2026 21:57:28.135] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56636, total=87
+[04-05-2026 21:57:28.180] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56636, body=licitez 5378
+[04-05-2026 21:57:28.180] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56636, body=licitez 5378
+[04-05-2026 21:57:28.192] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56638, total=88
+[04-05-2026 21:57:28.233] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56638, body=licitez 1669
+[04-05-2026 21:57:28.251] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56640, total=89
+[04-05-2026 21:57:28.292] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56640, body=licitez 3491
+[04-05-2026 21:57:28.292] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56640, body=licitez 3491
+[04-05-2026 21:57:28.310] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56642, total=90
+[04-05-2026 21:57:28.353] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56642, body=licitez 2948
+[04-05-2026 21:57:28.353] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56642, body=licitez 2948
+[04-05-2026 21:57:28.369] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56644, total=91
+[04-05-2026 21:57:28.413] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56644, body=licitez 9864
+[04-05-2026 21:57:28.413] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56644, body=licitez 9864
+[04-05-2026 21:57:28.422] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56646, total=92
+[04-05-2026 21:57:28.465] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56646, body=licitez 5123
+[04-05-2026 21:57:28.465] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56646, body=licitez 5123
+[04-05-2026 21:57:28.478] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56648, total=93
+[04-05-2026 21:57:28.522] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56648, body=licitez 8630
+[04-05-2026 21:57:28.532] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56650, total=94
+[04-05-2026 21:57:28.573] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56650, body=licitez 7199
+[04-05-2026 21:57:28.573] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56650, body=licitez 7199
+[04-05-2026 21:57:28.588] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56652, total=95
+[04-05-2026 21:57:28.628] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56652, body=licitez 6279
+[04-05-2026 21:57:28.645] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56654, total=96
+[04-05-2026 21:57:28.686] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56654, body=licitez 1629
+[04-05-2026 21:57:28.705] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56656, total=97
+[04-05-2026 21:57:28.748] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56656, body=licitez 1471
+[04-05-2026 21:57:28.748] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56656, body=licitez 1471
+[04-05-2026 21:57:28.766] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56658, total=98
+[04-05-2026 21:57:28.808] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56658, body=licitez 6514
+[04-05-2026 21:57:28.823] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56660, total=99
+[04-05-2026 21:57:28.865] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56660, body=licitez 6379
+[04-05-2026 21:57:28.865] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56660, body=licitez 6379
+[04-05-2026 21:57:28.883] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56662, total=100
+[04-05-2026 21:57:28.928] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56662, body=licitez 4554
+[04-05-2026 21:57:28.928] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56662, body=licitez 4554
+[04-05-2026 21:57:28.940] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56664, total=101
+[04-05-2026 21:57:28.981] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56664, body=licitez 3030
+[04-05-2026 21:57:29.004] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56666, total=102
+[04-05-2026 21:57:29.046] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56666, body=licitez 3465
+[04-05-2026 21:57:29.046] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56666, body=licitez 3465
+[04-05-2026 21:57:29.063] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56668, total=103
+[04-05-2026 21:57:29.107] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56668, body=licitez 2838
+[04-05-2026 21:57:29.114] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56670, total=104
+[04-05-2026 21:57:29.156] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56670, body=licitez 2792
+[04-05-2026 21:57:29.156] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56670, body=licitez 2792
+[04-05-2026 21:57:29.170] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56672, total=105
+[04-05-2026 21:57:29.212] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56672, body=licitez 2891
+[04-05-2026 21:57:29.224] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56674, total=106
+[04-05-2026 21:57:29.267] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56674, body=licitez 8602
+[04-05-2026 21:57:29.267] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56674, body=licitez 8602
+[04-05-2026 21:57:29.279] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56676, total=107
+[04-05-2026 21:57:29.321] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56676, body=licitez 6952
+[04-05-2026 21:57:29.321] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56676, body=licitez 6952
+[04-05-2026 21:57:29.337] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56678, total=108
+[04-05-2026 21:57:29.379] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56678, body=licitez 2101
+[04-05-2026 21:57:29.391] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56680, total=109
+[04-05-2026 21:57:29.435] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56680, body=licitez 8022
+[04-05-2026 21:57:29.447] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56682, total=110
+[04-05-2026 21:57:29.487] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56682, body=licitez 3366
+[04-05-2026 21:57:29.506] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56684, total=111
+[04-05-2026 21:57:29.553] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56684, body=licitez 5147
+[04-05-2026 21:57:29.573] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56688, total=112
+[04-05-2026 21:57:29.614] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56688, body=licitez 1306
+[04-05-2026 21:57:29.614] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56688, body=licitez 1306
+[04-05-2026 21:57:29.629] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56690, total=113
+[04-05-2026 21:57:29.671] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56690, body=licitez 1820
+[04-05-2026 21:57:29.686] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56692, total=114
+[04-05-2026 21:57:29.730] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56692, body=licitez 3026
+[04-05-2026 21:57:29.730] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56692, body=licitez 3026
+[04-05-2026 21:57:29.742] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56694, total=115
+[04-05-2026 21:57:29.784] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56694, body=licitez 3671
+[04-05-2026 21:57:29.785] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56694, body=licitez 3671
+[04-05-2026 21:57:29.803] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56696, total=116
+[04-05-2026 21:57:29.848] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56696, body=licitez 4833
+[04-05-2026 21:57:29.849] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56696, body=licitez 4833
+[04-05-2026 21:57:29.861] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56698, total=117
+[04-05-2026 21:57:29.905] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56698, body=licitez 9673
+[04-05-2026 21:57:29.915] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56700, total=118
+[04-05-2026 21:57:29.961] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56700, body=licitez 4529
+[04-05-2026 21:57:29.971] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56702, total=119
+[04-05-2026 21:57:30.014] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56702, body=licitez 7151
+[04-05-2026 21:57:30.014] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56702, body=licitez 7151
+[04-05-2026 21:57:30.032] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56704, total=120
+[04-05-2026 21:57:30.076] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56704, body=licitez 1647
+[04-05-2026 21:57:30.077] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56704, body=licitez 1647
+[04-05-2026 21:57:30.088] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56706, total=121
+[04-05-2026 21:57:30.130] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56706, body=licitez 5153
+[04-05-2026 21:57:30.130] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56706, body=licitez 5153
+[04-05-2026 21:57:30.141] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56708, total=122
+[04-05-2026 21:57:30.192] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56708, body=licitez 7175
+[04-05-2026 21:57:30.207] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56710, total=123
+[04-05-2026 21:57:30.247] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56710, body=licitez 2430
+[04-05-2026 21:57:30.248] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56710, body=licitez 2430
+[04-05-2026 21:57:30.258] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56712, total=124
+[04-05-2026 21:57:30.299] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56712, body=licitez 9128
+[04-05-2026 21:57:30.300] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56712, body=licitez 9128
+[04-05-2026 21:57:30.316] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56714, total=125
+[04-05-2026 21:57:30.359] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56714, body=licitez 6004
+[04-05-2026 21:57:30.372] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56716, total=126
+[04-05-2026 21:57:30.420] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56716, body=licitez 6678
+[04-05-2026 21:57:30.420] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56716, body=licitez 6678
+[04-05-2026 21:57:30.438] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56718, total=127
+[04-05-2026 21:57:30.479] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56718, body=licitez 7501
+[04-05-2026 21:57:30.500] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56720, total=128
+[04-05-2026 21:57:30.545] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56720, body=licitez 5200
+[04-05-2026 21:57:30.545] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56720, body=licitez 5200
+[04-05-2026 21:57:30.549] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56722, total=129
+[04-05-2026 21:57:30.591] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56722, body=licitez 2621
+[04-05-2026 21:57:30.591] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56722, body=licitez 2621
+[04-05-2026 21:57:30.606] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56724, total=130
+[04-05-2026 21:57:30.648] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56724, body=licitez 4213
+[04-05-2026 21:57:30.648] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56724, body=licitez 4213
+[04-05-2026 21:57:30.661] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56726, total=131
+[04-05-2026 21:57:30.707] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56726, body=licitez 8188
+[04-05-2026 21:57:30.707] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56726, body=licitez 8188
+[04-05-2026 21:57:30.722] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56728, total=132
+[04-05-2026 21:57:30.763] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56728, body=licitez 2128
+[04-05-2026 21:57:30.763] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56728, body=licitez 2128
+[04-05-2026 21:57:30.776] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56730, total=133
+[04-05-2026 21:57:30.817] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56730, body=licitez 6487
+[04-05-2026 21:57:30.817] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56730, body=licitez 6487
+[04-05-2026 21:57:30.828] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56732, total=134
+[04-05-2026 21:57:30.869] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56732, body=licitez 1551
+[04-05-2026 21:57:30.886] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56734, total=135
+[04-05-2026 21:57:30.926] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56734, body=licitez 2590
+[04-05-2026 21:57:30.927] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56734, body=licitez 2590
+[04-05-2026 21:57:30.945] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56736, total=136
+[04-05-2026 21:57:30.985] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56736, body=licitez 9253
+[04-05-2026 21:57:30.985] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56736, body=licitez 9253
+[04-05-2026 21:57:31.003] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56738, total=137
+[04-05-2026 21:57:31.048] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56738, body=licitez 3096
+[04-05-2026 21:57:31.048] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56738, body=licitez 3096
+[04-05-2026 21:57:31.063] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56740, total=138
+[04-05-2026 21:57:31.107] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56740, body=licitez 7614
+[04-05-2026 21:57:31.108] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56740, body=licitez 7614
+[04-05-2026 21:57:31.121] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56742, total=139
+[04-05-2026 21:57:31.163] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56742, body=licitez 1308
+[04-05-2026 21:57:31.164] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56742, body=licitez 1308
+[04-05-2026 21:57:31.177] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56744, total=140
+[04-05-2026 21:57:31.223] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56744, body=licitez 8756
+[04-05-2026 21:57:31.223] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56744, body=licitez 8756
+[04-05-2026 21:57:31.235] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56746, total=141
+[04-05-2026 21:57:31.278] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56746, body=licitez 1393
+[04-05-2026 21:57:31.288] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56748, total=142
+[04-05-2026 21:57:31.330] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56748, body=licitez 1682
+[04-05-2026 21:57:31.330] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56748, body=licitez 1682
+[04-05-2026 21:57:31.346] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56750, total=143
+[04-05-2026 21:57:31.386] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56750, body=licitez 8395
+[04-05-2026 21:57:31.387] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56750, body=licitez 8395
+[04-05-2026 21:57:31.401] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56752, total=144
+[04-05-2026 21:57:31.445] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56752, body=licitez 8830
+[04-05-2026 21:57:31.446] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56752, body=licitez 8830
+[04-05-2026 21:57:31.464] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56754, total=145
+[04-05-2026 21:57:31.506] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56754, body=licitez 3573
+[04-05-2026 21:57:31.506] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56754, body=licitez 3573
+[04-05-2026 21:57:31.518] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56756, total=146
+[04-05-2026 21:57:31.558] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56756, body=licitez 8597
+[04-05-2026 21:57:31.573] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56758, total=147
+[04-05-2026 21:57:31.615] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56758, body=licitez 1652
+[04-05-2026 21:57:31.616] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56758, body=licitez 1652
+[04-05-2026 21:57:31.629] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56760, total=148
+[04-05-2026 21:57:31.671] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56760, body=licitez 7291
+[04-05-2026 21:57:31.671] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56760, body=licitez 7291
+[04-05-2026 21:57:31.691] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56762, total=149
+[04-05-2026 21:57:31.734] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56762, body=licitez 9006
+[04-05-2026 21:57:31.734] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56762, body=licitez 9006
+[04-05-2026 21:57:31.746] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56764, total=150
+[04-05-2026 21:57:31.789] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56764, body=licitez 7084
+[04-05-2026 21:57:31.800] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56766, total=151
+[04-05-2026 21:57:31.850] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56766, body=licitez 9726
+[04-05-2026 21:57:31.860] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56768, total=152
+[04-05-2026 21:57:31.905] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56768, body=licitez 4836
+[04-05-2026 21:57:31.906] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56768, body=licitez 4836
+[04-05-2026 21:57:31.915] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56770, total=153
+[04-05-2026 21:57:31.962] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56770, body=licitez 6781
+[04-05-2026 21:57:31.963] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56770, body=licitez 6781
+[04-05-2026 21:57:31.974] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56772, total=154
+[04-05-2026 21:57:32.019] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56772, body=licitez 5806
+[04-05-2026 21:57:32.032] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56774, total=155
+[04-05-2026 21:57:32.073] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56774, body=licitez 8459
+[04-05-2026 21:57:32.085] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56776, total=156
+[04-05-2026 21:57:32.128] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56776, body=licitez 6568
+[04-05-2026 21:57:32.141] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56780, total=157
+[04-05-2026 21:57:32.186] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56780, body=licitez 5811
+[04-05-2026 21:57:32.195] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56782, total=158
+[04-05-2026 21:57:32.237] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56782, body=licitez 3142
+[04-05-2026 21:57:32.257] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56784, total=159
+[04-05-2026 21:57:32.298] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56784, body=licitez 9233
+[04-05-2026 21:57:32.298] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56784, body=licitez 9233
+[04-05-2026 21:57:32.309] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56786, total=160
+[04-05-2026 21:57:32.349] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56786, body=licitez 9551
+[04-05-2026 21:57:32.367] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56788, total=161
+[04-05-2026 21:57:32.410] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56788, body=licitez 4992
+[04-05-2026 21:57:32.427] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56790, total=162
+[04-05-2026 21:57:32.470] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56790, body=licitez 5156
+[04-05-2026 21:57:32.471] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56790, body=licitez 5156
+[04-05-2026 21:57:32.489] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56792, total=163
+[04-05-2026 21:57:32.533] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56792, body=licitez 5728
+[04-05-2026 21:57:32.542] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56794, total=164
+[04-05-2026 21:57:32.586] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56794, body=licitez 9407
+[04-05-2026 21:57:32.596] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56796, total=165
+[04-05-2026 21:57:32.640] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56796, body=licitez 5040
+[04-05-2026 21:57:32.651] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56798, total=166
+[04-05-2026 21:57:32.696] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56798, body=licitez 6448
+[04-05-2026 21:57:32.697] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56798, body=licitez 6448
+[04-05-2026 21:57:32.702] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56800, total=167
+[04-05-2026 21:57:32.745] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56800, body=licitez 2998
+[04-05-2026 21:57:32.758] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56802, total=168
+[04-05-2026 21:57:32.804] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56802, body=licitez 2666
+[04-05-2026 21:57:32.804] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56802, body=licitez 2666
+[04-05-2026 21:57:32.813] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56804, total=169
+[04-05-2026 21:57:32.858] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56804, body=licitez 6243
+[04-05-2026 21:57:32.864] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56806, total=170
+[04-05-2026 21:57:32.907] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56806, body=licitez 8390
+[04-05-2026 21:57:32.929] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56808, total=171
+[04-05-2026 21:57:32.975] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56808, body=licitez 3529
+[04-05-2026 21:57:32.989] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56810, total=172
+[04-05-2026 21:57:33.034] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56810, body=licitez 6162
+[04-05-2026 21:57:33.045] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56812, total=173
+[04-05-2026 21:57:33.087] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56812, body=licitez 3859
+[04-05-2026 21:57:33.101] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56814, total=174
+[04-05-2026 21:57:33.147] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56814, body=licitez 8860
+[04-05-2026 21:57:33.152] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56816, total=175
+[04-05-2026 21:57:33.198] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56816, body=licitez 2765
+[04-05-2026 21:57:33.211] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56818, total=176
+[04-05-2026 21:57:33.260] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56818, body=licitez 9910
+[04-05-2026 21:57:33.267] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56820, total=177
+[04-05-2026 21:57:33.309] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56820, body=licitez 3145
+[04-05-2026 21:57:33.311] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56820, body=licitez 3145
+[04-05-2026 21:57:33.324] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56822, total=178
+[04-05-2026 21:57:33.367] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56822, body=licitez 1297
+[04-05-2026 21:57:33.367] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56822, body=licitez 1297
+[04-05-2026 21:57:33.379] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56824, total=179
+[04-05-2026 21:57:33.423] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56824, body=licitez 5550
+[04-05-2026 21:57:33.445] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56826, total=180
+[04-05-2026 21:57:33.514] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56826, body=licitez 2195
+[04-05-2026 21:57:33.526] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56828, total=181
+[04-05-2026 21:57:33.574] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56828, body=licitez 8876
+[04-05-2026 21:57:33.574] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56828, body=licitez 8876
+[04-05-2026 21:57:33.574] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56830, total=182
+[04-05-2026 21:57:33.621] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56830, body=licitez 5847
+[04-05-2026 21:57:33.622] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56832, total=183
+[04-05-2026 21:57:33.663] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56832, body=licitez 5228
+[04-05-2026 21:57:33.663] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56832, body=licitez 5228
+[04-05-2026 21:57:33.669] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56834, total=184
+[04-05-2026 21:57:33.712] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56834, body=licitez 5596
+[04-05-2026 21:57:33.713] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56834, body=licitez 5596
+[04-05-2026 21:57:33.722] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56836, total=185
+[04-05-2026 21:57:33.767] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56836, body=licitez 8825
+[04-05-2026 21:57:33.780] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56838, total=186
+[04-05-2026 21:57:33.825] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56838, body=licitez 7608
+[04-05-2026 21:57:33.825] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56838, body=licitez 7608
+[04-05-2026 21:57:33.833] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56840, total=187
+[04-05-2026 21:57:33.876] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56840, body=licitez 5487
+[04-05-2026 21:57:33.876] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56840, body=licitez 5487
+[04-05-2026 21:57:33.889] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56842, total=188
+[04-05-2026 21:57:33.930] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56842, body=licitez 6730
+[04-05-2026 21:57:33.931] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56842, body=licitez 6730
+[04-05-2026 21:57:33.943] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56844, total=189
+[04-05-2026 21:57:33.985] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56844, body=licitez 3368
+[04-05-2026 21:57:33.985] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56844, body=licitez 3368
+[04-05-2026 21:57:34.012] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56846, total=190
+[04-05-2026 21:57:34.144] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56846, body=licitez 1950
+[04-05-2026 21:57:34.157] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56848, total=191
+[04-05-2026 21:57:34.209] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56848, body=licitez 4823
+[04-05-2026 21:57:34.210] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56848, body=licitez 4823
+[04-05-2026 21:57:34.210] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56850, total=192
+[04-05-2026 21:57:34.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56850, body=licitez 2579
+[04-05-2026 21:57:34.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56850, body=licitez 2579
+[04-05-2026 21:57:34.249] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56853, total=193
+[04-05-2026 21:57:34.291] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56853, body=licitez 3263
+[04-05-2026 21:57:34.291] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56853, body=licitez 3263
+[04-05-2026 21:57:34.292] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56855, total=194
+[04-05-2026 21:57:34.336] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56855, body=licitez 6184
+[04-05-2026 21:57:34.344] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56857, total=195
+[04-05-2026 21:57:34.385] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56857, body=licitez 3060
+[04-05-2026 21:57:34.396] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56859, total=196
+[04-05-2026 21:57:34.435] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56859, body=licitez 7726
+[04-05-2026 21:57:34.435] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56859, body=licitez 7726
+[04-05-2026 21:57:34.453] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56861, total=197
+[04-05-2026 21:57:34.491] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56861, body=licitez 5044
+[04-05-2026 21:57:34.512] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56863, total=198
+[04-05-2026 21:57:34.554] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56863, body=licitez 1778
+[04-05-2026 21:57:34.572] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56865, total=199
+[04-05-2026 21:57:34.614] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56865, body=licitez 2276
+[04-05-2026 21:57:34.626] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56867, total=200
+[04-05-2026 21:57:34.669] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56867, body=licitez 9650
+[04-05-2026 21:57:34.669] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56867, body=licitez 9650
+[04-05-2026 21:57:34.702] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56869, total=201
+[04-05-2026 21:57:34.779] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56869, body=licitez 4735
+[04-05-2026 21:57:34.786] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56871, total=202
+[04-05-2026 21:57:34.830] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56871, body=licitez 8859
+[04-05-2026 21:57:34.831] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56871, body=licitez 8859
+[04-05-2026 21:57:34.831] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56873, total=203
+[04-05-2026 21:57:34.872] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56873, body=licitez 2497
+[04-05-2026 21:57:34.873] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56875, total=204
+[04-05-2026 21:57:34.920] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56875, body=licitez 4680
+[04-05-2026 21:57:34.931] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56877, total=205
+[04-05-2026 21:57:34.971] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56877, body=licitez 4788
+[04-05-2026 21:57:34.981] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56879, total=206
+[04-05-2026 21:57:35.029] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56879, body=licitez 8553
+[04-05-2026 21:57:35.037] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56881, total=207
+[04-05-2026 21:57:35.083] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56881, body=licitez 9500
+[04-05-2026 21:57:35.084] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56881, body=licitez 9500
+[04-05-2026 21:57:35.093] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56883, total=208
+[04-05-2026 21:57:35.135] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56883, body=licitez 9387
+[04-05-2026 21:57:35.147] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56885, total=209
+[04-05-2026 21:57:35.195] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56885, body=licitez 3237
+[04-05-2026 21:57:35.205] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56887, total=210
+[04-05-2026 21:57:35.248] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56887, body=licitez 4768
+[04-05-2026 21:57:35.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56887, body=licitez 4768
+[04-05-2026 21:57:35.261] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56889, total=211
+[04-05-2026 21:57:35.305] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56889, body=licitez 3806
+[04-05-2026 21:57:35.305] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56889, body=licitez 3806
+[04-05-2026 21:57:35.318] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56891, total=212
+[04-05-2026 21:57:35.363] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56891, body=licitez 1640
+[04-05-2026 21:57:35.378] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56893, total=213
+[04-05-2026 21:57:35.422] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56893, body=licitez 9380
+[04-05-2026 21:57:35.434] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56895, total=214
+[04-05-2026 21:57:35.478] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56895, body=licitez 2973
+[04-05-2026 21:57:35.491] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56897, total=215
+[04-05-2026 21:57:35.533] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56897, body=licitez 9322
+[04-05-2026 21:57:35.543] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56899, total=216
+[04-05-2026 21:57:35.588] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56899, body=licitez 1069
+[04-05-2026 21:57:35.588] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56899, body=licitez 1069
+[04-05-2026 21:57:35.599] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56901, total=217
+[04-05-2026 21:57:35.641] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56901, body=licitez 5721
+[04-05-2026 21:57:35.654] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56903, total=218
+[04-05-2026 21:57:35.702] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56903, body=licitez 7870
+[04-05-2026 21:57:35.717] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56905, total=219
+[04-05-2026 21:57:35.768] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56905, body=licitez 4739
+[04-05-2026 21:57:35.769] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56905, body=licitez 4739
+[04-05-2026 21:57:35.783] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56907, total=220
+[04-05-2026 21:57:35.846] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56907, body=licitez 6496
+[04-05-2026 21:57:35.851] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56909, total=221
+[04-05-2026 21:57:35.897] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56909, body=licitez 3447
+[04-05-2026 21:57:35.898] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56909, body=licitez 3447
+[04-05-2026 21:57:35.903] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56911, total=222
+[04-05-2026 21:57:35.949] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56911, body=licitez 8672
+[04-05-2026 21:57:35.954] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56913, total=223
+[04-05-2026 21:57:36.001] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56913, body=licitez 5787
+[04-05-2026 21:57:36.001] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56913, body=licitez 5787
+[04-05-2026 21:57:36.004] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56915, total=224
+[04-05-2026 21:57:36.046] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56915, body=licitez 9925
+[04-05-2026 21:57:36.060] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56917, total=225
+[04-05-2026 21:57:36.106] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56917, body=licitez 2113
+[04-05-2026 21:57:36.107] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56917, body=licitez 2113
+[04-05-2026 21:57:36.115] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56919, total=226
+[04-05-2026 21:57:36.157] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56919, body=licitez 6302
+[04-05-2026 21:57:36.169] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56921, total=227
+[04-05-2026 21:57:36.222] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56921, body=licitez 5814
+[04-05-2026 21:57:36.222] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56921, body=licitez 5814
+[04-05-2026 21:57:36.229] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56923, total=228
+[04-05-2026 21:57:36.274] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56923, body=licitez 3548
+[04-05-2026 21:57:36.274] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56923, body=licitez 3548
+[04-05-2026 21:57:36.283] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56925, total=229
+[04-05-2026 21:57:36.328] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56925, body=licitez 5774
+[04-05-2026 21:57:36.333] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56927, total=230
+[04-05-2026 21:57:36.374] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56927, body=licitez 7089
+[04-05-2026 21:57:36.374] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56927, body=licitez 7089
+[04-05-2026 21:57:36.395] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56929, total=231
+[04-05-2026 21:57:36.438] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56929, body=licitez 2693
+[04-05-2026 21:57:36.439] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56929, body=licitez 2693
+[04-05-2026 21:57:36.450] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56931, total=232
+[04-05-2026 21:57:36.494] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56931, body=licitez 9075
+[04-05-2026 21:57:36.494] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56931, body=licitez 9075
+[04-05-2026 21:57:36.508] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56933, total=233
+[04-05-2026 21:57:36.550] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56933, body=licitez 7773
+[04-05-2026 21:57:36.562] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56935, total=234
+[04-05-2026 21:57:36.603] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56935, body=licitez 6587
+[04-05-2026 21:57:36.618] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56937, total=235
+[04-05-2026 21:57:36.669] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56937, body=licitez 8644
+[04-05-2026 21:57:36.669] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56937, body=licitez 8644
+[04-05-2026 21:57:36.691] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56939, total=236
+[04-05-2026 21:57:36.739] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56939, body=licitez 7708
+[04-05-2026 21:57:36.739] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56939, body=licitez 7708
+[04-05-2026 21:57:36.744] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56941, total=237
+[04-05-2026 21:57:36.790] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56941, body=licitez 7643
+[04-05-2026 21:57:36.793] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56943, total=238
+[04-05-2026 21:57:36.841] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56943, body=licitez 9880
+[04-05-2026 21:57:36.847] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56945, total=239
+[04-05-2026 21:57:36.895] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56945, body=licitez 6954
+[04-05-2026 21:57:36.895] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56945, body=licitez 6954
+[04-05-2026 21:57:36.903] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56947, total=240
+[04-05-2026 21:57:36.949] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56947, body=licitez 7844
+[04-05-2026 21:57:36.963] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56949, total=241
+[04-05-2026 21:57:37.005] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56949, body=licitez 4158
+[04-05-2026 21:57:37.006] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56949, body=licitez 4158
+[04-05-2026 21:57:37.017] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56951, total=242
+[04-05-2026 21:57:37.067] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56951, body=licitez 6737
+[04-05-2026 21:57:37.081] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56953, total=243
+[04-05-2026 21:57:37.125] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56953, body=licitez 3723
+[04-05-2026 21:57:37.125] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56953, body=licitez 3723
+[04-05-2026 21:57:37.135] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56955, total=244
+[04-05-2026 21:57:37.177] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56955, body=licitez 5102
+[04-05-2026 21:57:37.178] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56955, body=licitez 5102
+[04-05-2026 21:57:37.194] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56957, total=245
+[04-05-2026 21:57:37.239] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56957, body=licitez 6460
+[04-05-2026 21:57:37.254] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56959, total=246
+[04-05-2026 21:57:37.296] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56959, body=licitez 8352
+[04-05-2026 21:57:37.309] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56961, total=247
+[04-05-2026 21:57:37.350] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56961, body=licitez 6610
+[04-05-2026 21:57:37.351] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56961, body=licitez 6610
+[04-05-2026 21:57:37.363] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56963, total=248
+[04-05-2026 21:57:37.405] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56963, body=licitez 9601
+[04-05-2026 21:57:37.419] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56965, total=249
+[04-05-2026 21:57:37.458] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56965, body=licitez 9620
+[04-05-2026 21:57:37.475] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56967, total=250
+[04-05-2026 21:57:37.518] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56967, body=licitez 6969
+[04-05-2026 21:57:37.518] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56967, body=licitez 6969
+[04-05-2026 21:57:37.531] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56971, total=251
+[04-05-2026 21:57:37.572] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56971, body=licitez 5022
+[04-05-2026 21:57:37.573] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56971, body=licitez 5022
+[04-05-2026 21:57:37.590] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56973, total=252
+[04-05-2026 21:57:37.633] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56973, body=licitez 9061
+[04-05-2026 21:57:37.634] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56973, body=licitez 9061
+[04-05-2026 21:57:37.651] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56975, total=253
+[04-05-2026 21:57:37.694] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56975, body=licitez 4409
+[04-05-2026 21:57:37.694] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56975, body=licitez 4409
+[04-05-2026 21:57:37.709] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56977, total=254
+[04-05-2026 21:57:37.756] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56977, body=licitez 4618
+[04-05-2026 21:57:37.756] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56977, body=licitez 4618
+[04-05-2026 21:57:37.769] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56979, total=255
+[04-05-2026 21:57:37.811] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56979, body=licitez 9437
+[04-05-2026 21:57:37.811] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56979, body=licitez 9437
+[04-05-2026 21:57:37.823] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56981, total=256
+[04-05-2026 21:57:37.867] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56981, body=licitez 9884
+[04-05-2026 21:57:37.878] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56983, total=257
+[04-05-2026 21:57:37.923] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56983, body=licitez 1015
+[04-05-2026 21:57:37.933] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56985, total=258
+[04-05-2026 21:57:37.979] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56985, body=licitez 2455
+[04-05-2026 21:57:37.987] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56987, total=259
+[04-05-2026 21:57:38.029] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56987, body=licitez 7075
+[04-05-2026 21:57:38.041] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:56989, total=260
+[04-05-2026 21:57:38.077] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:56989, body=licitez 5354
+[04-05-2026 21:57:45.623] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=22578
+[04-05-2026 21:58:33.549] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 21:58:33.554] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 21:58:33.757] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57028, total=1
+[04-05-2026 21:58:33.810] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57028, body=licitez 1400
+[04-05-2026 21:58:33.814] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57028, body=licitez 1400
+[04-05-2026 21:58:33.815] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57030, total=2
+[04-05-2026 21:58:33.861] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57030, body=licitez 1140
+[04-05-2026 21:58:33.861] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57030, body=licitez 1140
+[04-05-2026 21:58:33.872] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57032, total=3
+[04-05-2026 21:58:33.913] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57032, body=licitez 7581
+[04-05-2026 21:58:33.914] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57032, body=licitez 7581
+[04-05-2026 21:58:33.926] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57034, total=4
+[04-05-2026 21:58:33.967] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57034, body=licitez 3873
+[04-05-2026 21:58:33.968] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57034, body=licitez 3873
+[04-05-2026 21:58:33.983] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57036, total=5
+[04-05-2026 21:58:34.027] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57036, body=licitez 7818
+[04-05-2026 21:58:34.042] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57038, total=6
+[04-05-2026 21:58:34.081] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57038, body=licitez 9785
+[04-05-2026 21:58:34.098] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57040, total=7
+[04-05-2026 21:58:34.140] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57040, body=licitez 1823
+[04-05-2026 21:58:34.141] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57040, body=licitez 1823
+[04-05-2026 21:58:34.154] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57042, total=8
+[04-05-2026 21:58:34.193] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57042, body=licitez 3927
+[04-05-2026 21:58:34.194] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57042, body=licitez 3927
+[04-05-2026 21:58:34.209] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57044, total=9
+[04-05-2026 21:58:34.250] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57044, body=licitez 2873
+[04-05-2026 21:58:34.266] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57046, total=10
+[04-05-2026 21:58:34.306] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57046, body=licitez 6463
+[04-05-2026 21:58:34.321] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57048, total=11
+[04-05-2026 21:58:34.363] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57048, body=licitez 9446
+[04-05-2026 21:58:34.364] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57048, body=licitez 9446
+[04-05-2026 21:58:34.381] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57050, total=12
+[04-05-2026 21:58:34.420] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57050, body=licitez 8376
+[04-05-2026 21:58:34.437] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57052, total=13
+[04-05-2026 21:58:34.477] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57052, body=licitez 1277
+[04-05-2026 21:58:34.478] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57052, body=licitez 1277
+[04-05-2026 21:58:34.493] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57054, total=14
+[04-05-2026 21:58:34.533] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57054, body=licitez 5260
+[04-05-2026 21:58:34.551] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57056, total=15
+[04-05-2026 21:58:34.590] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57056, body=licitez 9300
+[04-05-2026 21:58:34.591] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57056, body=licitez 9300
+[04-05-2026 21:58:34.607] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57058, total=16
+[04-05-2026 21:58:34.647] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57058, body=licitez 7790
+[04-05-2026 21:58:34.647] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57058, body=licitez 7790
+[04-05-2026 21:58:34.661] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57060, total=17
+[04-05-2026 21:58:34.702] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57060, body=licitez 7920
+[04-05-2026 21:58:34.702] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57060, body=licitez 7920
+[04-05-2026 21:58:34.719] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57062, total=18
+[04-05-2026 21:58:34.759] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57062, body=licitez 8385
+[04-05-2026 21:58:34.776] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57064, total=19
+[04-05-2026 21:58:34.815] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57064, body=licitez 4939
+[04-05-2026 21:58:34.833] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57066, total=20
+[04-05-2026 21:58:34.875] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57066, body=licitez 8545
+[04-05-2026 21:58:34.892] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57068, total=21
+[04-05-2026 21:58:34.933] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57068, body=licitez 5877
+[04-05-2026 21:58:34.946] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57070, total=22
+[04-05-2026 21:58:34.986] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57070, body=licitez 4834
+[04-05-2026 21:58:34.986] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57070, body=licitez 4834
+[04-05-2026 21:58:35.002] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57072, total=23
+[04-05-2026 21:58:35.044] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57072, body=licitez 1638
+[04-05-2026 21:58:35.045] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57072, body=licitez 1638
+[04-05-2026 21:58:35.059] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57074, total=24
+[04-05-2026 21:58:35.100] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57074, body=licitez 8778
+[04-05-2026 21:58:35.101] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57074, body=licitez 8778
+[04-05-2026 21:58:35.113] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57076, total=25
+[04-05-2026 21:58:35.152] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57076, body=licitez 5655
+[04-05-2026 21:58:35.168] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57078, total=26
+[04-05-2026 21:58:35.207] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57078, body=licitez 8370
+[04-05-2026 21:58:35.207] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57078, body=licitez 8370
+[04-05-2026 21:58:35.223] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57080, total=27
+[04-05-2026 21:58:35.263] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57080, body=licitez 4405
+[04-05-2026 21:58:35.279] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57082, total=28
+[04-05-2026 21:58:35.317] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57082, body=licitez 4791
+[04-05-2026 21:58:35.337] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57084, total=29
+[04-05-2026 21:58:35.378] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57084, body=licitez 9482
+[04-05-2026 21:58:35.379] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57084, body=licitez 9482
+[04-05-2026 21:58:35.391] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57086, total=30
+[04-05-2026 21:58:35.432] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57086, body=licitez 6336
+[04-05-2026 21:58:35.447] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57088, total=31
+[04-05-2026 21:58:35.487] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57088, body=licitez 3621
+[04-05-2026 21:58:35.488] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57088, body=licitez 3621
+[04-05-2026 21:58:35.504] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57090, total=32
+[04-05-2026 21:58:35.547] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57090, body=licitez 6819
+[04-05-2026 21:58:35.549] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57090, body=licitez 6819
+[04-05-2026 21:58:35.563] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57092, total=33
+[04-05-2026 21:58:35.601] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57092, body=licitez 3637
+[04-05-2026 21:58:35.618] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57094, total=34
+[04-05-2026 21:58:35.658] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57094, body=licitez 7215
+[04-05-2026 21:58:35.659] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57094, body=licitez 7215
+[04-05-2026 21:58:35.675] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57096, total=35
+[04-05-2026 21:58:35.714] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57096, body=licitez 7651
+[04-05-2026 21:58:35.732] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57098, total=36
+[04-05-2026 21:58:35.772] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57098, body=licitez 3355
+[04-05-2026 21:58:35.773] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57098, body=licitez 3355
+[04-05-2026 21:58:35.788] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57102, total=37
+[04-05-2026 21:58:35.829] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57102, body=licitez 7120
+[04-05-2026 21:58:35.830] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57102, body=licitez 7120
+[04-05-2026 21:58:35.848] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57104, total=38
+[04-05-2026 21:58:35.896] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57104, body=licitez 3953
+[04-05-2026 21:58:35.910] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57106, total=39
+[04-05-2026 21:58:35.952] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57106, body=licitez 9602
+[04-05-2026 21:58:35.953] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57106, body=licitez 9602
+[04-05-2026 21:58:35.963] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57108, total=40
+[04-05-2026 21:58:36.000] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57108, body=licitez 9381
+[04-05-2026 21:58:51.008] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=17482, bids=62
+[04-05-2026 21:58:54.872] [AuctioneerMicroservice] EVENT=auction_result | winner=/127.0.0.1:57038, price=9785
+[04-05-2026 21:58:54.873] [AuctioneerMicroservice] EVENT=cycle_end | duration_ms=21353, notified=40
+[04-05-2026 21:58:54.890] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=21370
+[04-05-2026 22:15:14.449] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 22:15:14.452] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 22:15:14.984] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57711, total=1
+[04-05-2026 22:15:15.055] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57711, body=licitez 8508
+[04-05-2026 22:15:15.059] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57711, body=licitez 8508
+[04-05-2026 22:15:15.059] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57713, total=2
+[04-05-2026 22:15:15.089] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57713, body=licitez 1420
+[04-05-2026 22:15:15.098] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57715, total=3
+[04-05-2026 22:15:15.143] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57715, body=licitez 5269
+[04-05-2026 22:15:15.146] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57717, total=4
+[04-05-2026 22:15:15.190] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57717, body=licitez 4445
+[04-05-2026 22:15:15.190] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57717, body=licitez 4445
+[04-05-2026 22:15:15.198] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57719, total=5
+[04-05-2026 22:15:15.238] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57719, body=licitez 5023
+[04-05-2026 22:15:15.238] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57719, body=licitez 5023
+[04-05-2026 22:15:15.250] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57721, total=6
+[04-05-2026 22:15:15.291] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57721, body=licitez 6082
+[04-05-2026 22:15:15.292] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57721, body=licitez 6082
+[04-05-2026 22:15:15.308] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57723, total=7
+[04-05-2026 22:15:15.349] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57723, body=licitez 1856
+[04-05-2026 22:15:15.349] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57723, body=licitez 1856
+[04-05-2026 22:15:15.361] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57725, total=8
+[04-05-2026 22:15:15.400] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57725, body=licitez 7258
+[04-05-2026 22:15:15.400] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57725, body=licitez 7258
+[04-05-2026 22:15:15.418] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57727, total=9
+[04-05-2026 22:15:15.458] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57727, body=licitez 1926
+[04-05-2026 22:15:15.458] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57727, body=licitez 1926
+[04-05-2026 22:15:15.474] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57729, total=10
+[04-05-2026 22:15:15.513] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57729, body=licitez 9993
+[04-05-2026 22:15:15.514] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57729, body=licitez 9993
+[04-05-2026 22:15:15.532] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57731, total=11
+[04-05-2026 22:15:15.574] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57731, body=licitez 2929
+[04-05-2026 22:15:15.574] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57731, body=licitez 2929
+[04-05-2026 22:15:15.591] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57733, total=12
+[04-05-2026 22:15:15.630] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57733, body=licitez 3139
+[04-05-2026 22:15:15.648] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57735, total=13
+[04-05-2026 22:15:15.688] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57735, body=licitez 3645
+[04-05-2026 22:15:15.705] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57737, total=14
+[04-05-2026 22:15:15.744] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57737, body=licitez 1753
+[04-05-2026 22:15:15.745] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57737, body=licitez 1753
+[04-05-2026 22:15:15.761] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57739, total=15
+[04-05-2026 22:15:15.803] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57739, body=licitez 7480
+[04-05-2026 22:15:15.803] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57739, body=licitez 7480
+[04-05-2026 22:15:15.815] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57743, total=16
+[04-05-2026 22:15:15.856] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57743, body=licitez 1006
+[04-05-2026 22:15:15.871] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57745, total=17
+[04-05-2026 22:15:15.911] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57745, body=licitez 6126
+[04-05-2026 22:15:15.927] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57747, total=18
+[04-05-2026 22:15:15.967] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57747, body=licitez 5489
+[04-05-2026 22:15:15.967] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57747, body=licitez 5489
+[04-05-2026 22:15:15.983] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57749, total=19
+[04-05-2026 22:15:16.023] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57749, body=licitez 3021
+[04-05-2026 22:15:16.041] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57751, total=20
+[04-05-2026 22:15:16.084] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57751, body=licitez 3503
+[04-05-2026 22:15:16.084] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57751, body=licitez 3503
+[04-05-2026 22:15:16.101] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57753, total=21
+[04-05-2026 22:15:16.143] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57753, body=licitez 2197
+[04-05-2026 22:15:16.159] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57755, total=22
+[04-05-2026 22:15:16.201] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57755, body=licitez 7096
+[04-05-2026 22:15:16.201] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57755, body=licitez 7096
+[04-05-2026 22:15:16.211] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57757, total=23
+[04-05-2026 22:15:16.253] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57757, body=licitez 2053
+[04-05-2026 22:15:16.254] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57757, body=licitez 2053
+[04-05-2026 22:15:16.265] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57759, total=24
+[04-05-2026 22:15:16.305] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57759, body=licitez 9859
+[04-05-2026 22:15:16.322] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57761, total=25
+[04-05-2026 22:15:16.363] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57761, body=licitez 3682
+[04-05-2026 22:15:16.363] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57761, body=licitez 3682
+[04-05-2026 22:15:16.377] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57763, total=26
+[04-05-2026 22:15:16.417] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57763, body=licitez 4754
+[04-05-2026 22:15:16.431] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57765, total=27
+[04-05-2026 22:15:16.472] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57765, body=licitez 9988
+[04-05-2026 22:15:16.472] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57765, body=licitez 9988
+[04-05-2026 22:15:16.493] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57767, total=28
+[04-05-2026 22:15:16.533] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57767, body=licitez 1643
+[04-05-2026 22:15:16.547] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57769, total=29
+[04-05-2026 22:15:16.591] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57769, body=licitez 3787
+[04-05-2026 22:15:16.608] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57771, total=30
+[04-05-2026 22:15:16.650] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57771, body=licitez 1166
+[04-05-2026 22:15:16.661] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57773, total=31
+[04-05-2026 22:15:16.701] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57773, body=licitez 7795
+[04-05-2026 22:15:16.701] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57773, body=licitez 7795
+[04-05-2026 22:15:16.715] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57775, total=32
+[04-05-2026 22:15:16.755] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57775, body=licitez 9769
+[04-05-2026 22:15:16.755] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57775, body=licitez 9769
+[04-05-2026 22:15:16.772] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57777, total=33
+[04-05-2026 22:15:16.812] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57777, body=licitez 9062
+[04-05-2026 22:15:16.813] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57777, body=licitez 9062
+[04-05-2026 22:15:16.830] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57779, total=34
+[04-05-2026 22:15:16.869] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57779, body=licitez 9218
+[04-05-2026 22:15:16.870] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57779, body=licitez 9218
+[04-05-2026 22:15:16.885] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57781, total=35
+[04-05-2026 22:15:16.925] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57781, body=licitez 4571
+[04-05-2026 22:15:16.925] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57781, body=licitez 4571
+[04-05-2026 22:15:16.943] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57783, total=36
+[04-05-2026 22:15:16.982] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57783, body=licitez 1398
+[04-05-2026 22:15:16.982] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57783, body=licitez 1398
+[04-05-2026 22:15:17.000] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57785, total=37
+[04-05-2026 22:15:17.041] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57785, body=licitez 2209
+[04-05-2026 22:15:17.041] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57785, body=licitez 2209
+[04-05-2026 22:15:17.057] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57787, total=38
+[04-05-2026 22:15:17.101] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57787, body=licitez 6544
+[04-05-2026 22:15:17.101] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57787, body=licitez 6544
+[04-05-2026 22:15:17.118] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57789, total=39
+[04-05-2026 22:15:17.159] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57789, body=licitez 9002
+[04-05-2026 22:15:17.160] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57789, body=licitez 9002
+[04-05-2026 22:15:17.174] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57791, total=40
+[04-05-2026 22:15:17.210] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57791, body=licitez 2571
+[04-05-2026 22:15:17.210] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57791, body=licitez 2571
+[04-05-2026 22:15:32.218] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=17787, bids=67
+[04-05-2026 22:15:32.333] [AuctioneerMicroservice] EVENT=auction_result | winner=/127.0.0.1:57729, price=9993
+[04-05-2026 22:15:32.334] [AuctioneerMicroservice] EVENT=cycle_end | duration_ms=17909, notified=40
+[04-05-2026 22:15:32.379] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=17954
+[04-05-2026 22:16:32.585] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 22:16:32.589] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 22:16:33.110] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57843, total=1
+[04-05-2026 22:16:33.160] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57843, body=licitez 7061
+[04-05-2026 22:16:33.165] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57843, body=licitez 7061
+[04-05-2026 22:16:33.165] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57845, total=2
+[04-05-2026 22:16:33.193] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57845, body=licitez 9225
+[04-05-2026 22:16:33.194] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57845, body=licitez 9225
+[04-05-2026 22:16:33.209] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57847, total=3
+[04-05-2026 22:16:33.248] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57847, body=licitez 3850
+[04-05-2026 22:16:33.249] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57847, body=licitez 3850
+[04-05-2026 22:16:33.258] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57849, total=4
+[04-05-2026 22:16:33.297] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57849, body=licitez 5800
+[04-05-2026 22:16:33.314] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57851, total=5
+[04-05-2026 22:16:33.354] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57851, body=licitez 4231
+[04-05-2026 22:16:33.370] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57853, total=6
+[04-05-2026 22:16:33.409] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57853, body=licitez 3897
+[04-05-2026 22:16:33.426] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57855, total=7
+[04-05-2026 22:16:33.468] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57855, body=licitez 1882
+[04-05-2026 22:16:33.481] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57857, total=8
+[04-05-2026 22:16:33.520] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57857, body=licitez 8405
+[04-05-2026 22:16:33.536] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57859, total=9
+[04-05-2026 22:16:33.576] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57859, body=licitez 3177
+[04-05-2026 22:16:33.592] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57861, total=10
+[04-05-2026 22:16:33.634] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57861, body=licitez 2199
+[04-05-2026 22:16:33.635] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57861, body=licitez 2199
+[04-05-2026 22:16:33.647] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57863, total=11
+[04-05-2026 22:16:33.686] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57863, body=licitez 4793
+[04-05-2026 22:16:33.686] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57863, body=licitez 4793
+[04-05-2026 22:16:33.702] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57865, total=12
+[04-05-2026 22:16:33.740] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57865, body=licitez 8202
+[04-05-2026 22:16:33.740] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57865, body=licitez 8202
+[04-05-2026 22:16:33.759] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57867, total=13
+[04-05-2026 22:16:33.799] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57867, body=licitez 9769
+[04-05-2026 22:16:33.799] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57867, body=licitez 9769
+[04-05-2026 22:16:33.816] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57869, total=14
+[04-05-2026 22:16:33.855] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57869, body=licitez 4454
+[04-05-2026 22:16:33.873] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57871, total=15
+[04-05-2026 22:16:33.911] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57871, body=licitez 5645
+[04-05-2026 22:16:33.931] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57873, total=16
+[04-05-2026 22:16:33.971] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57873, body=licitez 3557
+[04-05-2026 22:16:33.987] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57875, total=17
+[04-05-2026 22:16:34.028] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57875, body=licitez 1284
+[04-05-2026 22:16:34.028] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57875, body=licitez 1284
+[04-05-2026 22:16:34.045] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57877, total=18
+[04-05-2026 22:16:34.084] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57877, body=licitez 9362
+[04-05-2026 22:16:34.104] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57879, total=19
+[04-05-2026 22:16:34.144] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57879, body=licitez 7232
+[04-05-2026 22:16:34.161] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57881, total=20
+[04-05-2026 22:16:34.203] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57881, body=licitez 2007
+[04-05-2026 22:16:34.204] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57881, body=licitez 2007
+[04-05-2026 22:16:34.221] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57883, total=21
+[04-05-2026 22:16:34.261] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57883, body=licitez 4091
+[04-05-2026 22:16:34.262] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57883, body=licitez 4091
+[04-05-2026 22:16:34.276] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57885, total=22
+[04-05-2026 22:16:34.316] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57885, body=licitez 8346
+[04-05-2026 22:16:34.316] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57885, body=licitez 8346
+[04-05-2026 22:16:34.333] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57887, total=23
+[04-05-2026 22:16:34.375] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57887, body=licitez 2397
+[04-05-2026 22:16:34.375] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57887, body=licitez 2397
+[04-05-2026 22:16:34.390] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57889, total=24
+[04-05-2026 22:16:34.430] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57889, body=licitez 1037
+[04-05-2026 22:16:34.445] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57893, total=25
+[04-05-2026 22:16:34.484] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57893, body=licitez 4808
+[04-05-2026 22:16:34.484] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57893, body=licitez 4808
+[04-05-2026 22:16:34.503] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57895, total=26
+[04-05-2026 22:16:34.545] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57895, body=licitez 8727
+[04-05-2026 22:16:34.559] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57897, total=27
+[04-05-2026 22:16:34.603] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57897, body=licitez 6224
+[04-05-2026 22:16:34.603] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57897, body=licitez 6224
+[04-05-2026 22:16:34.617] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57899, total=28
+[04-05-2026 22:16:34.656] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57899, body=licitez 4102
+[04-05-2026 22:16:34.670] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57901, total=29
+[04-05-2026 22:16:34.714] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57901, body=licitez 5395
+[04-05-2026 22:16:34.728] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57903, total=30
+[04-05-2026 22:16:34.768] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57903, body=licitez 2225
+[04-05-2026 22:16:34.768] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57903, body=licitez 2225
+[04-05-2026 22:16:34.784] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57905, total=31
+[04-05-2026 22:16:34.824] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57905, body=licitez 2127
+[04-05-2026 22:16:34.825] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57905, body=licitez 2127
+[04-05-2026 22:16:34.840] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57907, total=32
+[04-05-2026 22:16:34.879] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57907, body=licitez 4016
+[04-05-2026 22:16:34.897] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57909, total=33
+[04-05-2026 22:16:34.937] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57909, body=licitez 4523
+[04-05-2026 22:16:34.952] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57911, total=34
+[04-05-2026 22:16:34.991] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57911, body=licitez 4224
+[04-05-2026 22:16:34.991] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57911, body=licitez 4224
+[04-05-2026 22:16:35.010] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57913, total=35
+[04-05-2026 22:16:35.050] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57913, body=licitez 9048
+[04-05-2026 22:16:35.050] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57913, body=licitez 9048
+[04-05-2026 22:16:35.068] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57915, total=36
+[04-05-2026 22:16:35.108] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57915, body=licitez 3710
+[04-05-2026 22:16:35.124] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57917, total=37
+[04-05-2026 22:16:35.163] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57917, body=licitez 8328
+[04-05-2026 22:16:35.164] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57917, body=licitez 8328
+[04-05-2026 22:16:35.183] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57919, total=38
+[04-05-2026 22:16:35.226] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57919, body=licitez 8238
+[04-05-2026 22:16:35.226] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57919, body=licitez 8238
+[04-05-2026 22:16:35.239] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57921, total=39
+[04-05-2026 22:16:35.281] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57921, body=licitez 3392
+[04-05-2026 22:16:35.292] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57923, total=40
+[04-05-2026 22:16:35.329] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57923, body=licitez 7344
+[04-05-2026 22:16:35.329] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57923, body=licitez 7344
+[04-05-2026 22:16:50.336] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=17769, bids=61
+[04-05-2026 22:16:50.450] [AuctioneerMicroservice] EVENT=auction_result | winner=/127.0.0.1:57867, price=9769
+[04-05-2026 22:16:50.451] [AuctioneerMicroservice] EVENT=cycle_end | duration_ms=17889, notified=40
+[04-05-2026 22:16:50.480] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=17918
+[04-05-2026 22:16:53.327] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 22:16:53.330] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 22:16:53.843] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57939, total=1
+[04-05-2026 22:16:53.892] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57939, body=licitez 4525
+[04-05-2026 22:16:53.896] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57941, total=2
+[04-05-2026 22:16:53.928] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57941, body=licitez 6215
+[04-05-2026 22:16:53.929] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57941, body=licitez 6215
+[04-05-2026 22:16:53.947] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57943, total=3
+[04-05-2026 22:16:53.988] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57943, body=licitez 3012
+[04-05-2026 22:16:53.997] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57945, total=4
+[04-05-2026 22:16:54.038] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57945, body=licitez 2890
+[04-05-2026 22:16:54.038] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57945, body=licitez 2890
+[04-05-2026 22:16:54.058] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57947, total=5
+[04-05-2026 22:16:54.097] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57947, body=licitez 4556
+[04-05-2026 22:16:54.097] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57947, body=licitez 4556
+[04-05-2026 22:16:54.114] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57949, total=6
+[04-05-2026 22:16:54.154] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57949, body=licitez 3177
+[04-05-2026 22:16:54.154] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57949, body=licitez 3177
+[04-05-2026 22:16:54.172] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57951, total=7
+[04-05-2026 22:16:54.212] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57951, body=licitez 3159
+[04-05-2026 22:16:54.229] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57953, total=8
+[04-05-2026 22:16:54.270] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57953, body=licitez 5390
+[04-05-2026 22:16:54.286] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57955, total=9
+[04-05-2026 22:16:54.325] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57955, body=licitez 9026
+[04-05-2026 22:16:54.342] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57957, total=10
+[04-05-2026 22:16:54.382] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57957, body=licitez 9574
+[04-05-2026 22:16:54.402] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57959, total=11
+[04-05-2026 22:16:54.444] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57959, body=licitez 6484
+[04-05-2026 22:16:54.461] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57961, total=12
+[04-05-2026 22:16:54.499] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57961, body=licitez 7599
+[04-05-2026 22:16:54.499] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57961, body=licitez 7599
+[04-05-2026 22:16:54.514] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57963, total=13
+[04-05-2026 22:16:54.553] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57963, body=licitez 5132
+[04-05-2026 22:16:54.554] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57963, body=licitez 5132
+[04-05-2026 22:16:54.571] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57965, total=14
+[04-05-2026 22:16:54.613] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57965, body=licitez 5650
+[04-05-2026 22:16:54.623] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57967, total=15
+[04-05-2026 22:16:54.663] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57967, body=licitez 5464
+[04-05-2026 22:16:54.663] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57967, body=licitez 5464
+[04-05-2026 22:16:54.682] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57969, total=16
+[04-05-2026 22:16:54.723] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57969, body=licitez 3640
+[04-05-2026 22:16:54.723] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57969, body=licitez 3640
+[04-05-2026 22:16:54.740] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57971, total=17
+[04-05-2026 22:16:54.780] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57971, body=licitez 7248
+[04-05-2026 22:16:54.781] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57971, body=licitez 7248
+[04-05-2026 22:16:54.796] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57973, total=18
+[04-05-2026 22:16:54.836] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57973, body=licitez 5004
+[04-05-2026 22:16:54.855] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57975, total=19
+[04-05-2026 22:16:54.895] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57975, body=licitez 9962
+[04-05-2026 22:16:54.908] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:57977, total=20
+[04-05-2026 22:16:54.948] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:57977, body=licitez 9153
+[04-05-2026 22:17:09.956] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=16647, bids=29
+[04-05-2026 22:17:10.316] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=17013
+[04-05-2026 22:21:02.332] [AuctioneerMicroservice] EVENT=startup | port=1500, duration_ms=15000
+[04-05-2026 22:21:02.335] [AuctioneerMicroservice] EVENT=cycle_start | port=1500
+[04-05-2026 22:21:02.863] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58708, total=1
+[04-05-2026 22:21:02.933] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58708, body=licitez 4525
+[04-05-2026 22:21:02.937] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58708, body=licitez 4525
+[04-05-2026 22:21:02.938] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58710, total=2
+[04-05-2026 22:21:02.978] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58710, body=licitez 6215
+[04-05-2026 22:21:02.979] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58710, body=licitez 6215
+[04-05-2026 22:21:02.994] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58712, total=3
+[04-05-2026 22:21:03.038] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58712, body=licitez 3012
+[04-05-2026 22:21:03.039] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58714, total=4
+[04-05-2026 22:21:03.067] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58714, body=licitez 2890
+[04-05-2026 22:21:03.068] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58714, body=licitez 2890
+[04-05-2026 22:21:03.083] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58716, total=5
+[04-05-2026 22:21:03.123] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58716, body=licitez 4556
+[04-05-2026 22:21:03.124] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58716, body=licitez 4556
+[04-05-2026 22:21:03.135] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58718, total=6
+[04-05-2026 22:21:03.176] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58718, body=licitez 3177
+[04-05-2026 22:21:03.177] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58718, body=licitez 3177
+[04-05-2026 22:21:03.194] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58720, total=7
+[04-05-2026 22:21:03.234] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58720, body=licitez 3159
+[04-05-2026 22:21:03.246] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58722, total=8
+[04-05-2026 22:21:03.286] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58722, body=licitez 5390
+[04-05-2026 22:21:03.288] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58722, body=licitez 5390
+[04-05-2026 22:21:03.306] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58724, total=9
+[04-05-2026 22:21:03.347] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58724, body=licitez 9026
+[04-05-2026 22:21:03.348] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58724, body=licitez 9026
+[04-05-2026 22:21:03.364] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58726, total=10
+[04-05-2026 22:21:03.404] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58726, body=licitez 9574
+[04-05-2026 22:21:03.406] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58726, body=licitez 9574
+[04-05-2026 22:21:03.419] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58728, total=11
+[04-05-2026 22:21:03.461] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58728, body=licitez 6484
+[04-05-2026 22:21:03.476] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58730, total=12
+[04-05-2026 22:21:03.516] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58730, body=licitez 7599
+[04-05-2026 22:21:03.529] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58732, total=13
+[04-05-2026 22:21:03.571] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58732, body=licitez 5132
+[04-05-2026 22:21:03.586] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58734, total=14
+[04-05-2026 22:21:03.624] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58734, body=licitez 5650
+[04-05-2026 22:21:03.642] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58736, total=15
+[04-05-2026 22:21:03.684] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58736, body=licitez 5464
+[04-05-2026 22:21:03.686] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58736, body=licitez 5464
+[04-05-2026 22:21:03.698] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58738, total=16
+[04-05-2026 22:21:03.739] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58738, body=licitez 3640
+[04-05-2026 22:21:03.756] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58740, total=17
+[04-05-2026 22:21:03.797] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58740, body=licitez 7248
+[04-05-2026 22:21:03.812] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58742, total=18
+[04-05-2026 22:21:03.852] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58742, body=licitez 5004
+[04-05-2026 22:21:03.870] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58744, total=19
+[04-05-2026 22:21:03.913] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58744, body=licitez 9962
+[04-05-2026 22:21:03.914] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58744, body=licitez 9962
+[04-05-2026 22:21:03.926] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58746, total=20
+[04-05-2026 22:21:03.970] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58746, body=licitez 9153
+[04-05-2026 22:21:03.982] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58748, total=21
+[04-05-2026 22:21:04.022] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58748, body=licitez 6354
+[04-05-2026 22:21:04.038] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58750, total=22
+[04-05-2026 22:21:04.076] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58750, body=licitez 2872
+[04-05-2026 22:21:04.077] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58750, body=licitez 2872
+[04-05-2026 22:21:04.093] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58752, total=23
+[04-05-2026 22:21:04.134] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58752, body=licitez 5855
+[04-05-2026 22:21:04.149] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58754, total=24
+[04-05-2026 22:21:04.189] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58754, body=licitez 5966
+[04-05-2026 22:21:04.189] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58754, body=licitez 5966
+[04-05-2026 22:21:04.207] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58756, total=25
+[04-05-2026 22:21:04.247] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58756, body=licitez 8108
+[04-05-2026 22:21:04.248] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58756, body=licitez 8108
+[04-05-2026 22:21:04.262] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58760, total=26
+[04-05-2026 22:21:04.300] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58760, body=licitez 9053
+[04-05-2026 22:21:04.301] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58760, body=licitez 9053
+[04-05-2026 22:21:04.319] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58762, total=27
+[04-05-2026 22:21:04.359] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58762, body=licitez 5145
+[04-05-2026 22:21:04.379] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58764, total=28
+[04-05-2026 22:21:04.419] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58764, body=licitez 8287
+[04-05-2026 22:21:04.419] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58764, body=licitez 8287
+[04-05-2026 22:21:04.433] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58766, total=29
+[04-05-2026 22:21:04.472] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58766, body=licitez 8807
+[04-05-2026 22:21:04.487] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58768, total=30
+[04-05-2026 22:21:04.527] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58768, body=licitez 2922
+[04-05-2026 22:21:04.528] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58768, body=licitez 2922
+[04-05-2026 22:21:04.542] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58770, total=31
+[04-05-2026 22:21:04.582] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58770, body=licitez 8726
+[04-05-2026 22:21:04.582] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58770, body=licitez 8726
+[04-05-2026 22:21:04.599] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58772, total=32
+[04-05-2026 22:21:04.639] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58772, body=licitez 8502
+[04-05-2026 22:21:04.653] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58774, total=33
+[04-05-2026 22:21:04.708] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58774, body=licitez 2820
+[04-05-2026 22:21:04.709] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58774, body=licitez 2820
+[04-05-2026 22:21:04.729] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58776, total=34
+[04-05-2026 22:21:04.772] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58776, body=licitez 4201
+[04-05-2026 22:21:04.772] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58778, total=35
+[04-05-2026 22:21:04.808] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58778, body=licitez 4098
+[04-05-2026 22:21:04.809] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58778, body=licitez 4098
+[04-05-2026 22:21:04.825] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58780, total=36
+[04-05-2026 22:21:04.864] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58780, body=licitez 6489
+[04-05-2026 22:21:04.865] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58780, body=licitez 6489
+[04-05-2026 22:21:04.879] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58782, total=37
+[04-05-2026 22:21:04.919] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58782, body=licitez 7782
+[04-05-2026 22:21:04.919] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58782, body=licitez 7782
+[04-05-2026 22:21:04.936] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58784, total=38
+[04-05-2026 22:21:04.980] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58784, body=licitez 2938
+[04-05-2026 22:21:04.993] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58786, total=39
+[04-05-2026 22:21:05.032] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58786, body=licitez 2181
+[04-05-2026 22:21:05.047] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58788, total=40
+[04-05-2026 22:21:05.087] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58788, body=licitez 1653
+[04-05-2026 22:21:05.087] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58788, body=licitez 1653
+[04-05-2026 22:21:05.105] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58790, total=41
+[04-05-2026 22:21:05.147] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58790, body=licitez 6116
+[04-05-2026 22:21:05.164] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58792, total=42
+[04-05-2026 22:21:05.205] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58792, body=licitez 5582
+[04-05-2026 22:21:05.206] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58792, body=licitez 5582
+[04-05-2026 22:21:05.217] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58794, total=43
+[04-05-2026 22:21:05.259] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58794, body=licitez 8661
+[04-05-2026 22:21:05.273] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58796, total=44
+[04-05-2026 22:21:05.313] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58796, body=licitez 8065
+[04-05-2026 22:21:05.331] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58798, total=45
+[04-05-2026 22:21:05.372] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58798, body=licitez 9424
+[04-05-2026 22:21:05.373] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58798, body=licitez 9424
+[04-05-2026 22:21:05.387] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58800, total=46
+[04-05-2026 22:21:05.426] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58800, body=licitez 2171
+[04-05-2026 22:21:05.444] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58802, total=47
+[04-05-2026 22:21:05.484] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58802, body=licitez 3388
+[04-05-2026 22:21:05.499] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58804, total=48
+[04-05-2026 22:21:05.539] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58804, body=licitez 1612
+[04-05-2026 22:21:05.541] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58804, body=licitez 1612
+[04-05-2026 22:21:05.557] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58806, total=49
+[04-05-2026 22:21:05.597] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58806, body=licitez 8248
+[04-05-2026 22:21:05.598] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58806, body=licitez 8248
+[04-05-2026 22:21:05.611] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58808, total=50
+[04-05-2026 22:21:05.653] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58808, body=licitez 9202
+[04-05-2026 22:21:05.654] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58808, body=licitez 9202
+[04-05-2026 22:21:05.669] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58810, total=51
+[04-05-2026 22:21:05.710] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58810, body=licitez 3999
+[04-05-2026 22:21:05.711] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58810, body=licitez 3999
+[04-05-2026 22:21:05.727] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58812, total=52
+[04-05-2026 22:21:05.770] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58812, body=licitez 7996
+[04-05-2026 22:21:05.771] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58812, body=licitez 7996
+[04-05-2026 22:21:05.790] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58814, total=53
+[04-05-2026 22:21:05.835] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58814, body=licitez 9496
+[04-05-2026 22:21:05.836] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58814, body=licitez 9496
+[04-05-2026 22:21:05.846] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58816, total=54
+[04-05-2026 22:21:05.889] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58816, body=licitez 1262
+[04-05-2026 22:21:05.899] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58818, total=55
+[04-05-2026 22:21:05.939] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58818, body=licitez 6681
+[04-05-2026 22:21:05.941] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58818, body=licitez 6681
+[04-05-2026 22:21:05.955] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58820, total=56
+[04-05-2026 22:21:06.004] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58820, body=licitez 6239
+[04-05-2026 22:21:06.020] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58822, total=57
+[04-05-2026 22:21:06.088] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58822, body=licitez 6918
+[04-05-2026 22:21:06.091] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58822, body=licitez 6918
+[04-05-2026 22:21:06.112] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58824, total=58
+[04-05-2026 22:21:06.194] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58824, body=licitez 5907
+[04-05-2026 22:21:06.196] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58824, body=licitez 5907
+[04-05-2026 22:21:06.215] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58826, total=59
+[04-05-2026 22:21:06.292] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58826, body=licitez 7634
+[04-05-2026 22:21:06.294] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58827, total=60
+[04-05-2026 22:21:06.325] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58827, body=licitez 2080
+[04-05-2026 22:21:06.327] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58827, body=licitez 2080
+[04-05-2026 22:21:06.327] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58830, total=61
+[04-05-2026 22:21:06.381] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58830, body=licitez 1745
+[04-05-2026 22:21:06.382] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58832, total=62
+[04-05-2026 22:21:06.413] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58832, body=licitez 3785
+[04-05-2026 22:21:06.414] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58832, body=licitez 3785
+[04-05-2026 22:21:06.414] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58834, total=63
+[04-05-2026 22:21:06.467] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58834, body=licitez 5593
+[04-05-2026 22:21:06.469] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58836, total=64
+[04-05-2026 22:21:06.516] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58836, body=licitez 7612
+[04-05-2026 22:21:06.517] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58836, body=licitez 7612
+[04-05-2026 22:21:06.518] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58838, total=65
+[04-05-2026 22:21:06.561] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58838, body=licitez 6452
+[04-05-2026 22:21:06.564] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58840, total=66
+[04-05-2026 22:21:06.616] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58840, body=licitez 9255
+[04-05-2026 22:21:06.617] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58842, total=67
+[04-05-2026 22:21:06.661] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58842, body=licitez 4762
+[04-05-2026 22:21:06.662] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58844, total=68
+[04-05-2026 22:21:06.733] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58844, body=licitez 5128
+[04-05-2026 22:21:06.735] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58844, body=licitez 5128
+[04-05-2026 22:21:06.736] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58846, total=69
+[04-05-2026 22:21:06.775] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58846, body=licitez 7694
+[04-05-2026 22:21:06.777] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58846, body=licitez 7694
+[04-05-2026 22:21:06.799] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58848, total=70
+[04-05-2026 22:21:06.861] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58848, body=licitez 1028
+[04-05-2026 22:21:06.862] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58850, total=71
+[04-05-2026 22:21:06.895] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58850, body=licitez 1477
+[04-05-2026 22:21:06.897] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58850, body=licitez 1477
+[04-05-2026 22:21:06.897] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58852, total=72
+[04-05-2026 22:21:06.975] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58852, body=licitez 5348
+[04-05-2026 22:21:06.976] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58852, body=licitez 5348
+[04-05-2026 22:21:06.980] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58856, total=73
+[04-05-2026 22:21:07.063] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58856, body=licitez 6284
+[04-05-2026 22:21:07.064] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58856, body=licitez 6284
+[04-05-2026 22:21:07.064] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58858, total=74
+[04-05-2026 22:21:07.119] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58858, body=licitez 6716
+[04-05-2026 22:21:07.121] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58858, body=licitez 6716
+[04-05-2026 22:21:07.122] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58860, total=75
+[04-05-2026 22:21:07.170] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58860, body=licitez 6735
+[04-05-2026 22:21:07.172] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58860, body=licitez 6735
+[04-05-2026 22:21:07.172] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58861, total=76
+[04-05-2026 22:21:07.203] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58861, body=licitez 8156
+[04-05-2026 22:21:07.206] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58864, total=77
+[04-05-2026 22:21:07.252] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58864, body=licitez 3746
+[04-05-2026 22:21:07.254] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58864, body=licitez 3746
+[04-05-2026 22:21:07.255] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58866, total=78
+[04-05-2026 22:21:07.323] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58866, body=licitez 8061
+[04-05-2026 22:21:07.324] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58866, body=licitez 8061
+[04-05-2026 22:21:07.325] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58867, total=79
+[04-05-2026 22:21:07.347] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58867, body=licitez 5121
+[04-05-2026 22:21:07.348] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58870, total=80
+[04-05-2026 22:21:07.417] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58870, body=licitez 5066
+[04-05-2026 22:21:07.421] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58870, body=licitez 5066
+[04-05-2026 22:21:07.421] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58872, total=81
+[04-05-2026 22:21:07.500] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58872, body=licitez 7156
+[04-05-2026 22:21:07.502] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58873, total=82
+[04-05-2026 22:21:07.528] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58873, body=licitez 8560
+[04-05-2026 22:21:07.529] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58873, body=licitez 8560
+[04-05-2026 22:21:07.534] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58876, total=83
+[04-05-2026 22:21:07.605] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58876, body=licitez 6162
+[04-05-2026 22:21:07.608] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58878, total=84
+[04-05-2026 22:21:07.635] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58878, body=licitez 7169
+[04-05-2026 22:21:07.636] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58880, total=85
+[04-05-2026 22:21:07.679] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58880, body=licitez 9698
+[04-05-2026 22:21:07.681] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58880, body=licitez 9698
+[04-05-2026 22:21:07.692] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58882, total=86
+[04-05-2026 22:21:07.755] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58882, body=licitez 9838
+[04-05-2026 22:21:07.756] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58884, total=87
+[04-05-2026 22:21:07.783] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58884, body=licitez 5378
+[04-05-2026 22:21:07.785] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58886, total=88
+[04-05-2026 22:21:07.846] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58886, body=licitez 1669
+[04-05-2026 22:21:07.847] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58888, total=89
+[04-05-2026 22:21:07.902] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58888, body=licitez 3491
+[04-05-2026 22:21:07.903] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58890, total=90
+[04-05-2026 22:21:07.962] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58890, body=licitez 2948
+[04-05-2026 22:21:07.963] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58892, total=91
+[04-05-2026 22:21:08.014] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58892, body=licitez 9864
+[04-05-2026 22:21:08.014] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58894, total=92
+[04-05-2026 22:21:08.071] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58894, body=licitez 5123
+[04-05-2026 22:21:08.072] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58894, body=licitez 5123
+[04-05-2026 22:21:08.102] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58896, total=93
+[04-05-2026 22:21:08.146] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58896, body=licitez 8630
+[04-05-2026 22:21:08.148] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58896, body=licitez 8630
+[04-05-2026 22:21:08.148] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58898, total=94
+[04-05-2026 22:21:08.185] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58898, body=licitez 7199
+[04-05-2026 22:21:08.187] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58898, body=licitez 7199
+[04-05-2026 22:21:08.203] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58900, total=95
+[04-05-2026 22:21:08.268] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58900, body=licitez 6279
+[04-05-2026 22:21:08.272] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58900, body=licitez 6279
+[04-05-2026 22:21:08.272] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58902, total=96
+[04-05-2026 22:21:08.310] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58902, body=licitez 1629
+[04-05-2026 22:21:08.311] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58902, body=licitez 1629
+[04-05-2026 22:21:08.312] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58904, total=97
+[04-05-2026 22:21:08.373] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58904, body=licitez 1471
+[04-05-2026 22:21:08.375] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58904, body=licitez 1471
+[04-05-2026 22:21:08.376] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58906, total=98
+[04-05-2026 22:21:08.433] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58906, body=licitez 6514
+[04-05-2026 22:21:08.435] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58906, body=licitez 6514
+[04-05-2026 22:21:08.435] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58908, total=99
+[04-05-2026 22:21:08.481] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58908, body=licitez 6379
+[04-05-2026 22:21:08.482] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58908, body=licitez 6379
+[04-05-2026 22:21:08.483] [AuctioneerMicroservice] EVENT=bidder_connected | remote=/127.0.0.1:58910, total=100
+[04-05-2026 22:21:08.527] [AuctioneerMicroservice] EVENT=bid_received | sender=/127.0.0.1:58910, body=licitez 4554
+[04-05-2026 22:21:23.534] [AuctioneerMicroservice] EVENT=auction_closed | duration_ms=21221, bids=156
+[04-05-2026 22:21:23.716] [AuctioneerMicroservice] EVENT=auction_result | winner=/127.0.0.1:58744, price=9962
+[04-05-2026 22:21:23.729] [AuctioneerMicroservice] EVENT=cycle_end | duration_ms=21410, notified=100
+[04-05-2026 22:21:23.836] [AuctioneerMicroservice] EVENT=shutdown | uptime_ms=21528

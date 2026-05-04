@@ -1,0 +1,4 @@
+[04-05-2026 21:57:37] [Bidder 251:56971] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 251', phone='0700000251', email='bidder251@mail.ro'.
+[04-05-2026 21:57:37] [Bidder 251:56971] Placing bid: licitez 5022
+[04-05-2026 21:57:37] [Bidder 251:56971] Sending duplicate (deduplication test).
+[04-05-2026 21:57:37] [Bidder 251:56971] Waiting for auction result.

@@ -1,0 +1,4 @@
+[04-05-2026 21:57:34] [Bidder 196:56859] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 196', phone='0700000196', email='bidder196@mail.ro'.
+[04-05-2026 21:57:34] [Bidder 196:56859] Placing bid: licitez 7726
+[04-05-2026 21:57:34] [Bidder 196:56859] Sending duplicate (deduplication test).
+[04-05-2026 21:57:34] [Bidder 196:56859] Waiting for auction result.

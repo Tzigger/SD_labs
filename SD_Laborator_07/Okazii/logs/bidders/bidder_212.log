@@ -1,0 +1,6 @@
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 212:56891] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 212', phone='0700000212', email='bidder212@mail.ro'.
+[Bidder 212:56891] M-am conectat la Auctioneer! Identitate: Bidder 212 (0700000212, bidder212@mail.ro)
+[BidderMicroservice:212] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 212:56891] Placing bid: licitez 1640
+[Bidder 212:56891] Astept rezultatul licitatiei...
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 212:56891] Waiting for auction result.

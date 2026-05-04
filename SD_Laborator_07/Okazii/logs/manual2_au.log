@@ -1,0 +1,1043 @@
+[JOURNAL] [04-05-2026 21:57:23] AuctioneerMicroservice starting up.
+[AuctioneerMicroservice] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+AuctioneerMicroservice se executa pe portul: 1500
+Se asteapta oferte de la bidderi... (15s)
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [04-05-2026 21:57:23] CYCLE_START: Listening on port 1500. Duration: 15000ms.
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56462. Total: 1
+[04-05-2026 21:57:23] /127.0.0.1:56462 (name=Bidder 1, phone=0700000001, email=bidder1@mail.ro) >>> licitez 1400
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56462 (name=Bidder 1, phone=0700000001, email=bidder1@mail.ro) >>> licitez 1400
+[04-05-2026 21:57:23] /127.0.0.1:56462 (name=Bidder 1, phone=0700000001, email=bidder1@mail.ro) >>> licitez 1400
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56462 (name=Bidder 1, phone=0700000001, email=bidder1@mail.ro) >>> licitez 1400
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56464. Total: 2
+[04-05-2026 21:57:23] /127.0.0.1:56464 (name=Bidder 2, phone=0700000002, email=bidder2@mail.ro) >>> licitez 1140
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56464 (name=Bidder 2, phone=0700000002, email=bidder2@mail.ro) >>> licitez 1140
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56466. Total: 3
+[04-05-2026 21:57:23] /127.0.0.1:56466 (name=Bidder 3, phone=0700000003, email=bidder3@mail.ro) >>> licitez 7581
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56466 (name=Bidder 3, phone=0700000003, email=bidder3@mail.ro) >>> licitez 7581
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56468. Total: 4
+[04-05-2026 21:57:23] /127.0.0.1:56468 (name=Bidder 4, phone=0700000004, email=bidder4@mail.ro) >>> licitez 3873
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56468 (name=Bidder 4, phone=0700000004, email=bidder4@mail.ro) >>> licitez 3873
+[04-05-2026 21:57:23] /127.0.0.1:56468 (name=Bidder 4, phone=0700000004, email=bidder4@mail.ro) >>> licitez 3873
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56468 (name=Bidder 4, phone=0700000004, email=bidder4@mail.ro) >>> licitez 3873
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56470. Total: 5
+[04-05-2026 21:57:23] /127.0.0.1:56470 (name=Bidder 5, phone=0700000005, email=bidder5@mail.ro) >>> licitez 7818
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56470 (name=Bidder 5, phone=0700000005, email=bidder5@mail.ro) >>> licitez 7818
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56472. Total: 6
+[04-05-2026 21:57:23] /127.0.0.1:56472 (name=Bidder 6, phone=0700000006, email=bidder6@mail.ro) >>> licitez 9785
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56472 (name=Bidder 6, phone=0700000006, email=bidder6@mail.ro) >>> licitez 9785
+[04-05-2026 21:57:23] /127.0.0.1:56472 (name=Bidder 6, phone=0700000006, email=bidder6@mail.ro) >>> licitez 9785
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56472 (name=Bidder 6, phone=0700000006, email=bidder6@mail.ro) >>> licitez 9785
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56474. Total: 7
+[04-05-2026 21:57:23] /127.0.0.1:56474 (name=Bidder 7, phone=0700000007, email=bidder7@mail.ro) >>> licitez 1823
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56474 (name=Bidder 7, phone=0700000007, email=bidder7@mail.ro) >>> licitez 1823
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56476. Total: 8
+[04-05-2026 21:57:23] /127.0.0.1:56476 (name=Bidder 8, phone=0700000008, email=bidder8@mail.ro) >>> licitez 3927
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56476 (name=Bidder 8, phone=0700000008, email=bidder8@mail.ro) >>> licitez 3927
+[04-05-2026 21:57:23] /127.0.0.1:56476 (name=Bidder 8, phone=0700000008, email=bidder8@mail.ro) >>> licitez 3927
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56476 (name=Bidder 8, phone=0700000008, email=bidder8@mail.ro) >>> licitez 3927
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56478. Total: 9
+[04-05-2026 21:57:23] /127.0.0.1:56478 (name=Bidder 9, phone=0700000009, email=bidder9@mail.ro) >>> licitez 2873
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56478 (name=Bidder 9, phone=0700000009, email=bidder9@mail.ro) >>> licitez 2873
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56480. Total: 10
+[04-05-2026 21:57:23] /127.0.0.1:56480 (name=Bidder 10, phone=0700000010, email=bidder10@mail.ro) >>> licitez 6463
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56480 (name=Bidder 10, phone=0700000010, email=bidder10@mail.ro) >>> licitez 6463
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56482. Total: 11
+[04-05-2026 21:57:23] /127.0.0.1:56482 (name=Bidder 11, phone=0700000011, email=bidder11@mail.ro) >>> licitez 9446
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56482 (name=Bidder 11, phone=0700000011, email=bidder11@mail.ro) >>> licitez 9446
+[04-05-2026 21:57:23] /127.0.0.1:56482 (name=Bidder 11, phone=0700000011, email=bidder11@mail.ro) >>> licitez 9446
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56482 (name=Bidder 11, phone=0700000011, email=bidder11@mail.ro) >>> licitez 9446
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56484. Total: 12
+[04-05-2026 21:57:23] /127.0.0.1:56484 (name=Bidder 12, phone=0700000012, email=bidder12@mail.ro) >>> licitez 8376
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56484 (name=Bidder 12, phone=0700000012, email=bidder12@mail.ro) >>> licitez 8376
+[JOURNAL] [04-05-2026 21:57:23] Bidder connected: /127.0.0.1:56486. Total: 13
+[04-05-2026 21:57:23] /127.0.0.1:56486 (name=Bidder 13, phone=0700000013, email=bidder13@mail.ro) >>> licitez 1277
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56486 (name=Bidder 13, phone=0700000013, email=bidder13@mail.ro) >>> licitez 1277
+[04-05-2026 21:57:23] /127.0.0.1:56486 (name=Bidder 13, phone=0700000013, email=bidder13@mail.ro) >>> licitez 1277
+[JOURNAL] [04-05-2026 21:57:23] Bid received: [04-05-2026 21:57:23] /127.0.0.1:56486 (name=Bidder 13, phone=0700000013, email=bidder13@mail.ro) >>> licitez 1277
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56488. Total: 14
+[04-05-2026 21:57:24] /127.0.0.1:56488 (name=Bidder 14, phone=0700000014, email=bidder14@mail.ro) >>> licitez 5260
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56488 (name=Bidder 14, phone=0700000014, email=bidder14@mail.ro) >>> licitez 5260
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56490. Total: 15
+[04-05-2026 21:57:24] /127.0.0.1:56490 (name=Bidder 15, phone=0700000015, email=bidder15@mail.ro) >>> licitez 9300
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56490 (name=Bidder 15, phone=0700000015, email=bidder15@mail.ro) >>> licitez 9300
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56492. Total: 16
+[04-05-2026 21:57:24] /127.0.0.1:56492 (name=Bidder 16, phone=0700000016, email=bidder16@mail.ro) >>> licitez 7790
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56492 (name=Bidder 16, phone=0700000016, email=bidder16@mail.ro) >>> licitez 7790
+[04-05-2026 21:57:24] /127.0.0.1:56492 (name=Bidder 16, phone=0700000016, email=bidder16@mail.ro) >>> licitez 7790
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56492 (name=Bidder 16, phone=0700000016, email=bidder16@mail.ro) >>> licitez 7790
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56494. Total: 17
+[04-05-2026 21:57:24] /127.0.0.1:56494 (name=Bidder 17, phone=0700000017, email=bidder17@mail.ro) >>> licitez 7920
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56494 (name=Bidder 17, phone=0700000017, email=bidder17@mail.ro) >>> licitez 7920
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56496. Total: 18
+[04-05-2026 21:57:24] /127.0.0.1:56496 (name=Bidder 18, phone=0700000018, email=bidder18@mail.ro) >>> licitez 8385
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56496 (name=Bidder 18, phone=0700000018, email=bidder18@mail.ro) >>> licitez 8385
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56498. Total: 19
+[04-05-2026 21:57:24] /127.0.0.1:56498 (name=Bidder 19, phone=0700000019, email=bidder19@mail.ro) >>> licitez 4939
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56498 (name=Bidder 19, phone=0700000019, email=bidder19@mail.ro) >>> licitez 4939
+[04-05-2026 21:57:24] /127.0.0.1:56498 (name=Bidder 19, phone=0700000019, email=bidder19@mail.ro) >>> licitez 4939
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56498 (name=Bidder 19, phone=0700000019, email=bidder19@mail.ro) >>> licitez 4939
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56500. Total: 20
+[04-05-2026 21:57:24] /127.0.0.1:56500 (name=Bidder 20, phone=0700000020, email=bidder20@mail.ro) >>> licitez 8545
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56500 (name=Bidder 20, phone=0700000020, email=bidder20@mail.ro) >>> licitez 8545
+[04-05-2026 21:57:24] /127.0.0.1:56500 (name=Bidder 20, phone=0700000020, email=bidder20@mail.ro) >>> licitez 8545
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56500 (name=Bidder 20, phone=0700000020, email=bidder20@mail.ro) >>> licitez 8545
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56502. Total: 21
+[04-05-2026 21:57:24] /127.0.0.1:56502 (name=Bidder 21, phone=0700000021, email=bidder21@mail.ro) >>> licitez 5877
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56502 (name=Bidder 21, phone=0700000021, email=bidder21@mail.ro) >>> licitez 5877
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56504. Total: 22
+[04-05-2026 21:57:24] /127.0.0.1:56504 (name=Bidder 22, phone=0700000022, email=bidder22@mail.ro) >>> licitez 4834
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56504 (name=Bidder 22, phone=0700000022, email=bidder22@mail.ro) >>> licitez 4834
+[04-05-2026 21:57:24] /127.0.0.1:56504 (name=Bidder 22, phone=0700000022, email=bidder22@mail.ro) >>> licitez 4834
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56504 (name=Bidder 22, phone=0700000022, email=bidder22@mail.ro) >>> licitez 4834
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56506. Total: 23
+[04-05-2026 21:57:24] /127.0.0.1:56506 (name=Bidder 23, phone=0700000023, email=bidder23@mail.ro) >>> licitez 1638
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56506 (name=Bidder 23, phone=0700000023, email=bidder23@mail.ro) >>> licitez 1638
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56508. Total: 24
+[04-05-2026 21:57:24] /127.0.0.1:56508 (name=Bidder 24, phone=0700000024, email=bidder24@mail.ro) >>> licitez 8778
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56508 (name=Bidder 24, phone=0700000024, email=bidder24@mail.ro) >>> licitez 8778
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56510. Total: 25
+[04-05-2026 21:57:24] /127.0.0.1:56510 (name=Bidder 25, phone=0700000025, email=bidder25@mail.ro) >>> licitez 5655
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56510 (name=Bidder 25, phone=0700000025, email=bidder25@mail.ro) >>> licitez 5655
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56512. Total: 26
+[04-05-2026 21:57:24] /127.0.0.1:56512 (name=Bidder 26, phone=0700000026, email=bidder26@mail.ro) >>> licitez 8370
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56512 (name=Bidder 26, phone=0700000026, email=bidder26@mail.ro) >>> licitez 8370
+[04-05-2026 21:57:24] /127.0.0.1:56512 (name=Bidder 26, phone=0700000026, email=bidder26@mail.ro) >>> licitez 8370
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56512 (name=Bidder 26, phone=0700000026, email=bidder26@mail.ro) >>> licitez 8370
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56514. Total: 27
+[04-05-2026 21:57:24] /127.0.0.1:56514 (name=Bidder 27, phone=0700000027, email=bidder27@mail.ro) >>> licitez 4405
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56514 (name=Bidder 27, phone=0700000027, email=bidder27@mail.ro) >>> licitez 4405
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56516. Total: 28
+[04-05-2026 21:57:24] /127.0.0.1:56516 (name=Bidder 28, phone=0700000028, email=bidder28@mail.ro) >>> licitez 4791
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56516 (name=Bidder 28, phone=0700000028, email=bidder28@mail.ro) >>> licitez 4791
+[04-05-2026 21:57:24] /127.0.0.1:56516 (name=Bidder 28, phone=0700000028, email=bidder28@mail.ro) >>> licitez 4791
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56516 (name=Bidder 28, phone=0700000028, email=bidder28@mail.ro) >>> licitez 4791
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56518. Total: 29
+[04-05-2026 21:57:24] /127.0.0.1:56518 (name=Bidder 29, phone=0700000029, email=bidder29@mail.ro) >>> licitez 9482
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56518 (name=Bidder 29, phone=0700000029, email=bidder29@mail.ro) >>> licitez 9482
+[04-05-2026 21:57:24] /127.0.0.1:56518 (name=Bidder 29, phone=0700000029, email=bidder29@mail.ro) >>> licitez 9482
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56518 (name=Bidder 29, phone=0700000029, email=bidder29@mail.ro) >>> licitez 9482
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56520. Total: 30
+[04-05-2026 21:57:24] /127.0.0.1:56520 (name=Bidder 30, phone=0700000030, email=bidder30@mail.ro) >>> licitez 6336
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56520 (name=Bidder 30, phone=0700000030, email=bidder30@mail.ro) >>> licitez 6336
+[04-05-2026 21:57:24] /127.0.0.1:56520 (name=Bidder 30, phone=0700000030, email=bidder30@mail.ro) >>> licitez 6336
+[JOURNAL] [04-05-2026 21:57:24] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56520 (name=Bidder 30, phone=0700000030, email=bidder30@mail.ro) >>> licitez 6336
+[JOURNAL] [04-05-2026 21:57:24] Bidder connected: /127.0.0.1:56522. Total: 31
+[04-05-2026 21:57:24] /127.0.0.1:56522 (name=Bidder 31, phone=0700000031, email=bidder31@mail.ro) >>> licitez 3621
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56522 (name=Bidder 31, phone=0700000031, email=bidder31@mail.ro) >>> licitez 3621
+[04-05-2026 21:57:24] /127.0.0.1:56522 (name=Bidder 31, phone=0700000031, email=bidder31@mail.ro) >>> licitez 3621
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:24] /127.0.0.1:56522 (name=Bidder 31, phone=0700000031, email=bidder31@mail.ro) >>> licitez 3621
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56524. Total: 32
+[04-05-2026 21:57:25] /127.0.0.1:56524 (name=Bidder 32, phone=0700000032, email=bidder32@mail.ro) >>> licitez 6819
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56524 (name=Bidder 32, phone=0700000032, email=bidder32@mail.ro) >>> licitez 6819
+[04-05-2026 21:57:25] /127.0.0.1:56524 (name=Bidder 32, phone=0700000032, email=bidder32@mail.ro) >>> licitez 6819
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56524 (name=Bidder 32, phone=0700000032, email=bidder32@mail.ro) >>> licitez 6819
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56526. Total: 33
+[04-05-2026 21:57:25] /127.0.0.1:56526 (name=Bidder 33, phone=0700000033, email=bidder33@mail.ro) >>> licitez 3637
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56526 (name=Bidder 33, phone=0700000033, email=bidder33@mail.ro) >>> licitez 3637
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56528. Total: 34
+[04-05-2026 21:57:25] /127.0.0.1:56528 (name=Bidder 34, phone=0700000034, email=bidder34@mail.ro) >>> licitez 7215
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56528 (name=Bidder 34, phone=0700000034, email=bidder34@mail.ro) >>> licitez 7215
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56530. Total: 35
+[04-05-2026 21:57:25] /127.0.0.1:56530 (name=Bidder 35, phone=0700000035, email=bidder35@mail.ro) >>> licitez 7651
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56530 (name=Bidder 35, phone=0700000035, email=bidder35@mail.ro) >>> licitez 7651
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56532. Total: 36
+[04-05-2026 21:57:25] /127.0.0.1:56532 (name=Bidder 36, phone=0700000036, email=bidder36@mail.ro) >>> licitez 3355
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56532 (name=Bidder 36, phone=0700000036, email=bidder36@mail.ro) >>> licitez 3355
+[04-05-2026 21:57:25] /127.0.0.1:56532 (name=Bidder 36, phone=0700000036, email=bidder36@mail.ro) >>> licitez 3355
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56532 (name=Bidder 36, phone=0700000036, email=bidder36@mail.ro) >>> licitez 3355
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56534. Total: 37
+[04-05-2026 21:57:25] /127.0.0.1:56534 (name=Bidder 37, phone=0700000037, email=bidder37@mail.ro) >>> licitez 7120
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56534 (name=Bidder 37, phone=0700000037, email=bidder37@mail.ro) >>> licitez 7120
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56536. Total: 38
+[04-05-2026 21:57:25] /127.0.0.1:56536 (name=Bidder 38, phone=0700000038, email=bidder38@mail.ro) >>> licitez 3953
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56536 (name=Bidder 38, phone=0700000038, email=bidder38@mail.ro) >>> licitez 3953
+[04-05-2026 21:57:25] /127.0.0.1:56536 (name=Bidder 38, phone=0700000038, email=bidder38@mail.ro) >>> licitez 3953
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56536 (name=Bidder 38, phone=0700000038, email=bidder38@mail.ro) >>> licitez 3953
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56538. Total: 39
+[04-05-2026 21:57:25] /127.0.0.1:56538 (name=Bidder 39, phone=0700000039, email=bidder39@mail.ro) >>> licitez 9602
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56538 (name=Bidder 39, phone=0700000039, email=bidder39@mail.ro) >>> licitez 9602
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56540. Total: 40
+[04-05-2026 21:57:25] /127.0.0.1:56540 (name=Bidder 40, phone=0700000040, email=bidder40@mail.ro) >>> licitez 9381
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56540 (name=Bidder 40, phone=0700000040, email=bidder40@mail.ro) >>> licitez 9381
+[04-05-2026 21:57:25] /127.0.0.1:56540 (name=Bidder 40, phone=0700000040, email=bidder40@mail.ro) >>> licitez 9381
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56540 (name=Bidder 40, phone=0700000040, email=bidder40@mail.ro) >>> licitez 9381
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56542. Total: 41
+[04-05-2026 21:57:25] /127.0.0.1:56542 (name=Bidder 41, phone=0700000041, email=bidder41@mail.ro) >>> licitez 6116
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56542 (name=Bidder 41, phone=0700000041, email=bidder41@mail.ro) >>> licitez 6116
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56544. Total: 42
+[04-05-2026 21:57:25] /127.0.0.1:56544 (name=Bidder 42, phone=0700000042, email=bidder42@mail.ro) >>> licitez 5582
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56544 (name=Bidder 42, phone=0700000042, email=bidder42@mail.ro) >>> licitez 5582
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56546. Total: 43
+[04-05-2026 21:57:25] /127.0.0.1:56546 (name=Bidder 43, phone=0700000043, email=bidder43@mail.ro) >>> licitez 8661
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56546 (name=Bidder 43, phone=0700000043, email=bidder43@mail.ro) >>> licitez 8661
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56548. Total: 44
+[04-05-2026 21:57:25] /127.0.0.1:56548 (name=Bidder 44, phone=0700000044, email=bidder44@mail.ro) >>> licitez 8065
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56548 (name=Bidder 44, phone=0700000044, email=bidder44@mail.ro) >>> licitez 8065
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56550. Total: 45
+[04-05-2026 21:57:25] /127.0.0.1:56550 (name=Bidder 45, phone=0700000045, email=bidder45@mail.ro) >>> licitez 9424
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56550 (name=Bidder 45, phone=0700000045, email=bidder45@mail.ro) >>> licitez 9424
+[04-05-2026 21:57:25] /127.0.0.1:56550 (name=Bidder 45, phone=0700000045, email=bidder45@mail.ro) >>> licitez 9424
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56550 (name=Bidder 45, phone=0700000045, email=bidder45@mail.ro) >>> licitez 9424
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56552. Total: 46
+[04-05-2026 21:57:25] /127.0.0.1:56552 (name=Bidder 46, phone=0700000046, email=bidder46@mail.ro) >>> licitez 2171
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56552 (name=Bidder 46, phone=0700000046, email=bidder46@mail.ro) >>> licitez 2171
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56554. Total: 47
+[04-05-2026 21:57:25] /127.0.0.1:56554 (name=Bidder 47, phone=0700000047, email=bidder47@mail.ro) >>> licitez 3388
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56554 (name=Bidder 47, phone=0700000047, email=bidder47@mail.ro) >>> licitez 3388
+[04-05-2026 21:57:25] /127.0.0.1:56554 (name=Bidder 47, phone=0700000047, email=bidder47@mail.ro) >>> licitez 3388
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56554 (name=Bidder 47, phone=0700000047, email=bidder47@mail.ro) >>> licitez 3388
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56558. Total: 48
+[04-05-2026 21:57:25] /127.0.0.1:56558 (name=Bidder 48, phone=0700000048, email=bidder48@mail.ro) >>> licitez 1612
+[JOURNAL] [04-05-2026 21:57:25] Bid received: [04-05-2026 21:57:25] /127.0.0.1:56558 (name=Bidder 48, phone=0700000048, email=bidder48@mail.ro) >>> licitez 1612
+[JOURNAL] [04-05-2026 21:57:25] Bidder connected: /127.0.0.1:56560. Total: 49
+[04-05-2026 21:57:26] /127.0.0.1:56560 (name=Bidder 49, phone=0700000049, email=bidder49@mail.ro) >>> licitez 8248
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56560 (name=Bidder 49, phone=0700000049, email=bidder49@mail.ro) >>> licitez 8248
+[04-05-2026 21:57:26] /127.0.0.1:56560 (name=Bidder 49, phone=0700000049, email=bidder49@mail.ro) >>> licitez 8248
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56560 (name=Bidder 49, phone=0700000049, email=bidder49@mail.ro) >>> licitez 8248
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56562. Total: 50
+[04-05-2026 21:57:26] /127.0.0.1:56562 (name=Bidder 50, phone=0700000050, email=bidder50@mail.ro) >>> licitez 9202
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56562 (name=Bidder 50, phone=0700000050, email=bidder50@mail.ro) >>> licitez 9202
+[04-05-2026 21:57:26] /127.0.0.1:56562 (name=Bidder 50, phone=0700000050, email=bidder50@mail.ro) >>> licitez 9202
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56562 (name=Bidder 50, phone=0700000050, email=bidder50@mail.ro) >>> licitez 9202
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56564. Total: 51
+[04-05-2026 21:57:26] /127.0.0.1:56564 (name=Bidder 51, phone=0700000051, email=bidder51@mail.ro) >>> licitez 3999
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56564 (name=Bidder 51, phone=0700000051, email=bidder51@mail.ro) >>> licitez 3999
+[04-05-2026 21:57:26] /127.0.0.1:56564 (name=Bidder 51, phone=0700000051, email=bidder51@mail.ro) >>> licitez 3999
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56564 (name=Bidder 51, phone=0700000051, email=bidder51@mail.ro) >>> licitez 3999
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56566. Total: 52
+[04-05-2026 21:57:26] /127.0.0.1:56566 (name=Bidder 52, phone=0700000052, email=bidder52@mail.ro) >>> licitez 7996
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56566 (name=Bidder 52, phone=0700000052, email=bidder52@mail.ro) >>> licitez 7996
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56568. Total: 53
+[04-05-2026 21:57:26] /127.0.0.1:56568 (name=Bidder 53, phone=0700000053, email=bidder53@mail.ro) >>> licitez 9496
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56568 (name=Bidder 53, phone=0700000053, email=bidder53@mail.ro) >>> licitez 9496
+[04-05-2026 21:57:26] /127.0.0.1:56568 (name=Bidder 53, phone=0700000053, email=bidder53@mail.ro) >>> licitez 9496
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56568 (name=Bidder 53, phone=0700000053, email=bidder53@mail.ro) >>> licitez 9496
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56570. Total: 54
+[04-05-2026 21:57:26] /127.0.0.1:56570 (name=Bidder 54, phone=0700000054, email=bidder54@mail.ro) >>> licitez 1262
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56570 (name=Bidder 54, phone=0700000054, email=bidder54@mail.ro) >>> licitez 1262
+[04-05-2026 21:57:26] /127.0.0.1:56570 (name=Bidder 54, phone=0700000054, email=bidder54@mail.ro) >>> licitez 1262
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56570 (name=Bidder 54, phone=0700000054, email=bidder54@mail.ro) >>> licitez 1262
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56572. Total: 55
+[04-05-2026 21:57:26] /127.0.0.1:56572 (name=Bidder 55, phone=0700000055, email=bidder55@mail.ro) >>> licitez 6681
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56572 (name=Bidder 55, phone=0700000055, email=bidder55@mail.ro) >>> licitez 6681
+[04-05-2026 21:57:26] /127.0.0.1:56572 (name=Bidder 55, phone=0700000055, email=bidder55@mail.ro) >>> licitez 6681
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56572 (name=Bidder 55, phone=0700000055, email=bidder55@mail.ro) >>> licitez 6681
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56574. Total: 56
+[04-05-2026 21:57:26] /127.0.0.1:56574 (name=Bidder 56, phone=0700000056, email=bidder56@mail.ro) >>> licitez 6239
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56574 (name=Bidder 56, phone=0700000056, email=bidder56@mail.ro) >>> licitez 6239
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56576. Total: 57
+[04-05-2026 21:57:26] /127.0.0.1:56576 (name=Bidder 57, phone=0700000057, email=bidder57@mail.ro) >>> licitez 6918
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56576 (name=Bidder 57, phone=0700000057, email=bidder57@mail.ro) >>> licitez 6918
+[04-05-2026 21:57:26] /127.0.0.1:56576 (name=Bidder 57, phone=0700000057, email=bidder57@mail.ro) >>> licitez 6918
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56576 (name=Bidder 57, phone=0700000057, email=bidder57@mail.ro) >>> licitez 6918
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56578. Total: 58
+[04-05-2026 21:57:26] /127.0.0.1:56578 (name=Bidder 58, phone=0700000058, email=bidder58@mail.ro) >>> licitez 5907
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56578 (name=Bidder 58, phone=0700000058, email=bidder58@mail.ro) >>> licitez 5907
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56580. Total: 59
+[04-05-2026 21:57:26] /127.0.0.1:56580 (name=Bidder 59, phone=0700000059, email=bidder59@mail.ro) >>> licitez 7634
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56580 (name=Bidder 59, phone=0700000059, email=bidder59@mail.ro) >>> licitez 7634
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56582. Total: 60
+[04-05-2026 21:57:26] /127.0.0.1:56582 (name=Bidder 60, phone=0700000060, email=bidder60@mail.ro) >>> licitez 2080
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56582 (name=Bidder 60, phone=0700000060, email=bidder60@mail.ro) >>> licitez 2080
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56584. Total: 61
+[04-05-2026 21:57:26] /127.0.0.1:56584 (name=Bidder 61, phone=0700000061, email=bidder61@mail.ro) >>> licitez 1745
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56584 (name=Bidder 61, phone=0700000061, email=bidder61@mail.ro) >>> licitez 1745
+[04-05-2026 21:57:26] /127.0.0.1:56584 (name=Bidder 61, phone=0700000061, email=bidder61@mail.ro) >>> licitez 1745
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56584 (name=Bidder 61, phone=0700000061, email=bidder61@mail.ro) >>> licitez 1745
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56586. Total: 62
+[04-05-2026 21:57:26] /127.0.0.1:56586 (name=Bidder 62, phone=0700000062, email=bidder62@mail.ro) >>> licitez 3785
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56586 (name=Bidder 62, phone=0700000062, email=bidder62@mail.ro) >>> licitez 3785
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56588. Total: 63
+[04-05-2026 21:57:26] /127.0.0.1:56588 (name=Bidder 63, phone=0700000063, email=bidder63@mail.ro) >>> licitez 5593
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56588 (name=Bidder 63, phone=0700000063, email=bidder63@mail.ro) >>> licitez 5593
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56590. Total: 64
+[04-05-2026 21:57:26] /127.0.0.1:56590 (name=Bidder 64, phone=0700000064, email=bidder64@mail.ro) >>> licitez 7612
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56590 (name=Bidder 64, phone=0700000064, email=bidder64@mail.ro) >>> licitez 7612
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56592. Total: 65
+[04-05-2026 21:57:26] /127.0.0.1:56592 (name=Bidder 65, phone=0700000065, email=bidder65@mail.ro) >>> licitez 6452
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56592 (name=Bidder 65, phone=0700000065, email=bidder65@mail.ro) >>> licitez 6452
+[04-05-2026 21:57:26] /127.0.0.1:56592 (name=Bidder 65, phone=0700000065, email=bidder65@mail.ro) >>> licitez 6452
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56592 (name=Bidder 65, phone=0700000065, email=bidder65@mail.ro) >>> licitez 6452
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56594. Total: 66
+[04-05-2026 21:57:26] /127.0.0.1:56594 (name=Bidder 66, phone=0700000066, email=bidder66@mail.ro) >>> licitez 9255
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56594 (name=Bidder 66, phone=0700000066, email=bidder66@mail.ro) >>> licitez 9255
+[04-05-2026 21:57:26] /127.0.0.1:56594 (name=Bidder 66, phone=0700000066, email=bidder66@mail.ro) >>> licitez 9255
+[JOURNAL] [04-05-2026 21:57:26] Bid received: [04-05-2026 21:57:26] /127.0.0.1:56594 (name=Bidder 66, phone=0700000066, email=bidder66@mail.ro) >>> licitez 9255
+[JOURNAL] [04-05-2026 21:57:26] Bidder connected: /127.0.0.1:56596. Total: 67
+[04-05-2026 21:57:27] /127.0.0.1:56596 (name=Bidder 67, phone=0700000067, email=bidder67@mail.ro) >>> licitez 4762
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56596 (name=Bidder 67, phone=0700000067, email=bidder67@mail.ro) >>> licitez 4762
+[04-05-2026 21:57:27] /127.0.0.1:56596 (name=Bidder 67, phone=0700000067, email=bidder67@mail.ro) >>> licitez 4762
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56596 (name=Bidder 67, phone=0700000067, email=bidder67@mail.ro) >>> licitez 4762
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56598. Total: 68
+[04-05-2026 21:57:27] /127.0.0.1:56598 (name=Bidder 68, phone=0700000068, email=bidder68@mail.ro) >>> licitez 5128
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56598 (name=Bidder 68, phone=0700000068, email=bidder68@mail.ro) >>> licitez 5128
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56600. Total: 69
+[04-05-2026 21:57:27] /127.0.0.1:56600 (name=Bidder 69, phone=0700000069, email=bidder69@mail.ro) >>> licitez 7694
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56600 (name=Bidder 69, phone=0700000069, email=bidder69@mail.ro) >>> licitez 7694
+[04-05-2026 21:57:27] /127.0.0.1:56600 (name=Bidder 69, phone=0700000069, email=bidder69@mail.ro) >>> licitez 7694
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56600 (name=Bidder 69, phone=0700000069, email=bidder69@mail.ro) >>> licitez 7694
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56602. Total: 70
+[04-05-2026 21:57:27] /127.0.0.1:56602 (name=Bidder 70, phone=0700000070, email=bidder70@mail.ro) >>> licitez 1028
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56602 (name=Bidder 70, phone=0700000070, email=bidder70@mail.ro) >>> licitez 1028
+[04-05-2026 21:57:27] /127.0.0.1:56602 (name=Bidder 70, phone=0700000070, email=bidder70@mail.ro) >>> licitez 1028
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56602 (name=Bidder 70, phone=0700000070, email=bidder70@mail.ro) >>> licitez 1028
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56604. Total: 71
+[04-05-2026 21:57:27] /127.0.0.1:56604 (name=Bidder 71, phone=0700000071, email=bidder71@mail.ro) >>> licitez 1477
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56604 (name=Bidder 71, phone=0700000071, email=bidder71@mail.ro) >>> licitez 1477
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56606. Total: 72
+[04-05-2026 21:57:27] /127.0.0.1:56606 (name=Bidder 72, phone=0700000072, email=bidder72@mail.ro) >>> licitez 5348
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56606 (name=Bidder 72, phone=0700000072, email=bidder72@mail.ro) >>> licitez 5348
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56608. Total: 73
+[04-05-2026 21:57:27] /127.0.0.1:56608 (name=Bidder 73, phone=0700000073, email=bidder73@mail.ro) >>> licitez 6284
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56608 (name=Bidder 73, phone=0700000073, email=bidder73@mail.ro) >>> licitez 6284
+[04-05-2026 21:57:27] /127.0.0.1:56608 (name=Bidder 73, phone=0700000073, email=bidder73@mail.ro) >>> licitez 6284
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56608 (name=Bidder 73, phone=0700000073, email=bidder73@mail.ro) >>> licitez 6284
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56610. Total: 74
+[04-05-2026 21:57:27] /127.0.0.1:56610 (name=Bidder 74, phone=0700000074, email=bidder74@mail.ro) >>> licitez 6716
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56610 (name=Bidder 74, phone=0700000074, email=bidder74@mail.ro) >>> licitez 6716
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56612. Total: 75
+[04-05-2026 21:57:27] /127.0.0.1:56612 (name=Bidder 75, phone=0700000075, email=bidder75@mail.ro) >>> licitez 6735
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56612 (name=Bidder 75, phone=0700000075, email=bidder75@mail.ro) >>> licitez 6735
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56614. Total: 76
+[04-05-2026 21:57:27] /127.0.0.1:56614 (name=Bidder 76, phone=0700000076, email=bidder76@mail.ro) >>> licitez 8156
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56614 (name=Bidder 76, phone=0700000076, email=bidder76@mail.ro) >>> licitez 8156
+[04-05-2026 21:57:27] /127.0.0.1:56614 (name=Bidder 76, phone=0700000076, email=bidder76@mail.ro) >>> licitez 8156
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56614 (name=Bidder 76, phone=0700000076, email=bidder76@mail.ro) >>> licitez 8156
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56616. Total: 77
+[04-05-2026 21:57:27] /127.0.0.1:56616 (name=Bidder 77, phone=0700000077, email=bidder77@mail.ro) >>> licitez 3746
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56616 (name=Bidder 77, phone=0700000077, email=bidder77@mail.ro) >>> licitez 3746
+[04-05-2026 21:57:27] /127.0.0.1:56616 (name=Bidder 77, phone=0700000077, email=bidder77@mail.ro) >>> licitez 3746
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56616 (name=Bidder 77, phone=0700000077, email=bidder77@mail.ro) >>> licitez 3746
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56618. Total: 78
+[04-05-2026 21:57:27] /127.0.0.1:56618 (name=Bidder 78, phone=0700000078, email=bidder78@mail.ro) >>> licitez 8061
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56618 (name=Bidder 78, phone=0700000078, email=bidder78@mail.ro) >>> licitez 8061
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56620. Total: 79
+[04-05-2026 21:57:27] /127.0.0.1:56620 (name=Bidder 79, phone=0700000079, email=bidder79@mail.ro) >>> licitez 5121
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56620 (name=Bidder 79, phone=0700000079, email=bidder79@mail.ro) >>> licitez 5121
+[04-05-2026 21:57:27] /127.0.0.1:56620 (name=Bidder 79, phone=0700000079, email=bidder79@mail.ro) >>> licitez 5121
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56620 (name=Bidder 79, phone=0700000079, email=bidder79@mail.ro) >>> licitez 5121
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56622. Total: 80
+[04-05-2026 21:57:27] /127.0.0.1:56622 (name=Bidder 80, phone=0700000080, email=bidder80@mail.ro) >>> licitez 5066
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56622 (name=Bidder 80, phone=0700000080, email=bidder80@mail.ro) >>> licitez 5066
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56624. Total: 81
+[04-05-2026 21:57:27] /127.0.0.1:56624 (name=Bidder 81, phone=0700000081, email=bidder81@mail.ro) >>> licitez 7156
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56624 (name=Bidder 81, phone=0700000081, email=bidder81@mail.ro) >>> licitez 7156
+[04-05-2026 21:57:27] /127.0.0.1:56624 (name=Bidder 81, phone=0700000081, email=bidder81@mail.ro) >>> licitez 7156
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56624 (name=Bidder 81, phone=0700000081, email=bidder81@mail.ro) >>> licitez 7156
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56626. Total: 82
+[04-05-2026 21:57:27] /127.0.0.1:56626 (name=Bidder 82, phone=0700000082, email=bidder82@mail.ro) >>> licitez 8560
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56626 (name=Bidder 82, phone=0700000082, email=bidder82@mail.ro) >>> licitez 8560
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56628. Total: 83
+[04-05-2026 21:57:27] /127.0.0.1:56628 (name=Bidder 83, phone=0700000083, email=bidder83@mail.ro) >>> licitez 6162
+[JOURNAL] [04-05-2026 21:57:27] Bid received: [04-05-2026 21:57:27] /127.0.0.1:56628 (name=Bidder 83, phone=0700000083, email=bidder83@mail.ro) >>> licitez 6162
+[JOURNAL] [04-05-2026 21:57:27] Bidder connected: /127.0.0.1:56630. Total: 84
+[04-05-2026 21:57:28] /127.0.0.1:56630 (name=Bidder 84, phone=0700000084, email=bidder84@mail.ro) >>> licitez 7169
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56630 (name=Bidder 84, phone=0700000084, email=bidder84@mail.ro) >>> licitez 7169
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56632. Total: 85
+[04-05-2026 21:57:28] /127.0.0.1:56632 (name=Bidder 85, phone=0700000085, email=bidder85@mail.ro) >>> licitez 9698
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56632 (name=Bidder 85, phone=0700000085, email=bidder85@mail.ro) >>> licitez 9698
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56634. Total: 86
+[04-05-2026 21:57:28] /127.0.0.1:56634 (name=Bidder 86, phone=0700000086, email=bidder86@mail.ro) >>> licitez 9838
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56634 (name=Bidder 86, phone=0700000086, email=bidder86@mail.ro) >>> licitez 9838
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56636. Total: 87
+[04-05-2026 21:57:28] /127.0.0.1:56636 (name=Bidder 87, phone=0700000087, email=bidder87@mail.ro) >>> licitez 5378
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56636 (name=Bidder 87, phone=0700000087, email=bidder87@mail.ro) >>> licitez 5378
+[04-05-2026 21:57:28] /127.0.0.1:56636 (name=Bidder 87, phone=0700000087, email=bidder87@mail.ro) >>> licitez 5378
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56636 (name=Bidder 87, phone=0700000087, email=bidder87@mail.ro) >>> licitez 5378
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56638. Total: 88
+[04-05-2026 21:57:28] /127.0.0.1:56638 (name=Bidder 88, phone=0700000088, email=bidder88@mail.ro) >>> licitez 1669
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56638 (name=Bidder 88, phone=0700000088, email=bidder88@mail.ro) >>> licitez 1669
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56640. Total: 89
+[04-05-2026 21:57:28] /127.0.0.1:56640 (name=Bidder 89, phone=0700000089, email=bidder89@mail.ro) >>> licitez 3491
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56640 (name=Bidder 89, phone=0700000089, email=bidder89@mail.ro) >>> licitez 3491
+[04-05-2026 21:57:28] /127.0.0.1:56640 (name=Bidder 89, phone=0700000089, email=bidder89@mail.ro) >>> licitez 3491
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56640 (name=Bidder 89, phone=0700000089, email=bidder89@mail.ro) >>> licitez 3491
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56642. Total: 90
+[04-05-2026 21:57:28] /127.0.0.1:56642 (name=Bidder 90, phone=0700000090, email=bidder90@mail.ro) >>> licitez 2948
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56642 (name=Bidder 90, phone=0700000090, email=bidder90@mail.ro) >>> licitez 2948
+[04-05-2026 21:57:28] /127.0.0.1:56642 (name=Bidder 90, phone=0700000090, email=bidder90@mail.ro) >>> licitez 2948
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56642 (name=Bidder 90, phone=0700000090, email=bidder90@mail.ro) >>> licitez 2948
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56644. Total: 91
+[04-05-2026 21:57:28] /127.0.0.1:56644 (name=Bidder 91, phone=0700000091, email=bidder91@mail.ro) >>> licitez 9864
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56644 (name=Bidder 91, phone=0700000091, email=bidder91@mail.ro) >>> licitez 9864
+[04-05-2026 21:57:28] /127.0.0.1:56644 (name=Bidder 91, phone=0700000091, email=bidder91@mail.ro) >>> licitez 9864
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56644 (name=Bidder 91, phone=0700000091, email=bidder91@mail.ro) >>> licitez 9864
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56646. Total: 92
+[04-05-2026 21:57:28] /127.0.0.1:56646 (name=Bidder 92, phone=0700000092, email=bidder92@mail.ro) >>> licitez 5123
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56646 (name=Bidder 92, phone=0700000092, email=bidder92@mail.ro) >>> licitez 5123
+[04-05-2026 21:57:28] /127.0.0.1:56646 (name=Bidder 92, phone=0700000092, email=bidder92@mail.ro) >>> licitez 5123
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56646 (name=Bidder 92, phone=0700000092, email=bidder92@mail.ro) >>> licitez 5123
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56648. Total: 93
+[04-05-2026 21:57:28] /127.0.0.1:56648 (name=Bidder 93, phone=0700000093, email=bidder93@mail.ro) >>> licitez 8630
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56648 (name=Bidder 93, phone=0700000093, email=bidder93@mail.ro) >>> licitez 8630
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56650. Total: 94
+[04-05-2026 21:57:28] /127.0.0.1:56650 (name=Bidder 94, phone=0700000094, email=bidder94@mail.ro) >>> licitez 7199
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56650 (name=Bidder 94, phone=0700000094, email=bidder94@mail.ro) >>> licitez 7199
+[04-05-2026 21:57:28] /127.0.0.1:56650 (name=Bidder 94, phone=0700000094, email=bidder94@mail.ro) >>> licitez 7199
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56650 (name=Bidder 94, phone=0700000094, email=bidder94@mail.ro) >>> licitez 7199
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56652. Total: 95
+[04-05-2026 21:57:28] /127.0.0.1:56652 (name=Bidder 95, phone=0700000095, email=bidder95@mail.ro) >>> licitez 6279
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56652 (name=Bidder 95, phone=0700000095, email=bidder95@mail.ro) >>> licitez 6279
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56654. Total: 96
+[04-05-2026 21:57:28] /127.0.0.1:56654 (name=Bidder 96, phone=0700000096, email=bidder96@mail.ro) >>> licitez 1629
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56654 (name=Bidder 96, phone=0700000096, email=bidder96@mail.ro) >>> licitez 1629
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56656. Total: 97
+[04-05-2026 21:57:28] /127.0.0.1:56656 (name=Bidder 97, phone=0700000097, email=bidder97@mail.ro) >>> licitez 1471
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56656 (name=Bidder 97, phone=0700000097, email=bidder97@mail.ro) >>> licitez 1471
+[04-05-2026 21:57:28] /127.0.0.1:56656 (name=Bidder 97, phone=0700000097, email=bidder97@mail.ro) >>> licitez 1471
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56656 (name=Bidder 97, phone=0700000097, email=bidder97@mail.ro) >>> licitez 1471
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56658. Total: 98
+[04-05-2026 21:57:28] /127.0.0.1:56658 (name=Bidder 98, phone=0700000098, email=bidder98@mail.ro) >>> licitez 6514
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56658 (name=Bidder 98, phone=0700000098, email=bidder98@mail.ro) >>> licitez 6514
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56660. Total: 99
+[04-05-2026 21:57:28] /127.0.0.1:56660 (name=Bidder 99, phone=0700000099, email=bidder99@mail.ro) >>> licitez 6379
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56660 (name=Bidder 99, phone=0700000099, email=bidder99@mail.ro) >>> licitez 6379
+[04-05-2026 21:57:28] /127.0.0.1:56660 (name=Bidder 99, phone=0700000099, email=bidder99@mail.ro) >>> licitez 6379
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56660 (name=Bidder 99, phone=0700000099, email=bidder99@mail.ro) >>> licitez 6379
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56662. Total: 100
+[04-05-2026 21:57:28] /127.0.0.1:56662 (name=Bidder 100, phone=0700000100, email=bidder100@mail.ro) >>> licitez 4554
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56662 (name=Bidder 100, phone=0700000100, email=bidder100@mail.ro) >>> licitez 4554
+[04-05-2026 21:57:28] /127.0.0.1:56662 (name=Bidder 100, phone=0700000100, email=bidder100@mail.ro) >>> licitez 4554
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56662 (name=Bidder 100, phone=0700000100, email=bidder100@mail.ro) >>> licitez 4554
+[JOURNAL] [04-05-2026 21:57:28] Bidder connected: /127.0.0.1:56664. Total: 101
+[04-05-2026 21:57:28] /127.0.0.1:56664 (name=Bidder 101, phone=0700000101, email=bidder101@mail.ro) >>> licitez 3030
+[JOURNAL] [04-05-2026 21:57:28] Bid received: [04-05-2026 21:57:28] /127.0.0.1:56664 (name=Bidder 101, phone=0700000101, email=bidder101@mail.ro) >>> licitez 3030
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56666. Total: 102
+[04-05-2026 21:57:29] /127.0.0.1:56666 (name=Bidder 102, phone=0700000102, email=bidder102@mail.ro) >>> licitez 3465
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56666 (name=Bidder 102, phone=0700000102, email=bidder102@mail.ro) >>> licitez 3465
+[04-05-2026 21:57:29] /127.0.0.1:56666 (name=Bidder 102, phone=0700000102, email=bidder102@mail.ro) >>> licitez 3465
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56666 (name=Bidder 102, phone=0700000102, email=bidder102@mail.ro) >>> licitez 3465
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56668. Total: 103
+[04-05-2026 21:57:29] /127.0.0.1:56668 (name=Bidder 103, phone=0700000103, email=bidder103@mail.ro) >>> licitez 2838
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56668 (name=Bidder 103, phone=0700000103, email=bidder103@mail.ro) >>> licitez 2838
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56670. Total: 104
+[04-05-2026 21:57:29] /127.0.0.1:56670 (name=Bidder 104, phone=0700000104, email=bidder104@mail.ro) >>> licitez 2792
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56670 (name=Bidder 104, phone=0700000104, email=bidder104@mail.ro) >>> licitez 2792
+[04-05-2026 21:57:29] /127.0.0.1:56670 (name=Bidder 104, phone=0700000104, email=bidder104@mail.ro) >>> licitez 2792
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56670 (name=Bidder 104, phone=0700000104, email=bidder104@mail.ro) >>> licitez 2792
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56672. Total: 105
+[04-05-2026 21:57:29] /127.0.0.1:56672 (name=Bidder 105, phone=0700000105, email=bidder105@mail.ro) >>> licitez 2891
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56672 (name=Bidder 105, phone=0700000105, email=bidder105@mail.ro) >>> licitez 2891
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56674. Total: 106
+[04-05-2026 21:57:29] /127.0.0.1:56674 (name=Bidder 106, phone=0700000106, email=bidder106@mail.ro) >>> licitez 8602
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56674 (name=Bidder 106, phone=0700000106, email=bidder106@mail.ro) >>> licitez 8602
+[04-05-2026 21:57:29] /127.0.0.1:56674 (name=Bidder 106, phone=0700000106, email=bidder106@mail.ro) >>> licitez 8602
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56674 (name=Bidder 106, phone=0700000106, email=bidder106@mail.ro) >>> licitez 8602
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56676. Total: 107
+[04-05-2026 21:57:29] /127.0.0.1:56676 (name=Bidder 107, phone=0700000107, email=bidder107@mail.ro) >>> licitez 6952
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56676 (name=Bidder 107, phone=0700000107, email=bidder107@mail.ro) >>> licitez 6952
+[04-05-2026 21:57:29] /127.0.0.1:56676 (name=Bidder 107, phone=0700000107, email=bidder107@mail.ro) >>> licitez 6952
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56676 (name=Bidder 107, phone=0700000107, email=bidder107@mail.ro) >>> licitez 6952
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56678. Total: 108
+[04-05-2026 21:57:29] /127.0.0.1:56678 (name=Bidder 108, phone=0700000108, email=bidder108@mail.ro) >>> licitez 2101
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56678 (name=Bidder 108, phone=0700000108, email=bidder108@mail.ro) >>> licitez 2101
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56680. Total: 109
+[04-05-2026 21:57:29] /127.0.0.1:56680 (name=Bidder 109, phone=0700000109, email=bidder109@mail.ro) >>> licitez 8022
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56680 (name=Bidder 109, phone=0700000109, email=bidder109@mail.ro) >>> licitez 8022
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56682. Total: 110
+[04-05-2026 21:57:29] /127.0.0.1:56682 (name=Bidder 110, phone=0700000110, email=bidder110@mail.ro) >>> licitez 3366
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56682 (name=Bidder 110, phone=0700000110, email=bidder110@mail.ro) >>> licitez 3366
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56684. Total: 111
+[04-05-2026 21:57:29] /127.0.0.1:56684 (name=Bidder 111, phone=0700000111, email=bidder111@mail.ro) >>> licitez 5147
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56684 (name=Bidder 111, phone=0700000111, email=bidder111@mail.ro) >>> licitez 5147
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56688. Total: 112
+[04-05-2026 21:57:29] /127.0.0.1:56688 (name=Bidder 112, phone=0700000112, email=bidder112@mail.ro) >>> licitez 1306
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56688 (name=Bidder 112, phone=0700000112, email=bidder112@mail.ro) >>> licitez 1306
+[04-05-2026 21:57:29] /127.0.0.1:56688 (name=Bidder 112, phone=0700000112, email=bidder112@mail.ro) >>> licitez 1306
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56688 (name=Bidder 112, phone=0700000112, email=bidder112@mail.ro) >>> licitez 1306
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56690. Total: 113
+[04-05-2026 21:57:29] /127.0.0.1:56690 (name=Bidder 113, phone=0700000113, email=bidder113@mail.ro) >>> licitez 1820
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56690 (name=Bidder 113, phone=0700000113, email=bidder113@mail.ro) >>> licitez 1820
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56692. Total: 114
+[04-05-2026 21:57:29] /127.0.0.1:56692 (name=Bidder 114, phone=0700000114, email=bidder114@mail.ro) >>> licitez 3026
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56692 (name=Bidder 114, phone=0700000114, email=bidder114@mail.ro) >>> licitez 3026
+[04-05-2026 21:57:29] /127.0.0.1:56692 (name=Bidder 114, phone=0700000114, email=bidder114@mail.ro) >>> licitez 3026
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56692 (name=Bidder 114, phone=0700000114, email=bidder114@mail.ro) >>> licitez 3026
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56694. Total: 115
+[04-05-2026 21:57:29] /127.0.0.1:56694 (name=Bidder 115, phone=0700000115, email=bidder115@mail.ro) >>> licitez 3671
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56694 (name=Bidder 115, phone=0700000115, email=bidder115@mail.ro) >>> licitez 3671
+[04-05-2026 21:57:29] /127.0.0.1:56694 (name=Bidder 115, phone=0700000115, email=bidder115@mail.ro) >>> licitez 3671
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56694 (name=Bidder 115, phone=0700000115, email=bidder115@mail.ro) >>> licitez 3671
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56696. Total: 116
+[04-05-2026 21:57:29] /127.0.0.1:56696 (name=Bidder 116, phone=0700000116, email=bidder116@mail.ro) >>> licitez 4833
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56696 (name=Bidder 116, phone=0700000116, email=bidder116@mail.ro) >>> licitez 4833
+[04-05-2026 21:57:29] /127.0.0.1:56696 (name=Bidder 116, phone=0700000116, email=bidder116@mail.ro) >>> licitez 4833
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56696 (name=Bidder 116, phone=0700000116, email=bidder116@mail.ro) >>> licitez 4833
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56698. Total: 117
+[04-05-2026 21:57:29] /127.0.0.1:56698 (name=Bidder 117, phone=0700000117, email=bidder117@mail.ro) >>> licitez 9673
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56698 (name=Bidder 117, phone=0700000117, email=bidder117@mail.ro) >>> licitez 9673
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56700. Total: 118
+[04-05-2026 21:57:29] /127.0.0.1:56700 (name=Bidder 118, phone=0700000118, email=bidder118@mail.ro) >>> licitez 4529
+[JOURNAL] [04-05-2026 21:57:29] Bid received: [04-05-2026 21:57:29] /127.0.0.1:56700 (name=Bidder 118, phone=0700000118, email=bidder118@mail.ro) >>> licitez 4529
+[JOURNAL] [04-05-2026 21:57:29] Bidder connected: /127.0.0.1:56702. Total: 119
+[04-05-2026 21:57:30] /127.0.0.1:56702 (name=Bidder 119, phone=0700000119, email=bidder119@mail.ro) >>> licitez 7151
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56702 (name=Bidder 119, phone=0700000119, email=bidder119@mail.ro) >>> licitez 7151
+[04-05-2026 21:57:30] /127.0.0.1:56702 (name=Bidder 119, phone=0700000119, email=bidder119@mail.ro) >>> licitez 7151
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56702 (name=Bidder 119, phone=0700000119, email=bidder119@mail.ro) >>> licitez 7151
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56704. Total: 120
+[04-05-2026 21:57:30] /127.0.0.1:56704 (name=Bidder 120, phone=0700000120, email=bidder120@mail.ro) >>> licitez 1647
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56704 (name=Bidder 120, phone=0700000120, email=bidder120@mail.ro) >>> licitez 1647
+[04-05-2026 21:57:30] /127.0.0.1:56704 (name=Bidder 120, phone=0700000120, email=bidder120@mail.ro) >>> licitez 1647
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56704 (name=Bidder 120, phone=0700000120, email=bidder120@mail.ro) >>> licitez 1647
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56706. Total: 121
+[04-05-2026 21:57:30] /127.0.0.1:56706 (name=Bidder 121, phone=0700000121, email=bidder121@mail.ro) >>> licitez 5153
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56706 (name=Bidder 121, phone=0700000121, email=bidder121@mail.ro) >>> licitez 5153
+[04-05-2026 21:57:30] /127.0.0.1:56706 (name=Bidder 121, phone=0700000121, email=bidder121@mail.ro) >>> licitez 5153
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56706 (name=Bidder 121, phone=0700000121, email=bidder121@mail.ro) >>> licitez 5153
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56708. Total: 122
+[04-05-2026 21:57:30] /127.0.0.1:56708 (name=Bidder 122, phone=0700000122, email=bidder122@mail.ro) >>> licitez 7175
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56708 (name=Bidder 122, phone=0700000122, email=bidder122@mail.ro) >>> licitez 7175
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56710. Total: 123
+[04-05-2026 21:57:30] /127.0.0.1:56710 (name=Bidder 123, phone=0700000123, email=bidder123@mail.ro) >>> licitez 2430
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56710 (name=Bidder 123, phone=0700000123, email=bidder123@mail.ro) >>> licitez 2430
+[04-05-2026 21:57:30] /127.0.0.1:56710 (name=Bidder 123, phone=0700000123, email=bidder123@mail.ro) >>> licitez 2430
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56710 (name=Bidder 123, phone=0700000123, email=bidder123@mail.ro) >>> licitez 2430
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56712. Total: 124
+[04-05-2026 21:57:30] /127.0.0.1:56712 (name=Bidder 124, phone=0700000124, email=bidder124@mail.ro) >>> licitez 9128
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56712 (name=Bidder 124, phone=0700000124, email=bidder124@mail.ro) >>> licitez 9128
+[04-05-2026 21:57:30] /127.0.0.1:56712 (name=Bidder 124, phone=0700000124, email=bidder124@mail.ro) >>> licitez 9128
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56712 (name=Bidder 124, phone=0700000124, email=bidder124@mail.ro) >>> licitez 9128
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56714. Total: 125
+[04-05-2026 21:57:30] /127.0.0.1:56714 (name=Bidder 125, phone=0700000125, email=bidder125@mail.ro) >>> licitez 6004
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56714 (name=Bidder 125, phone=0700000125, email=bidder125@mail.ro) >>> licitez 6004
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56716. Total: 126
+[04-05-2026 21:57:30] /127.0.0.1:56716 (name=Bidder 126, phone=0700000126, email=bidder126@mail.ro) >>> licitez 6678
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56716 (name=Bidder 126, phone=0700000126, email=bidder126@mail.ro) >>> licitez 6678
+[04-05-2026 21:57:30] /127.0.0.1:56716 (name=Bidder 126, phone=0700000126, email=bidder126@mail.ro) >>> licitez 6678
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56716 (name=Bidder 126, phone=0700000126, email=bidder126@mail.ro) >>> licitez 6678
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56718. Total: 127
+[04-05-2026 21:57:30] /127.0.0.1:56718 (name=Bidder 127, phone=0700000127, email=bidder127@mail.ro) >>> licitez 7501
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56718 (name=Bidder 127, phone=0700000127, email=bidder127@mail.ro) >>> licitez 7501
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56720. Total: 128
+[04-05-2026 21:57:30] /127.0.0.1:56720 (name=Bidder 128, phone=0700000128, email=bidder128@mail.ro) >>> licitez 5200
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56720 (name=Bidder 128, phone=0700000128, email=bidder128@mail.ro) >>> licitez 5200
+[04-05-2026 21:57:30] /127.0.0.1:56720 (name=Bidder 128, phone=0700000128, email=bidder128@mail.ro) >>> licitez 5200
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56720 (name=Bidder 128, phone=0700000128, email=bidder128@mail.ro) >>> licitez 5200
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56722. Total: 129
+[04-05-2026 21:57:30] /127.0.0.1:56722 (name=Bidder 129, phone=0700000129, email=bidder129@mail.ro) >>> licitez 2621
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56722 (name=Bidder 129, phone=0700000129, email=bidder129@mail.ro) >>> licitez 2621
+[04-05-2026 21:57:30] /127.0.0.1:56722 (name=Bidder 129, phone=0700000129, email=bidder129@mail.ro) >>> licitez 2621
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56722 (name=Bidder 129, phone=0700000129, email=bidder129@mail.ro) >>> licitez 2621
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56724. Total: 130
+[04-05-2026 21:57:30] /127.0.0.1:56724 (name=Bidder 130, phone=0700000130, email=bidder130@mail.ro) >>> licitez 4213
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56724 (name=Bidder 130, phone=0700000130, email=bidder130@mail.ro) >>> licitez 4213
+[04-05-2026 21:57:30] /127.0.0.1:56724 (name=Bidder 130, phone=0700000130, email=bidder130@mail.ro) >>> licitez 4213
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56724 (name=Bidder 130, phone=0700000130, email=bidder130@mail.ro) >>> licitez 4213
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56726. Total: 131
+[04-05-2026 21:57:30] /127.0.0.1:56726 (name=Bidder 131, phone=0700000131, email=bidder131@mail.ro) >>> licitez 8188
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56726 (name=Bidder 131, phone=0700000131, email=bidder131@mail.ro) >>> licitez 8188
+[04-05-2026 21:57:30] /127.0.0.1:56726 (name=Bidder 131, phone=0700000131, email=bidder131@mail.ro) >>> licitez 8188
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56726 (name=Bidder 131, phone=0700000131, email=bidder131@mail.ro) >>> licitez 8188
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56728. Total: 132
+[04-05-2026 21:57:30] /127.0.0.1:56728 (name=Bidder 132, phone=0700000132, email=bidder132@mail.ro) >>> licitez 2128
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56728 (name=Bidder 132, phone=0700000132, email=bidder132@mail.ro) >>> licitez 2128
+[04-05-2026 21:57:30] /127.0.0.1:56728 (name=Bidder 132, phone=0700000132, email=bidder132@mail.ro) >>> licitez 2128
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56728 (name=Bidder 132, phone=0700000132, email=bidder132@mail.ro) >>> licitez 2128
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56730. Total: 133
+[04-05-2026 21:57:30] /127.0.0.1:56730 (name=Bidder 133, phone=0700000133, email=bidder133@mail.ro) >>> licitez 6487
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56730 (name=Bidder 133, phone=0700000133, email=bidder133@mail.ro) >>> licitez 6487
+[04-05-2026 21:57:30] /127.0.0.1:56730 (name=Bidder 133, phone=0700000133, email=bidder133@mail.ro) >>> licitez 6487
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56730 (name=Bidder 133, phone=0700000133, email=bidder133@mail.ro) >>> licitez 6487
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56732. Total: 134
+[04-05-2026 21:57:30] /127.0.0.1:56732 (name=Bidder 134, phone=0700000134, email=bidder134@mail.ro) >>> licitez 1551
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56732 (name=Bidder 134, phone=0700000134, email=bidder134@mail.ro) >>> licitez 1551
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56734. Total: 135
+[04-05-2026 21:57:30] /127.0.0.1:56734 (name=Bidder 135, phone=0700000135, email=bidder135@mail.ro) >>> licitez 2590
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56734 (name=Bidder 135, phone=0700000135, email=bidder135@mail.ro) >>> licitez 2590
+[04-05-2026 21:57:30] /127.0.0.1:56734 (name=Bidder 135, phone=0700000135, email=bidder135@mail.ro) >>> licitez 2590
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56734 (name=Bidder 135, phone=0700000135, email=bidder135@mail.ro) >>> licitez 2590
+[JOURNAL] [04-05-2026 21:57:30] Bidder connected: /127.0.0.1:56736. Total: 136
+[04-05-2026 21:57:30] /127.0.0.1:56736 (name=Bidder 136, phone=0700000136, email=bidder136@mail.ro) >>> licitez 9253
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56736 (name=Bidder 136, phone=0700000136, email=bidder136@mail.ro) >>> licitez 9253
+[04-05-2026 21:57:30] /127.0.0.1:56736 (name=Bidder 136, phone=0700000136, email=bidder136@mail.ro) >>> licitez 9253
+[JOURNAL] [04-05-2026 21:57:30] Bid received: [04-05-2026 21:57:30] /127.0.0.1:56736 (name=Bidder 136, phone=0700000136, email=bidder136@mail.ro) >>> licitez 9253
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56738. Total: 137
+[04-05-2026 21:57:31] /127.0.0.1:56738 (name=Bidder 137, phone=0700000137, email=bidder137@mail.ro) >>> licitez 3096
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56738 (name=Bidder 137, phone=0700000137, email=bidder137@mail.ro) >>> licitez 3096
+[04-05-2026 21:57:31] /127.0.0.1:56738 (name=Bidder 137, phone=0700000137, email=bidder137@mail.ro) >>> licitez 3096
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56738 (name=Bidder 137, phone=0700000137, email=bidder137@mail.ro) >>> licitez 3096
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56740. Total: 138
+[04-05-2026 21:57:31] /127.0.0.1:56740 (name=Bidder 138, phone=0700000138, email=bidder138@mail.ro) >>> licitez 7614
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56740 (name=Bidder 138, phone=0700000138, email=bidder138@mail.ro) >>> licitez 7614
+[04-05-2026 21:57:31] /127.0.0.1:56740 (name=Bidder 138, phone=0700000138, email=bidder138@mail.ro) >>> licitez 7614
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56740 (name=Bidder 138, phone=0700000138, email=bidder138@mail.ro) >>> licitez 7614
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56742. Total: 139
+[04-05-2026 21:57:31] /127.0.0.1:56742 (name=Bidder 139, phone=0700000139, email=bidder139@mail.ro) >>> licitez 1308
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56742 (name=Bidder 139, phone=0700000139, email=bidder139@mail.ro) >>> licitez 1308
+[04-05-2026 21:57:31] /127.0.0.1:56742 (name=Bidder 139, phone=0700000139, email=bidder139@mail.ro) >>> licitez 1308
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56742 (name=Bidder 139, phone=0700000139, email=bidder139@mail.ro) >>> licitez 1308
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56744. Total: 140
+[04-05-2026 21:57:31] /127.0.0.1:56744 (name=Bidder 140, phone=0700000140, email=bidder140@mail.ro) >>> licitez 8756
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56744 (name=Bidder 140, phone=0700000140, email=bidder140@mail.ro) >>> licitez 8756
+[04-05-2026 21:57:31] /127.0.0.1:56744 (name=Bidder 140, phone=0700000140, email=bidder140@mail.ro) >>> licitez 8756
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56744 (name=Bidder 140, phone=0700000140, email=bidder140@mail.ro) >>> licitez 8756
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56746. Total: 141
+[04-05-2026 21:57:31] /127.0.0.1:56746 (name=Bidder 141, phone=0700000141, email=bidder141@mail.ro) >>> licitez 1393
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56746 (name=Bidder 141, phone=0700000141, email=bidder141@mail.ro) >>> licitez 1393
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56748. Total: 142
+[04-05-2026 21:57:31] /127.0.0.1:56748 (name=Bidder 142, phone=0700000142, email=bidder142@mail.ro) >>> licitez 1682
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56748 (name=Bidder 142, phone=0700000142, email=bidder142@mail.ro) >>> licitez 1682
+[04-05-2026 21:57:31] /127.0.0.1:56748 (name=Bidder 142, phone=0700000142, email=bidder142@mail.ro) >>> licitez 1682
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56748 (name=Bidder 142, phone=0700000142, email=bidder142@mail.ro) >>> licitez 1682
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56750. Total: 143
+[04-05-2026 21:57:31] /127.0.0.1:56750 (name=Bidder 143, phone=0700000143, email=bidder143@mail.ro) >>> licitez 8395
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56750 (name=Bidder 143, phone=0700000143, email=bidder143@mail.ro) >>> licitez 8395
+[04-05-2026 21:57:31] /127.0.0.1:56750 (name=Bidder 143, phone=0700000143, email=bidder143@mail.ro) >>> licitez 8395
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56750 (name=Bidder 143, phone=0700000143, email=bidder143@mail.ro) >>> licitez 8395
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56752. Total: 144
+[04-05-2026 21:57:31] /127.0.0.1:56752 (name=Bidder 144, phone=0700000144, email=bidder144@mail.ro) >>> licitez 8830
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56752 (name=Bidder 144, phone=0700000144, email=bidder144@mail.ro) >>> licitez 8830
+[04-05-2026 21:57:31] /127.0.0.1:56752 (name=Bidder 144, phone=0700000144, email=bidder144@mail.ro) >>> licitez 8830
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56752 (name=Bidder 144, phone=0700000144, email=bidder144@mail.ro) >>> licitez 8830
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56754. Total: 145
+[04-05-2026 21:57:31] /127.0.0.1:56754 (name=Bidder 145, phone=0700000145, email=bidder145@mail.ro) >>> licitez 3573
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56754 (name=Bidder 145, phone=0700000145, email=bidder145@mail.ro) >>> licitez 3573
+[04-05-2026 21:57:31] /127.0.0.1:56754 (name=Bidder 145, phone=0700000145, email=bidder145@mail.ro) >>> licitez 3573
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56754 (name=Bidder 145, phone=0700000145, email=bidder145@mail.ro) >>> licitez 3573
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56756. Total: 146
+[04-05-2026 21:57:31] /127.0.0.1:56756 (name=Bidder 146, phone=0700000146, email=bidder146@mail.ro) >>> licitez 8597
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56756 (name=Bidder 146, phone=0700000146, email=bidder146@mail.ro) >>> licitez 8597
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56758. Total: 147
+[04-05-2026 21:57:31] /127.0.0.1:56758 (name=Bidder 147, phone=0700000147, email=bidder147@mail.ro) >>> licitez 1652
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56758 (name=Bidder 147, phone=0700000147, email=bidder147@mail.ro) >>> licitez 1652
+[04-05-2026 21:57:31] /127.0.0.1:56758 (name=Bidder 147, phone=0700000147, email=bidder147@mail.ro) >>> licitez 1652
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56758 (name=Bidder 147, phone=0700000147, email=bidder147@mail.ro) >>> licitez 1652
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56760. Total: 148
+[04-05-2026 21:57:31] /127.0.0.1:56760 (name=Bidder 148, phone=0700000148, email=bidder148@mail.ro) >>> licitez 7291
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56760 (name=Bidder 148, phone=0700000148, email=bidder148@mail.ro) >>> licitez 7291
+[04-05-2026 21:57:31] /127.0.0.1:56760 (name=Bidder 148, phone=0700000148, email=bidder148@mail.ro) >>> licitez 7291
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56760 (name=Bidder 148, phone=0700000148, email=bidder148@mail.ro) >>> licitez 7291
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56762. Total: 149
+[04-05-2026 21:57:31] /127.0.0.1:56762 (name=Bidder 149, phone=0700000149, email=bidder149@mail.ro) >>> licitez 9006
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56762 (name=Bidder 149, phone=0700000149, email=bidder149@mail.ro) >>> licitez 9006
+[04-05-2026 21:57:31] /127.0.0.1:56762 (name=Bidder 149, phone=0700000149, email=bidder149@mail.ro) >>> licitez 9006
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56762 (name=Bidder 149, phone=0700000149, email=bidder149@mail.ro) >>> licitez 9006
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56764. Total: 150
+[04-05-2026 21:57:31] /127.0.0.1:56764 (name=Bidder 150, phone=0700000150, email=bidder150@mail.ro) >>> licitez 7084
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56764 (name=Bidder 150, phone=0700000150, email=bidder150@mail.ro) >>> licitez 7084
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56766. Total: 151
+[04-05-2026 21:57:31] /127.0.0.1:56766 (name=Bidder 151, phone=0700000151, email=bidder151@mail.ro) >>> licitez 9726
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56766 (name=Bidder 151, phone=0700000151, email=bidder151@mail.ro) >>> licitez 9726
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56768. Total: 152
+[04-05-2026 21:57:31] /127.0.0.1:56768 (name=Bidder 152, phone=0700000152, email=bidder152@mail.ro) >>> licitez 4836
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56768 (name=Bidder 152, phone=0700000152, email=bidder152@mail.ro) >>> licitez 4836
+[04-05-2026 21:57:31] /127.0.0.1:56768 (name=Bidder 152, phone=0700000152, email=bidder152@mail.ro) >>> licitez 4836
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56768 (name=Bidder 152, phone=0700000152, email=bidder152@mail.ro) >>> licitez 4836
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56770. Total: 153
+[04-05-2026 21:57:31] /127.0.0.1:56770 (name=Bidder 153, phone=0700000153, email=bidder153@mail.ro) >>> licitez 6781
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56770 (name=Bidder 153, phone=0700000153, email=bidder153@mail.ro) >>> licitez 6781
+[04-05-2026 21:57:31] /127.0.0.1:56770 (name=Bidder 153, phone=0700000153, email=bidder153@mail.ro) >>> licitez 6781
+[JOURNAL] [04-05-2026 21:57:31] Bid received: [04-05-2026 21:57:31] /127.0.0.1:56770 (name=Bidder 153, phone=0700000153, email=bidder153@mail.ro) >>> licitez 6781
+[JOURNAL] [04-05-2026 21:57:31] Bidder connected: /127.0.0.1:56772. Total: 154
+[04-05-2026 21:57:32] /127.0.0.1:56772 (name=Bidder 154, phone=0700000154, email=bidder154@mail.ro) >>> licitez 5806
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56772 (name=Bidder 154, phone=0700000154, email=bidder154@mail.ro) >>> licitez 5806
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56774. Total: 155
+[04-05-2026 21:57:32] /127.0.0.1:56774 (name=Bidder 155, phone=0700000155, email=bidder155@mail.ro) >>> licitez 8459
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56774 (name=Bidder 155, phone=0700000155, email=bidder155@mail.ro) >>> licitez 8459
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56776. Total: 156
+[04-05-2026 21:57:32] /127.0.0.1:56776 (name=Bidder 156, phone=0700000156, email=bidder156@mail.ro) >>> licitez 6568
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56776 (name=Bidder 156, phone=0700000156, email=bidder156@mail.ro) >>> licitez 6568
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56780. Total: 157
+[04-05-2026 21:57:32] /127.0.0.1:56780 (name=Bidder 157, phone=0700000157, email=bidder157@mail.ro) >>> licitez 5811
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56780 (name=Bidder 157, phone=0700000157, email=bidder157@mail.ro) >>> licitez 5811
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56782. Total: 158
+[04-05-2026 21:57:32] /127.0.0.1:56782 (name=Bidder 158, phone=0700000158, email=bidder158@mail.ro) >>> licitez 3142
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56782 (name=Bidder 158, phone=0700000158, email=bidder158@mail.ro) >>> licitez 3142
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56784. Total: 159
+[04-05-2026 21:57:32] /127.0.0.1:56784 (name=Bidder 159, phone=0700000159, email=bidder159@mail.ro) >>> licitez 9233
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56784 (name=Bidder 159, phone=0700000159, email=bidder159@mail.ro) >>> licitez 9233
+[04-05-2026 21:57:32] /127.0.0.1:56784 (name=Bidder 159, phone=0700000159, email=bidder159@mail.ro) >>> licitez 9233
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56784 (name=Bidder 159, phone=0700000159, email=bidder159@mail.ro) >>> licitez 9233
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56786. Total: 160
+[04-05-2026 21:57:32] /127.0.0.1:56786 (name=Bidder 160, phone=0700000160, email=bidder160@mail.ro) >>> licitez 9551
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56786 (name=Bidder 160, phone=0700000160, email=bidder160@mail.ro) >>> licitez 9551
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56788. Total: 161
+[04-05-2026 21:57:32] /127.0.0.1:56788 (name=Bidder 161, phone=0700000161, email=bidder161@mail.ro) >>> licitez 4992
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56788 (name=Bidder 161, phone=0700000161, email=bidder161@mail.ro) >>> licitez 4992
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56790. Total: 162
+[04-05-2026 21:57:32] /127.0.0.1:56790 (name=Bidder 162, phone=0700000162, email=bidder162@mail.ro) >>> licitez 5156
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56790 (name=Bidder 162, phone=0700000162, email=bidder162@mail.ro) >>> licitez 5156
+[04-05-2026 21:57:32] /127.0.0.1:56790 (name=Bidder 162, phone=0700000162, email=bidder162@mail.ro) >>> licitez 5156
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56790 (name=Bidder 162, phone=0700000162, email=bidder162@mail.ro) >>> licitez 5156
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56792. Total: 163
+[04-05-2026 21:57:32] /127.0.0.1:56792 (name=Bidder 163, phone=0700000163, email=bidder163@mail.ro) >>> licitez 5728
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56792 (name=Bidder 163, phone=0700000163, email=bidder163@mail.ro) >>> licitez 5728
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56794. Total: 164
+[04-05-2026 21:57:32] /127.0.0.1:56794 (name=Bidder 164, phone=0700000164, email=bidder164@mail.ro) >>> licitez 9407
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56794 (name=Bidder 164, phone=0700000164, email=bidder164@mail.ro) >>> licitez 9407
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56796. Total: 165
+[04-05-2026 21:57:32] /127.0.0.1:56796 (name=Bidder 165, phone=0700000165, email=bidder165@mail.ro) >>> licitez 5040
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56796 (name=Bidder 165, phone=0700000165, email=bidder165@mail.ro) >>> licitez 5040
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56798. Total: 166
+[04-05-2026 21:57:32] /127.0.0.1:56798 (name=Bidder 166, phone=0700000166, email=bidder166@mail.ro) >>> licitez 6448
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56798 (name=Bidder 166, phone=0700000166, email=bidder166@mail.ro) >>> licitez 6448
+[04-05-2026 21:57:32] /127.0.0.1:56798 (name=Bidder 166, phone=0700000166, email=bidder166@mail.ro) >>> licitez 6448
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56798 (name=Bidder 166, phone=0700000166, email=bidder166@mail.ro) >>> licitez 6448
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56800. Total: 167
+[04-05-2026 21:57:32] /127.0.0.1:56800 (name=Bidder 167, phone=0700000167, email=bidder167@mail.ro) >>> licitez 2998
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56800 (name=Bidder 167, phone=0700000167, email=bidder167@mail.ro) >>> licitez 2998
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56802. Total: 168
+[04-05-2026 21:57:32] /127.0.0.1:56802 (name=Bidder 168, phone=0700000168, email=bidder168@mail.ro) >>> licitez 2666
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56802 (name=Bidder 168, phone=0700000168, email=bidder168@mail.ro) >>> licitez 2666
+[04-05-2026 21:57:32] /127.0.0.1:56802 (name=Bidder 168, phone=0700000168, email=bidder168@mail.ro) >>> licitez 2666
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56802 (name=Bidder 168, phone=0700000168, email=bidder168@mail.ro) >>> licitez 2666
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56804. Total: 169
+[04-05-2026 21:57:32] /127.0.0.1:56804 (name=Bidder 169, phone=0700000169, email=bidder169@mail.ro) >>> licitez 6243
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56804 (name=Bidder 169, phone=0700000169, email=bidder169@mail.ro) >>> licitez 6243
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56806. Total: 170
+[04-05-2026 21:57:32] /127.0.0.1:56806 (name=Bidder 170, phone=0700000170, email=bidder170@mail.ro) >>> licitez 8390
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56806 (name=Bidder 170, phone=0700000170, email=bidder170@mail.ro) >>> licitez 8390
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56808. Total: 171
+[04-05-2026 21:57:32] /127.0.0.1:56808 (name=Bidder 171, phone=0700000171, email=bidder171@mail.ro) >>> licitez 3529
+[JOURNAL] [04-05-2026 21:57:32] Bid received: [04-05-2026 21:57:32] /127.0.0.1:56808 (name=Bidder 171, phone=0700000171, email=bidder171@mail.ro) >>> licitez 3529
+[JOURNAL] [04-05-2026 21:57:32] Bidder connected: /127.0.0.1:56810. Total: 172
+[04-05-2026 21:57:33] /127.0.0.1:56810 (name=Bidder 172, phone=0700000172, email=bidder172@mail.ro) >>> licitez 6162
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56810 (name=Bidder 172, phone=0700000172, email=bidder172@mail.ro) >>> licitez 6162
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56812. Total: 173
+[04-05-2026 21:57:33] /127.0.0.1:56812 (name=Bidder 173, phone=0700000173, email=bidder173@mail.ro) >>> licitez 3859
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56812 (name=Bidder 173, phone=0700000173, email=bidder173@mail.ro) >>> licitez 3859
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56814. Total: 174
+[04-05-2026 21:57:33] /127.0.0.1:56814 (name=Bidder 174, phone=0700000174, email=bidder174@mail.ro) >>> licitez 8860
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56814 (name=Bidder 174, phone=0700000174, email=bidder174@mail.ro) >>> licitez 8860
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56816. Total: 175
+[04-05-2026 21:57:33] /127.0.0.1:56816 (name=Bidder 175, phone=0700000175, email=bidder175@mail.ro) >>> licitez 2765
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56816 (name=Bidder 175, phone=0700000175, email=bidder175@mail.ro) >>> licitez 2765
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56818. Total: 176
+[04-05-2026 21:57:33] /127.0.0.1:56818 (name=Bidder 176, phone=0700000176, email=bidder176@mail.ro) >>> licitez 9910
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56818 (name=Bidder 176, phone=0700000176, email=bidder176@mail.ro) >>> licitez 9910
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56820. Total: 177
+[04-05-2026 21:57:33] /127.0.0.1:56820 (name=Bidder 177, phone=0700000177, email=bidder177@mail.ro) >>> licitez 3145
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56820 (name=Bidder 177, phone=0700000177, email=bidder177@mail.ro) >>> licitez 3145
+[04-05-2026 21:57:33] /127.0.0.1:56820 (name=Bidder 177, phone=0700000177, email=bidder177@mail.ro) >>> licitez 3145
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56820 (name=Bidder 177, phone=0700000177, email=bidder177@mail.ro) >>> licitez 3145
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56822. Total: 178
+[04-05-2026 21:57:33] /127.0.0.1:56822 (name=Bidder 178, phone=0700000178, email=bidder178@mail.ro) >>> licitez 1297
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56822 (name=Bidder 178, phone=0700000178, email=bidder178@mail.ro) >>> licitez 1297
+[04-05-2026 21:57:33] /127.0.0.1:56822 (name=Bidder 178, phone=0700000178, email=bidder178@mail.ro) >>> licitez 1297
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56822 (name=Bidder 178, phone=0700000178, email=bidder178@mail.ro) >>> licitez 1297
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56824. Total: 179
+[04-05-2026 21:57:33] /127.0.0.1:56824 (name=Bidder 179, phone=0700000179, email=bidder179@mail.ro) >>> licitez 5550
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56824 (name=Bidder 179, phone=0700000179, email=bidder179@mail.ro) >>> licitez 5550
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56826. Total: 180
+[04-05-2026 21:57:33] /127.0.0.1:56826 (name=Bidder 180, phone=0700000180, email=bidder180@mail.ro) >>> licitez 2195
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56826 (name=Bidder 180, phone=0700000180, email=bidder180@mail.ro) >>> licitez 2195
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56828. Total: 181
+[04-05-2026 21:57:33] /127.0.0.1:56828 (name=Bidder 181, phone=0700000181, email=bidder181@mail.ro) >>> licitez 8876
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56828 (name=Bidder 181, phone=0700000181, email=bidder181@mail.ro) >>> licitez 8876
+[04-05-2026 21:57:33] /127.0.0.1:56828 (name=Bidder 181, phone=0700000181, email=bidder181@mail.ro) >>> licitez 8876
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56828 (name=Bidder 181, phone=0700000181, email=bidder181@mail.ro) >>> licitez 8876
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56830. Total: 182
+[04-05-2026 21:57:33] /127.0.0.1:56830 (name=Bidder 182, phone=0700000182, email=bidder182@mail.ro) >>> licitez 5847
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56830 (name=Bidder 182, phone=0700000182, email=bidder182@mail.ro) >>> licitez 5847
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56832. Total: 183
+[04-05-2026 21:57:33] /127.0.0.1:56832 (name=Bidder 183, phone=0700000183, email=bidder183@mail.ro) >>> licitez 5228
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56832 (name=Bidder 183, phone=0700000183, email=bidder183@mail.ro) >>> licitez 5228
+[04-05-2026 21:57:33] /127.0.0.1:56832 (name=Bidder 183, phone=0700000183, email=bidder183@mail.ro) >>> licitez 5228
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56832 (name=Bidder 183, phone=0700000183, email=bidder183@mail.ro) >>> licitez 5228
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56834. Total: 184
+[04-05-2026 21:57:33] /127.0.0.1:56834 (name=Bidder 184, phone=0700000184, email=bidder184@mail.ro) >>> licitez 5596
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56834 (name=Bidder 184, phone=0700000184, email=bidder184@mail.ro) >>> licitez 5596
+[04-05-2026 21:57:33] /127.0.0.1:56834 (name=Bidder 184, phone=0700000184, email=bidder184@mail.ro) >>> licitez 5596
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56834 (name=Bidder 184, phone=0700000184, email=bidder184@mail.ro) >>> licitez 5596
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56836. Total: 185
+[04-05-2026 21:57:33] /127.0.0.1:56836 (name=Bidder 185, phone=0700000185, email=bidder185@mail.ro) >>> licitez 8825
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56836 (name=Bidder 185, phone=0700000185, email=bidder185@mail.ro) >>> licitez 8825
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56838. Total: 186
+[04-05-2026 21:57:33] /127.0.0.1:56838 (name=Bidder 186, phone=0700000186, email=bidder186@mail.ro) >>> licitez 7608
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56838 (name=Bidder 186, phone=0700000186, email=bidder186@mail.ro) >>> licitez 7608
+[04-05-2026 21:57:33] /127.0.0.1:56838 (name=Bidder 186, phone=0700000186, email=bidder186@mail.ro) >>> licitez 7608
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56838 (name=Bidder 186, phone=0700000186, email=bidder186@mail.ro) >>> licitez 7608
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56840. Total: 187
+[04-05-2026 21:57:33] /127.0.0.1:56840 (name=Bidder 187, phone=0700000187, email=bidder187@mail.ro) >>> licitez 5487
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56840 (name=Bidder 187, phone=0700000187, email=bidder187@mail.ro) >>> licitez 5487
+[04-05-2026 21:57:33] /127.0.0.1:56840 (name=Bidder 187, phone=0700000187, email=bidder187@mail.ro) >>> licitez 5487
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56840 (name=Bidder 187, phone=0700000187, email=bidder187@mail.ro) >>> licitez 5487
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56842. Total: 188
+[04-05-2026 21:57:33] /127.0.0.1:56842 (name=Bidder 188, phone=0700000188, email=bidder188@mail.ro) >>> licitez 6730
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56842 (name=Bidder 188, phone=0700000188, email=bidder188@mail.ro) >>> licitez 6730
+[04-05-2026 21:57:33] /127.0.0.1:56842 (name=Bidder 188, phone=0700000188, email=bidder188@mail.ro) >>> licitez 6730
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56842 (name=Bidder 188, phone=0700000188, email=bidder188@mail.ro) >>> licitez 6730
+[JOURNAL] [04-05-2026 21:57:33] Bidder connected: /127.0.0.1:56844. Total: 189
+[04-05-2026 21:57:33] /127.0.0.1:56844 (name=Bidder 189, phone=0700000189, email=bidder189@mail.ro) >>> licitez 3368
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56844 (name=Bidder 189, phone=0700000189, email=bidder189@mail.ro) >>> licitez 3368
+[04-05-2026 21:57:33] /127.0.0.1:56844 (name=Bidder 189, phone=0700000189, email=bidder189@mail.ro) >>> licitez 3368
+[JOURNAL] [04-05-2026 21:57:33] Bid received: [04-05-2026 21:57:33] /127.0.0.1:56844 (name=Bidder 189, phone=0700000189, email=bidder189@mail.ro) >>> licitez 3368
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56846. Total: 190
+[04-05-2026 21:57:34] /127.0.0.1:56846 (name=Bidder 190, phone=0700000190, email=bidder190@mail.ro) >>> licitez 1950
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56846 (name=Bidder 190, phone=0700000190, email=bidder190@mail.ro) >>> licitez 1950
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56848. Total: 191
+[04-05-2026 21:57:34] /127.0.0.1:56848 (name=Bidder 191, phone=0700000191, email=bidder191@mail.ro) >>> licitez 4823
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56848 (name=Bidder 191, phone=0700000191, email=bidder191@mail.ro) >>> licitez 4823
+[04-05-2026 21:57:34] /127.0.0.1:56848 (name=Bidder 191, phone=0700000191, email=bidder191@mail.ro) >>> licitez 4823
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56848 (name=Bidder 191, phone=0700000191, email=bidder191@mail.ro) >>> licitez 4823
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56850. Total: 192
+[04-05-2026 21:57:34] /127.0.0.1:56850 (name=Bidder 192, phone=0700000192, email=bidder192@mail.ro) >>> licitez 2579
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56850 (name=Bidder 192, phone=0700000192, email=bidder192@mail.ro) >>> licitez 2579
+[04-05-2026 21:57:34] /127.0.0.1:56850 (name=Bidder 192, phone=0700000192, email=bidder192@mail.ro) >>> licitez 2579
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56850 (name=Bidder 192, phone=0700000192, email=bidder192@mail.ro) >>> licitez 2579
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56853. Total: 193
+[04-05-2026 21:57:34] /127.0.0.1:56853 (name=Bidder 193, phone=0700000193, email=bidder193@mail.ro) >>> licitez 3263
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56853 (name=Bidder 193, phone=0700000193, email=bidder193@mail.ro) >>> licitez 3263
+[04-05-2026 21:57:34] /127.0.0.1:56853 (name=Bidder 193, phone=0700000193, email=bidder193@mail.ro) >>> licitez 3263
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56853 (name=Bidder 193, phone=0700000193, email=bidder193@mail.ro) >>> licitez 3263
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56855. Total: 194
+[04-05-2026 21:57:34] /127.0.0.1:56855 (name=Bidder 194, phone=0700000194, email=bidder194@mail.ro) >>> licitez 6184
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56855 (name=Bidder 194, phone=0700000194, email=bidder194@mail.ro) >>> licitez 6184
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56857. Total: 195
+[04-05-2026 21:57:34] /127.0.0.1:56857 (name=Bidder 195, phone=0700000195, email=bidder195@mail.ro) >>> licitez 3060
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56857 (name=Bidder 195, phone=0700000195, email=bidder195@mail.ro) >>> licitez 3060
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56859. Total: 196
+[04-05-2026 21:57:34] /127.0.0.1:56859 (name=Bidder 196, phone=0700000196, email=bidder196@mail.ro) >>> licitez 7726
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56859 (name=Bidder 196, phone=0700000196, email=bidder196@mail.ro) >>> licitez 7726
+[04-05-2026 21:57:34] /127.0.0.1:56859 (name=Bidder 196, phone=0700000196, email=bidder196@mail.ro) >>> licitez 7726
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56859 (name=Bidder 196, phone=0700000196, email=bidder196@mail.ro) >>> licitez 7726
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56861. Total: 197
+[04-05-2026 21:57:34] /127.0.0.1:56861 (name=Bidder 197, phone=0700000197, email=bidder197@mail.ro) >>> licitez 5044
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56861 (name=Bidder 197, phone=0700000197, email=bidder197@mail.ro) >>> licitez 5044
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56863. Total: 198
+[04-05-2026 21:57:34] /127.0.0.1:56863 (name=Bidder 198, phone=0700000198, email=bidder198@mail.ro) >>> licitez 1778
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56863 (name=Bidder 198, phone=0700000198, email=bidder198@mail.ro) >>> licitez 1778
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56865. Total: 199
+[04-05-2026 21:57:34] /127.0.0.1:56865 (name=Bidder 199, phone=0700000199, email=bidder199@mail.ro) >>> licitez 2276
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56865 (name=Bidder 199, phone=0700000199, email=bidder199@mail.ro) >>> licitez 2276
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56867. Total: 200
+[04-05-2026 21:57:34] /127.0.0.1:56867 (name=Bidder 200, phone=0700000200, email=bidder200@mail.ro) >>> licitez 9650
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56867 (name=Bidder 200, phone=0700000200, email=bidder200@mail.ro) >>> licitez 9650
+[04-05-2026 21:57:34] /127.0.0.1:56867 (name=Bidder 200, phone=0700000200, email=bidder200@mail.ro) >>> licitez 9650
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56867 (name=Bidder 200, phone=0700000200, email=bidder200@mail.ro) >>> licitez 9650
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56869. Total: 201
+[04-05-2026 21:57:34] /127.0.0.1:56869 (name=Bidder 201, phone=0700000201, email=bidder201@mail.ro) >>> licitez 4735
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56869 (name=Bidder 201, phone=0700000201, email=bidder201@mail.ro) >>> licitez 4735
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56871. Total: 202
+[04-05-2026 21:57:34] /127.0.0.1:56871 (name=Bidder 202, phone=0700000202, email=bidder202@mail.ro) >>> licitez 8859
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56871 (name=Bidder 202, phone=0700000202, email=bidder202@mail.ro) >>> licitez 8859
+[04-05-2026 21:57:34] /127.0.0.1:56871 (name=Bidder 202, phone=0700000202, email=bidder202@mail.ro) >>> licitez 8859
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56871 (name=Bidder 202, phone=0700000202, email=bidder202@mail.ro) >>> licitez 8859
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56873. Total: 203
+[04-05-2026 21:57:34] /127.0.0.1:56873 (name=Bidder 203, phone=0700000203, email=bidder203@mail.ro) >>> licitez 2497
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56873 (name=Bidder 203, phone=0700000203, email=bidder203@mail.ro) >>> licitez 2497
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56875. Total: 204
+[04-05-2026 21:57:34] /127.0.0.1:56875 (name=Bidder 204, phone=0700000204, email=bidder204@mail.ro) >>> licitez 4680
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56875 (name=Bidder 204, phone=0700000204, email=bidder204@mail.ro) >>> licitez 4680
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56877. Total: 205
+[04-05-2026 21:57:34] /127.0.0.1:56877 (name=Bidder 205, phone=0700000205, email=bidder205@mail.ro) >>> licitez 4788
+[JOURNAL] [04-05-2026 21:57:34] Bid received: [04-05-2026 21:57:34] /127.0.0.1:56877 (name=Bidder 205, phone=0700000205, email=bidder205@mail.ro) >>> licitez 4788
+[JOURNAL] [04-05-2026 21:57:34] Bidder connected: /127.0.0.1:56879. Total: 206
+[04-05-2026 21:57:35] /127.0.0.1:56879 (name=Bidder 206, phone=0700000206, email=bidder206@mail.ro) >>> licitez 8553
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56879 (name=Bidder 206, phone=0700000206, email=bidder206@mail.ro) >>> licitez 8553
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56881. Total: 207
+[04-05-2026 21:57:35] /127.0.0.1:56881 (name=Bidder 207, phone=0700000207, email=bidder207@mail.ro) >>> licitez 9500
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56881 (name=Bidder 207, phone=0700000207, email=bidder207@mail.ro) >>> licitez 9500
+[04-05-2026 21:57:35] /127.0.0.1:56881 (name=Bidder 207, phone=0700000207, email=bidder207@mail.ro) >>> licitez 9500
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56881 (name=Bidder 207, phone=0700000207, email=bidder207@mail.ro) >>> licitez 9500
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56883. Total: 208
+[04-05-2026 21:57:35] /127.0.0.1:56883 (name=Bidder 208, phone=0700000208, email=bidder208@mail.ro) >>> licitez 9387
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56883 (name=Bidder 208, phone=0700000208, email=bidder208@mail.ro) >>> licitez 9387
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56885. Total: 209
+[04-05-2026 21:57:35] /127.0.0.1:56885 (name=Bidder 209, phone=0700000209, email=bidder209@mail.ro) >>> licitez 3237
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56885 (name=Bidder 209, phone=0700000209, email=bidder209@mail.ro) >>> licitez 3237
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56887. Total: 210
+[04-05-2026 21:57:35] /127.0.0.1:56887 (name=Bidder 210, phone=0700000210, email=bidder210@mail.ro) >>> licitez 4768
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56887 (name=Bidder 210, phone=0700000210, email=bidder210@mail.ro) >>> licitez 4768
+[04-05-2026 21:57:35] /127.0.0.1:56887 (name=Bidder 210, phone=0700000210, email=bidder210@mail.ro) >>> licitez 4768
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56887 (name=Bidder 210, phone=0700000210, email=bidder210@mail.ro) >>> licitez 4768
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56889. Total: 211
+[04-05-2026 21:57:35] /127.0.0.1:56889 (name=Bidder 211, phone=0700000211, email=bidder211@mail.ro) >>> licitez 3806
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56889 (name=Bidder 211, phone=0700000211, email=bidder211@mail.ro) >>> licitez 3806
+[04-05-2026 21:57:35] /127.0.0.1:56889 (name=Bidder 211, phone=0700000211, email=bidder211@mail.ro) >>> licitez 3806
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56889 (name=Bidder 211, phone=0700000211, email=bidder211@mail.ro) >>> licitez 3806
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56891. Total: 212
+[04-05-2026 21:57:35] /127.0.0.1:56891 (name=Bidder 212, phone=0700000212, email=bidder212@mail.ro) >>> licitez 1640
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56891 (name=Bidder 212, phone=0700000212, email=bidder212@mail.ro) >>> licitez 1640
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56893. Total: 213
+[04-05-2026 21:57:35] /127.0.0.1:56893 (name=Bidder 213, phone=0700000213, email=bidder213@mail.ro) >>> licitez 9380
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56893 (name=Bidder 213, phone=0700000213, email=bidder213@mail.ro) >>> licitez 9380
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56895. Total: 214
+[04-05-2026 21:57:35] /127.0.0.1:56895 (name=Bidder 214, phone=0700000214, email=bidder214@mail.ro) >>> licitez 2973
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56895 (name=Bidder 214, phone=0700000214, email=bidder214@mail.ro) >>> licitez 2973
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56897. Total: 215
+[04-05-2026 21:57:35] /127.0.0.1:56897 (name=Bidder 215, phone=0700000215, email=bidder215@mail.ro) >>> licitez 9322
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56897 (name=Bidder 215, phone=0700000215, email=bidder215@mail.ro) >>> licitez 9322
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56899. Total: 216
+[04-05-2026 21:57:35] /127.0.0.1:56899 (name=Bidder 216, phone=0700000216, email=bidder216@mail.ro) >>> licitez 1069
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56899 (name=Bidder 216, phone=0700000216, email=bidder216@mail.ro) >>> licitez 1069
+[04-05-2026 21:57:35] /127.0.0.1:56899 (name=Bidder 216, phone=0700000216, email=bidder216@mail.ro) >>> licitez 1069
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56899 (name=Bidder 216, phone=0700000216, email=bidder216@mail.ro) >>> licitez 1069
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56901. Total: 217
+[04-05-2026 21:57:35] /127.0.0.1:56901 (name=Bidder 217, phone=0700000217, email=bidder217@mail.ro) >>> licitez 5721
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56901 (name=Bidder 217, phone=0700000217, email=bidder217@mail.ro) >>> licitez 5721
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56903. Total: 218
+[04-05-2026 21:57:35] /127.0.0.1:56903 (name=Bidder 218, phone=0700000218, email=bidder218@mail.ro) >>> licitez 7870
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56903 (name=Bidder 218, phone=0700000218, email=bidder218@mail.ro) >>> licitez 7870
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56905. Total: 219
+[04-05-2026 21:57:35] /127.0.0.1:56905 (name=Bidder 219, phone=0700000219, email=bidder219@mail.ro) >>> licitez 4739
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56905 (name=Bidder 219, phone=0700000219, email=bidder219@mail.ro) >>> licitez 4739
+[04-05-2026 21:57:35] /127.0.0.1:56905 (name=Bidder 219, phone=0700000219, email=bidder219@mail.ro) >>> licitez 4739
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56905 (name=Bidder 219, phone=0700000219, email=bidder219@mail.ro) >>> licitez 4739
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56907. Total: 220
+[04-05-2026 21:57:35] /127.0.0.1:56907 (name=Bidder 220, phone=0700000220, email=bidder220@mail.ro) >>> licitez 6496
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56907 (name=Bidder 220, phone=0700000220, email=bidder220@mail.ro) >>> licitez 6496
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56909. Total: 221
+[04-05-2026 21:57:35] /127.0.0.1:56909 (name=Bidder 221, phone=0700000221, email=bidder221@mail.ro) >>> licitez 3447
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56909 (name=Bidder 221, phone=0700000221, email=bidder221@mail.ro) >>> licitez 3447
+[04-05-2026 21:57:35] /127.0.0.1:56909 (name=Bidder 221, phone=0700000221, email=bidder221@mail.ro) >>> licitez 3447
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56909 (name=Bidder 221, phone=0700000221, email=bidder221@mail.ro) >>> licitez 3447
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56911. Total: 222
+[04-05-2026 21:57:35] /127.0.0.1:56911 (name=Bidder 222, phone=0700000222, email=bidder222@mail.ro) >>> licitez 8672
+[JOURNAL] [04-05-2026 21:57:35] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56911 (name=Bidder 222, phone=0700000222, email=bidder222@mail.ro) >>> licitez 8672
+[JOURNAL] [04-05-2026 21:57:35] Bidder connected: /127.0.0.1:56913. Total: 223
+[04-05-2026 21:57:35] /127.0.0.1:56913 (name=Bidder 223, phone=0700000223, email=bidder223@mail.ro) >>> licitez 5787
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56913 (name=Bidder 223, phone=0700000223, email=bidder223@mail.ro) >>> licitez 5787
+[04-05-2026 21:57:35] /127.0.0.1:56913 (name=Bidder 223, phone=0700000223, email=bidder223@mail.ro) >>> licitez 5787
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:35] /127.0.0.1:56913 (name=Bidder 223, phone=0700000223, email=bidder223@mail.ro) >>> licitez 5787
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56915. Total: 224
+[04-05-2026 21:57:36] /127.0.0.1:56915 (name=Bidder 224, phone=0700000224, email=bidder224@mail.ro) >>> licitez 9925
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56915 (name=Bidder 224, phone=0700000224, email=bidder224@mail.ro) >>> licitez 9925
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56917. Total: 225
+[04-05-2026 21:57:36] /127.0.0.1:56917 (name=Bidder 225, phone=0700000225, email=bidder225@mail.ro) >>> licitez 2113
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56917 (name=Bidder 225, phone=0700000225, email=bidder225@mail.ro) >>> licitez 2113
+[04-05-2026 21:57:36] /127.0.0.1:56917 (name=Bidder 225, phone=0700000225, email=bidder225@mail.ro) >>> licitez 2113
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56917 (name=Bidder 225, phone=0700000225, email=bidder225@mail.ro) >>> licitez 2113
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56919. Total: 226
+[04-05-2026 21:57:36] /127.0.0.1:56919 (name=Bidder 226, phone=0700000226, email=bidder226@mail.ro) >>> licitez 6302
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56919 (name=Bidder 226, phone=0700000226, email=bidder226@mail.ro) >>> licitez 6302
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56921. Total: 227
+[04-05-2026 21:57:36] /127.0.0.1:56921 (name=Bidder 227, phone=0700000227, email=bidder227@mail.ro) >>> licitez 5814
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56921 (name=Bidder 227, phone=0700000227, email=bidder227@mail.ro) >>> licitez 5814
+[04-05-2026 21:57:36] /127.0.0.1:56921 (name=Bidder 227, phone=0700000227, email=bidder227@mail.ro) >>> licitez 5814
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56921 (name=Bidder 227, phone=0700000227, email=bidder227@mail.ro) >>> licitez 5814
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56923. Total: 228
+[04-05-2026 21:57:36] /127.0.0.1:56923 (name=Bidder 228, phone=0700000228, email=bidder228@mail.ro) >>> licitez 3548
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56923 (name=Bidder 228, phone=0700000228, email=bidder228@mail.ro) >>> licitez 3548
+[04-05-2026 21:57:36] /127.0.0.1:56923 (name=Bidder 228, phone=0700000228, email=bidder228@mail.ro) >>> licitez 3548
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56923 (name=Bidder 228, phone=0700000228, email=bidder228@mail.ro) >>> licitez 3548
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56925. Total: 229
+[04-05-2026 21:57:36] /127.0.0.1:56925 (name=Bidder 229, phone=0700000229, email=bidder229@mail.ro) >>> licitez 5774
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56925 (name=Bidder 229, phone=0700000229, email=bidder229@mail.ro) >>> licitez 5774
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56927. Total: 230
+[04-05-2026 21:57:36] /127.0.0.1:56927 (name=Bidder 230, phone=0700000230, email=bidder230@mail.ro) >>> licitez 7089
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56927 (name=Bidder 230, phone=0700000230, email=bidder230@mail.ro) >>> licitez 7089
+[04-05-2026 21:57:36] /127.0.0.1:56927 (name=Bidder 230, phone=0700000230, email=bidder230@mail.ro) >>> licitez 7089
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56927 (name=Bidder 230, phone=0700000230, email=bidder230@mail.ro) >>> licitez 7089
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56929. Total: 231
+[04-05-2026 21:57:36] /127.0.0.1:56929 (name=Bidder 231, phone=0700000231, email=bidder231@mail.ro) >>> licitez 2693
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56929 (name=Bidder 231, phone=0700000231, email=bidder231@mail.ro) >>> licitez 2693
+[04-05-2026 21:57:36] /127.0.0.1:56929 (name=Bidder 231, phone=0700000231, email=bidder231@mail.ro) >>> licitez 2693
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56929 (name=Bidder 231, phone=0700000231, email=bidder231@mail.ro) >>> licitez 2693
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56931. Total: 232
+[04-05-2026 21:57:36] /127.0.0.1:56931 (name=Bidder 232, phone=0700000232, email=bidder232@mail.ro) >>> licitez 9075
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56931 (name=Bidder 232, phone=0700000232, email=bidder232@mail.ro) >>> licitez 9075
+[04-05-2026 21:57:36] /127.0.0.1:56931 (name=Bidder 232, phone=0700000232, email=bidder232@mail.ro) >>> licitez 9075
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56931 (name=Bidder 232, phone=0700000232, email=bidder232@mail.ro) >>> licitez 9075
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56933. Total: 233
+[04-05-2026 21:57:36] /127.0.0.1:56933 (name=Bidder 233, phone=0700000233, email=bidder233@mail.ro) >>> licitez 7773
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56933 (name=Bidder 233, phone=0700000233, email=bidder233@mail.ro) >>> licitez 7773
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56935. Total: 234
+[04-05-2026 21:57:36] /127.0.0.1:56935 (name=Bidder 234, phone=0700000234, email=bidder234@mail.ro) >>> licitez 6587
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56935 (name=Bidder 234, phone=0700000234, email=bidder234@mail.ro) >>> licitez 6587
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56937. Total: 235
+[04-05-2026 21:57:36] /127.0.0.1:56937 (name=Bidder 235, phone=0700000235, email=bidder235@mail.ro) >>> licitez 8644
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56937 (name=Bidder 235, phone=0700000235, email=bidder235@mail.ro) >>> licitez 8644
+[04-05-2026 21:57:36] /127.0.0.1:56937 (name=Bidder 235, phone=0700000235, email=bidder235@mail.ro) >>> licitez 8644
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56937 (name=Bidder 235, phone=0700000235, email=bidder235@mail.ro) >>> licitez 8644
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56939. Total: 236
+[04-05-2026 21:57:36] /127.0.0.1:56939 (name=Bidder 236, phone=0700000236, email=bidder236@mail.ro) >>> licitez 7708
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56939 (name=Bidder 236, phone=0700000236, email=bidder236@mail.ro) >>> licitez 7708
+[04-05-2026 21:57:36] /127.0.0.1:56939 (name=Bidder 236, phone=0700000236, email=bidder236@mail.ro) >>> licitez 7708
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56939 (name=Bidder 236, phone=0700000236, email=bidder236@mail.ro) >>> licitez 7708
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56941. Total: 237
+[04-05-2026 21:57:36] /127.0.0.1:56941 (name=Bidder 237, phone=0700000237, email=bidder237@mail.ro) >>> licitez 7643
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56941 (name=Bidder 237, phone=0700000237, email=bidder237@mail.ro) >>> licitez 7643
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56943. Total: 238
+[04-05-2026 21:57:36] /127.0.0.1:56943 (name=Bidder 238, phone=0700000238, email=bidder238@mail.ro) >>> licitez 9880
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56943 (name=Bidder 238, phone=0700000238, email=bidder238@mail.ro) >>> licitez 9880
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56945. Total: 239
+[04-05-2026 21:57:36] /127.0.0.1:56945 (name=Bidder 239, phone=0700000239, email=bidder239@mail.ro) >>> licitez 6954
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56945 (name=Bidder 239, phone=0700000239, email=bidder239@mail.ro) >>> licitez 6954
+[04-05-2026 21:57:36] /127.0.0.1:56945 (name=Bidder 239, phone=0700000239, email=bidder239@mail.ro) >>> licitez 6954
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56945 (name=Bidder 239, phone=0700000239, email=bidder239@mail.ro) >>> licitez 6954
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56947. Total: 240
+[04-05-2026 21:57:36] /127.0.0.1:56947 (name=Bidder 240, phone=0700000240, email=bidder240@mail.ro) >>> licitez 7844
+[JOURNAL] [04-05-2026 21:57:36] Bid received: [04-05-2026 21:57:36] /127.0.0.1:56947 (name=Bidder 240, phone=0700000240, email=bidder240@mail.ro) >>> licitez 7844
+[JOURNAL] [04-05-2026 21:57:36] Bidder connected: /127.0.0.1:56949. Total: 241
+[04-05-2026 21:57:37] /127.0.0.1:56949 (name=Bidder 241, phone=0700000241, email=bidder241@mail.ro) >>> licitez 4158
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56949 (name=Bidder 241, phone=0700000241, email=bidder241@mail.ro) >>> licitez 4158
+[04-05-2026 21:57:37] /127.0.0.1:56949 (name=Bidder 241, phone=0700000241, email=bidder241@mail.ro) >>> licitez 4158
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56949 (name=Bidder 241, phone=0700000241, email=bidder241@mail.ro) >>> licitez 4158
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56951. Total: 242
+[04-05-2026 21:57:37] /127.0.0.1:56951 (name=Bidder 242, phone=0700000242, email=bidder242@mail.ro) >>> licitez 6737
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56951 (name=Bidder 242, phone=0700000242, email=bidder242@mail.ro) >>> licitez 6737
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56953. Total: 243
+[04-05-2026 21:57:37] /127.0.0.1:56953 (name=Bidder 243, phone=0700000243, email=bidder243@mail.ro) >>> licitez 3723
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56953 (name=Bidder 243, phone=0700000243, email=bidder243@mail.ro) >>> licitez 3723
+[04-05-2026 21:57:37] /127.0.0.1:56953 (name=Bidder 243, phone=0700000243, email=bidder243@mail.ro) >>> licitez 3723
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56953 (name=Bidder 243, phone=0700000243, email=bidder243@mail.ro) >>> licitez 3723
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56955. Total: 244
+[04-05-2026 21:57:37] /127.0.0.1:56955 (name=Bidder 244, phone=0700000244, email=bidder244@mail.ro) >>> licitez 5102
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56955 (name=Bidder 244, phone=0700000244, email=bidder244@mail.ro) >>> licitez 5102
+[04-05-2026 21:57:37] /127.0.0.1:56955 (name=Bidder 244, phone=0700000244, email=bidder244@mail.ro) >>> licitez 5102
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56955 (name=Bidder 244, phone=0700000244, email=bidder244@mail.ro) >>> licitez 5102
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56957. Total: 245
+[04-05-2026 21:57:37] /127.0.0.1:56957 (name=Bidder 245, phone=0700000245, email=bidder245@mail.ro) >>> licitez 6460
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56957 (name=Bidder 245, phone=0700000245, email=bidder245@mail.ro) >>> licitez 6460
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56959. Total: 246
+[04-05-2026 21:57:37] /127.0.0.1:56959 (name=Bidder 246, phone=0700000246, email=bidder246@mail.ro) >>> licitez 8352
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56959 (name=Bidder 246, phone=0700000246, email=bidder246@mail.ro) >>> licitez 8352
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56961. Total: 247
+[04-05-2026 21:57:37] /127.0.0.1:56961 (name=Bidder 247, phone=0700000247, email=bidder247@mail.ro) >>> licitez 6610
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56961 (name=Bidder 247, phone=0700000247, email=bidder247@mail.ro) >>> licitez 6610
+[04-05-2026 21:57:37] /127.0.0.1:56961 (name=Bidder 247, phone=0700000247, email=bidder247@mail.ro) >>> licitez 6610
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56961 (name=Bidder 247, phone=0700000247, email=bidder247@mail.ro) >>> licitez 6610
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56963. Total: 248
+[04-05-2026 21:57:37] /127.0.0.1:56963 (name=Bidder 248, phone=0700000248, email=bidder248@mail.ro) >>> licitez 9601
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56963 (name=Bidder 248, phone=0700000248, email=bidder248@mail.ro) >>> licitez 9601
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56965. Total: 249
+[04-05-2026 21:57:37] /127.0.0.1:56965 (name=Bidder 249, phone=0700000249, email=bidder249@mail.ro) >>> licitez 9620
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56965 (name=Bidder 249, phone=0700000249, email=bidder249@mail.ro) >>> licitez 9620
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56967. Total: 250
+[04-05-2026 21:57:37] /127.0.0.1:56967 (name=Bidder 250, phone=0700000250, email=bidder250@mail.ro) >>> licitez 6969
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56967 (name=Bidder 250, phone=0700000250, email=bidder250@mail.ro) >>> licitez 6969
+[04-05-2026 21:57:37] /127.0.0.1:56967 (name=Bidder 250, phone=0700000250, email=bidder250@mail.ro) >>> licitez 6969
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56967 (name=Bidder 250, phone=0700000250, email=bidder250@mail.ro) >>> licitez 6969
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56971. Total: 251
+[04-05-2026 21:57:37] /127.0.0.1:56971 (name=Bidder 251, phone=0700000251, email=bidder251@mail.ro) >>> licitez 5022
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56971 (name=Bidder 251, phone=0700000251, email=bidder251@mail.ro) >>> licitez 5022
+[04-05-2026 21:57:37] /127.0.0.1:56971 (name=Bidder 251, phone=0700000251, email=bidder251@mail.ro) >>> licitez 5022
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56971 (name=Bidder 251, phone=0700000251, email=bidder251@mail.ro) >>> licitez 5022
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56973. Total: 252
+[04-05-2026 21:57:37] /127.0.0.1:56973 (name=Bidder 252, phone=0700000252, email=bidder252@mail.ro) >>> licitez 9061
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56973 (name=Bidder 252, phone=0700000252, email=bidder252@mail.ro) >>> licitez 9061
+[04-05-2026 21:57:37] /127.0.0.1:56973 (name=Bidder 252, phone=0700000252, email=bidder252@mail.ro) >>> licitez 9061
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56973 (name=Bidder 252, phone=0700000252, email=bidder252@mail.ro) >>> licitez 9061
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56975. Total: 253
+[04-05-2026 21:57:37] /127.0.0.1:56975 (name=Bidder 253, phone=0700000253, email=bidder253@mail.ro) >>> licitez 4409
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56975 (name=Bidder 253, phone=0700000253, email=bidder253@mail.ro) >>> licitez 4409
+[04-05-2026 21:57:37] /127.0.0.1:56975 (name=Bidder 253, phone=0700000253, email=bidder253@mail.ro) >>> licitez 4409
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56975 (name=Bidder 253, phone=0700000253, email=bidder253@mail.ro) >>> licitez 4409
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56977. Total: 254
+[04-05-2026 21:57:37] /127.0.0.1:56977 (name=Bidder 254, phone=0700000254, email=bidder254@mail.ro) >>> licitez 4618
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56977 (name=Bidder 254, phone=0700000254, email=bidder254@mail.ro) >>> licitez 4618
+[04-05-2026 21:57:37] /127.0.0.1:56977 (name=Bidder 254, phone=0700000254, email=bidder254@mail.ro) >>> licitez 4618
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56977 (name=Bidder 254, phone=0700000254, email=bidder254@mail.ro) >>> licitez 4618
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56979. Total: 255
+[04-05-2026 21:57:37] /127.0.0.1:56979 (name=Bidder 255, phone=0700000255, email=bidder255@mail.ro) >>> licitez 9437
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56979 (name=Bidder 255, phone=0700000255, email=bidder255@mail.ro) >>> licitez 9437
+[04-05-2026 21:57:37] /127.0.0.1:56979 (name=Bidder 255, phone=0700000255, email=bidder255@mail.ro) >>> licitez 9437
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56979 (name=Bidder 255, phone=0700000255, email=bidder255@mail.ro) >>> licitez 9437
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56981. Total: 256
+[04-05-2026 21:57:37] /127.0.0.1:56981 (name=Bidder 256, phone=0700000256, email=bidder256@mail.ro) >>> licitez 9884
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56981 (name=Bidder 256, phone=0700000256, email=bidder256@mail.ro) >>> licitez 9884
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56983. Total: 257
+[04-05-2026 21:57:37] /127.0.0.1:56983 (name=Bidder 257, phone=0700000257, email=bidder257@mail.ro) >>> licitez 1015
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56983 (name=Bidder 257, phone=0700000257, email=bidder257@mail.ro) >>> licitez 1015
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56985. Total: 258
+[04-05-2026 21:57:37] /127.0.0.1:56985 (name=Bidder 258, phone=0700000258, email=bidder258@mail.ro) >>> licitez 2455
+[JOURNAL] [04-05-2026 21:57:37] Bid received: [04-05-2026 21:57:37] /127.0.0.1:56985 (name=Bidder 258, phone=0700000258, email=bidder258@mail.ro) >>> licitez 2455
+[JOURNAL] [04-05-2026 21:57:37] Bidder connected: /127.0.0.1:56987. Total: 259
+[04-05-2026 21:57:38] /127.0.0.1:56987 (name=Bidder 259, phone=0700000259, email=bidder259@mail.ro) >>> licitez 7075
+[JOURNAL] [04-05-2026 21:57:38] Bid received: [04-05-2026 21:57:38] /127.0.0.1:56987 (name=Bidder 259, phone=0700000259, email=bidder259@mail.ro) >>> licitez 7075
+[JOURNAL] [04-05-2026 21:57:38] Bidder connected: /127.0.0.1:56989. Total: 260
+[04-05-2026 21:57:38] /127.0.0.1:56989 (name=Bidder 260, phone=0700000260, email=bidder260@mail.ro) >>> licitez 5354
+[JOURNAL] [04-05-2026 21:57:38] Bid received: [04-05-2026 21:57:38] /127.0.0.1:56989 (name=Bidder 260, phone=0700000260, email=bidder260@mail.ro) >>> licitez 5354
+[JOURNAL] [04-05-2026 21:57:45] Shutdown initiated.

@@ -1,0 +1,7 @@
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 219:56905] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 219', phone='0700000219', email='bidder219@mail.ro'.
+[Bidder 219:56905] M-am conectat la Auctioneer! Identitate: Bidder 219 (0700000219, bidder219@mail.ro)
+[BidderMicroservice:219] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 219:56905] Placing bid: licitez 4739
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 219:56905] Sending duplicate (deduplication test).
+[Bidder 219:56905] Astept rezultatul licitatiei...
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 219:56905] Waiting for auction result.

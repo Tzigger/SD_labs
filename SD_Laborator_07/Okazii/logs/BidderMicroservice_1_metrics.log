@@ -1,0 +1,40 @@
+[04-05-2026 21:54:37.166] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 21:54:37.195] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=3685
+[04-05-2026 21:54:37.202] [BidderMicroservice_1] EVENT=duplicate_sent | bidder_id=1, price=3685
+[04-05-2026 21:54:58.459] [BidderMicroservice_1] EVENT=auction_result | bidder_id=1, result=Licitatie pierduta...
+[04-05-2026 21:54:58.469] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 21:55:08.372] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 21:55:08.395] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=2018
+[04-05-2026 21:55:16.464] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 21:56:24.954] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 21:56:24.977] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=2018
+[04-05-2026 21:56:42.277] [BidderMicroservice_1] EVENT=auction_result | bidder_id=1, result=Licitatie pierduta...
+[04-05-2026 21:56:42.300] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 21:57:23.291] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 21:57:23.314] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=1400
+[04-05-2026 21:57:23.319] [BidderMicroservice_1] EVENT=duplicate_sent | bidder_id=1, price=1400
+[04-05-2026 21:57:45.752] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 21:58:33.774] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 21:58:33.797] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=1400
+[04-05-2026 21:58:33.802] [BidderMicroservice_1] EVENT=duplicate_sent | bidder_id=1, price=1400
+[04-05-2026 21:58:54.873] [BidderMicroservice_1] EVENT=auction_result | bidder_id=1, result=Licitatie pierduta...
+[04-05-2026 21:58:54.885] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 22:15:15.011] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 22:15:15.039] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=8508
+[04-05-2026 22:15:15.046] [BidderMicroservice_1] EVENT=duplicate_sent | bidder_id=1, price=8508
+[04-05-2026 22:15:32.335] [BidderMicroservice_1] EVENT=auction_result | bidder_id=1, result=Licitatie pierduta...
+[04-05-2026 22:15:32.360] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 22:16:33.123] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 22:16:33.148] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=7061
+[04-05-2026 22:16:33.153] [BidderMicroservice_1] EVENT=duplicate_sent | bidder_id=1, price=7061
+[04-05-2026 22:16:50.452] [BidderMicroservice_1] EVENT=auction_result | bidder_id=1, result=Licitatie pierduta...
+[04-05-2026 22:16:50.476] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 22:16:53.856] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 22:16:53.880] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=4525
+[04-05-2026 22:17:10.326] [BidderMicroservice_1] EVENT=error | bidder_id=1, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:17:10.328] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1
+[04-05-2026 22:21:02.879] [BidderMicroservice_1] EVENT=cycle_start | bidder_id=1, name=Bidder 1, phone=0700000001, email=bidder1@mail.ro
+[04-05-2026 22:21:02.898] [BidderMicroservice_1] EVENT=bid_sent | bidder_id=1, price=4525
+[04-05-2026 22:21:02.914] [BidderMicroservice_1] EVENT=duplicate_sent | bidder_id=1, price=4525
+[04-05-2026 22:21:23.718] [BidderMicroservice_1] EVENT=auction_result | bidder_id=1, result=Licitatie pierduta...
+[04-05-2026 22:21:23.754] [BidderMicroservice_1] EVENT=shutdown | bidder_id=1

@@ -1,0 +1,4 @@
+[04-05-2026 21:57:35.968] [BidderMicroservice_223] EVENT=cycle_start | bidder_id=223, name=Bidder 223, phone=0700000223, email=bidder223@mail.ro
+[04-05-2026 21:57:35.993] [BidderMicroservice_223] EVENT=bid_sent | bidder_id=223, price=5787
+[04-05-2026 21:57:36.000] [BidderMicroservice_223] EVENT=duplicate_sent | bidder_id=223, price=5787
+[04-05-2026 21:57:45.337] [BidderMicroservice_223] EVENT=shutdown | bidder_id=223

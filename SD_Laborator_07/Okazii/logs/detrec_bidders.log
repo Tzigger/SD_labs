@@ -1,0 +1,17 @@
+
+[0;36mStarting 40 BidderMicroservice instances...[0m
+
+[21:58:34] Launched 10 / 40 bidders...
+[21:58:34] Launched 20 / 40 bidders...
+[21:58:35] Launched 30 / 40 bidders...
+[21:58:35] Launched 40 / 40 bidders...
+[0;32mAll 40 bidder processes launched. Waiting for results...[0m
+
+
+[0;36m══════════════════════════════════[0m
+[0;36m  Results: 40 succeeded, 0 failed (of 40)[0m
+[0;36m  Logs: /Users/tziga/Desktop/Facultate/pp-1211b-homeworks-Tzigger/SD_Laborator_07/Okazii/logs/bidders/[0m
+[0;36m══════════════════════════════════[0m
+
+
+Stopping all bidder processes...

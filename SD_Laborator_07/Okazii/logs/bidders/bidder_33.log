@@ -1,8 +1,9 @@
-[JOURNAL] [29-04-2026 10:59:48] [Bidder 33:50928] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 33', phone='0700000033', email='bidder33@mail.ro'.
-[Bidder 33:50928] M-am conectat la Auctioneer! Identitate: Bidder 33 (0700000033, bidder33@mail.ro)
+[JOURNAL] [04-05-2026 22:21:04] [Bidder 33:58774] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 33', phone='0700000033', email='bidder33@mail.ro'.
+[Bidder 33:58774] M-am conectat la Auctioneer! Identitate: Bidder 33 (0700000033, bidder33@mail.ro)
 [BidderMicroservice:33] HeartBeat client connected to HeartBeatMicroservice.
-[JOURNAL] [29-04-2026 10:59:48] [Bidder 33:50928] Placing bid: licitez 9989
-[Bidder 33:50928] Astept rezultatul licitatiei...
-[JOURNAL] [29-04-2026 10:59:48] [Bidder 33:50928] Waiting for auction result.
-[Bidder 33:50928] Rezultat licitatie: Licitatie castigata! Pret castigator: 9989
-[JOURNAL] [29-04-2026 11:00:08] [Bidder 33:50928] CYCLE_END: Auction result: Licitatie castigata! Pret castigator: 9989
+[JOURNAL] [04-05-2026 22:21:04] [Bidder 33:58774] Placing bid: licitez 2820
+[JOURNAL] [04-05-2026 22:21:04] [Bidder 33:58774] Sending duplicate (deduplication test).
+[Bidder 33:58774] Astept rezultatul licitatiei...
+[JOURNAL] [04-05-2026 22:21:04] [Bidder 33:58774] Waiting for auction result.
+[Bidder 33:58774] Rezultat licitatie: Licitatie pierduta...
+[JOURNAL] [04-05-2026 22:21:23] [Bidder 33:58774] CYCLE_END: Auction result: Licitatie pierduta...

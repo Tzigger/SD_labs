@@ -1,0 +1,5 @@
+[04-05-2026 21:57:35] [Bidder 207:56881] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 207', phone='0700000207', email='bidder207@mail.ro'.
+[04-05-2026 21:57:35] [Bidder 207:56881] Placing bid: licitez 9500
+[04-05-2026 21:57:35] [Bidder 207:56881] Sending duplicate (deduplication test).
+[04-05-2026 21:57:35] [Bidder 207:56881] Waiting for auction result.
+[04-05-2026 21:57:46] [Bidder 207:56881] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

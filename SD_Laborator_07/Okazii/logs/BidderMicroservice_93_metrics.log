@@ -1,0 +1,13 @@
+[04-05-2026 21:54:42.725] [BidderMicroservice_93] EVENT=cycle_start | bidder_id=93, name=Bidder 93, phone=0700000093, email=bidder93@mail.ro
+[04-05-2026 21:54:42.762] [BidderMicroservice_93] EVENT=bid_sent | bidder_id=93, price=8060
+[04-05-2026 21:54:58.463] [BidderMicroservice_93] EVENT=auction_result | bidder_id=93, result=Licitatie pierduta...
+[04-05-2026 21:54:58.467] [BidderMicroservice_93] EVENT=shutdown | bidder_id=93
+[04-05-2026 21:57:28.495] [BidderMicroservice_93] EVENT=cycle_start | bidder_id=93, name=Bidder 93, phone=0700000093, email=bidder93@mail.ro
+[04-05-2026 21:57:28.517] [BidderMicroservice_93] EVENT=bid_sent | bidder_id=93, price=8630
+[04-05-2026 21:57:46.143] [BidderMicroservice_93] EVENT=shutdown | bidder_id=93
+[04-05-2026 21:57:46.397] [BidderMicroservice_93] EVENT=error | bidder_id=93, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:21:08.111] [BidderMicroservice_93] EVENT=cycle_start | bidder_id=93, name=Bidder 93, phone=0700000093, email=bidder93@mail.ro
+[04-05-2026 22:21:08.139] [BidderMicroservice_93] EVENT=bid_sent | bidder_id=93, price=8630
+[04-05-2026 22:21:08.147] [BidderMicroservice_93] EVENT=duplicate_sent | bidder_id=93, price=8630
+[04-05-2026 22:21:23.749] [BidderMicroservice_93] EVENT=auction_result | bidder_id=93, result=Licitatie pierduta...
+[04-05-2026 22:21:23.754] [BidderMicroservice_93] EVENT=shutdown | bidder_id=93

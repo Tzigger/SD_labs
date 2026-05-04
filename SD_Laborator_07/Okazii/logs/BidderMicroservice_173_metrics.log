@@ -1,0 +1,4 @@
+[04-05-2026 21:57:33.059] [BidderMicroservice_173] EVENT=cycle_start | bidder_id=173, name=Bidder 173, phone=0700000173, email=bidder173@mail.ro
+[04-05-2026 21:57:33.082] [BidderMicroservice_173] EVENT=bid_sent | bidder_id=173, price=3859
+[04-05-2026 21:57:45.985] [BidderMicroservice_173] EVENT=shutdown | bidder_id=173
+[04-05-2026 21:57:46.150] [BidderMicroservice_173] EVENT=error | bidder_id=173, message=AuctioneerMicroservice s-a deconectat.

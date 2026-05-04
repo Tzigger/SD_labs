@@ -1,0 +1,4 @@
+[04-05-2026 21:57:29.587] [BidderMicroservice_112] EVENT=cycle_start | bidder_id=112, name=Bidder 112, phone=0700000112, email=bidder112@mail.ro
+[04-05-2026 21:57:29.610] [BidderMicroservice_112] EVENT=bid_sent | bidder_id=112, price=1306
+[04-05-2026 21:57:29.614] [BidderMicroservice_112] EVENT=duplicate_sent | bidder_id=112, price=1306
+[04-05-2026 21:57:45.847] [BidderMicroservice_112] EVENT=shutdown | bidder_id=112

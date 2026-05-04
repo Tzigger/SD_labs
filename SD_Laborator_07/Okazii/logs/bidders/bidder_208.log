@@ -1,0 +1,8 @@
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 208:56883] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 208', phone='0700000208', email='bidder208@mail.ro'.
+[Bidder 208:56883] M-am conectat la Auctioneer! Identitate: Bidder 208 (0700000208, bidder208@mail.ro)
+[BidderMicroservice:208] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 208:56883] Placing bid: licitez 9387
+[Bidder 208:56883] Astept rezultatul licitatiei...
+[JOURNAL] [04-05-2026 21:57:35] [Bidder 208:56883] Waiting for auction result.
+[Bidder 208:56883] Eroare: java.lang.Exception: AuctioneerMicroservice s-a deconectat.
+[JOURNAL] [04-05-2026 21:57:46] [Bidder 208:56883] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

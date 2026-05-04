@@ -1,0 +1,14 @@
+[04-05-2026 21:54:41.473] [BidderMicroservice_71] EVENT=cycle_start | bidder_id=71, name=Bidder 71, phone=0700000071, email=bidder71@mail.ro
+[04-05-2026 21:54:41.526] [BidderMicroservice_71] EVENT=bid_sent | bidder_id=71, price=6128
+[04-05-2026 21:54:41.535] [BidderMicroservice_71] EVENT=duplicate_sent | bidder_id=71, price=6128
+[04-05-2026 21:54:58.670] [BidderMicroservice_71] EVENT=auction_result | bidder_id=71, result=Licitatie pierduta...
+[04-05-2026 21:54:58.677] [BidderMicroservice_71] EVENT=shutdown | bidder_id=71
+[04-05-2026 21:57:27.235] [BidderMicroservice_71] EVENT=cycle_start | bidder_id=71, name=Bidder 71, phone=0700000071, email=bidder71@mail.ro
+[04-05-2026 21:57:27.257] [BidderMicroservice_71] EVENT=bid_sent | bidder_id=71, price=1477
+[04-05-2026 21:57:46.017] [BidderMicroservice_71] EVENT=shutdown | bidder_id=71
+[04-05-2026 21:57:46.394] [BidderMicroservice_71] EVENT=error | bidder_id=71, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:21:06.860] [BidderMicroservice_71] EVENT=cycle_start | bidder_id=71, name=Bidder 71, phone=0700000071, email=bidder71@mail.ro
+[04-05-2026 22:21:06.889] [BidderMicroservice_71] EVENT=bid_sent | bidder_id=71, price=1477
+[04-05-2026 22:21:06.896] [BidderMicroservice_71] EVENT=duplicate_sent | bidder_id=71, price=1477
+[04-05-2026 22:21:23.815] [BidderMicroservice_71] EVENT=auction_result | bidder_id=71, result=Licitatie pierduta...
+[04-05-2026 22:21:23.824] [BidderMicroservice_71] EVENT=shutdown | bidder_id=71

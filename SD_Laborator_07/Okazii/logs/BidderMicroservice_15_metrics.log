@@ -1,0 +1,35 @@
+[04-05-2026 21:54:37.953] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 21:54:37.979] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=7614
+[04-05-2026 21:54:58.390] [BidderMicroservice_15] EVENT=auction_result | bidder_id=15, result=Licitatie pierduta...
+[04-05-2026 21:54:58.631] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 21:56:25.730] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 21:56:25.750] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=6242
+[04-05-2026 21:56:42.299] [BidderMicroservice_15] EVENT=auction_result | bidder_id=15, result=Licitatie pierduta...
+[04-05-2026 21:56:42.306] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 21:57:24.077] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 21:57:24.097] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=9300
+[04-05-2026 21:57:46.034] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 21:58:34.568] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 21:58:34.585] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=9300
+[04-05-2026 21:58:34.591] [BidderMicroservice_15] EVENT=duplicate_sent | bidder_id=15, price=9300
+[04-05-2026 21:58:54.875] [BidderMicroservice_15] EVENT=auction_result | bidder_id=15, result=Licitatie pierduta...
+[04-05-2026 21:58:54.887] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 22:15:15.776] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 22:15:15.796] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=7480
+[04-05-2026 22:15:15.802] [BidderMicroservice_15] EVENT=duplicate_sent | bidder_id=15, price=7480
+[04-05-2026 22:15:32.343] [BidderMicroservice_15] EVENT=auction_result | bidder_id=15, result=Licitatie pierduta...
+[04-05-2026 22:15:32.363] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 22:16:33.888] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 22:16:33.907] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=5645
+[04-05-2026 22:16:50.461] [BidderMicroservice_15] EVENT=auction_result | bidder_id=15, result=Licitatie pierduta...
+[04-05-2026 22:16:50.478] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 22:16:54.638] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 22:16:54.658] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=5464
+[04-05-2026 22:16:54.663] [BidderMicroservice_15] EVENT=duplicate_sent | bidder_id=15, price=5464
+[04-05-2026 22:17:10.328] [BidderMicroservice_15] EVENT=error | bidder_id=15, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:17:10.330] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15
+[04-05-2026 22:21:03.659] [BidderMicroservice_15] EVENT=cycle_start | bidder_id=15, name=Bidder 15, phone=0700000015, email=bidder15@mail.ro
+[04-05-2026 22:21:03.679] [BidderMicroservice_15] EVENT=bid_sent | bidder_id=15, price=5464
+[04-05-2026 22:21:03.686] [BidderMicroservice_15] EVENT=duplicate_sent | bidder_id=15, price=5464
+[04-05-2026 22:21:23.720] [BidderMicroservice_15] EVENT=auction_result | bidder_id=15, result=Licitatie pierduta...
+[04-05-2026 22:21:23.782] [BidderMicroservice_15] EVENT=shutdown | bidder_id=15

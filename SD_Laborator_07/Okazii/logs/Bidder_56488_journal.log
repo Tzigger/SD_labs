@@ -1,5 +1,0 @@
-[28-04-2026 16:15:19] [56488] CYCLE_START: Connected to Auctioneer. Identity: name='Ana Dima', phone='0740123456', email='ana@mail.ro'.
-[28-04-2026 16:15:19] [56488] Placing bid: licitez 6927
-[28-04-2026 16:15:19] [56488] Sending duplicate (deduplication test).
-[28-04-2026 16:15:19] [56488] Waiting for auction result.
-[28-04-2026 16:15:49] [56488] ERROR: java.net.SocketException: Connection reset

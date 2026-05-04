@@ -1,5 +1,0 @@
-[28-04-2026 16:17:49] [56681] CYCLE_START: Connected to Auctioneer. Identity: name='Lucia Petrescu', phone='0750665544', email='lucia@mail.ro'.
-[28-04-2026 16:17:49] [56681] Placing bid: licitez 6577
-[28-04-2026 16:17:49] [56681] Sending duplicate (deduplication test).
-[28-04-2026 16:17:49] [56681] Waiting for auction result.
-[28-04-2026 16:18:05] [56681] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

@@ -1,0 +1,4 @@
+[04-05-2026 21:57:35.164] [BidderMicroservice_209] EVENT=cycle_start | bidder_id=209, name=Bidder 209, phone=0700000209, email=bidder209@mail.ro
+[04-05-2026 21:57:35.191] [BidderMicroservice_209] EVENT=bid_sent | bidder_id=209, price=3237
+[04-05-2026 21:57:45.973] [BidderMicroservice_209] EVENT=shutdown | bidder_id=209
+[04-05-2026 21:57:46.136] [BidderMicroservice_209] EVENT=error | bidder_id=209, message=AuctioneerMicroservice s-a deconectat.

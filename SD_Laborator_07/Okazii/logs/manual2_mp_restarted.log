@@ -1,0 +1,8 @@
+[JOURNAL] [04-05-2026 21:57:40] MessageProcessorMicroservice starting up.
+[MessageProcessorMicroservice] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+MessageProcessorMicroservice se executa pe portul: 1600
+Se asteapta mesaje pentru procesare...
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [04-05-2026 21:57:40] Listening on port 1600.
+[JOURNAL] [04-05-2026 21:57:45] Shutdown initiated.
+Exception in thread "main" java.net.SocketException: Socket closed

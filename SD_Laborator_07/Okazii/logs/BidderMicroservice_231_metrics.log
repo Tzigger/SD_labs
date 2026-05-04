@@ -1,0 +1,4 @@
+[04-05-2026 21:57:36.410] [BidderMicroservice_231] EVENT=cycle_start | bidder_id=231, name=Bidder 231, phone=0700000231, email=bidder231@mail.ro
+[04-05-2026 21:57:36.434] [BidderMicroservice_231] EVENT=bid_sent | bidder_id=231, price=2693
+[04-05-2026 21:57:36.438] [BidderMicroservice_231] EVENT=duplicate_sent | bidder_id=231, price=2693
+[04-05-2026 21:57:45.384] [BidderMicroservice_231] EVENT=shutdown | bidder_id=231

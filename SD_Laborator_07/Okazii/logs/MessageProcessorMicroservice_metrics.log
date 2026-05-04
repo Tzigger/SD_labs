@@ -1,30 +1,623 @@
-[28-04-2026 16:12:18.134] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/[0:0:0:0:0:0:0:1]:56297
-[28-04-2026 16:15:17.466] [MessageProcessorMicroservice] EVENT=recovery_detected | journal_line=2
-[28-04-2026 16:15:17.469] [MessageProcessorMicroservice] EVENT=recovery_empty 
-[28-04-2026 16:15:34.566] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:56507
-[28-04-2026 16:15:34.611] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
-[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
-[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
-[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
-[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
-[28-04-2026 16:15:34.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
-[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
-[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
-[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
-[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
-[28-04-2026 16:15:34.616] [MessageProcessorMicroservice] EVENT=all_received | count=10
-[28-04-2026 16:15:34.621] [MessageProcessorMicroservice] EVENT=sorted | count=10
-[28-04-2026 16:15:34.627] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=17189
-[28-04-2026 16:17:49.078] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:56677
-[28-04-2026 16:17:49.110] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56472, body=Ionescu|phone=0720333444|email=maria@mail.ro|] licitez 8381
-[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56474, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 2302
-[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56476, body=Constantin|phone=0750999000|email=mihai@mail.ro|] licitez 8478
-[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56478, body=Munteanu|phone=0730998877|email=cristian@mail.ro|] licitez 9215
-[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56480, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6144
-[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56482, body=Popa|phone=0760555666|email=andrei@mail.ro|] licitez 6012
-[28-04-2026 16:17:49.113] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56484, body=Popescu|phone=0740111222|email=ion@mail.ro|] licitez 2750
-[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56486, body=Petrescu|phone=0750665544|email=lucia@mail.ro|] licitez 6917
-[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56488, body=Dima|phone=0740123456|email=ana@mail.ro|] licitez 6927
-[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56490, body=Gheorghe|phone=0720654321|email=radu@mail.ro|] licitez 8975
-[28-04-2026 16:17:49.114] [MessageProcessorMicroservice] EVENT=all_received | count=10
-[28-04-2026 16:17:49.118] [MessageProcessorMicroservice] EVENT=sorted | count=10
+[04-05-2026 21:54:58.139] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:56275
+[04-05-2026 21:54:58.183] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56051, body=licitez 3685
+[04-05-2026 21:54:58.184] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877195|/127.0.0.1:56051|Bidder 1|0700000001|bidder1@mail.ro|licitez 3685
+[04-05-2026 21:54:58.184] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56053, body=licitez 4196
+[04-05-2026 21:54:58.184] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56055, body=licitez 2070
+[04-05-2026 21:54:58.184] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877281|/127.0.0.1:56055|Bidder 3|0700000003|bidder3@mail.ro|licitez 2070
+[04-05-2026 21:54:58.185] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56057, body=licitez 9676
+[04-05-2026 21:54:58.185] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56059, body=licitez 9196
+[04-05-2026 21:54:58.185] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56061, body=licitez 2683
+[04-05-2026 21:54:58.185] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877445|/127.0.0.1:56061|Bidder 6|0700000006|bidder6@mail.ro|licitez 2683
+[04-05-2026 21:54:58.186] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56063, body=licitez 5724
+[04-05-2026 21:54:58.186] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56065, body=licitez 9746
+[04-05-2026 21:54:58.186] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56067, body=licitez 4107
+[04-05-2026 21:54:58.187] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56069, body=licitez 5655
+[04-05-2026 21:54:58.187] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877690|/127.0.0.1:56069|Bidder 10|0700000010|bidder10@mail.ro|licitez 5655
+[04-05-2026 21:54:58.187] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56071, body=licitez 6736
+[04-05-2026 21:54:58.187] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877741|/127.0.0.1:56071|Bidder 11|0700000011|bidder11@mail.ro|licitez 6736
+[04-05-2026 21:54:58.188] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56073, body=licitez 8334
+[04-05-2026 21:54:58.188] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56075, body=licitez 7851
+[04-05-2026 21:54:58.188] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877865|/127.0.0.1:56075|Bidder 13|0700000013|bidder13@mail.ro|licitez 7851
+[04-05-2026 21:54:58.188] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56077, body=licitez 8849
+[04-05-2026 21:54:58.188] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920877922|/127.0.0.1:56077|Bidder 14|0700000014|bidder14@mail.ro|licitez 8849
+[04-05-2026 21:54:58.189] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56079, body=licitez 7614
+[04-05-2026 21:54:58.189] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56083, body=licitez 6929
+[04-05-2026 21:54:58.189] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56085, body=licitez 7051
+[04-05-2026 21:54:58.189] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878077|/127.0.0.1:56085|Bidder 17|0700000017|bidder17@mail.ro|licitez 7051
+[04-05-2026 21:54:58.190] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56087, body=licitez 5628
+[04-05-2026 21:54:58.190] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56089, body=licitez 7562
+[04-05-2026 21:54:58.190] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878200|/127.0.0.1:56089|Bidder 19|0700000019|bidder19@mail.ro|licitez 7562
+[04-05-2026 21:54:58.190] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56091, body=licitez 7971
+[04-05-2026 21:54:58.191] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56093, body=licitez 7921
+[04-05-2026 21:54:58.191] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878348|/127.0.0.1:56093|Bidder 21|0700000021|bidder21@mail.ro|licitez 7921
+[04-05-2026 21:54:58.191] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56095, body=licitez 5044
+[04-05-2026 21:54:58.191] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56097, body=licitez 2386
+[04-05-2026 21:54:58.191] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56099, body=licitez 3088
+[04-05-2026 21:54:58.192] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56101, body=licitez 5175
+[04-05-2026 21:54:58.192] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878557|/127.0.0.1:56101|Bidder 25|0700000025|bidder25@mail.ro|licitez 5175
+[04-05-2026 21:54:58.192] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56103, body=licitez 8543
+[04-05-2026 21:54:58.192] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878631|/127.0.0.1:56103|Bidder 26|0700000026|bidder26@mail.ro|licitez 8543
+[04-05-2026 21:54:58.192] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56105, body=licitez 6896
+[04-05-2026 21:54:58.193] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56107, body=licitez 4322
+[04-05-2026 21:54:58.193] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878742|/127.0.0.1:56107|Bidder 28|0700000028|bidder28@mail.ro|licitez 4322
+[04-05-2026 21:54:58.193] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56109, body=licitez 4542
+[04-05-2026 21:54:58.193] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878818|/127.0.0.1:56109|Bidder 29|0700000029|bidder29@mail.ro|licitez 4542
+[04-05-2026 21:54:58.193] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56111, body=licitez 7061
+[04-05-2026 21:54:58.194] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920878916|/127.0.0.1:56111|Bidder 30|0700000030|bidder30@mail.ro|licitez 7061
+[04-05-2026 21:54:58.194] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56113, body=licitez 4948
+[04-05-2026 21:54:58.194] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879016|/127.0.0.1:56113|Bidder 31|0700000031|bidder31@mail.ro|licitez 4948
+[04-05-2026 21:54:58.194] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56115, body=licitez 4840
+[04-05-2026 21:54:58.194] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56116, body=licitez 5887
+[04-05-2026 21:54:58.195] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879070|/127.0.0.1:56116|Bidder 33|0700000033|bidder33@mail.ro|licitez 5887
+[04-05-2026 21:54:58.195] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56119, body=licitez 9486
+[04-05-2026 21:54:58.195] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879101|/127.0.0.1:56119|Bidder 34|0700000034|bidder34@mail.ro|licitez 9486
+[04-05-2026 21:54:58.195] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56121, body=licitez 1082
+[04-05-2026 21:54:58.195] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879152|/127.0.0.1:56121|Bidder 35|0700000035|bidder35@mail.ro|licitez 1082
+[04-05-2026 21:54:58.195] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56123, body=licitez 4539
+[04-05-2026 21:54:58.196] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879198|/127.0.0.1:56123|Bidder 36|0700000036|bidder36@mail.ro|licitez 4539
+[04-05-2026 21:54:58.196] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56125, body=licitez 8019
+[04-05-2026 21:54:58.196] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56127, body=licitez 2000
+[04-05-2026 21:54:58.196] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879302|/127.0.0.1:56127|Bidder 38|0700000038|bidder38@mail.ro|licitez 2000
+[04-05-2026 21:54:58.196] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56129, body=licitez 1043
+[04-05-2026 21:54:58.196] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879359|/127.0.0.1:56129|Bidder 39|0700000039|bidder39@mail.ro|licitez 1043
+[04-05-2026 21:54:58.197] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56131, body=licitez 1052
+[04-05-2026 21:54:58.197] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879412|/127.0.0.1:56131|Bidder 40|0700000040|bidder40@mail.ro|licitez 1052
+[04-05-2026 21:54:58.197] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56133, body=licitez 3777
+[04-05-2026 21:54:58.197] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879476|/127.0.0.1:56133|Bidder 41|0700000041|bidder41@mail.ro|licitez 3777
+[04-05-2026 21:54:58.197] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56135, body=licitez 9046
+[04-05-2026 21:54:58.197] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879525|/127.0.0.1:56135|Bidder 42|0700000042|bidder42@mail.ro|licitez 9046
+[04-05-2026 21:54:58.198] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56137, body=licitez 7494
+[04-05-2026 21:54:58.198] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56139, body=licitez 7057
+[04-05-2026 21:54:58.198] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879630|/127.0.0.1:56139|Bidder 44|0700000044|bidder44@mail.ro|licitez 7057
+[04-05-2026 21:54:58.198] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56141, body=licitez 1127
+[04-05-2026 21:54:58.198] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56143, body=licitez 7117
+[04-05-2026 21:54:58.199] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56145, body=licitez 6304
+[04-05-2026 21:54:58.199] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56147, body=licitez 9220
+[04-05-2026 21:54:58.199] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920879856|/127.0.0.1:56147|Bidder 48|0700000048|bidder48@mail.ro|licitez 9220
+[04-05-2026 21:54:58.199] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56149, body=licitez 1629
+[04-05-2026 21:54:58.199] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56151, body=licitez 7882
+[04-05-2026 21:54:58.200] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56153, body=licitez 2149
+[04-05-2026 21:54:58.200] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880037|/127.0.0.1:56153|Bidder 51|0700000051|bidder51@mail.ro|licitez 2149
+[04-05-2026 21:54:58.200] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56155, body=licitez 5446
+[04-05-2026 21:54:58.200] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56157, body=licitez 6879
+[04-05-2026 21:54:58.200] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56159, body=licitez 8561
+[04-05-2026 21:54:58.200] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56161, body=licitez 7242
+[04-05-2026 21:54:58.201] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56163, body=licitez 3347
+[04-05-2026 21:54:58.201] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880293|/127.0.0.1:56163|Bidder 56|0700000056|bidder56@mail.ro|licitez 3347
+[04-05-2026 21:54:58.201] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56165, body=licitez 6042
+[04-05-2026 21:54:58.201] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880362|/127.0.0.1:56165|Bidder 57|0700000057|bidder57@mail.ro|licitez 6042
+[04-05-2026 21:54:58.201] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56167, body=licitez 1447
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56169, body=licitez 8911
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880475|/127.0.0.1:56169|Bidder 59|0700000059|bidder59@mail.ro|licitez 8911
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56171, body=licitez 7091
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880530|/127.0.0.1:56171|Bidder 60|0700000060|bidder60@mail.ro|licitez 7091
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56173, body=licitez 7847
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56175, body=licitez 7437
+[04-05-2026 21:54:58.202] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880634|/127.0.0.1:56175|Bidder 62|0700000062|bidder62@mail.ro|licitez 7437
+[04-05-2026 21:54:58.203] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56177, body=licitez 2816
+[04-05-2026 21:54:58.203] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880690|/127.0.0.1:56177|Bidder 63|0700000063|bidder63@mail.ro|licitez 2816
+[04-05-2026 21:54:58.203] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56179, body=licitez 4040
+[04-05-2026 21:54:58.203] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920880942|/127.0.0.1:56179|Bidder 64|0700000064|bidder64@mail.ro|licitez 4040
+[04-05-2026 21:54:58.203] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56184, body=licitez 2188
+[04-05-2026 21:54:58.203] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881154|/127.0.0.1:56184|Bidder 65|0700000065|bidder65@mail.ro|licitez 2188
+[04-05-2026 21:54:58.204] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56186, body=licitez 1230
+[04-05-2026 21:54:58.204] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56190, body=licitez 4734
+[04-05-2026 21:54:58.204] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56191, body=licitez 6318
+[04-05-2026 21:54:58.204] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56195, body=licitez 4032
+[04-05-2026 21:54:58.204] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56196, body=licitez 8224
+[04-05-2026 21:54:58.204] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881459|/127.0.0.1:56196|Bidder 69|0700000069|bidder69@mail.ro|licitez 8224
+[04-05-2026 21:54:58.205] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56199, body=licitez 6398
+[04-05-2026 21:54:58.205] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881575|/127.0.0.1:56199|Bidder 72|0700000072|bidder72@mail.ro|licitez 6398
+[04-05-2026 21:54:58.205] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56201, body=licitez 6128
+[04-05-2026 21:54:58.205] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881525|/127.0.0.1:56201|Bidder 71|0700000071|bidder71@mail.ro|licitez 6128
+[04-05-2026 21:54:58.205] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56202, body=licitez 1129
+[04-05-2026 21:54:58.205] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56206, body=licitez 2917
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881652|/127.0.0.1:56206|Bidder 74|0700000074|bidder74@mail.ro|licitez 2917
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56207, body=licitez 3444
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56211, body=licitez 8550
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56212, body=licitez 5050
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881738|/127.0.0.1:56212|Bidder 77|0700000077|bidder77@mail.ro|licitez 5050
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56216, body=licitez 9127
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881824|/127.0.0.1:56216|Bidder 78|0700000078|bidder78@mail.ro|licitez 9127
+[04-05-2026 21:54:58.206] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56217, body=licitez 5892
+[04-05-2026 21:54:58.207] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56221, body=licitez 5088
+[04-05-2026 21:54:58.207] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56225, body=licitez 2818
+[04-05-2026 21:54:58.207] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920881976|/127.0.0.1:56225|Bidder 81|0700000081|bidder81@mail.ro|licitez 2818
+[04-05-2026 21:54:58.207] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56227, body=licitez 3715
+[04-05-2026 21:54:58.207] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56229, body=licitez 4559
+[04-05-2026 21:54:58.207] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56231, body=licitez 2065
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56233, body=licitez 9634
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920882206|/127.0.0.1:56233|Bidder 85|0700000085|bidder85@mail.ro|licitez 9634
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56235, body=licitez 2255
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920882283|/127.0.0.1:56235|Bidder 86|0700000086|bidder86@mail.ro|licitez 2255
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56237, body=licitez 9251
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56239, body=licitez 7288
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56241, body=licitez 2382
+[04-05-2026 21:54:58.208] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920882508|/127.0.0.1:56241|Bidder 89|0700000089|bidder89@mail.ro|licitez 2382
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56243, body=licitez 9132
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920882584|/127.0.0.1:56243|Bidder 90|0700000090|bidder90@mail.ro|licitez 9132
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56245, body=licitez 9721
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56247, body=licitez 8748
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920882729|/127.0.0.1:56247|Bidder 92|0700000092|bidder92@mail.ro|licitez 8748
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56249, body=licitez 8060
+[04-05-2026 21:54:58.209] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56251, body=licitez 6744
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56253, body=licitez 5133
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920882870|/127.0.0.1:56253|Bidder 95|0700000095|bidder95@mail.ro|licitez 5133
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56255, body=licitez 2409
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56256, body=licitez 1924
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56258, body=licitez 4550
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920883008|/127.0.0.1:56258|Bidder 98|0700000098|bidder98@mail.ro|licitez 4550
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56261, body=licitez 8748
+[04-05-2026 21:54:58.210] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920883076|/127.0.0.1:56261|Bidder 99|0700000099|bidder99@mail.ro|licitez 8748
+[04-05-2026 21:54:58.211] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56263, body=licitez 8737
+[04-05-2026 21:54:58.211] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920883109|/127.0.0.1:56263|Bidder 100|0700000100|bidder100@mail.ro|licitez 8737
+[04-05-2026 21:54:58.211] [MessageProcessorMicroservice] EVENT=all_received | count=100
+[04-05-2026 21:54:58.216] [MessageProcessorMicroservice] EVENT=sorted | count=100
+[04-05-2026 21:54:58.230] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=22695
+[04-05-2026 21:56:42.176] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:56433
+[04-05-2026 21:56:42.213] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56341, body=licitez 2018
+[04-05-2026 21:56:42.214] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56343, body=licitez 2449
+[04-05-2026 21:56:42.214] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985031|/127.0.0.1:56343|Bidder 2|0700000002|bidder2@mail.ro|licitez 2449
+[04-05-2026 21:56:42.215] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56345, body=licitez 3042
+[04-05-2026 21:56:42.215] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985084|/127.0.0.1:56345|Bidder 3|0700000003|bidder3@mail.ro|licitez 3042
+[04-05-2026 21:56:42.215] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56347, body=licitez 5902
+[04-05-2026 21:56:42.215] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56349, body=licitez 1341
+[04-05-2026 21:56:42.216] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56351, body=licitez 3670
+[04-05-2026 21:56:42.216] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985244|/127.0.0.1:56351|Bidder 6|0700000006|bidder6@mail.ro|licitez 3670
+[04-05-2026 21:56:42.216] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56353, body=licitez 4644
+[04-05-2026 21:56:42.216] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985302|/127.0.0.1:56353|Bidder 7|0700000007|bidder7@mail.ro|licitez 4644
+[04-05-2026 21:56:42.217] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56355, body=licitez 1295
+[04-05-2026 21:56:42.217] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56357, body=licitez 9920
+[04-05-2026 21:56:42.217] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985415|/127.0.0.1:56357|Bidder 9|0700000009|bidder9@mail.ro|licitez 9920
+[04-05-2026 21:56:42.217] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56359, body=licitez 4093
+[04-05-2026 21:56:42.218] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985470|/127.0.0.1:56359|Bidder 10|0700000010|bidder10@mail.ro|licitez 4093
+[04-05-2026 21:56:42.218] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56361, body=licitez 8842
+[04-05-2026 21:56:42.218] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985527|/127.0.0.1:56361|Bidder 11|0700000011|bidder11@mail.ro|licitez 8842
+[04-05-2026 21:56:42.218] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56363, body=licitez 3110
+[04-05-2026 21:56:42.219] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985581|/127.0.0.1:56363|Bidder 12|0700000012|bidder12@mail.ro|licitez 3110
+[04-05-2026 21:56:42.219] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56365, body=licitez 5390
+[04-05-2026 21:56:42.219] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56367, body=licitez 1982
+[04-05-2026 21:56:42.219] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985694|/127.0.0.1:56367|Bidder 14|0700000014|bidder14@mail.ro|licitez 1982
+[04-05-2026 21:56:42.220] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56369, body=licitez 6242
+[04-05-2026 21:56:42.220] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56371, body=licitez 4136
+[04-05-2026 21:56:42.220] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985807|/127.0.0.1:56371|Bidder 16|0700000016|bidder16@mail.ro|licitez 4136
+[04-05-2026 21:56:42.220] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56373, body=licitez 9346
+[04-05-2026 21:56:42.221] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56375, body=licitez 5630
+[04-05-2026 21:56:42.221] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920985922|/127.0.0.1:56375|Bidder 18|0700000018|bidder18@mail.ro|licitez 5630
+[04-05-2026 21:56:42.221] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56377, body=licitez 2440
+[04-05-2026 21:56:42.221] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56379, body=licitez 6661
+[04-05-2026 21:56:42.222] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986033|/127.0.0.1:56379|Bidder 20|0700000020|bidder20@mail.ro|licitez 6661
+[04-05-2026 21:56:42.222] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56381, body=licitez 1458
+[04-05-2026 21:56:42.222] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56383, body=licitez 1395
+[04-05-2026 21:56:42.222] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56385, body=licitez 7475
+[04-05-2026 21:56:42.223] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56387, body=licitez 3693
+[04-05-2026 21:56:42.223] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986259|/127.0.0.1:56387|Bidder 24|0700000024|bidder24@mail.ro|licitez 3693
+[04-05-2026 21:56:42.223] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56389, body=licitez 6082
+[04-05-2026 21:56:42.223] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56391, body=licitez 5604
+[04-05-2026 21:56:42.224] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56393, body=licitez 8165
+[04-05-2026 21:56:42.224] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986428|/127.0.0.1:56393|Bidder 27|0700000027|bidder27@mail.ro|licitez 8165
+[04-05-2026 21:56:42.224] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56395, body=licitez 9005
+[04-05-2026 21:56:42.224] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986487|/127.0.0.1:56395|Bidder 28|0700000028|bidder28@mail.ro|licitez 9005
+[04-05-2026 21:56:42.224] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56397, body=licitez 9590
+[04-05-2026 21:56:42.225] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986549|/127.0.0.1:56397|Bidder 29|0700000029|bidder29@mail.ro|licitez 9590
+[04-05-2026 21:56:42.225] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56399, body=licitez 5271
+[04-05-2026 21:56:42.225] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56401, body=licitez 6700
+[04-05-2026 21:56:42.225] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56403, body=licitez 7787
+[04-05-2026 21:56:42.226] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986715|/127.0.0.1:56403|Bidder 32|0700000032|bidder32@mail.ro|licitez 7787
+[04-05-2026 21:56:42.226] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56405, body=licitez 9918
+[04-05-2026 21:56:42.226] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56407, body=licitez 9200
+[04-05-2026 21:56:42.226] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986828|/127.0.0.1:56407|Bidder 34|0700000034|bidder34@mail.ro|licitez 9200
+[04-05-2026 21:56:42.226] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56409, body=licitez 5105
+[04-05-2026 21:56:42.226] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986883|/127.0.0.1:56409|Bidder 35|0700000035|bidder35@mail.ro|licitez 5105
+[04-05-2026 21:56:42.227] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56411, body=licitez 7903
+[04-05-2026 21:56:42.227] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986940|/127.0.0.1:56411|Bidder 36|0700000036|bidder36@mail.ro|licitez 7903
+[04-05-2026 21:56:42.227] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56413, body=licitez 3180
+[04-05-2026 21:56:42.227] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920986995|/127.0.0.1:56413|Bidder 37|0700000037|bidder37@mail.ro|licitez 3180
+[04-05-2026 21:56:42.227] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56415, body=licitez 5419
+[04-05-2026 21:56:42.228] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56417, body=licitez 3891
+[04-05-2026 21:56:42.228] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:56419, body=licitez 2664
+[04-05-2026 21:56:42.228] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777920987161|/127.0.0.1:56419|Bidder 40|0700000040|bidder40@mail.ro|licitez 2664
+[04-05-2026 21:56:42.228] [MessageProcessorMicroservice] EVENT=all_received | count=40
+[04-05-2026 21:56:42.232] [MessageProcessorMicroservice] EVENT=sorted | count=40
+[04-05-2026 21:56:42.242] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=17809
+[04-05-2026 21:58:51.014] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:57120
+[04-05-2026 21:58:51.062] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57028, body=licitez 1400
+[04-05-2026 21:58:51.063] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921113796|/127.0.0.1:57028|Bidder 1|0700000001|bidder1@mail.ro|licitez 1400
+[04-05-2026 21:58:51.063] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57030, body=licitez 1140
+[04-05-2026 21:58:51.063] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921113854|/127.0.0.1:57030|Bidder 2|0700000002|bidder2@mail.ro|licitez 1140
+[04-05-2026 21:58:51.063] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57032, body=licitez 7581
+[04-05-2026 21:58:51.064] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921113909|/127.0.0.1:57032|Bidder 3|0700000003|bidder3@mail.ro|licitez 7581
+[04-05-2026 21:58:51.064] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57034, body=licitez 3873
+[04-05-2026 21:58:51.064] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921113962|/127.0.0.1:57034|Bidder 4|0700000004|bidder4@mail.ro|licitez 3873
+[04-05-2026 21:58:51.064] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57036, body=licitez 7818
+[04-05-2026 21:58:51.065] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57038, body=licitez 9785
+[04-05-2026 21:58:51.065] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57040, body=licitez 1823
+[04-05-2026 21:58:51.065] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114133|/127.0.0.1:57040|Bidder 7|0700000007|bidder7@mail.ro|licitez 1823
+[04-05-2026 21:58:51.065] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57042, body=licitez 3927
+[04-05-2026 21:58:51.066] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114189|/127.0.0.1:57042|Bidder 8|0700000008|bidder8@mail.ro|licitez 3927
+[04-05-2026 21:58:51.066] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57044, body=licitez 2873
+[04-05-2026 21:58:51.066] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57046, body=licitez 6463
+[04-05-2026 21:58:51.067] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57048, body=licitez 9446
+[04-05-2026 21:58:51.067] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114358|/127.0.0.1:57048|Bidder 11|0700000011|bidder11@mail.ro|licitez 9446
+[04-05-2026 21:58:51.067] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57050, body=licitez 8376
+[04-05-2026 21:58:51.067] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57052, body=licitez 1277
+[04-05-2026 21:58:51.067] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114472|/127.0.0.1:57052|Bidder 13|0700000013|bidder13@mail.ro|licitez 1277
+[04-05-2026 21:58:51.068] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57054, body=licitez 5260
+[04-05-2026 21:58:51.068] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57056, body=licitez 9300
+[04-05-2026 21:58:51.068] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114585|/127.0.0.1:57056|Bidder 15|0700000015|bidder15@mail.ro|licitez 9300
+[04-05-2026 21:58:51.068] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57058, body=licitez 7790
+[04-05-2026 21:58:51.069] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114641|/127.0.0.1:57058|Bidder 16|0700000016|bidder16@mail.ro|licitez 7790
+[04-05-2026 21:58:51.069] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57060, body=licitez 7920
+[04-05-2026 21:58:51.069] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114697|/127.0.0.1:57060|Bidder 17|0700000017|bidder17@mail.ro|licitez 7920
+[04-05-2026 21:58:51.069] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57062, body=licitez 8385
+[04-05-2026 21:58:51.070] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57064, body=licitez 4939
+[04-05-2026 21:58:51.070] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57066, body=licitez 8545
+[04-05-2026 21:58:51.070] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57068, body=licitez 5877
+[04-05-2026 21:58:51.070] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57070, body=licitez 4834
+[04-05-2026 21:58:51.071] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921114980|/127.0.0.1:57070|Bidder 22|0700000022|bidder22@mail.ro|licitez 4834
+[04-05-2026 21:58:51.071] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57072, body=licitez 1638
+[04-05-2026 21:58:51.071] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115039|/127.0.0.1:57072|Bidder 23|0700000023|bidder23@mail.ro|licitez 1638
+[04-05-2026 21:58:51.071] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57074, body=licitez 8778
+[04-05-2026 21:58:51.072] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115095|/127.0.0.1:57074|Bidder 24|0700000024|bidder24@mail.ro|licitez 8778
+[04-05-2026 21:58:51.072] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57076, body=licitez 5655
+[04-05-2026 21:58:51.072] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57078, body=licitez 8370
+[04-05-2026 21:58:51.072] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115202|/127.0.0.1:57078|Bidder 26|0700000026|bidder26@mail.ro|licitez 8370
+[04-05-2026 21:58:51.072] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57080, body=licitez 4405
+[04-05-2026 21:58:51.073] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57082, body=licitez 4791
+[04-05-2026 21:58:51.073] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57084, body=licitez 9482
+[04-05-2026 21:58:51.073] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115374|/127.0.0.1:57084|Bidder 29|0700000029|bidder29@mail.ro|licitez 9482
+[04-05-2026 21:58:51.073] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57086, body=licitez 6336
+[04-05-2026 21:58:51.074] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57088, body=licitez 3621
+[04-05-2026 21:58:51.074] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115482|/127.0.0.1:57088|Bidder 31|0700000031|bidder31@mail.ro|licitez 3621
+[04-05-2026 21:58:51.074] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57090, body=licitez 6819
+[04-05-2026 21:58:51.074] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115543|/127.0.0.1:57090|Bidder 32|0700000032|bidder32@mail.ro|licitez 6819
+[04-05-2026 21:58:51.074] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57092, body=licitez 3637
+[04-05-2026 21:58:51.075] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57094, body=licitez 7215
+[04-05-2026 21:58:51.075] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115653|/127.0.0.1:57094|Bidder 34|0700000034|bidder34@mail.ro|licitez 7215
+[04-05-2026 21:58:51.075] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57096, body=licitez 7651
+[04-05-2026 21:58:51.075] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57098, body=licitez 3355
+[04-05-2026 21:58:51.075] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115768|/127.0.0.1:57098|Bidder 36|0700000036|bidder36@mail.ro|licitez 3355
+[04-05-2026 21:58:51.076] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57102, body=licitez 7120
+[04-05-2026 21:58:51.076] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115824|/127.0.0.1:57102|Bidder 37|0700000037|bidder37@mail.ro|licitez 7120
+[04-05-2026 21:58:51.076] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57104, body=licitez 3953
+[04-05-2026 21:58:51.076] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57106, body=licitez 9602
+[04-05-2026 21:58:51.076] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777921115948|/127.0.0.1:57106|Bidder 39|0700000039|bidder39@mail.ro|licitez 9602
+[04-05-2026 21:58:51.076] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57108, body=licitez 9381
+[04-05-2026 21:58:51.077] [MessageProcessorMicroservice] EVENT=all_received | count=40
+[04-05-2026 21:58:51.081] [MessageProcessorMicroservice] EVENT=sorted | count=40
+[04-05-2026 21:58:54.818] [MessageProcessorMicroservice] EVENT=recovery_detected | journal_line=2
+[04-05-2026 21:58:54.821] [MessageProcessorMicroservice] EVENT=recovery_loaded | messages=40
+[04-05-2026 21:58:54.860] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=70
+[04-05-2026 21:58:54.860] [MessageProcessorMicroservice] EVENT=recovery_complete | forwarded=40
+[04-05-2026 22:15:32.225] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:57799
+[04-05-2026 22:15:32.270] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57711, body=licitez 8508
+[04-05-2026 22:15:32.271] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115039|/127.0.0.1:57711|Bidder 1|0700000001|bidder1@mail.ro|licitez 8508
+[04-05-2026 22:15:32.271] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57713, body=licitez 1420
+[04-05-2026 22:15:32.271] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57715, body=licitez 5269
+[04-05-2026 22:15:32.272] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57717, body=licitez 4445
+[04-05-2026 22:15:32.272] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115183|/127.0.0.1:57717|Bidder 4|0700000004|bidder4@mail.ro|licitez 4445
+[04-05-2026 22:15:32.272] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57719, body=licitez 5023
+[04-05-2026 22:15:32.272] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115232|/127.0.0.1:57719|Bidder 5|0700000005|bidder5@mail.ro|licitez 5023
+[04-05-2026 22:15:32.273] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57721, body=licitez 6082
+[04-05-2026 22:15:32.273] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115285|/127.0.0.1:57721|Bidder 6|0700000006|bidder6@mail.ro|licitez 6082
+[04-05-2026 22:15:32.273] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57723, body=licitez 1856
+[04-05-2026 22:15:32.273] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115344|/127.0.0.1:57723|Bidder 7|0700000007|bidder7@mail.ro|licitez 1856
+[04-05-2026 22:15:32.274] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57725, body=licitez 7258
+[04-05-2026 22:15:32.274] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115394|/127.0.0.1:57725|Bidder 8|0700000008|bidder8@mail.ro|licitez 7258
+[04-05-2026 22:15:32.274] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57727, body=licitez 1926
+[04-05-2026 22:15:32.274] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115453|/127.0.0.1:57727|Bidder 9|0700000009|bidder9@mail.ro|licitez 1926
+[04-05-2026 22:15:32.275] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57729, body=licitez 9993
+[04-05-2026 22:15:32.275] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115508|/127.0.0.1:57729|Bidder 10|0700000010|bidder10@mail.ro|licitez 9993
+[04-05-2026 22:15:32.275] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57731, body=licitez 2929
+[04-05-2026 22:15:32.275] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115567|/127.0.0.1:57731|Bidder 11|0700000011|bidder11@mail.ro|licitez 2929
+[04-05-2026 22:15:32.276] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57733, body=licitez 3139
+[04-05-2026 22:15:32.276] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57735, body=licitez 3645
+[04-05-2026 22:15:32.276] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57737, body=licitez 1753
+[04-05-2026 22:15:32.276] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115738|/127.0.0.1:57737|Bidder 14|0700000014|bidder14@mail.ro|licitez 1753
+[04-05-2026 22:15:32.277] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57739, body=licitez 7480
+[04-05-2026 22:15:32.277] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115796|/127.0.0.1:57739|Bidder 15|0700000015|bidder15@mail.ro|licitez 7480
+[04-05-2026 22:15:32.277] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57743, body=licitez 1006
+[04-05-2026 22:15:32.277] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57745, body=licitez 6126
+[04-05-2026 22:15:32.278] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57747, body=licitez 5489
+[04-05-2026 22:15:32.278] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922115961|/127.0.0.1:57747|Bidder 18|0700000018|bidder18@mail.ro|licitez 5489
+[04-05-2026 22:15:32.278] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57749, body=licitez 3021
+[04-05-2026 22:15:32.278] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57751, body=licitez 3503
+[04-05-2026 22:15:32.278] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116078|/127.0.0.1:57751|Bidder 20|0700000020|bidder20@mail.ro|licitez 3503
+[04-05-2026 22:15:32.279] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57753, body=licitez 2197
+[04-05-2026 22:15:32.279] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57755, body=licitez 7096
+[04-05-2026 22:15:32.279] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116195|/127.0.0.1:57755|Bidder 22|0700000022|bidder22@mail.ro|licitez 7096
+[04-05-2026 22:15:32.279] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57757, body=licitez 2053
+[04-05-2026 22:15:32.280] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116248|/127.0.0.1:57757|Bidder 23|0700000023|bidder23@mail.ro|licitez 2053
+[04-05-2026 22:15:32.280] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57759, body=licitez 9859
+[04-05-2026 22:15:32.280] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57761, body=licitez 3682
+[04-05-2026 22:15:32.280] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116357|/127.0.0.1:57761|Bidder 25|0700000025|bidder25@mail.ro|licitez 3682
+[04-05-2026 22:15:32.281] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57763, body=licitez 4754
+[04-05-2026 22:15:32.281] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57765, body=licitez 9988
+[04-05-2026 22:15:32.281] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116468|/127.0.0.1:57765|Bidder 27|0700000027|bidder27@mail.ro|licitez 9988
+[04-05-2026 22:15:32.281] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57767, body=licitez 1643
+[04-05-2026 22:15:32.282] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57769, body=licitez 3787
+[04-05-2026 22:15:32.282] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57771, body=licitez 1166
+[04-05-2026 22:15:32.282] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57773, body=licitez 7795
+[04-05-2026 22:15:32.282] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116696|/127.0.0.1:57773|Bidder 31|0700000031|bidder31@mail.ro|licitez 7795
+[04-05-2026 22:15:32.282] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57775, body=licitez 9769
+[04-05-2026 22:15:32.283] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116750|/127.0.0.1:57775|Bidder 32|0700000032|bidder32@mail.ro|licitez 9769
+[04-05-2026 22:15:32.283] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57777, body=licitez 9062
+[04-05-2026 22:15:32.283] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116807|/127.0.0.1:57777|Bidder 33|0700000033|bidder33@mail.ro|licitez 9062
+[04-05-2026 22:15:32.283] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57779, body=licitez 9218
+[04-05-2026 22:15:32.283] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116864|/127.0.0.1:57779|Bidder 34|0700000034|bidder34@mail.ro|licitez 9218
+[04-05-2026 22:15:32.284] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57781, body=licitez 4571
+[04-05-2026 22:15:32.284] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116921|/127.0.0.1:57781|Bidder 35|0700000035|bidder35@mail.ro|licitez 4571
+[04-05-2026 22:15:32.284] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57783, body=licitez 1398
+[04-05-2026 22:15:32.284] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922116977|/127.0.0.1:57783|Bidder 36|0700000036|bidder36@mail.ro|licitez 1398
+[04-05-2026 22:15:32.284] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57785, body=licitez 2209
+[04-05-2026 22:15:32.285] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922117035|/127.0.0.1:57785|Bidder 37|0700000037|bidder37@mail.ro|licitez 2209
+[04-05-2026 22:15:32.285] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57787, body=licitez 6544
+[04-05-2026 22:15:32.285] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922117095|/127.0.0.1:57787|Bidder 38|0700000038|bidder38@mail.ro|licitez 6544
+[04-05-2026 22:15:32.285] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57789, body=licitez 9002
+[04-05-2026 22:15:32.285] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922117154|/127.0.0.1:57789|Bidder 39|0700000039|bidder39@mail.ro|licitez 9002
+[04-05-2026 22:15:32.285] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57791, body=licitez 2571
+[04-05-2026 22:15:32.286] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922117206|/127.0.0.1:57791|Bidder 40|0700000040|bidder40@mail.ro|licitez 2571
+[04-05-2026 22:15:32.286] [MessageProcessorMicroservice] EVENT=all_received | count=40
+[04-05-2026 22:15:32.290] [MessageProcessorMicroservice] EVENT=sorted | count=40
+[04-05-2026 22:15:32.299] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=18404
+[04-05-2026 22:16:50.343] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:57932
+[04-05-2026 22:16:50.388] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57843, body=licitez 7061
+[04-05-2026 22:16:50.389] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193148|/127.0.0.1:57843|Bidder 1|0700000001|bidder1@mail.ro|licitez 7061
+[04-05-2026 22:16:50.389] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57845, body=licitez 9225
+[04-05-2026 22:16:50.389] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193188|/127.0.0.1:57845|Bidder 2|0700000002|bidder2@mail.ro|licitez 9225
+[04-05-2026 22:16:50.389] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57847, body=licitez 3850
+[04-05-2026 22:16:50.390] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193243|/127.0.0.1:57847|Bidder 3|0700000003|bidder3@mail.ro|licitez 3850
+[04-05-2026 22:16:50.390] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57849, body=licitez 5800
+[04-05-2026 22:16:50.390] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57851, body=licitez 4231
+[04-05-2026 22:16:50.390] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57853, body=licitez 3897
+[04-05-2026 22:16:50.391] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57855, body=licitez 1882
+[04-05-2026 22:16:50.391] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57857, body=licitez 8405
+[04-05-2026 22:16:50.391] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57859, body=licitez 3177
+[04-05-2026 22:16:50.392] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57861, body=licitez 2199
+[04-05-2026 22:16:50.392] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193628|/127.0.0.1:57861|Bidder 10|0700000010|bidder10@mail.ro|licitez 2199
+[04-05-2026 22:16:50.392] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57863, body=licitez 4793
+[04-05-2026 22:16:50.392] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193682|/127.0.0.1:57863|Bidder 11|0700000011|bidder11@mail.ro|licitez 4793
+[04-05-2026 22:16:50.393] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57865, body=licitez 8202
+[04-05-2026 22:16:50.393] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193735|/127.0.0.1:57865|Bidder 12|0700000012|bidder12@mail.ro|licitez 8202
+[04-05-2026 22:16:50.393] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57867, body=licitez 9769
+[04-05-2026 22:16:50.393] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922193793|/127.0.0.1:57867|Bidder 13|0700000013|bidder13@mail.ro|licitez 9769
+[04-05-2026 22:16:50.394] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57869, body=licitez 4454
+[04-05-2026 22:16:50.394] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57871, body=licitez 5645
+[04-05-2026 22:16:50.394] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57873, body=licitez 3557
+[04-05-2026 22:16:50.394] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57875, body=licitez 1284
+[04-05-2026 22:16:50.395] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194022|/127.0.0.1:57875|Bidder 17|0700000017|bidder17@mail.ro|licitez 1284
+[04-05-2026 22:16:50.395] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57877, body=licitez 9362
+[04-05-2026 22:16:50.395] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57879, body=licitez 7232
+[04-05-2026 22:16:50.395] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57881, body=licitez 2007
+[04-05-2026 22:16:50.396] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194197|/127.0.0.1:57881|Bidder 20|0700000020|bidder20@mail.ro|licitez 2007
+[04-05-2026 22:16:50.396] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57883, body=licitez 4091
+[04-05-2026 22:16:50.396] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194256|/127.0.0.1:57883|Bidder 21|0700000021|bidder21@mail.ro|licitez 4091
+[04-05-2026 22:16:50.396] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57885, body=licitez 8346
+[04-05-2026 22:16:50.397] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194310|/127.0.0.1:57885|Bidder 22|0700000022|bidder22@mail.ro|licitez 8346
+[04-05-2026 22:16:50.397] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57887, body=licitez 2397
+[04-05-2026 22:16:50.397] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194369|/127.0.0.1:57887|Bidder 23|0700000023|bidder23@mail.ro|licitez 2397
+[04-05-2026 22:16:50.397] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57889, body=licitez 1037
+[04-05-2026 22:16:50.398] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57893, body=licitez 4808
+[04-05-2026 22:16:50.398] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194479|/127.0.0.1:57893|Bidder 25|0700000025|bidder25@mail.ro|licitez 4808
+[04-05-2026 22:16:50.398] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57895, body=licitez 8727
+[04-05-2026 22:16:50.398] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57897, body=licitez 6224
+[04-05-2026 22:16:50.398] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194596|/127.0.0.1:57897|Bidder 27|0700000027|bidder27@mail.ro|licitez 6224
+[04-05-2026 22:16:50.399] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57899, body=licitez 4102
+[04-05-2026 22:16:50.399] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57901, body=licitez 5395
+[04-05-2026 22:16:50.399] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57903, body=licitez 2225
+[04-05-2026 22:16:50.400] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194763|/127.0.0.1:57903|Bidder 30|0700000030|bidder30@mail.ro|licitez 2225
+[04-05-2026 22:16:50.400] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57905, body=licitez 2127
+[04-05-2026 22:16:50.400] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194819|/127.0.0.1:57905|Bidder 31|0700000031|bidder31@mail.ro|licitez 2127
+[04-05-2026 22:16:50.400] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57907, body=licitez 4016
+[04-05-2026 22:16:50.400] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57909, body=licitez 4523
+[04-05-2026 22:16:50.401] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57911, body=licitez 4224
+[04-05-2026 22:16:50.401] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922194986|/127.0.0.1:57911|Bidder 34|0700000034|bidder34@mail.ro|licitez 4224
+[04-05-2026 22:16:50.401] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57913, body=licitez 9048
+[04-05-2026 22:16:50.401] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922195044|/127.0.0.1:57913|Bidder 35|0700000035|bidder35@mail.ro|licitez 9048
+[04-05-2026 22:16:50.401] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57915, body=licitez 3710
+[04-05-2026 22:16:50.401] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57917, body=licitez 8328
+[04-05-2026 22:16:50.402] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922195158|/127.0.0.1:57917|Bidder 37|0700000037|bidder37@mail.ro|licitez 8328
+[04-05-2026 22:16:50.402] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57919, body=licitez 8238
+[04-05-2026 22:16:50.402] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922195221|/127.0.0.1:57919|Bidder 38|0700000038|bidder38@mail.ro|licitez 8238
+[04-05-2026 22:16:50.402] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57921, body=licitez 3392
+[04-05-2026 22:16:50.402] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57923, body=licitez 7344
+[04-05-2026 22:16:50.403] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922195325|/127.0.0.1:57923|Bidder 40|0700000040|bidder40@mail.ro|licitez 7344
+[04-05-2026 22:16:50.403] [MessageProcessorMicroservice] EVENT=all_received | count=40
+[04-05-2026 22:16:50.407] [MessageProcessorMicroservice] EVENT=sorted | count=40
+[04-05-2026 22:16:50.416] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=18380
+[04-05-2026 22:17:09.962] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:57989
+[04-05-2026 22:17:10.006] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57939, body=licitez 4525
+[04-05-2026 22:17:10.007] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57941, body=licitez 6215
+[04-05-2026 22:17:10.008] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922213923|/127.0.0.1:57941|Bidder 2|0700000002|bidder2@mail.ro|licitez 6215
+[04-05-2026 22:17:10.008] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57943, body=licitez 3012
+[04-05-2026 22:17:10.008] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57945, body=licitez 2890
+[04-05-2026 22:17:10.009] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214032|/127.0.0.1:57945|Bidder 4|0700000004|bidder4@mail.ro|licitez 2890
+[04-05-2026 22:17:10.009] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57947, body=licitez 4556
+[04-05-2026 22:17:10.009] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214092|/127.0.0.1:57947|Bidder 5|0700000005|bidder5@mail.ro|licitez 4556
+[04-05-2026 22:17:10.009] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57949, body=licitez 3177
+[04-05-2026 22:17:10.009] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214149|/127.0.0.1:57949|Bidder 6|0700000006|bidder6@mail.ro|licitez 3177
+[04-05-2026 22:17:10.010] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57951, body=licitez 3159
+[04-05-2026 22:17:10.010] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57953, body=licitez 5390
+[04-05-2026 22:17:10.010] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57955, body=licitez 9026
+[04-05-2026 22:17:10.011] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57957, body=licitez 9574
+[04-05-2026 22:17:10.011] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57959, body=licitez 6484
+[04-05-2026 22:17:10.011] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57961, body=licitez 7599
+[04-05-2026 22:17:10.012] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214495|/127.0.0.1:57961|Bidder 12|0700000012|bidder12@mail.ro|licitez 7599
+[04-05-2026 22:17:10.012] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57963, body=licitez 5132
+[04-05-2026 22:17:10.012] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214548|/127.0.0.1:57963|Bidder 13|0700000013|bidder13@mail.ro|licitez 5132
+[04-05-2026 22:17:10.012] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57965, body=licitez 5650
+[04-05-2026 22:17:10.012] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57967, body=licitez 5464
+[04-05-2026 22:17:10.013] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214657|/127.0.0.1:57967|Bidder 15|0700000015|bidder15@mail.ro|licitez 5464
+[04-05-2026 22:17:10.013] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57969, body=licitez 3640
+[04-05-2026 22:17:10.013] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214716|/127.0.0.1:57969|Bidder 16|0700000016|bidder16@mail.ro|licitez 3640
+[04-05-2026 22:17:10.013] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57971, body=licitez 7248
+[04-05-2026 22:17:10.014] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922214775|/127.0.0.1:57971|Bidder 17|0700000017|bidder17@mail.ro|licitez 7248
+[04-05-2026 22:17:10.014] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57973, body=licitez 5004
+[04-05-2026 22:17:10.014] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57975, body=licitez 9962
+[04-05-2026 22:17:10.014] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:57977, body=licitez 9153
+[04-05-2026 22:17:10.015] [MessageProcessorMicroservice] EVENT=all_received | count=20
+[04-05-2026 22:17:10.019] [MessageProcessorMicroservice] EVENT=sorted | count=20
+[04-05-2026 22:17:10.932] [MessageProcessorMicroservice] EVENT=recovery_detected | journal_line=2
+[04-05-2026 22:17:10.935] [MessageProcessorMicroservice] EVENT=recovery_loaded | messages=20
+[04-05-2026 22:17:10.967] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=62
+[04-05-2026 22:17:10.968] [MessageProcessorMicroservice] EVENT=recovery_complete | forwarded=20
+[04-05-2026 22:21:23.542] [MessageProcessorMicroservice] EVENT=cycle_start | auctioneer=/127.0.0.1:58920
+[04-05-2026 22:21:23.605] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58708, body=licitez 4525
+[04-05-2026 22:21:23.606] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922462898|/127.0.0.1:58708|Bidder 1|0700000001|bidder1@mail.ro|licitez 4525
+[04-05-2026 22:21:23.606] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58710, body=licitez 6215
+[04-05-2026 22:21:23.606] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922462972|/127.0.0.1:58710|Bidder 2|0700000002|bidder2@mail.ro|licitez 6215
+[04-05-2026 22:21:23.607] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58712, body=licitez 3012
+[04-05-2026 22:21:23.607] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58714, body=licitez 2890
+[04-05-2026 22:21:23.607] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463062|/127.0.0.1:58714|Bidder 4|0700000004|bidder4@mail.ro|licitez 2890
+[04-05-2026 22:21:23.607] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58716, body=licitez 4556
+[04-05-2026 22:21:23.607] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463119|/127.0.0.1:58716|Bidder 5|0700000005|bidder5@mail.ro|licitez 4556
+[04-05-2026 22:21:23.608] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58718, body=licitez 3177
+[04-05-2026 22:21:23.608] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463172|/127.0.0.1:58718|Bidder 6|0700000006|bidder6@mail.ro|licitez 3177
+[04-05-2026 22:21:23.608] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58720, body=licitez 3159
+[04-05-2026 22:21:23.608] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58722, body=licitez 5390
+[04-05-2026 22:21:23.609] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463281|/127.0.0.1:58722|Bidder 8|0700000008|bidder8@mail.ro|licitez 5390
+[04-05-2026 22:21:23.609] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58724, body=licitez 9026
+[04-05-2026 22:21:23.609] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463342|/127.0.0.1:58724|Bidder 9|0700000009|bidder9@mail.ro|licitez 9026
+[04-05-2026 22:21:23.610] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58726, body=licitez 9574
+[04-05-2026 22:21:23.610] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463399|/127.0.0.1:58726|Bidder 10|0700000010|bidder10@mail.ro|licitez 9574
+[04-05-2026 22:21:23.610] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58728, body=licitez 6484
+[04-05-2026 22:21:23.610] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58730, body=licitez 7599
+[04-05-2026 22:21:23.611] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58732, body=licitez 5132
+[04-05-2026 22:21:23.611] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58734, body=licitez 5650
+[04-05-2026 22:21:23.611] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58736, body=licitez 5464
+[04-05-2026 22:21:23.611] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463679|/127.0.0.1:58736|Bidder 15|0700000015|bidder15@mail.ro|licitez 5464
+[04-05-2026 22:21:23.612] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58738, body=licitez 3640
+[04-05-2026 22:21:23.612] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58740, body=licitez 7248
+[04-05-2026 22:21:23.612] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58742, body=licitez 5004
+[04-05-2026 22:21:23.612] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58744, body=licitez 9962
+[04-05-2026 22:21:23.613] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922463907|/127.0.0.1:58744|Bidder 19|0700000019|bidder19@mail.ro|licitez 9962
+[04-05-2026 22:21:23.613] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58746, body=licitez 9153
+[04-05-2026 22:21:23.613] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58748, body=licitez 6354
+[04-05-2026 22:21:23.613] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58750, body=licitez 2872
+[04-05-2026 22:21:23.613] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464072|/127.0.0.1:58750|Bidder 22|0700000022|bidder22@mail.ro|licitez 2872
+[04-05-2026 22:21:23.614] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58752, body=licitez 5855
+[04-05-2026 22:21:23.614] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58754, body=licitez 5966
+[04-05-2026 22:21:23.614] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464183|/127.0.0.1:58754|Bidder 24|0700000024|bidder24@mail.ro|licitez 5966
+[04-05-2026 22:21:23.614] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58756, body=licitez 8108
+[04-05-2026 22:21:23.615] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464242|/127.0.0.1:58756|Bidder 25|0700000025|bidder25@mail.ro|licitez 8108
+[04-05-2026 22:21:23.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58760, body=licitez 9053
+[04-05-2026 22:21:23.615] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464295|/127.0.0.1:58760|Bidder 26|0700000026|bidder26@mail.ro|licitez 9053
+[04-05-2026 22:21:23.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58762, body=licitez 5145
+[04-05-2026 22:21:23.615] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58764, body=licitez 8287
+[04-05-2026 22:21:23.616] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464414|/127.0.0.1:58764|Bidder 28|0700000028|bidder28@mail.ro|licitez 8287
+[04-05-2026 22:21:23.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58766, body=licitez 8807
+[04-05-2026 22:21:23.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58768, body=licitez 2922
+[04-05-2026 22:21:23.616] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464522|/127.0.0.1:58768|Bidder 30|0700000030|bidder30@mail.ro|licitez 2922
+[04-05-2026 22:21:23.616] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58770, body=licitez 8726
+[04-05-2026 22:21:23.617] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464576|/127.0.0.1:58770|Bidder 31|0700000031|bidder31@mail.ro|licitez 8726
+[04-05-2026 22:21:23.617] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58772, body=licitez 8502
+[04-05-2026 22:21:23.617] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58774, body=licitez 2820
+[04-05-2026 22:21:23.617] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464702|/127.0.0.1:58774|Bidder 33|0700000033|bidder33@mail.ro|licitez 2820
+[04-05-2026 22:21:23.617] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58776, body=licitez 4201
+[04-05-2026 22:21:23.617] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58778, body=licitez 4098
+[04-05-2026 22:21:23.618] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464803|/127.0.0.1:58778|Bidder 35|0700000035|bidder35@mail.ro|licitez 4098
+[04-05-2026 22:21:23.618] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58780, body=licitez 6489
+[04-05-2026 22:21:23.618] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464859|/127.0.0.1:58780|Bidder 36|0700000036|bidder36@mail.ro|licitez 6489
+[04-05-2026 22:21:23.618] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58782, body=licitez 7782
+[04-05-2026 22:21:23.618] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922464913|/127.0.0.1:58782|Bidder 37|0700000037|bidder37@mail.ro|licitez 7782
+[04-05-2026 22:21:23.619] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58784, body=licitez 2938
+[04-05-2026 22:21:23.619] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58786, body=licitez 2181
+[04-05-2026 22:21:23.619] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58788, body=licitez 1653
+[04-05-2026 22:21:23.619] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465081|/127.0.0.1:58788|Bidder 40|0700000040|bidder40@mail.ro|licitez 1653
+[04-05-2026 22:21:23.620] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58790, body=licitez 6116
+[04-05-2026 22:21:23.620] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58792, body=licitez 5582
+[04-05-2026 22:21:23.620] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465199|/127.0.0.1:58792|Bidder 42|0700000042|bidder42@mail.ro|licitez 5582
+[04-05-2026 22:21:23.621] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58794, body=licitez 8661
+[04-05-2026 22:21:23.621] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58796, body=licitez 8065
+[04-05-2026 22:21:23.621] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58798, body=licitez 9424
+[04-05-2026 22:21:23.621] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465367|/127.0.0.1:58798|Bidder 45|0700000045|bidder45@mail.ro|licitez 9424
+[04-05-2026 22:21:23.621] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58800, body=licitez 2171
+[04-05-2026 22:21:23.622] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58802, body=licitez 3388
+[04-05-2026 22:21:23.622] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58804, body=licitez 1612
+[04-05-2026 22:21:23.622] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465534|/127.0.0.1:58804|Bidder 48|0700000048|bidder48@mail.ro|licitez 1612
+[04-05-2026 22:21:23.622] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58806, body=licitez 8248
+[04-05-2026 22:21:23.622] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465593|/127.0.0.1:58806|Bidder 49|0700000049|bidder49@mail.ro|licitez 8248
+[04-05-2026 22:21:23.623] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58808, body=licitez 9202
+[04-05-2026 22:21:23.623] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465648|/127.0.0.1:58808|Bidder 50|0700000050|bidder50@mail.ro|licitez 9202
+[04-05-2026 22:21:23.623] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58810, body=licitez 3999
+[04-05-2026 22:21:23.623] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465705|/127.0.0.1:58810|Bidder 51|0700000051|bidder51@mail.ro|licitez 3999
+[04-05-2026 22:21:23.623] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58812, body=licitez 7996
+[04-05-2026 22:21:23.623] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465764|/127.0.0.1:58812|Bidder 52|0700000052|bidder52@mail.ro|licitez 7996
+[04-05-2026 22:21:23.624] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58814, body=licitez 9496
+[04-05-2026 22:21:23.624] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465830|/127.0.0.1:58814|Bidder 53|0700000053|bidder53@mail.ro|licitez 9496
+[04-05-2026 22:21:23.624] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58816, body=licitez 1262
+[04-05-2026 22:21:23.624] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58818, body=licitez 6681
+[04-05-2026 22:21:23.624] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922465934|/127.0.0.1:58818|Bidder 55|0700000055|bidder55@mail.ro|licitez 6681
+[04-05-2026 22:21:23.624] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58820, body=licitez 6239
+[04-05-2026 22:21:23.625] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58822, body=licitez 6918
+[04-05-2026 22:21:23.625] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466067|/127.0.0.1:58822|Bidder 57|0700000057|bidder57@mail.ro|licitez 6918
+[04-05-2026 22:21:23.625] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58824, body=licitez 5907
+[04-05-2026 22:21:23.626] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466184|/127.0.0.1:58824|Bidder 58|0700000058|bidder58@mail.ro|licitez 5907
+[04-05-2026 22:21:23.626] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58826, body=licitez 7634
+[04-05-2026 22:21:23.626] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58827, body=licitez 2080
+[04-05-2026 22:21:23.626] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466316|/127.0.0.1:58827|Bidder 60|0700000060|bidder60@mail.ro|licitez 2080
+[04-05-2026 22:21:23.627] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58830, body=licitez 1745
+[04-05-2026 22:21:23.627] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58832, body=licitez 3785
+[04-05-2026 22:21:23.627] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466406|/127.0.0.1:58832|Bidder 62|0700000062|bidder62@mail.ro|licitez 3785
+[04-05-2026 22:21:23.627] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58834, body=licitez 5593
+[04-05-2026 22:21:23.627] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58836, body=licitez 7612
+[04-05-2026 22:21:23.628] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466509|/127.0.0.1:58836|Bidder 64|0700000064|bidder64@mail.ro|licitez 7612
+[04-05-2026 22:21:23.628] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58838, body=licitez 6452
+[04-05-2026 22:21:23.628] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58840, body=licitez 9255
+[04-05-2026 22:21:23.628] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58842, body=licitez 4762
+[04-05-2026 22:21:23.628] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58844, body=licitez 5128
+[04-05-2026 22:21:23.628] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466727|/127.0.0.1:58844|Bidder 68|0700000068|bidder68@mail.ro|licitez 5128
+[04-05-2026 22:21:23.629] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58846, body=licitez 7694
+[04-05-2026 22:21:23.629] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466769|/127.0.0.1:58846|Bidder 69|0700000069|bidder69@mail.ro|licitez 7694
+[04-05-2026 22:21:23.629] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58848, body=licitez 1028
+[04-05-2026 22:21:23.629] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58850, body=licitez 1477
+[04-05-2026 22:21:23.629] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466888|/127.0.0.1:58850|Bidder 71|0700000071|bidder71@mail.ro|licitez 1477
+[04-05-2026 22:21:23.630] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58852, body=licitez 5348
+[04-05-2026 22:21:23.630] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922466957|/127.0.0.1:58852|Bidder 72|0700000072|bidder72@mail.ro|licitez 5348
+[04-05-2026 22:21:23.630] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58856, body=licitez 6284
+[04-05-2026 22:21:23.630] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467056|/127.0.0.1:58856|Bidder 73|0700000073|bidder73@mail.ro|licitez 6284
+[04-05-2026 22:21:23.630] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58858, body=licitez 6716
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467110|/127.0.0.1:58858|Bidder 74|0700000074|bidder74@mail.ro|licitez 6716
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58860, body=licitez 6735
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467163|/127.0.0.1:58860|Bidder 75|0700000075|bidder75@mail.ro|licitez 6735
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58861, body=licitez 8156
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58864, body=licitez 3746
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467244|/127.0.0.1:58864|Bidder 77|0700000077|bidder77@mail.ro|licitez 3746
+[04-05-2026 22:21:23.631] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58866, body=licitez 8061
+[04-05-2026 22:21:23.632] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467314|/127.0.0.1:58866|Bidder 78|0700000078|bidder78@mail.ro|licitez 8061
+[04-05-2026 22:21:23.632] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58867, body=licitez 5121
+[04-05-2026 22:21:23.632] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58870, body=licitez 5066
+[04-05-2026 22:21:23.632] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467410|/127.0.0.1:58870|Bidder 80|0700000080|bidder80@mail.ro|licitez 5066
+[04-05-2026 22:21:23.632] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58872, body=licitez 7156
+[04-05-2026 22:21:23.633] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58873, body=licitez 8560
+[04-05-2026 22:21:23.633] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467522|/127.0.0.1:58873|Bidder 82|0700000082|bidder82@mail.ro|licitez 8560
+[04-05-2026 22:21:23.633] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58876, body=licitez 6162
+[04-05-2026 22:21:23.633] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58878, body=licitez 7169
+[04-05-2026 22:21:23.633] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58880, body=licitez 9698
+[04-05-2026 22:21:23.633] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922467673|/127.0.0.1:58880|Bidder 85|0700000085|bidder85@mail.ro|licitez 9698
+[04-05-2026 22:21:23.634] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58882, body=licitez 9838
+[04-05-2026 22:21:23.634] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58884, body=licitez 5378
+[04-05-2026 22:21:23.634] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58886, body=licitez 1669
+[04-05-2026 22:21:23.634] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58888, body=licitez 3491
+[04-05-2026 22:21:23.634] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58890, body=licitez 2948
+[04-05-2026 22:21:23.635] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58892, body=licitez 9864
+[04-05-2026 22:21:23.635] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58894, body=licitez 5123
+[04-05-2026 22:21:23.635] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468065|/127.0.0.1:58894|Bidder 92|0700000092|bidder92@mail.ro|licitez 5123
+[04-05-2026 22:21:23.635] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58896, body=licitez 8630
+[04-05-2026 22:21:23.636] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468138|/127.0.0.1:58896|Bidder 93|0700000093|bidder93@mail.ro|licitez 8630
+[04-05-2026 22:21:23.636] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58898, body=licitez 7199
+[04-05-2026 22:21:23.636] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468177|/127.0.0.1:58898|Bidder 94|0700000094|bidder94@mail.ro|licitez 7199
+[04-05-2026 22:21:23.636] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58900, body=licitez 6279
+[04-05-2026 22:21:23.636] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468260|/127.0.0.1:58900|Bidder 95|0700000095|bidder95@mail.ro|licitez 6279
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58902, body=licitez 1629
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468303|/127.0.0.1:58902|Bidder 96|0700000096|bidder96@mail.ro|licitez 1629
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58904, body=licitez 1471
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468366|/127.0.0.1:58904|Bidder 97|0700000097|bidder97@mail.ro|licitez 1471
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58906, body=licitez 6514
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468426|/127.0.0.1:58906|Bidder 98|0700000098|bidder98@mail.ro|licitez 6514
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58908, body=licitez 6379
+[04-05-2026 22:21:23.637] [MessageProcessorMicroservice] EVENT=duplicate_filtered | key=1777922468475|/127.0.0.1:58908|Bidder 99|0700000099|bidder99@mail.ro|licitez 6379
+[04-05-2026 22:21:23.638] [MessageProcessorMicroservice] EVENT=message_received | sender=/127.0.0.1:58910, body=licitez 4554
+[04-05-2026 22:21:23.638] [MessageProcessorMicroservice] EVENT=all_received | count=100
+[04-05-2026 22:21:23.642] [MessageProcessorMicroservice] EVENT=sorted | count=100
+[04-05-2026 22:21:23.661] [MessageProcessorMicroservice] EVENT=cycle_end | elapsed_ms=22409

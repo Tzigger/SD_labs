@@ -1,0 +1,117 @@
+[JOURNAL] [04-05-2026 21:58:33] MessageProcessorMicroservice starting up.
+[MessageProcessorMicroservice] WARNING: Cannot connect to HeartBeatMicroservice: java.net.ConnectException: Connection refused. Running without heartbeat monitoring.
+MessageProcessorMicroservice se executa pe portul: 1600
+Se asteapta mesaje pentru procesare...
+Apasati CTRL+C pentru a opri.
+[JOURNAL] [04-05-2026 21:58:33] Listening on port 1600.
+[JOURNAL] [04-05-2026 21:58:51] CYCLE_START: Auctioneer connected from /127.0.0.1:57120.
+[JOURNAL] [04-05-2026 21:58:51] Starting to receive and process messages.
+[04-05-2026 21:58:33] /127.0.0.1:57028 (name=Bidder 1, phone=0700000001, email=bidder1@mail.ro) >>> licitez 1400
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:33] /127.0.0.1:57028 (name=Bidder 1, phone=0700000001, email=bidder1@mail.ro) >>> licitez 1400
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921113796|/127.0.0.1:57028|Bidder 1|0700000001|bidder1@mail.ro|licitez 1400'
+[04-05-2026 21:58:33] /127.0.0.1:57030 (name=Bidder 2, phone=0700000002, email=bidder2@mail.ro) >>> licitez 1140
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:33] /127.0.0.1:57030 (name=Bidder 2, phone=0700000002, email=bidder2@mail.ro) >>> licitez 1140
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921113854|/127.0.0.1:57030|Bidder 2|0700000002|bidder2@mail.ro|licitez 1140'
+[04-05-2026 21:58:33] /127.0.0.1:57032 (name=Bidder 3, phone=0700000003, email=bidder3@mail.ro) >>> licitez 7581
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:33] /127.0.0.1:57032 (name=Bidder 3, phone=0700000003, email=bidder3@mail.ro) >>> licitez 7581
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921113909|/127.0.0.1:57032|Bidder 3|0700000003|bidder3@mail.ro|licitez 7581'
+[04-05-2026 21:58:33] /127.0.0.1:57034 (name=Bidder 4, phone=0700000004, email=bidder4@mail.ro) >>> licitez 3873
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:33] /127.0.0.1:57034 (name=Bidder 4, phone=0700000004, email=bidder4@mail.ro) >>> licitez 3873
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921113962|/127.0.0.1:57034|Bidder 4|0700000004|bidder4@mail.ro|licitez 3873'
+[04-05-2026 21:58:34] /127.0.0.1:57036 (name=Bidder 5, phone=0700000005, email=bidder5@mail.ro) >>> licitez 7818
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57036 (name=Bidder 5, phone=0700000005, email=bidder5@mail.ro) >>> licitez 7818
+[04-05-2026 21:58:34] /127.0.0.1:57038 (name=Bidder 6, phone=0700000006, email=bidder6@mail.ro) >>> licitez 9785
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57038 (name=Bidder 6, phone=0700000006, email=bidder6@mail.ro) >>> licitez 9785
+[04-05-2026 21:58:34] /127.0.0.1:57040 (name=Bidder 7, phone=0700000007, email=bidder7@mail.ro) >>> licitez 1823
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57040 (name=Bidder 7, phone=0700000007, email=bidder7@mail.ro) >>> licitez 1823
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114133|/127.0.0.1:57040|Bidder 7|0700000007|bidder7@mail.ro|licitez 1823'
+[04-05-2026 21:58:34] /127.0.0.1:57042 (name=Bidder 8, phone=0700000008, email=bidder8@mail.ro) >>> licitez 3927
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57042 (name=Bidder 8, phone=0700000008, email=bidder8@mail.ro) >>> licitez 3927
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114189|/127.0.0.1:57042|Bidder 8|0700000008|bidder8@mail.ro|licitez 3927'
+[04-05-2026 21:58:34] /127.0.0.1:57044 (name=Bidder 9, phone=0700000009, email=bidder9@mail.ro) >>> licitez 2873
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57044 (name=Bidder 9, phone=0700000009, email=bidder9@mail.ro) >>> licitez 2873
+[04-05-2026 21:58:34] /127.0.0.1:57046 (name=Bidder 10, phone=0700000010, email=bidder10@mail.ro) >>> licitez 6463
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57046 (name=Bidder 10, phone=0700000010, email=bidder10@mail.ro) >>> licitez 6463
+[04-05-2026 21:58:34] /127.0.0.1:57048 (name=Bidder 11, phone=0700000011, email=bidder11@mail.ro) >>> licitez 9446
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57048 (name=Bidder 11, phone=0700000011, email=bidder11@mail.ro) >>> licitez 9446
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114358|/127.0.0.1:57048|Bidder 11|0700000011|bidder11@mail.ro|licitez 9446'
+[04-05-2026 21:58:34] /127.0.0.1:57050 (name=Bidder 12, phone=0700000012, email=bidder12@mail.ro) >>> licitez 8376
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57050 (name=Bidder 12, phone=0700000012, email=bidder12@mail.ro) >>> licitez 8376
+[04-05-2026 21:58:34] /127.0.0.1:57052 (name=Bidder 13, phone=0700000013, email=bidder13@mail.ro) >>> licitez 1277
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57052 (name=Bidder 13, phone=0700000013, email=bidder13@mail.ro) >>> licitez 1277
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114472|/127.0.0.1:57052|Bidder 13|0700000013|bidder13@mail.ro|licitez 1277'
+[04-05-2026 21:58:34] /127.0.0.1:57054 (name=Bidder 14, phone=0700000014, email=bidder14@mail.ro) >>> licitez 5260
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57054 (name=Bidder 14, phone=0700000014, email=bidder14@mail.ro) >>> licitez 5260
+[04-05-2026 21:58:34] /127.0.0.1:57056 (name=Bidder 15, phone=0700000015, email=bidder15@mail.ro) >>> licitez 9300
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57056 (name=Bidder 15, phone=0700000015, email=bidder15@mail.ro) >>> licitez 9300
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114585|/127.0.0.1:57056|Bidder 15|0700000015|bidder15@mail.ro|licitez 9300'
+[04-05-2026 21:58:34] /127.0.0.1:57058 (name=Bidder 16, phone=0700000016, email=bidder16@mail.ro) >>> licitez 7790
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57058 (name=Bidder 16, phone=0700000016, email=bidder16@mail.ro) >>> licitez 7790
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114641|/127.0.0.1:57058|Bidder 16|0700000016|bidder16@mail.ro|licitez 7790'
+[04-05-2026 21:58:34] /127.0.0.1:57060 (name=Bidder 17, phone=0700000017, email=bidder17@mail.ro) >>> licitez 7920
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57060 (name=Bidder 17, phone=0700000017, email=bidder17@mail.ro) >>> licitez 7920
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114697|/127.0.0.1:57060|Bidder 17|0700000017|bidder17@mail.ro|licitez 7920'
+[04-05-2026 21:58:34] /127.0.0.1:57062 (name=Bidder 18, phone=0700000018, email=bidder18@mail.ro) >>> licitez 8385
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57062 (name=Bidder 18, phone=0700000018, email=bidder18@mail.ro) >>> licitez 8385
+[04-05-2026 21:58:34] /127.0.0.1:57064 (name=Bidder 19, phone=0700000019, email=bidder19@mail.ro) >>> licitez 4939
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57064 (name=Bidder 19, phone=0700000019, email=bidder19@mail.ro) >>> licitez 4939
+[04-05-2026 21:58:34] /127.0.0.1:57066 (name=Bidder 20, phone=0700000020, email=bidder20@mail.ro) >>> licitez 8545
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57066 (name=Bidder 20, phone=0700000020, email=bidder20@mail.ro) >>> licitez 8545
+[04-05-2026 21:58:34] /127.0.0.1:57068 (name=Bidder 21, phone=0700000021, email=bidder21@mail.ro) >>> licitez 5877
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57068 (name=Bidder 21, phone=0700000021, email=bidder21@mail.ro) >>> licitez 5877
+[04-05-2026 21:58:34] /127.0.0.1:57070 (name=Bidder 22, phone=0700000022, email=bidder22@mail.ro) >>> licitez 4834
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:34] /127.0.0.1:57070 (name=Bidder 22, phone=0700000022, email=bidder22@mail.ro) >>> licitez 4834
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921114980|/127.0.0.1:57070|Bidder 22|0700000022|bidder22@mail.ro|licitez 4834'
+[04-05-2026 21:58:35] /127.0.0.1:57072 (name=Bidder 23, phone=0700000023, email=bidder23@mail.ro) >>> licitez 1638
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57072 (name=Bidder 23, phone=0700000023, email=bidder23@mail.ro) >>> licitez 1638
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115039|/127.0.0.1:57072|Bidder 23|0700000023|bidder23@mail.ro|licitez 1638'
+[04-05-2026 21:58:35] /127.0.0.1:57074 (name=Bidder 24, phone=0700000024, email=bidder24@mail.ro) >>> licitez 8778
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57074 (name=Bidder 24, phone=0700000024, email=bidder24@mail.ro) >>> licitez 8778
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115095|/127.0.0.1:57074|Bidder 24|0700000024|bidder24@mail.ro|licitez 8778'
+[04-05-2026 21:58:35] /127.0.0.1:57076 (name=Bidder 25, phone=0700000025, email=bidder25@mail.ro) >>> licitez 5655
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57076 (name=Bidder 25, phone=0700000025, email=bidder25@mail.ro) >>> licitez 5655
+[04-05-2026 21:58:35] /127.0.0.1:57078 (name=Bidder 26, phone=0700000026, email=bidder26@mail.ro) >>> licitez 8370
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57078 (name=Bidder 26, phone=0700000026, email=bidder26@mail.ro) >>> licitez 8370
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115202|/127.0.0.1:57078|Bidder 26|0700000026|bidder26@mail.ro|licitez 8370'
+[04-05-2026 21:58:35] /127.0.0.1:57080 (name=Bidder 27, phone=0700000027, email=bidder27@mail.ro) >>> licitez 4405
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57080 (name=Bidder 27, phone=0700000027, email=bidder27@mail.ro) >>> licitez 4405
+[04-05-2026 21:58:35] /127.0.0.1:57082 (name=Bidder 28, phone=0700000028, email=bidder28@mail.ro) >>> licitez 4791
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57082 (name=Bidder 28, phone=0700000028, email=bidder28@mail.ro) >>> licitez 4791
+[04-05-2026 21:58:35] /127.0.0.1:57084 (name=Bidder 29, phone=0700000029, email=bidder29@mail.ro) >>> licitez 9482
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57084 (name=Bidder 29, phone=0700000029, email=bidder29@mail.ro) >>> licitez 9482
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115374|/127.0.0.1:57084|Bidder 29|0700000029|bidder29@mail.ro|licitez 9482'
+[04-05-2026 21:58:35] /127.0.0.1:57086 (name=Bidder 30, phone=0700000030, email=bidder30@mail.ro) >>> licitez 6336
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57086 (name=Bidder 30, phone=0700000030, email=bidder30@mail.ro) >>> licitez 6336
+[04-05-2026 21:58:35] /127.0.0.1:57088 (name=Bidder 31, phone=0700000031, email=bidder31@mail.ro) >>> licitez 3621
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57088 (name=Bidder 31, phone=0700000031, email=bidder31@mail.ro) >>> licitez 3621
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115482|/127.0.0.1:57088|Bidder 31|0700000031|bidder31@mail.ro|licitez 3621'
+[04-05-2026 21:58:35] /127.0.0.1:57090 (name=Bidder 32, phone=0700000032, email=bidder32@mail.ro) >>> licitez 6819
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57090 (name=Bidder 32, phone=0700000032, email=bidder32@mail.ro) >>> licitez 6819
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115543|/127.0.0.1:57090|Bidder 32|0700000032|bidder32@mail.ro|licitez 6819'
+[04-05-2026 21:58:35] /127.0.0.1:57092 (name=Bidder 33, phone=0700000033, email=bidder33@mail.ro) >>> licitez 3637
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57092 (name=Bidder 33, phone=0700000033, email=bidder33@mail.ro) >>> licitez 3637
+[04-05-2026 21:58:35] /127.0.0.1:57094 (name=Bidder 34, phone=0700000034, email=bidder34@mail.ro) >>> licitez 7215
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57094 (name=Bidder 34, phone=0700000034, email=bidder34@mail.ro) >>> licitez 7215
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115653|/127.0.0.1:57094|Bidder 34|0700000034|bidder34@mail.ro|licitez 7215'
+[04-05-2026 21:58:35] /127.0.0.1:57096 (name=Bidder 35, phone=0700000035, email=bidder35@mail.ro) >>> licitez 7651
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57096 (name=Bidder 35, phone=0700000035, email=bidder35@mail.ro) >>> licitez 7651
+[04-05-2026 21:58:35] /127.0.0.1:57098 (name=Bidder 36, phone=0700000036, email=bidder36@mail.ro) >>> licitez 3355
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57098 (name=Bidder 36, phone=0700000036, email=bidder36@mail.ro) >>> licitez 3355
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115768|/127.0.0.1:57098|Bidder 36|0700000036|bidder36@mail.ro|licitez 3355'
+[04-05-2026 21:58:35] /127.0.0.1:57102 (name=Bidder 37, phone=0700000037, email=bidder37@mail.ro) >>> licitez 7120
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57102 (name=Bidder 37, phone=0700000037, email=bidder37@mail.ro) >>> licitez 7120
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115824|/127.0.0.1:57102|Bidder 37|0700000037|bidder37@mail.ro|licitez 7120'
+[04-05-2026 21:58:35] /127.0.0.1:57104 (name=Bidder 38, phone=0700000038, email=bidder38@mail.ro) >>> licitez 3953
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57104 (name=Bidder 38, phone=0700000038, email=bidder38@mail.ro) >>> licitez 3953
+[04-05-2026 21:58:35] /127.0.0.1:57106 (name=Bidder 39, phone=0700000039, email=bidder39@mail.ro) >>> licitez 9602
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57106 (name=Bidder 39, phone=0700000039, email=bidder39@mail.ro) >>> licitez 9602
+[JOURNAL] [04-05-2026 21:58:51] DUPLICATE filtered: key='1777921115948|/127.0.0.1:57106|Bidder 39|0700000039|bidder39@mail.ro|licitez 9602'
+[04-05-2026 21:58:35] /127.0.0.1:57108 (name=Bidder 40, phone=0700000040, email=bidder40@mail.ro) >>> licitez 9381
+[JOURNAL] [04-05-2026 21:58:51] Received: [04-05-2026 21:58:35] /127.0.0.1:57108 (name=Bidder 40, phone=0700000040, email=bidder40@mail.ro) >>> licitez 9381
+S-au primit toate mesajele.
+[JOURNAL] [04-05-2026 21:58:51] All messages received. Unique: 40
+[JOURNAL] [04-05-2026 21:58:51] Sorted 40 messages by timestamp.
+[JOURNAL] [04-05-2026 21:58:51] Acknowledged receipt to Auctioneer.
+Nu ma pot conecta la BiddingProcessor!
+[JOURNAL] [04-05-2026 21:58:51] FATAL: Cannot connect to BiddingProcessor: java.net.ConnectException: Connection refused
+[JOURNAL] [04-05-2026 21:58:51] Shutdown initiated.

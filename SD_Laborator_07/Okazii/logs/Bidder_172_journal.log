@@ -1,0 +1,4 @@
+[04-05-2026 21:57:32] [Bidder 172:56810] CYCLE_START: Connected to Auctioneer. Identity: name='Bidder 172', phone='0700000172', email='bidder172@mail.ro'.
+[04-05-2026 21:57:33] [Bidder 172:56810] Placing bid: licitez 6162
+[04-05-2026 21:57:33] [Bidder 172:56810] Waiting for auction result.
+[04-05-2026 21:57:46] [Bidder 172:56810] ERROR: java.lang.Exception: AuctioneerMicroservice s-a deconectat.

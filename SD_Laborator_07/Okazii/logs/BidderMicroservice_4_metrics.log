@@ -1,0 +1,36 @@
+[04-05-2026 21:54:37.312] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 21:54:37.331] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=9676
+[04-05-2026 21:54:58.346] [BidderMicroservice_4] EVENT=auction_result | bidder_id=4, result=Licitatie pierduta...
+[04-05-2026 21:54:58.468] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 21:56:25.114] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 21:56:25.135] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=5902
+[04-05-2026 21:56:42.279] [BidderMicroservice_4] EVENT=auction_result | bidder_id=4, result=Licitatie pierduta...
+[04-05-2026 21:56:42.302] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 21:57:23.455] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 21:57:23.476] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=3873
+[04-05-2026 21:57:23.480] [BidderMicroservice_4] EVENT=duplicate_sent | bidder_id=4, price=3873
+[04-05-2026 21:57:45.870] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 21:58:33.943] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 21:58:33.963] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=3873
+[04-05-2026 21:58:33.968] [BidderMicroservice_4] EVENT=duplicate_sent | bidder_id=4, price=3873
+[04-05-2026 21:58:54.873] [BidderMicroservice_4] EVENT=auction_result | bidder_id=4, result=Licitatie pierduta...
+[04-05-2026 21:58:54.894] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 22:15:15.161] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 22:15:15.184] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=4445
+[04-05-2026 22:15:15.189] [BidderMicroservice_4] EVENT=duplicate_sent | bidder_id=4, price=4445
+[04-05-2026 22:15:32.359] [BidderMicroservice_4] EVENT=auction_result | bidder_id=4, result=Licitatie pierduta...
+[04-05-2026 22:15:32.380] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 22:16:33.273] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 22:16:33.292] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=5800
+[04-05-2026 22:16:50.453] [BidderMicroservice_4] EVENT=auction_result | bidder_id=4, result=Licitatie pierduta...
+[04-05-2026 22:16:50.478] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 22:16:54.012] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 22:16:54.032] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=2890
+[04-05-2026 22:16:54.037] [BidderMicroservice_4] EVENT=duplicate_sent | bidder_id=4, price=2890
+[04-05-2026 22:17:10.324] [BidderMicroservice_4] EVENT=error | bidder_id=4, message=AuctioneerMicroservice s-a deconectat.
+[04-05-2026 22:17:10.328] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
+[04-05-2026 22:21:03.043] [BidderMicroservice_4] EVENT=cycle_start | bidder_id=4, name=Bidder 4, phone=0700000004, email=bidder4@mail.ro
+[04-05-2026 22:21:03.063] [BidderMicroservice_4] EVENT=bid_sent | bidder_id=4, price=2890
+[04-05-2026 22:21:03.068] [BidderMicroservice_4] EVENT=duplicate_sent | bidder_id=4, price=2890
+[04-05-2026 22:21:23.752] [BidderMicroservice_4] EVENT=auction_result | bidder_id=4, result=Licitatie pierduta...
+[04-05-2026 22:21:23.761] [BidderMicroservice_4] EVENT=shutdown | bidder_id=4
